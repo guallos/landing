@@ -222,3 +222,14 @@ if (prevBtn && nextBtn && track) {
 document.querySelectorAll('.mockup__bubble, .mockup__typing').forEach((el, i) => {
   el.style.animationDelay = `${0.8 + i * 0.4}s`;
 });
+
+// Scroll con offset al cargar si hay hash en la URL
+window.addEventListener('load', () => {
+  if (!window.location.hash) return;
+  const target = document.querySelector(window.location.hash);
+  if (!target) return;
+  const offset = nav.offsetHeight + 16;
+  setTimeout(() => {
+    window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+  }, 80); // pequeño delay para que el browser haga su scroll nativo primero
+});
