@@ -28,7 +28,7 @@
   <!-- Geo -->
   <meta name="geo.region" content="CO" />
   <meta name="geo.placename" content="Colombia" />
-  <meta name="language" content="Spanish" />
+  <meta http-equiv="content-language" content="es-CO" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
   <!-- Schema JSON-LD -->
@@ -227,7 +227,7 @@
       </a>
 
         <!-- BOTÓN HOME -->
-      <a href="../index.html" class="nav__home" aria-label="Volver al inicio">
+      <a href="/" class="nav__home" aria-label="Volver al inicio">
         <span class="nav__home-icon">
           <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
             <path d="M1.5 6.5L7 1.5l5.5 5M3 5.5V12h3V8.5h2V12h3V5.5" stroke="#00E5D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -236,13 +236,6 @@
         Inicio
       </a>
 
-
-      <ul class="nav__links" role="list">
-        <li><a href="/#servicios" class="nav__link">Servicios</a></li>
-        <li><a href="/#nosotros" class="nav__link">Nosotros</a></li>
-        <li><a href="/#stats" class="nav__link">Resultados</a></li>
-        <li><a href="/#faq" class="nav__link">FAQ</a></li>
-      </ul>
       <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="btn btn--cyan nav__cta">
         Iniciar consulta
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -253,12 +246,6 @@
       </button>
     </div>
     <div class="nav__drawer" id="drawer" aria-hidden="true">
-      <ul role="list">
-        <li><a href="/#servicios" class="nav__link">Servicios</a></li>
-        <li><a href="/#nosotros" class="nav__link">Nosotros</a></li>
-        <li><a href="/#stats" class="nav__link">Resultados</a></li>
-        <li><a href="/#faq" class="nav__link">FAQ</a></li>
-      </ul>
       <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="btn btn--cyan">Iniciar consulta →</a>
     </div>
   </nav>
@@ -372,8 +359,8 @@
             <div class="service-card__icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="#00E5D4" stroke-width="1.5"/><path d="M16 3H8L6 7h12l-2-4z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/></svg>
             </div>
-            <h3 class="service-card__title">Tutela laboral</h3>
-            <p class="service-card__desc">Vulneración de derechos laborales, mínimo vital, estabilidad reforzada o acoso en el trabajo.</p>
+            <h3 class="service-card__title">Tutela por derecho de petición</h3>
+            <p class="service-card__desc">Vulneración al derecho de petición, al no recibir respuesta dentro del término legal o al recibir una respuesta incompleta.</p>
             <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
@@ -552,6 +539,7 @@
           <ul class="footer__links" role="list">
             <li><a href="/accion-de-tutela/">Acción de Tutela</a></li>
             <li><a href="/derecho-de-peticion/">Derecho de Petición</a></li>
+            <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer">Reclamaciones</a></li>
             <li><a href="/desacato/">Desacato</a></li>
             <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer">Registro de Marcas</a></li>
             <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer">Contratos</a></li>
@@ -570,8 +558,8 @@
       <div class="footer__bottom">
         <span class="mono">© 2024 Justiexpress. Todos los derechos reservados.</span>
         <div class="footer__legal">
-          <a href="/terminos">Términos y condiciones</a>
-          <a href="/privacidad">Política de privacidad</a>
+          <a href="../TyC.html">Términos y condiciones</a>
+          <a href="../PP.html">Política de privacidad</a>
         </div>
       </div>
     </div>
