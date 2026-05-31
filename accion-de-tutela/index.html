@@ -5,9 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Acción de Tutela en Colombia por $12.500 | Justiexpress</title>
   <meta name="description" content="Redactamos tu acción de tutela en segundos por solo $12.500. Abogados expertos, entrega inmediata en todo Colombia. Protege tus derechos fundamentales hoy." />
-  <meta name="keywords" content="accion de tutela, acción de tutela colombia, tutela eps, tutela derecho fundamental, presentar tutela, tutela urgente, tutela online colombia, como hacer una tutela, tutela salud colombia" />
   <link rel="canonical" href="https://www.justiexpress.com/accion-de-tutela/" />
   <link rel="icon" href="../logo.png" type="image/png" />
+
+  <!-- ════════════════════════════════════════════════
+       GOOGLE ADS TRACKING
+       INSTRUCCIONES:
+       1. Reemplaza "AW-XXXXXXXXXX" con tu ID de conversión
+          (lo encuentras en Google Ads → Objetivos → Conversiones → tu acción → Etiqueta)
+       2. Reemplaza "CONVERSION_LABEL_TUTELA" con la etiqueta de conversión específica
+       ════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-18198394694');
+
+    // Función global para disparar conversión al hacer clic en chat
+    function trackConversionTutela() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18198394694/xbBKCPrrlrYcEMbu1eVD',
+        'value': 12500,
+        'currency': 'COP'
+      });
+    }
+
+    // UTM passthrough: agrega parámetros UTM al link del chat
+    function getChatUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
+      const chatBase = 'https://chat.justiexpress.com/';
+      const chatParams = new URLSearchParams();
+      chatParams.set('origen', 'ads-tutela');
+      utmParams.forEach(p => { if(params.get(p)) chatParams.set(p, params.get(p)); });
+      return chatBase + '?' + chatParams.toString();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Actualizar todos los links al chat con UTMs
+      document.querySelectorAll('a[data-chat-link]').forEach(function(el) {
+        el.href = getChatUrl();
+        el.addEventListener('click', trackConversionTutela);
+      });
+    });
+  </script>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -29,7 +71,8 @@
   <meta name="geo.region" content="CO" />
   <meta name="geo.placename" content="Colombia" />
   <meta http-equiv="content-language" content="es-CO" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <!-- NO indexar esta versión ads para no duplicar SEO -->
+  <meta name="robots" content="noindex, follow" />
 
   <!-- Schema JSON-LD -->
   <script type="application/ld+json">
@@ -62,75 +105,11 @@
       "availability": "https://schema.org/InStock",
       "description": "Redacción de acción de tutela lista para presentar"
     },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servicios legales",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Acción de Tutela",
-            "description": "Documento jurídico para proteger derechos fundamentales vulnerados"
-          }
-        }
-      ]
-    },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
       "reviewCount": "2000"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-        "author": { "@type": "Person", "name": "Carolina M." },
-        "reviewBody": "Presenté mi tutela contra la EPS en menos de un día. El proceso fue increíblemente fácil y el resultado fue positivo."
-      }
-    ]
-  }
-  </script>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Qué es una acción de tutela?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La acción de tutela es el mecanismo constitucional para proteger tus derechos fundamentales en Colombia. Cualquier persona puede presentarla cuando sus derechos están siendo vulnerados o amenazados. El juez tiene 10 días para resolverla."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánto cuesta una tutela en Justiexpress?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "En Justiexpress redactamos tu acción de tutela por $12.500 COP. El documento queda listo para presentar ante el juez."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánto tiempo toma elaborar una tutela?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Elaboramos tu acción de tutela de manera inmediata, en segundos, garantizando calidad jurídica y efectividad."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Necesito un abogado para presentar una tutela?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. La tutela fue diseñada para que cualquier persona pueda presentarla. Sin embargo, contar con asesoría profesional aumenta significativamente las probabilidades de éxito."
-        }
-      }
-    ]
+    }
   }
   </script>
 
@@ -162,7 +141,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .nav__home::before {
       content: '';
       position: absolute;
@@ -171,7 +149,6 @@
       opacity: 0;
       transition: opacity 0.3s;
     }
-
     .nav__home:hover {
       color: var(--cyan);
       border-color: var(--cyan-border);
@@ -179,11 +156,8 @@
       transform: translateY(-1px);
       box-shadow: 0 6px 20px rgba(0,229,212,0.10);
     }
-
     .nav__home:hover::before { opacity: 1; }
-
     .nav__home:active { transform: translateY(0); }
-
     .nav__home-icon {
       width: 22px;
       height: 22px;
@@ -196,11 +170,7 @@
       flex-shrink: 0;
       transition: background 0.25s;
     }
-
-    .nav__home:hover .nav__home-icon {
-      background: rgba(0,229,212,0.18);
-    }
-
+    .nav__home:hover .nav__home-icon { background: rgba(0,229,212,0.18); }
     @media (max-width: 860px) {
       .nav__home { display: none; }
       .nav__home--drawer {
@@ -210,11 +180,87 @@
         justify-content: center;
       }
     }
+
+    /* ── ADS: BARRA URGENCIA TOP ── */
+.ads-urgency-bar {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 184, 169, 0.212) 0%,
+    rgba(0, 127, 121, 0.242) 100%
+  );
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  color: #fff;
+  text-align: center;
+  padding: 9px 16px;
+
+  font-family: var(--ff-mono, monospace);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+
+  position: sticky;
+  top: 0;
+  z-index: 200;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.ads-urgency-bar strong {
+  font-weight: 700;
+}    
+
+    /* ── ADS: BADGE MESSAGE MATCH ── */
+    .ads-match-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0,229,212,0.12);
+      border: 1px solid rgba(0,229,212,0.35);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-family: var(--ff-mono, monospace);
+      font-size: 11px;
+      font-weight: 500;
+      color: #00e5d4;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .ads-match-badge svg { flex-shrink: 0; }
+
+    /* ── ADS: PRECIO DESTACADO ── */
+    .ads-price-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,229,212,0.08);
+      border: 1.5px solid rgba(0,229,212,0.4);
+      border-radius: 999px;
+      padding: 8px 20px;
+      margin-top: 20px;
+      font-family: var(--ff-mono, monospace);
+      font-size: 13px;
+      font-weight: 600;
+      color: #00e5d4;
+    }
+    .ads-price-pill__amount {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+    }
   </style>
-
-
 </head>
 <body>
+
+  <!-- ── BARRA URGENCIA (visible solo en tráfico de ads) ── -->
+  <div class="ads-urgency-bar" id="ads-urgency-bar">
+    ⚡ <strong>Servicio disponible ahora</strong> · Tu tutela lista en segundos · Abogados expertos · Todo Colombia
+  </div>
 
   <!-- ── NAV ── -->
   <nav class="nav" id="nav">
@@ -225,8 +271,6 @@
         </div>
         <span class="nav__name">Justiexpress</span>
       </a>
-
-        <!-- BOTÓN HOME -->
       <a href="/" class="nav__home" aria-label="Volver al inicio">
         <span class="nav__home-icon">
           <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -235,18 +279,16 @@
         </span>
         Inicio
       </a>
-
-      <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="btn btn--cyan nav__cta">
+      <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--cyan nav__cta">
         Iniciar consulta
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-      
       <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" id="burger">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="nav__drawer" id="drawer" aria-hidden="true">
-      <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="btn btn--cyan">Iniciar consulta →</a>
+      <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--cyan">Iniciar consulta →</a>
     </div>
   </nav>
 
@@ -279,6 +321,13 @@
       <div class="hero__grid-bg" aria-hidden="true"></div>
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__inner">
+
+        <!-- ADS: Badge de message match con el anuncio -->
+        <div class="ads-match-badge">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#00e5d4" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#00e5d4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Tutela por $12.500 · Entrega inmediata · Abogados expertos
+        </div>
+
         <div class="hero__badge">
           <span class="badge__dot"></span>
           <span class="mono">Solo $12.500 · Entrega inmediata</span>
@@ -290,8 +339,16 @@
         <p class="hero__sub">
           ¿Tu EPS negó un servicio? ¿Vulneraron tus derechos fundamentales? Redactamos tu tutela con abogados expertos por solo <strong style="color:var(--cyan)">$12.500</strong>. Lista para presentar ante el juez, en cualquier ciudad de Colombia.
         </p>
-        <div class="hero__actions">
-          <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="btn btn--hero">
+
+        <!-- ADS: Precio grande y claro -->
+        <div class="ads-price-pill">
+          <span>Precio fijo:</span>
+          <span class="ads-price-pill__amount">$12.500</span>
+          <span>COP · Sin costos ocultos</span>
+        </div>
+
+        <div class="hero__actions" style="margin-top:28px;">
+          <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--hero">
             <span>Quiero mi tutela ahora</span>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -345,34 +402,30 @@
     <section class="section" style="padding-top:0;" aria-label="Qué incluye la tutela">
       <div class="container">
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-
           <div class="service-card">
             <div class="service-card__icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7L12 2z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/></svg>
             </div>
             <h3 class="service-card__title">Tutela contra EPS</h3>
             <p class="service-card__desc">Negación de medicamentos, cirugías, citas o tratamientos. El caso más común y con mayor tasa de éxito.</p>
-            <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
-
           <div class="service-card">
             <div class="service-card__icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="#00E5D4" stroke-width="1.5"/><path d="M16 3H8L6 7h12l-2-4z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/></svg>
             </div>
             <h3 class="service-card__title">Tutela por derecho de petición</h3>
             <p class="service-card__desc">Vulneración al derecho de petición, al no recibir respuesta dentro del término legal o al recibir una respuesta incompleta.</p>
-            <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
-
           <div class="service-card">
             <div class="service-card__icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 22V12h6v10" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/></svg>
             </div>
             <h3 class="service-card__title">Otros derechos fundamentales</h3>
             <p class="service-card__desc">Vida, educación, vivienda digna, debido proceso, habeas data, petición. Cualquier derecho vulnerado.</p>
-            <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
-
         </div>
       </div>
     </section>
@@ -381,23 +434,10 @@
     <section class="stats" id="stats" aria-label="Estadísticas">
       <div class="container">
         <div class="stats__grid">
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="2000">0</span>
-            <span class="stat-card__label">clientes satisfechos</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="2000">0</span>
-            <span class="stat-card__label">documentos entregados</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="4000">0</span>
-            <span class="stat-card__label">asesorías realizadas</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="24">0</span>
-            <span class="stat-card__unit">/7</span>
-            <span class="stat-card__label">disponibilidad</span>
-          </div>
+          <div class="stat-card"><span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">clientes satisfechos</span></div>
+          <div class="stat-card"><span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">documentos entregados</span></div>
+          <div class="stat-card"><span class="stat-card__num" data-target="4000">0</span><span class="stat-card__label">asesorías realizadas</span></div>
+          <div class="stat-card"><span class="stat-card__num" data-target="24">0</span><span class="stat-card__unit">/7</span><span class="stat-card__label">disponibilidad</span></div>
         </div>
       </div>
     </section>
@@ -412,26 +452,17 @@
         <div class="how__steps">
           <div class="how__step">
             <div class="how__step-num mono">01</div>
-            <div class="how__step-content">
-              <h3>Describe tu caso</h3>
-              <p>Cuéntanos qué derecho fue vulnerado, quién lo vulneró y desde cuándo. Sin formularios largos.</p>
-            </div>
+            <div class="how__step-content"><h3>Describe tu caso</h3><p>Cuéntanos qué derecho fue vulnerado, quién lo vulneró y desde cuándo. Sin formularios largos.</p></div>
           </div>
           <div class="how__connector" aria-hidden="true"></div>
           <div class="how__step">
             <div class="how__step-num mono">02</div>
-            <div class="how__step-content">
-              <h3>Redactamos tu tutela</h3>
-              <p>Un abogado experto elabora el documento con los argumentos jurídicos correctos para tu caso.</p>
-            </div>
+            <div class="how__step-content"><h3>Redactamos tu tutela</h3><p>Un abogado experto elabora el documento con los argumentos jurídicos correctos para tu caso.</p></div>
           </div>
           <div class="how__connector" aria-hidden="true"></div>
           <div class="how__step">
             <div class="how__step-num mono">03</div>
-            <div class="how__step-content">
-              <h3>Presenta y gana</h3>
-              <p>Recibes el PDF listo para presentar ante el juez. El fallo llega en máximo 10 días hábiles.</p>
-            </div>
+            <div class="how__step-content"><h3>Presenta y gana</h3><p>Recibes el PDF listo para presentar ante el juez. El fallo llega en máximo 10 días hábiles.</p></div>
           </div>
         </div>
       </div>
@@ -485,7 +516,7 @@
           <details class="faq__item"><summary class="faq__q">¿Cuánto cuesta la tutela en Justiexpress?</summary><p class="faq__a">Solo $12.500 COP. Sin costos ocultos ni mensualidades. Pagas una vez y recibes tu documento listo para presentar.</p></details>
           <details class="faq__item"><summary class="faq__q">¿Cuánto tiempo toma elaborar la tutela?</summary><p class="faq__a">La elaboramos de manera inmediata. En la mayoría de los casos el documento está listo en segundos.</p></details>
           <details class="faq__item"><summary class="faq__q">¿Necesito un abogado para presentarla?</summary><p class="faq__a">No. La tutela fue diseñada para que cualquier ciudadano pueda presentarla sin representación legal. Te entregamos el documento listo para llevar al juzgado o enviar por correo electrónico.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Qué pasa si me niegan la tutela?</summary><p class="faq__a">Tienes derecho a impugnar dentro de los 3 días siguientes al fallo. La impugnación la resuelve el superior jerárquico en máximo 20 días. Además, la Corte Constitucional puede seleccionarla para revisión.</p></details>
+          <details class="faq__item"><summary class="faq__q">¿Qué pasa si me niegan la tutela?</summary><p class="faq__a">Tienes derecho a impugnar dentro de los 3 días siguientes al fallo. La impugnación la resuelve el superior jerárquico en máximo 20 días.</p></details>
           <details class="faq__item"><summary class="faq__q">¿Atienden en todo Colombia?</summary><p class="faq__a">Sí. Gracias a la digitalización de trámites judiciales, podemos presentar tutelas en cualquier ciudad del país.</p></details>
         </div>
       </div>
@@ -500,7 +531,7 @@
           <h2 class="cta-final__title">Tu tutela lista<br/><em>en segundos.</em></h2>
           <p class="cta-final__sub">Sin filas, sin turnos, sin tecnicismos. Abogados expertos redactan tu acción de tutela hoy.</p>
           <div class="cta-final__actions">
-            <a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer" class="btn btn--hero">
+            <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--hero">
               Quiero mi tutela ahora
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
