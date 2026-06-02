@@ -28,17 +28,23 @@
         'currency': 'COP'
       });
     }
+      function getChatUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
+        const chatBase = 'https://chat.justiexpress.com/';
+        const chatParams = new URLSearchParams();
+        chatParams.set('categoria', 'tutela');        // ← desacato va a tutelas
+        chatParams.set('origen', 'ads-desacato');
+        utmParams.forEach(p => { if(params.get(p)) chatParams.set(p, params.get(p)); });
+        return chatBase + '?' + chatParams.toString();
+      }
 
-    function getChatUrl() {
-      const params = new URLSearchParams(window.location.search);
-      const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
-      const chatBase = 'https://chat.justiexpress.com/';
-      const chatParams = new URLSearchParams();
-      chatParams.set('origen', 'ads-desacato');
-      utmParams.forEach(p => { if(params.get(p)) chatParams.set(p, params.get(p)); });
-      return chatBase + '?' + chatParams.toString();
-    }
-
+      (function() {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('gclid') || params.get('utm_source') === 'google') {
+          window.location.replace('https://chat.justiexpress.com/?categoria=tutela');
+        }
+      })();
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('a[data-chat-link]').forEach(function(el) {
         el.href = getChatUrl();
@@ -103,38 +109,6 @@
       .nav__home--drawer { display: inline-flex !important; margin-top: 4px; width: 100%; justify-content: center; }
     }
 
-.ads-urgency-bar {
-  background: linear-gradient(
-    90deg,
-    rgba(0, 184, 169, 0.212) 0%,
-    rgba(0, 127, 121, 0.242) 100%
-  );
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-
-  color: #fff;
-  text-align: center;
-  padding: 9px 16px;
-
-  font-family: var(--ff-mono, monospace);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-
-  position: sticky;
-  top: 0;
-  z-index: 200;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-}
-
-.ads-urgency-bar strong {
-  font-weight: 700;
-}    
-
 .ads-match-badge {
       display: inline-flex; align-items: center; gap: 6px;
       background: rgba(0,229,212,0.12); border: 1px solid rgba(0,229,212,0.35);
@@ -152,10 +126,6 @@
   </style>
 </head>
 <body>
-
-  <div class="ads-urgency-bar">
-    ⚡ <strong>¿Ignoraron tu tutela?</strong> · Incidente de desacato por $12.500 · Arresto para el incumplidor · Todo Colombia
-  </div>
 
   <nav class="nav" id="nav">
     <div class="nav__inner">

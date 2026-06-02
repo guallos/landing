@@ -1,420 +1,1139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Derecho de Petición en Colombia por $12.500 | Justiexpress</title>
-  <meta name="description" content="Redactamos tu derecho de petición en segundos por solo $12.500. Exige respuesta a entidades públicas y privadas. Abogados expertos, todo Colombia." />
-  <link rel="canonical" href="https://www.justiexpress.com/derecho-de-peticion/" />
-  <link rel="icon" href="../logo.png" type="image/png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Derecho de Petición en Colombia por $12.500 | Justiexpress</title>
+    <meta
+      name="description"
+      content="Redactamos tu derecho de petición en segundos por solo $12.500. Exige respuesta a entidades públicas y privadas. Abogados expertos, todo Colombia."
+    />
+    <link
+      rel="canonical"
+      href="https://www.justiexpress.com/derecho-de-peticion/"
+    />
+    <link rel="icon" href="../logo.png" type="image/png" />
 
-  <!-- ════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════
        GOOGLE ADS TRACKING
        INSTRUCCIONES:
        1. Reemplaza "AW-XXXXXXXXXX" con tu ID de conversión
        2. Reemplaza "CONVERSION_LABEL_PETICION" con la etiqueta específica de esta campaña
        ════════════════════════════════════════════════ -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'AW-XXXXXXXXXX');
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-XXXXXXXXXX");
 
-    function trackConversionPeticion() {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-XXXXXXXXXX/CONVERSION_LABEL_PETICION',
-        'value': 12500,
-        'currency': 'COP'
+      function trackConversionPeticion() {
+        gtag("event", "conversion", {
+          send_to: "AW-XXXXXXXXXX/CONVERSION_LABEL_PETICION",
+          value: 12500,
+          currency: "COP",
+        });
+      }
+
+      function getChatUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const utmParams = [
+          "utm_source",
+          "utm_medium",
+          "utm_campaign",
+          "utm_term",
+          "utm_content",
+          "gclid",
+        ];
+        const chatBase = "https://chat.justiexpress.com/";
+        const chatParams = new URLSearchParams();
+        chatParams.set("categoria", "derecho-peticion"); // ← NUEVO
+        chatParams.set("origen", "ads-peticion");
+        utmParams.forEach((p) => {
+          if (params.get(p)) chatParams.set(p, params.get(p));
+        });
+        return chatBase + "?" + chatParams.toString();
+      }
+
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get("gclid") || params.get("utm_source") === "google") {
+          window.location.replace(
+            "https://chat.justiexpress.com/?categoria=derecho-peticion",
+          );
+        }
+      })();
+      
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("a[data-chat-link]").forEach(function (el) {
+          el.href = getChatUrl();
+          el.addEventListener("click", trackConversionPeticion);
+        });
       });
-    }
+    </script>
 
-    function getChatUrl() {
-      const params = new URLSearchParams(window.location.search);
-      const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
-      const chatBase = 'https://chat.justiexpress.com/';
-      const chatParams = new URLSearchParams();
-      chatParams.set('origen', 'ads-peticion');
-      utmParams.forEach(p => { if(params.get(p)) chatParams.set(p, params.get(p)); });
-      return chatBase + '?' + chatParams.toString();
-    }
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.justiexpress.com/derecho-de-peticion/"
+    />
+    <meta
+      property="og:title"
+      content="Derecho de Petición en Colombia por $12.500 | Justiexpress"
+    />
+    <meta
+      property="og:description"
+      content="Redactamos tu derecho de petición en segundos por solo $12.500. Exige respuesta a entidades públicas y privadas."
+    />
+    <meta
+      property="og:image"
+      content="https://www.justiexpress.com/Justiexpress_-_Tu_Caso_Legal_-_600x600.png"
+    />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="JustiExpress" />
 
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[data-chat-link]').forEach(function(el) {
-        el.href = getChatUrl();
-        el.addEventListener('click', trackConversionPeticion);
-      });
-    });
-  </script>
+    <meta name="geo.region" content="CO" />
+    <meta name="geo.placename" content="Colombia" />
+    <meta http-equiv="content-language" content="es-CO" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.justiexpress.com/derecho-de-peticion/" />
-  <meta property="og:title" content="Derecho de Petición en Colombia por $12.500 | Justiexpress" />
-  <meta property="og:description" content="Redactamos tu derecho de petición en segundos por solo $12.500. Exige respuesta a entidades públicas y privadas." />
-  <meta property="og:image" content="https://www.justiexpress.com/Justiexpress_-_Tu_Caso_Legal_-_600x600.png" />
-  <meta property="og:locale" content="es_CO" />
-  <meta property="og:site_name" content="JustiExpress" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Derecho de Petición — Justiexpress",
+        "description": "Redacción de derechos de petición en Colombia por $12.500.",
+        "url": "https://www.justiexpress.com/derecho-de-peticion/",
+        "telephone": "+573185725324",
+        "areaServed": "CO",
+        "priceRange": "$12.500 COP",
+        "offers": {
+          "@type": "Offer",
+          "price": "12500",
+          "priceCurrency": "COP"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "2000"
+        }
+      }
+    </script>
 
-  <meta name="geo.region" content="CO" />
-  <meta name="geo.placename" content="Colombia" />
-  <meta http-equiv="content-language" content="es-CO" />
-  <meta name="robots" content="index, follow" />
+    <link rel="preload" as="image" href="../logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "Derecho de Petición — Justiexpress",
-    "description": "Redacción de derechos de petición en Colombia por $12.500.",
-    "url": "https://www.justiexpress.com/derecho-de-peticion/",
-    "telephone": "+573185725324",
-    "areaServed": "CO",
-    "priceRange": "$12.500 COP",
-    "offers": { "@type": "Offer", "price": "12500", "priceCurrency": "COP" },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "2000" }
-  }
-  </script>
+    <style>
+      .nav__home {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-family: var(--ff-mono);
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: var(--text-2);
+        padding: 7px 14px 7px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--noir-3);
+        transition: all 0.25s var(--ease-out);
+        white-space: nowrap;
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .nav__home::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 229, 212, 0.06),
+          transparent
+        );
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .nav__home:hover {
+        color: var(--cyan);
+        border-color: var(--cyan-border);
+        background: var(--noir-4);
+        transform: translateY(-1px);
+        box-shadow: 0 6px 20px rgba(0, 229, 212, 0.1);
+      }
+      .nav__home:hover::before {
+        opacity: 1;
+      }
+      .nav__home:active {
+        transform: translateY(0);
+      }
+      .nav__home-icon {
+        width: 22px;
+        height: 22px;
+        border-radius: 7px;
+        background: var(--cyan-dim);
+        border: 1px solid var(--cyan-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: background 0.25s;
+      }
+      .nav__home:hover .nav__home-icon {
+        background: rgba(0, 229, 212, 0.18);
+      }
+      @media (max-width: 860px) {
+        .nav__home {
+          display: none;
+        }
+        .nav__home--drawer {
+          display: inline-flex !important;
+          margin-top: 4px;
+          width: 100%;
+          justify-content: center;
+        }
+      }
 
-  <link rel="preload" as="image" href="../logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles.css" />
-
-  <style>
-    .nav__home {
-      display: inline-flex; align-items: center; gap: 7px;
-      font-family: var(--ff-mono); font-size: 10px; font-weight: 500;
-      letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-2);
-      padding: 7px 14px 7px 10px; border-radius: 999px;
-      border: 1px solid var(--border); background: var(--noir-3);
-      transition: all 0.25s var(--ease-out); white-space: nowrap;
-      flex-shrink: 0; position: relative; overflow: hidden;
-    }
-    .nav__home::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,229,212,0.06), transparent); opacity: 0; transition: opacity 0.3s; }
-    .nav__home:hover { color: var(--cyan); border-color: var(--cyan-border); background: var(--noir-4); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,229,212,0.10); }
-    .nav__home:hover::before { opacity: 1; }
-    .nav__home:active { transform: translateY(0); }
-    .nav__home-icon { width: 22px; height: 22px; border-radius: 7px; background: var(--cyan-dim); border: 1px solid var(--cyan-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.25s; }
-    .nav__home:hover .nav__home-icon { background: rgba(0,229,212,0.18); }
-    @media (max-width: 860px) {
-      .nav__home { display: none; }
-      .nav__home--drawer { display: inline-flex !important; margin-top: 4px; width: 100%; justify-content: center; }
-    }
-
-.ads-urgency-bar {
-  background: linear-gradient(
-    90deg,
-    rgba(0, 184, 169, 0.212) 0%,
-    rgba(0, 127, 121, 0.242) 100%
-  );
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-
-  color: #fff;
-  text-align: center;
-  padding: 9px 16px;
-
-  font-family: var(--ff-mono, monospace);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-
-  position: sticky;
-  top: 0;
-  z-index: 200;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-}
-
-.ads-urgency-bar strong {
-  font-weight: 700;
-}    
-
-    .ads-match-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: rgba(0,229,212,0.12); border: 1px solid rgba(0,229,212,0.35);
-      border-radius: 6px; padding: 5px 12px;
-      font-family: var(--ff-mono, monospace); font-size: 11px; font-weight: 500;
-      color: #00e5d4; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 18px;
-    }
-    .ads-price-pill {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(0,229,212,0.08); border: 1.5px solid rgba(0,229,212,0.4);
-      border-radius: 999px; padding: 8px 20px; margin-top: 20px;
-      font-family: var(--ff-mono, monospace); font-size: 13px; font-weight: 600; color: #00e5d4;
-    }
-    .ads-price-pill__amount { font-size: 22px; font-weight: 800; color: #fff; }
-  </style>
-</head>
-<body>
-
-  <div class="ads-urgency-bar">
-    ⚡ <strong>Servicio disponible ahora</strong> · Tu derecho de petición listo en segundos · Obligación legal de respuesta · Todo Colombia
-  </div>
-
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="/" class="nav__brand">
-        <div class="nav__logo-wrap">
-          <img src="../logo.png" alt="JustiExpress" width="40" height="40" loading="eager" />
-        </div>
-        <span class="nav__name">Justiexpress</span>
-      </a>
-      <a href="/" class="nav__home" aria-label="Volver al inicio">
-        <span class="nav__home-icon">
-          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M1.5 6.5L7 1.5l5.5 5M3 5.5V12h3V8.5h2V12h3V5.5" stroke="#00E5D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        Inicio
-      </a>
-      <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--cyan nav__cta">
-        Iniciar consulta
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" id="burger">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="nav__drawer" id="drawer" aria-hidden="true">
-      <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--cyan">Iniciar consulta →</a>
-    </div>
-  </nav>
-
-  <!-- ── BARRA SOCIAL LATERAL ── -->
-  <aside class="social-bar" aria-label="Redes sociales">
-    <a href="https://www.facebook.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-bar__link social-bar__link--facebook">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
-    </a>
-    <a href="https://twitter.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="social-bar__link social-bar__link--x">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg>
-    </a>
-    <a href="https://www.tiktok.com/@tucasolegal" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-bar__link social-bar__link--tiktok">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>
-    </a>
-    <a href="https://www.linkedin.com/company/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-bar__link social-bar__link--linkedin">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
-    </a>
-    <a href="https://www.instagram.com/justiexpress.legal" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-bar__link social-bar__link--instagram">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
-    </a>
-    <a href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-bar__link social-bar__link--youtube">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
-    </a>
-  </aside>
-
-  <main>
-    <section class="hero" aria-label="Derecho de Petición">
-      <div class="hero__grid-bg" aria-hidden="true"></div>
-      <div class="hero__glow" aria-hidden="true"></div>
-      <div class="hero__inner">
-
-        <div class="ads-match-badge">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#00e5d4" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#00e5d4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Derecho de Petición por $12.500 · Obligación legal de respuesta
-        </div>
-
-        <div class="hero__badge">
-          <span class="badge__dot"></span>
-          <span class="mono">Solo $12.500 · Entrega inmediata</span>
-        </div>
-        <h1 class="hero__title">
-          Derecho de Petición<br/>
-          <em class="hero__title--em">que sí recibe respuesta.</em>
-        </h1>
-        <p class="hero__sub">
-          ¿Una entidad no te responde? ¿El banco, la EPS o una entidad pública ignora tu solicitud? Redactamos tu derecho de petición por solo <strong style="color:var(--cyan)">$12.500</strong>. Están obligados a responder en máximo 15 días hábiles.
-        </p>
-
-        <div class="ads-price-pill">
-          <span>Precio fijo:</span>
-          <span class="ads-price-pill__amount">$12.500</span>
-          <span>COP · Sin costos ocultos</span>
-        </div>
-
-        <div class="hero__actions" style="margin-top:28px;">
-          <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--hero">
-            <span>Quiero mi petición ahora</span>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20necesito%20un%20derecho%20de%20petici%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Preguntar por WhatsApp
-          </a>
-        </div>
-        <div class="hero__trust">
-          <span class="hero__trust-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Obligación legal de respuesta</span>
-          <span class="hero__trust-sep" aria-hidden="true">·</span>
-          <span class="hero__trust-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Todo Colombia</span>
-          <span class="hero__trust-sep" aria-hidden="true">·</span>
-          <span class="hero__trust-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Solo $12.500</span>
-        </div>
-      </div>
-
-      <div class="hero__mockup" aria-hidden="true">
-        <div class="mockup__chrome">
-          <div class="mockup__dot"></div><div class="mockup__dot"></div><div class="mockup__dot"></div>
-          <span class="mono" style="font-size:10px;color:var(--text-3);margin-left:auto;margin-right:auto;">chat.justiexpress.com</span>
-        </div>
-        <div class="mockup__body">
-          <div class="mockup__msg mockup__msg--ai"><div class="mockup__avatar">JE</div><div class="mockup__bubble">Hola 👋 ¿Qué entidad no te ha respondido?</div></div>
-          <div class="mockup__msg mockup__msg--user"><div class="mockup__bubble mockup__bubble--user">El banco lleva 3 meses sin resolver mi queja</div></div>
-          <div class="mockup__msg mockup__msg--ai"><div class="mockup__avatar">JE</div><div class="mockup__bubble">Perfecto. Los bancos están obligados a responder. Redacto tu <strong>derecho de petición</strong> por $12.500. ¿Cuál es el nombre del banco?</div></div>
-          <div class="mockup__typing"><span></span><span></span><span></span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top:0;" aria-label="Tipos de derecho de petición">
-      <div class="container">
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-          <div class="service-card">
-            <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12h6M9 16h4M7 3H4a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V8l-5-5H7z" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 3v5h5" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <h3 class="service-card__title">Petición a entidades públicas</h3>
-            <p class="service-card__desc">Alcaldías, gobernaciones, ministerios, DIAN, Registraduría. Tienen 15 días hábiles para responder.</p>
-            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      .ads-match-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(0, 229, 212, 0.12);
+        border: 1px solid rgba(0, 229, 212, 0.35);
+        border-radius: 6px;
+        padding: 5px 12px;
+        font-family: var(--ff-mono, monospace);
+        font-size: 11px;
+        font-weight: 500;
+        color: #00e5d4;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+      .ads-price-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(0, 229, 212, 0.08);
+        border: 1.5px solid rgba(0, 229, 212, 0.4);
+        border-radius: 999px;
+        padding: 8px 20px;
+        margin-top: 20px;
+        font-family: var(--ff-mono, monospace);
+        font-size: 13px;
+        font-weight: 600;
+        color: #00e5d4;
+      }
+      .ads-price-pill__amount {
+        font-size: 22px;
+        font-weight: 800;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="/" class="nav__brand">
+          <div class="nav__logo-wrap">
+            <img
+              src="../logo.png"
+              alt="JustiExpress"
+              width="40"
+              height="40"
+              loading="eager"
+            />
           </div>
-          <div class="service-card">
-            <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="#00E5D4" stroke-width="1.5"/><path d="M2 10h20" stroke="#00E5D4" stroke-width="1.5"/></svg></div>
-            <h3 class="service-card__title">Petición a bancos y financieras</h3>
-            <p class="service-card__desc">Cobros indebidos, reportes en centrales de riesgo, cuentas bloqueadas o productos no solicitados.</p>
-            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
-            <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7L12 2z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
-            <h3 class="service-card__title">Petición a EPS y servicios públicos</h3>
-            <p class="service-card__desc">Negaciones de servicio, facturas incorrectas, historial clínico o problemas con servicios domiciliarios.</p>
-            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats" id="stats" aria-label="Estadísticas">
-      <div class="container">
-        <div class="stats__grid">
-          <div class="stat-card"><span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">clientes satisfechos</span></div>
-          <div class="stat-card"><span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">documentos entregados</span></div>
-          <div class="stat-card"><span class="stat-card__num" data-target="4000">0</span><span class="stat-card__label">asesorías realizadas</span></div>
-          <div class="stat-card"><span class="stat-card__num" data-target="24">0</span><span class="stat-card__unit">/7</span><span class="stat-card__label">disponibilidad</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section how" id="como-funciona" aria-label="Cómo funciona">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">Proceso</p>
-          <h2 class="section__title">Tres pasos.<br/><em>Tu petición lista.</em></h2>
-        </header>
-        <div class="how__steps">
-          <div class="how__step"><div class="how__step-num mono">01</div><div class="how__step-content"><h3>Cuéntanos el problema</h3><p>Dinos qué necesitas, a quién se lo pides y qué ha pasado hasta ahora. Sin formularios complicados.</p></div></div>
-          <div class="how__connector" aria-hidden="true"></div>
-          <div class="how__step"><div class="how__step-num mono">02</div><div class="how__step-content"><h3>Redactamos tu petición</h3><p>Un abogado redacta el documento con el tono y los argumentos jurídicos correctos para forzar una respuesta.</p></div></div>
-          <div class="how__connector" aria-hidden="true"></div>
-          <div class="how__step"><div class="how__step-num mono">03</div><div class="how__step-content"><h3>Presenta y exige respuesta</h3><p>Recibes el PDF listo para enviar. Si no responden, tienes base para una tutela por vulneración del derecho.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq" id="faq" aria-label="Preguntas frecuentes">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">FAQ</p>
-          <h2 class="section__title">Preguntas<br/><em>frecuentes</em></h2>
-        </header>
-        <div class="faq__list">
-          <details class="faq__item"><summary class="faq__q">¿Qué es un derecho de petición?</summary><p class="faq__a">Es un derecho fundamental que permite a cualquier persona solicitar información o respuestas a entidades públicas y privadas en Colombia. La entidad tiene entre 10 y 30 días hábiles para responder según el tipo de solicitud.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Cuánto cuesta en Justiexpress?</summary><p class="faq__a">Solo $12.500 COP. Sin costos adicionales. Pagas una vez y recibes tu documento listo para presentar o enviar por correo electrónico.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Cuánto tiempo tiene la entidad para responder?</summary><p class="faq__a">15 días hábiles para peticiones generales, 10 días para solicitudes de información y documentos, y 30 días para consultas. Si no responden, puedes presentar una tutela.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Las empresas privadas están obligadas a responder?</summary><p class="faq__a">Sí. Empresas que prestan servicios públicos, entidades financieras y empresas que manejan datos personales están obligadas. El incumplimiento da lugar a una acción de tutela.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Qué pasa si no me responden?</summary><p class="faq__a">El silencio administrativo puede interpretarse como respuesta positiva en algunos casos, y siempre da lugar a una acción de tutela por vulneración del derecho fundamental de petición.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Atienden en todo Colombia?</summary><p class="faq__a">Sí. El servicio es 100% digital y puedes solicitar el documento desde cualquier ciudad del país.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-final" aria-label="Llamada a la acción">
-      <div class="cta-final__glow" aria-hidden="true"></div>
-      <div class="container">
-        <div class="cta-final__inner">
-          <p class="mono cta-final__eyebrow">Solo $12.500</p>
-          <h2 class="cta-final__title">Haz que te respondan<br/><em>de una vez por todas.</em></h2>
-          <p class="cta-final__sub">Un derecho de petición bien redactado es la diferencia entre el silencio y la respuesta.</p>
-          <div class="cta-final__actions">
-            <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--hero">
-              Quiero mi petición ahora
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20necesito%20un%20derecho%20de%20petici%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Contactar por WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ── FOOTER ── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
           <span class="nav__name">Justiexpress</span>
-          <p class="footer__tagline mono">Innovación legal respaldada por abogados expertos.</p>
-          <div class="footer__social">
-            <a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer__social-link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="/" class="nav__home" aria-label="Volver al inicio">
+          <span class="nav__home-icon">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 14 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M1.5 6.5L7 1.5l5.5 5M3 5.5V12h3V8.5h2V12h3V5.5"
+                stroke="#00E5D4"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          Inicio
+        </a>
+        <a
+          href="https://chat.justiexpress.com/"
+          data-chat-link
+          class="btn btn--cyan nav__cta"
+        >
+          Iniciar consulta
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M2 7h10M7 2l5 5-5 5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <button
+          class="nav__burger"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          id="burger"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav__drawer" id="drawer" aria-hidden="true">
+        <a
+          href="https://chat.justiexpress.com/"
+          data-chat-link
+          class="btn btn--cyan"
+          >Iniciar consulta →</a
+        >
+      </div>
+    </nav>
+
+    <!-- ── BARRA SOCIAL LATERAL ── -->
+    <aside class="social-bar" aria-label="Redes sociales">
+      <a
+        href="https://www.facebook.com/justiexpress"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook"
+        class="social-bar__link social-bar__link--facebook"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+          aria-hidden="true"
+        >
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://twitter.com/justiexpress"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="X (Twitter)"
+        class="social-bar__link social-bar__link--x"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+          aria-hidden="true"
+        >
+          <path
+            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.tiktok.com/@tucasolegal"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="TikTok"
+        class="social-bar__link social-bar__link--tiktok"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+          aria-hidden="true"
+        >
+          <path
+            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.linkedin.com/company/justiexpress"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        class="social-bar__link social-bar__link--linkedin"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+          aria-hidden="true"
+        >
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.instagram.com/justiexpress.legal"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+        class="social-bar__link social-bar__link--instagram"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+          aria-hidden="true"
+        >
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="YouTube"
+        class="social-bar__link social-bar__link--youtube"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+          aria-hidden="true"
+        >
+          <path
+            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+          />
+        </svg>
+      </a>
+    </aside>
+
+    <main>
+      <section class="hero" aria-label="Derecho de Petición">
+        <div class="hero__grid-bg" aria-hidden="true"></div>
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__inner">
+          <div class="ads-match-badge">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="5" stroke="#00e5d4" stroke-width="1.2" />
+              <path
+                d="M4 6l1.5 1.5L8 4"
+                stroke="#00e5d4"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Derecho de Petición por $12.500 · Obligación legal de respuesta
+          </div>
+
+          <div class="hero__badge">
+            <span class="badge__dot"></span>
+            <span class="mono">Solo $12.500 · Entrega inmediata</span>
+          </div>
+          <h1 class="hero__title">
+            Derecho de Petición<br />
+            <em class="hero__title--em">que sí recibe respuesta.</em>
+          </h1>
+          <p class="hero__sub">
+            ¿Una entidad no te responde? ¿El banco, la EPS o una entidad pública
+            ignora tu solicitud? Redactamos tu derecho de petición por solo
+            <strong style="color: var(--cyan)">$12.500</strong>. Están obligados
+            a responder en máximo 15 días hábiles.
+          </p>
+
+          <div class="ads-price-pill">
+            <span>Precio fijo:</span>
+            <span class="ads-price-pill__amount">$12.500</span>
+            <span>COP · Sin costos ocultos</span>
+          </div>
+
+          <div class="hero__actions" style="margin-top: 28px">
+            <a
+              href="https://chat.justiexpress.com/"
+              data-chat-link
+              class="btn btn--hero"
+            >
+              <span>Quiero mi petición ahora</span>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 9h12M9 3l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
-            <a href="https://www.instagram.com/justiexpress.legal" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
-            </a>
-            <a href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/company/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+            <a
+              href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20necesito%20un%20derecho%20de%20petici%C3%B3n"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--ghost"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              Preguntar por WhatsApp
             </a>
           </div>
+          <div class="hero__trust">
+            <span class="hero__trust-item"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="7"
+                  cy="7"
+                  r="6"
+                  stroke="#00E5D4"
+                  stroke-width="1.2"
+                />
+                <path
+                  d="M4.5 7l2 2 3-3"
+                  stroke="#00E5D4"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Obligación legal de respuesta</span
+            >
+            <span class="hero__trust-sep" aria-hidden="true">·</span>
+            <span class="hero__trust-item"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="7"
+                  cy="7"
+                  r="6"
+                  stroke="#00E5D4"
+                  stroke-width="1.2"
+                />
+                <path
+                  d="M4.5 7l2 2 3-3"
+                  stroke="#00E5D4"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Todo Colombia</span
+            >
+            <span class="hero__trust-sep" aria-hidden="true">·</span>
+            <span class="hero__trust-item"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="7"
+                  cy="7"
+                  r="6"
+                  stroke="#00E5D4"
+                  stroke-width="1.2"
+                />
+                <path
+                  d="M4.5 7l2 2 3-3"
+                  stroke="#00E5D4"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Solo $12.500</span
+            >
+          </div>
         </div>
-        <div class="footer__col">
-          <h4 class="footer__heading mono">Servicios</h4>
-          <ul class="footer__links" role="list">
-            <li><a href="/accion-de-tutela/">Acción de Tutela</a></li>
-            <li><a href="/derecho-de-peticion/">Derecho de Petición</a></li>
-            <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer">Reclamaciones</a></li>
-            <li><a href="/desacato/">Desacato</a></li>
-            <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer">Registro de Marcas</a></li>
-            <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer">Contratos</a></li>
-          </ul>
+
+        <div class="hero__mockup" aria-hidden="true">
+          <div class="mockup__chrome">
+            <div class="mockup__dot"></div>
+            <div class="mockup__dot"></div>
+            <div class="mockup__dot"></div>
+            <span
+              class="mono"
+              style="
+                font-size: 10px;
+                color: var(--text-3);
+                margin-left: auto;
+                margin-right: auto;
+              "
+              >chat.justiexpress.com</span
+            >
+          </div>
+          <div class="mockup__body">
+            <div class="mockup__msg mockup__msg--ai">
+              <div class="mockup__avatar">JE</div>
+              <div class="mockup__bubble">
+                Hola 👋 ¿Qué entidad no te ha respondido?
+              </div>
+            </div>
+            <div class="mockup__msg mockup__msg--user">
+              <div class="mockup__bubble mockup__bubble--user">
+                El banco lleva 3 meses sin resolver mi queja
+              </div>
+            </div>
+            <div class="mockup__msg mockup__msg--ai">
+              <div class="mockup__avatar">JE</div>
+              <div class="mockup__bubble">
+                Perfecto. Los bancos están obligados a responder. Redacto tu
+                <strong>derecho de petición</strong> por $12.500. ¿Cuál es el
+                nombre del banco?
+              </div>
+            </div>
+            <div class="mockup__typing">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
         </div>
-        <div class="footer__col">
-          <h4 class="footer__heading mono">Empresa</h4>
-          <ul class="footer__links" role="list">
-            <li><a href="/#nosotros">Quiénes somos</a></li>
-            <li><a href="/#faq">FAQ</a></li>
-            <li><a href="mailto:justiexpress@gmail.com">justiexpress@gmail.com</a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer">+57 318 572 5324</a></li>
-          </ul>
+      </section>
+
+      <section
+        class="section"
+        style="padding-top: 0"
+        aria-label="Tipos de derecho de petición"
+      >
+        <div class="container">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 16px;
+            "
+          >
+            <div class="service-card">
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M9 12h6M9 16h4M7 3H4a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V8l-5-5H7z"
+                    stroke="#00E5D4"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 3v5h5"
+                    stroke="#00E5D4"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="service-card__title">Petición a entidades públicas</h3>
+              <p class="service-card__desc">
+                Alcaldías, gobernaciones, ministerios, DIAN, Registraduría.
+                Tienen 15 días hábiles para responder.
+              </p>
+              <a
+                href="https://chat.justiexpress.com/"
+                data-chat-link
+                class="service-card__cta"
+                >Iniciar ahora
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M2 6h8M6 2l4 4-4 4"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="2"
+                    y="5"
+                    width="20"
+                    height="14"
+                    rx="2"
+                    stroke="#00E5D4"
+                    stroke-width="1.5"
+                  />
+                  <path d="M2 10h20" stroke="#00E5D4" stroke-width="1.5" />
+                </svg>
+              </div>
+              <h3 class="service-card__title">
+                Petición a bancos y financieras
+              </h3>
+              <p class="service-card__desc">
+                Cobros indebidos, reportes en centrales de riesgo, cuentas
+                bloqueadas o productos no solicitados.
+              </p>
+              <a
+                href="https://chat.justiexpress.com/"
+                data-chat-link
+                class="service-card__cta"
+                >Iniciar ahora
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M2 6h8M6 2l4 4-4 4"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7L12 2z"
+                    stroke="#00E5D4"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="service-card__title">
+                Petición a EPS y servicios públicos
+              </h3>
+              <p class="service-card__desc">
+                Negaciones de servicio, facturas incorrectas, historial clínico
+                o problemas con servicios domiciliarios.
+              </p>
+              <a
+                href="https://chat.justiexpress.com/"
+                data-chat-link
+                class="service-card__cta"
+                >Iniciar ahora
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M2 6h8M6 2l4 4-4 4"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" id="stats" aria-label="Estadísticas">
+        <div class="container">
+          <div class="stats__grid">
+            <div class="stat-card">
+              <span class="stat-card__num" data-target="2000">0</span
+              ><span class="stat-card__label">clientes satisfechos</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num" data-target="2000">0</span
+              ><span class="stat-card__label">documentos entregados</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num" data-target="4000">0</span
+              ><span class="stat-card__label">asesorías realizadas</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num" data-target="24">0</span
+              ><span class="stat-card__unit">/7</span
+              ><span class="stat-card__label">disponibilidad</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section how"
+        id="como-funciona"
+        aria-label="Cómo funciona"
+      >
+        <div class="container">
+          <header class="section__header">
+            <p class="mono section__eyebrow">Proceso</p>
+            <h2 class="section__title">
+              Tres pasos.<br /><em>Tu petición lista.</em>
+            </h2>
+          </header>
+          <div class="how__steps">
+            <div class="how__step">
+              <div class="how__step-num mono">01</div>
+              <div class="how__step-content">
+                <h3>Cuéntanos el problema</h3>
+                <p>
+                  Dinos qué necesitas, a quién se lo pides y qué ha pasado hasta
+                  ahora. Sin formularios complicados.
+                </p>
+              </div>
+            </div>
+            <div class="how__connector" aria-hidden="true"></div>
+            <div class="how__step">
+              <div class="how__step-num mono">02</div>
+              <div class="how__step-content">
+                <h3>Redactamos tu petición</h3>
+                <p>
+                  Un abogado redacta el documento con el tono y los argumentos
+                  jurídicos correctos para forzar una respuesta.
+                </p>
+              </div>
+            </div>
+            <div class="how__connector" aria-hidden="true"></div>
+            <div class="how__step">
+              <div class="how__step-num mono">03</div>
+              <div class="how__step-content">
+                <h3>Presenta y exige respuesta</h3>
+                <p>
+                  Recibes el PDF listo para enviar. Si no responden, tienes base
+                  para una tutela por vulneración del derecho.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq" aria-label="Preguntas frecuentes">
+        <div class="container">
+          <header class="section__header">
+            <p class="mono section__eyebrow">FAQ</p>
+            <h2 class="section__title">Preguntas<br /><em>frecuentes</em></h2>
+          </header>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary class="faq__q">¿Qué es un derecho de petición?</summary>
+              <p class="faq__a">
+                Es un derecho fundamental que permite a cualquier persona
+                solicitar información o respuestas a entidades públicas y
+                privadas en Colombia. La entidad tiene entre 10 y 30 días
+                hábiles para responder según el tipo de solicitud.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">¿Cuánto cuesta en Justiexpress?</summary>
+              <p class="faq__a">
+                Solo $12.500 COP. Sin costos adicionales. Pagas una vez y
+                recibes tu documento listo para presentar o enviar por correo
+                electrónico.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">
+                ¿Cuánto tiempo tiene la entidad para responder?
+              </summary>
+              <p class="faq__a">
+                15 días hábiles para peticiones generales, 10 días para
+                solicitudes de información y documentos, y 30 días para
+                consultas. Si no responden, puedes presentar una tutela.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">
+                ¿Las empresas privadas están obligadas a responder?
+              </summary>
+              <p class="faq__a">
+                Sí. Empresas que prestan servicios públicos, entidades
+                financieras y empresas que manejan datos personales están
+                obligadas. El incumplimiento da lugar a una acción de tutela.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">¿Qué pasa si no me responden?</summary>
+              <p class="faq__a">
+                El silencio administrativo puede interpretarse como respuesta
+                positiva en algunos casos, y siempre da lugar a una acción de
+                tutela por vulneración del derecho fundamental de petición.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">¿Atienden en todo Colombia?</summary>
+              <p class="faq__a">
+                Sí. El servicio es 100% digital y puedes solicitar el documento
+                desde cualquier ciudad del país.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-final" aria-label="Llamada a la acción">
+        <div class="cta-final__glow" aria-hidden="true"></div>
+        <div class="container">
+          <div class="cta-final__inner">
+            <p class="mono cta-final__eyebrow">Solo $12.500</p>
+            <h2 class="cta-final__title">
+              Haz que te respondan<br /><em>de una vez por todas.</em>
+            </h2>
+            <p class="cta-final__sub">
+              Un derecho de petición bien redactado es la diferencia entre el
+              silencio y la respuesta.
+            </p>
+            <div class="cta-final__actions">
+              <a
+                href="https://chat.justiexpress.com/"
+                data-chat-link
+                class="btn btn--hero"
+              >
+                Quiero mi petición ahora
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 9h12M9 3l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20necesito%20un%20derecho%20de%20petici%C3%B3n"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--ghost"
+                >Contactar por WhatsApp</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <span class="nav__name">Justiexpress</span>
+            <p class="footer__tagline mono">
+              Innovación legal respaldada por abogados expertos.
+            </p>
+            <div class="footer__social">
+              <a
+                href="https://api.whatsapp.com/send?phone=573185725324"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                class="footer__social-link"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/justiexpress.legal"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="footer__social-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                class="footer__social-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/justiexpress"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="footer__social-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__heading mono">Servicios</h4>
+            <ul class="footer__links" role="list">
+              <li><a href="/accion-de-tutela/">Acción de Tutela</a></li>
+              <li><a href="/derecho-de-peticion/">Derecho de Petición</a></li>
+              <li>
+                <a
+                  href="https://chat.justiexpress.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Reclamaciones</a
+                >
+              </li>
+              <li><a href="/desacato/">Desacato</a></li>
+              <li>
+                <a
+                  href="https://chat.justiexpress.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Registro de Marcas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://chat.justiexpress.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Contratos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__heading mono">Empresa</h4>
+            <ul class="footer__links" role="list">
+              <li><a href="/#nosotros">Quiénes somos</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+              <li>
+                <a href="mailto:justiexpress@gmail.com"
+                  >justiexpress@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=573185725324"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >+57 318 572 5324</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span class="mono"
+            >© 2024 Justiexpress. Todos los derechos reservados.</span
+          >
+          <div class="footer__legal">
+            <a href="../TyC.html">Términos y condiciones</a>
+            <a href="../PP.html">Política de privacidad</a>
+          </div>
         </div>
       </div>
-      <div class="footer__bottom">
-        <span class="mono">© 2024 Justiexpress. Todos los derechos reservados.</span>
-        <div class="footer__legal">
-          <a href="../TyC.html">Términos y condiciones</a>
-          <a href="../PP.html">Política de privacidad</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20necesito%20un%20derecho%20de%20petici%C3%B3n" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Contactar por WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+    <a
+      href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20necesito%20un%20derecho%20de%20petici%C3%B3n"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fab-whatsapp"
+      aria-label="Contactar por WhatsApp"
+    >
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="white"
+        aria-hidden="true"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
 
-  <script src="../main.js"></script>
-</body>
+    <script src="../main.js"></script>
+  </body>
 </html>
