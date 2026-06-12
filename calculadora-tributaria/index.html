@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Incidente de Desacato de Tutela en Colombia por $12.900 | Justiexpress</title>
-  <meta name="description" content="¿No cumplieron tu tutela? Presentamos tu incidente de desacato en Colombia por solo $12.900. Obligamos al juez a sancionar al incumplido. Abogados expertos, todo Colombia." />
-  <meta name="keywords" content="incidente de desacato, desacato tutela, no cumplieron mi tutela, sancion por desacato, incumplimiento fallo de tutela, desacato eps, como presentar un desacato, desacato colombia" />
-  <link rel="canonical" href="https://www.justiexpress.com/desacato/" />
+  <title>Calculadora de Impuesto de Renta y Retención por $12.900 | Justiexpress</title>
+  <meta name="description" content="Calcula tu impuesto de renta (formulario 210) y la retención en la fuente de salarios y honorarios en segundos por solo $12.900. Resultado detallado en PDF, todo Colombia." />
+  <meta name="keywords" content="calculadora impuesto de renta, calcular declaracion de renta colombia, formulario 210, calculadora retencion en la fuente, retencion salarios, retencion honorarios, renta personas naturales, calculadora tributaria colombia, cuanto pago de renta" />
+  <link rel="canonical" href="https://www.justiexpress.com/calculadora-tributaria/" />
   <link rel="icon" href="../logo.png" type="image/png" />
 
   <!-- UTM passthrough hacia el chat (sin Google Ads en esta landing) -->
@@ -16,13 +16,13 @@
       const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
       const chatBase = 'https://chat.justiexpress.com/';
       const chatParams = new URLSearchParams();
-      chatParams.set('categoria', 'tutela');        // ← desacato va a tutelas
-      chatParams.set('origen', 'landing-desacato');
-      utmParams.forEach(p => { if(params.get(p)) chatParams.set(p, params.get(p)); });
+      chatParams.set('categoria', 'calculadora-tributaria');
+      chatParams.set('origen', 'landing-calc-tributaria');
+      utmParams.forEach(p => { if (params.get(p)) chatParams.set(p, params.get(p)); });
       return chatBase + '?' + chatParams.toString();
     }
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[data-chat-link]').forEach(function(el) {
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[data-chat-link]').forEach(function (el) {
         el.href = getChatUrl();
       });
     });
@@ -30,9 +30,9 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.justiexpress.com/desacato/" />
-  <meta property="og:title" content="Incidente de Desacato de Tutela en Colombia por $12.900 | Justiexpress" />
-  <meta property="og:description" content="¿No cumplieron tu tutela? Presentamos tu incidente de desacato por solo $12.900. Abogados expertos, entrega inmediata en todo Colombia." />
+  <meta property="og:url" content="https://www.justiexpress.com/calculadora-tributaria/" />
+  <meta property="og:title" content="Calculadora de Impuesto de Renta y Retención por $12.900 | Justiexpress" />
+  <meta property="og:description" content="Impuesto de renta (F-210) y retención en la fuente de salarios y honorarios calculados en segundos por solo $12.900." />
   <meta property="og:image" content="https://www.justiexpress.com/Justiexpress_-_Tu_Caso_Legal_-_600x600.png" />
   <meta property="og:locale" content="es_CO" />
   <meta property="og:site_name" content="JustiExpress" />
@@ -40,23 +40,26 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@justiexpress" />
-  <meta name="twitter:title" content="Incidente de Desacato de Tutela en Colombia por $12.900 | Justiexpress" />
-  <meta name="twitter:description" content="¿No cumplieron tu tutela? Presentamos tu incidente de desacato por solo $12.900. Abogados expertos, entrega inmediata." />
+  <meta name="twitter:title" content="Calculadora de Impuesto de Renta y Retención por $12.900 | Justiexpress" />
+  <meta name="twitter:description" content="Impuesto de renta (F-210) y retención en la fuente calculados en segundos por solo $12.900." />
   <meta name="twitter:image" content="https://www.justiexpress.com/Justiexpress_-_Tu_Caso_Legal_-_600x600.png" />
 
+  <!-- Geo -->
   <meta name="geo.region" content="CO" />
   <meta name="geo.placename" content="Colombia" />
   <meta http-equiv="content-language" content="es-CO" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
+  <!-- Schema JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "name": "Incidente de Desacato — Justiexpress",
-    "description": "Redacción de incidentes de desacato de tutela en Colombia por $12.900.",
-    "url": "https://www.justiexpress.com/desacato/",
+    "name": "Calculadora Tributaria — Justiexpress",
+    "description": "Cálculo del impuesto de renta de personas naturales (formulario 210) por cédulas y de la retención en la fuente de salarios y honorarios en Colombia por $12.900.",
+    "url": "https://www.justiexpress.com/calculadora-tributaria/",
     "telephone": "+573185725324",
+    "email": "justiexpress@gmail.com",
     "areaServed": "CO",
     "priceRange": "$12.900 COP",
     "provider": {
@@ -71,7 +74,13 @@
         "https://www.linkedin.com/company/justiexpress"
       ]
     },
-    "offers": { "@type": "Offer", "price": "12900", "priceCurrency": "COP", "availability": "https://schema.org/InStock" },
+    "offers": {
+      "@type": "Offer",
+      "price": "12900",
+      "priceCurrency": "COP",
+      "availability": "https://schema.org/InStock",
+      "description": "Cálculo tributario detallado con informe en PDF"
+    },
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "2000" }
   }
   </script>
@@ -83,7 +92,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.justiexpress.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Incidente de Desacato", "item": "https://www.justiexpress.com/desacato/" }
+      { "@type": "ListItem", "position": 2, "name": "Calculadora Tributaria", "item": "https://www.justiexpress.com/calculadora-tributaria/" }
     ]
   }
   </script>
@@ -96,33 +105,33 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "¿Qué es un incidente de desacato?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Es el mecanismo legal para exigir el cumplimiento de una tutela que ya fue concedida pero que la entidad condenada no ha acatado. Se presenta ante el mismo juez que conoció la tutela y puede llevar a la sanción del responsable con arresto y multa." }
+        "name": "¿Qué calcula exactamente la Calculadora Tributaria?",
+        "acceptedAnswer": { "@type": "Answer", "text": "El impuesto de renta de personas naturales (formulario 210) con todas sus cédulas — trabajo, capital, no laborales, pensiones, dividendos y ganancias ocasionales — y la retención en la fuente mensual de salarios y honorarios." }
       },
       {
         "@type": "Question",
-        "name": "¿Cuánto tiempo tiene la entidad para cumplir la tutela?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El juez fija el plazo en la sentencia. Si no lo fija expresamente, la regla general es de 48 horas para cumplir. Vencido ese término sin cumplimiento, ya procede el incidente de desacato." }
+        "name": "¿Cuánto cuesta la Calculadora Tributaria?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Solo $12.900 COP, pago único a través de Wompi. Sin suscripciones, sin mensualidades, sin costos ocultos. Pagas una vez y recibes tu cálculo completo con informe en PDF." }
       },
       {
         "@type": "Question",
-        "name": "¿Qué sanciones puede imponer el juez?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El juez puede imponer arresto de hasta 6 meses y multa de hasta 20 salarios mínimos mensuales al responsable del incumplimiento. Adicionalmente, puede remitir el expediente a la Procuraduría para investigación disciplinaria." }
+        "name": "¿Necesito saber de impuestos para usarla?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. La calculadora te guía campo por campo en lenguaje claro: solo necesitas tus ingresos, certificados y aportes. Ella aplica las fórmulas, los topes y las tarifas por ti." }
       },
       {
         "@type": "Question",
-        "name": "¿Cuánto cuesta en Justiexpress?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Solo $12.900 COP. Sin costos ocultos. Pagas una vez y recibes tu incidente de desacato listo para radicar ante el juzgado que conoció la tutela." }
+        "name": "¿Sirve para saber si debo declarar renta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Con tus ingresos y movimientos del año, el resultado te muestra tu situación frente al impuesto y te orienta sobre tu obligación de declarar." }
       },
       {
         "@type": "Question",
-        "name": "¿Necesito haber presentado la tutela con Justiexpress para pedir el desacato?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. Si tu tutela fue redactada por otro abogado o por ti mismo, igualmente podemos redactar el incidente de desacato. Solo necesitas tener el número de radicado, el nombre del juzgado y el contenido del fallo." }
+        "name": "¿Puedo modificar los datos después de pagar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Con el botón Editar cálculo puedes ajustar ingresos, deducciones o retenciones y recalcular las veces que necesites, sin pagar de nuevo." }
       },
       {
         "@type": "Question",
-        "name": "¿Atienden en todo Colombia?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. El servicio es 100% digital. Puedes solicitar el documento desde cualquier ciudad del país y radicarlo ante el juzgado correspondiente de forma presencial o por correo electrónico." }
+        "name": "¿Cómo recibo el resultado?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico." }
       }
     ]
   }
@@ -135,6 +144,7 @@
   <link rel="stylesheet" href="../styles.css" />
 
   <style>
+    /* ── BOTÓN HOME ── */
     .nav__home {
       display: inline-flex; align-items: center; gap: 7px;
       font-family: var(--ff-mono); font-size: 10px; font-weight: 500;
@@ -155,13 +165,17 @@
       .nav__home--drawer { display: inline-flex !important; margin-top: 4px; width: 100%; justify-content: center; }
     }
 
-.ads-match-badge {
+    /* ── ADS: BADGE MESSAGE MATCH ── */
+    .ads-match-badge {
       display: inline-flex; align-items: center; gap: 6px;
       background: rgba(0,229,212,0.12); border: 1px solid rgba(0,229,212,0.35);
       border-radius: 6px; padding: 5px 12px;
       font-family: var(--ff-mono, monospace); font-size: 11px; font-weight: 500;
       color: #00e5d4; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 18px;
     }
+    .ads-match-badge svg { flex-shrink: 0; }
+
+    /* ── ADS: PRECIO DESTACADO ── */
     .ads-price-pill {
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(0,229,212,0.08); border: 1.5px solid rgba(0,229,212,0.4);
@@ -169,10 +183,63 @@
       font-family: var(--ff-mono, monospace); font-size: 13px; font-weight: 600; color: #00e5d4;
     }
     .ads-price-pill__amount { font-size: 22px; font-weight: 800; color: #fff; }
+
+    /* ── MOCKUP DE RESULTADO (calculadora) ── */
+    .calcmock__title {
+      font-family: var(--ff-mono); font-size: 10px; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--cyan);
+      padding: 4px 2px 10px; border-bottom: 1px solid var(--border); margin-bottom: 4px;
+    }
+    .calcmock__row {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      padding: 9px 2px; border-bottom: 1px solid var(--border);
+      animation: fade-up 0.5s var(--ease-out) both;
+    }
+    .calcmock__row span {
+      font-size: 13px; color: var(--text-2);
+    }
+    .calcmock__row strong {
+      font-family: var(--ff-mono); font-size: 13px; font-weight: 500; color: var(--text-1);
+      white-space: nowrap;
+    }
+    .calcmock__row--total {
+      border-bottom: none; margin-top: 4px; padding-top: 14px;
+      border-top: 1px solid var(--border-lit);
+    }
+    .calcmock__row--total span {
+      font-family: var(--ff-display); font-weight: 700; color: var(--text-1); font-size: 14px;
+    }
+    .calcmock__row--total strong {
+      font-family: var(--ff-display); font-size: 20px; font-weight: 800; color: var(--cyan);
+      text-shadow: 0 0 18px rgba(0,229,212,0.35);
+    }
+    .calcmock__row:nth-child(2) { animation-delay: 0.7s; }
+    .calcmock__row:nth-child(3) { animation-delay: 0.9s; }
+    .calcmock__row:nth-child(4) { animation-delay: 1.1s; }
+    .calcmock__row:nth-child(5) { animation-delay: 1.3s; }
+    .calcmock__row:nth-child(6) { animation-delay: 1.5s; }
+    .calcmock__row:nth-child(7) { animation-delay: 1.9s; }
+
+    /* ── QUÉ INCLUYE ── */
+    .includes__list {
+      max-width: 720px; margin-inline: auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    @media (max-width: 640px) { .includes__list { grid-template-columns: 1fr; } }
+    .includes__item {
+      display: flex; align-items: flex-start; gap: 12px;
+      background: var(--noir-3); border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px 18px;
+      transition: border-color 0.3s, transform 0.3s var(--ease-out);
+    }
+    .includes__item:hover { border-color: var(--cyan-border); transform: translateY(-2px); }
+    .includes__item svg { flex-shrink: 0; margin-top: 2px; }
+    .includes__item p { font-size: 14px; color: var(--text-2); line-height: 1.55; }
+    .includes__item p strong { color: var(--text-1); font-weight: 600; }
   </style>
 </head>
 <body>
-
+  <!-- ── NAV ── -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="/" class="nav__brand">
@@ -183,14 +250,12 @@
       </a>
       <a href="/" class="nav__home" aria-label="Volver al inicio">
         <span class="nav__home-icon">
-          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M1.5 6.5L7 1.5l5.5 5M3 5.5V12h3V8.5h2V12h3V5.5" stroke="#00E5D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1.5 6.5L7 1.5l5.5 5M3 5.5V12h3V8.5h2V12h3V5.5" stroke="#00E5D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         Inicio
       </a>
-      <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--cyan nav__cta">
-        Iniciar consulta
+      <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="btn btn--cyan nav__cta">
+        Calcular ahora
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" id="burger">
@@ -198,15 +263,7 @@
       </button>
     </div>
     <div class="nav__drawer" id="drawer" aria-hidden="true">
-      <a href="/" class="nav__home nav__home--drawer" style="display:none;" aria-label="Volver al inicio">
-        <span class="nav__home-icon">
-          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M1.5 6.5L7 1.5l5.5 5M3 5.5V12h3V8.5h2V12h3V5.5" stroke="#00E5D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        Volver al inicio
-      </a>
-      <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--cyan">Iniciar consulta →</a>
+      <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="btn btn--cyan">Calcular ahora →</a>
     </div>
   </nav>
 
@@ -233,197 +290,257 @@
   </aside>
 
   <main>
-
-  <main>
-    <section class="hero" aria-label="Incidente de Desacato">
+    <!-- ── HERO ── -->
+    <section class="hero" aria-label="Calculadora Tributaria">
       <div class="hero__grid-bg" aria-hidden="true"></div>
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__inner">
-
+        <!-- ADS: Badge de message match con el anuncio -->
         <div class="ads-match-badge">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#00e5d4" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#00e5d4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Desacato de Tutela por $12.900 · Arresto al incumplidor
+          Calculadora tributaria por $12.900 · Resultado inmediato
         </div>
 
         <div class="hero__badge">
           <span class="badge__dot"></span>
-          <span class="mono">Solo $12.900 · Entrega inmediata</span>
+          <span class="mono">Solo $12.900 · Resultado al instante</span>
         </div>
         <h1 class="hero__title">
-          Incidente de Desacato<br/>
-          <em class="hero__title--em">que obliga a cumplir.</em>
+          Calculadora Tributaria:<br />
+          <em class="hero__title--em">tu renta, sin sustos.</em>
         </h1>
         <p class="hero__sub">
-          ¿Te concedieron la tutela pero la entidad no la cumplió? Presentamos tu incidente de desacato por solo <strong style="color:var(--cyan)">$12.900</strong>. El juez puede sancionar con arresto y multa al responsable del incumplimiento.
+          ¿Debes declarar renta? ¿Te retienen de más en tu salario u honorarios? Calcula tu impuesto de renta (formulario 210) y tus retenciones en la fuente en segundos por solo
+          <strong style="color: var(--cyan)">$12.900</strong>. Con informe detallado en PDF, cédula por cédula.
         </p>
 
+        <!-- ADS: Precio grande y claro -->
         <div class="ads-price-pill">
           <span>Precio fijo:</span>
           <span class="ads-price-pill__amount">$12.900</span>
-          <span>COP · Sin costos ocultos</span>
+          <span>COP · Pago único</span>
         </div>
 
-        <div class="hero__actions" style="margin-top:28px;">
-          <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--hero">
-            <span>Quiero mi desacato ahora</span>
+        <div class="hero__actions" style="margin-top: 28px">
+          <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="btn btn--hero">
+            <span>Calcular mi impuesto</span>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+          <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Preguntar por WhatsApp
           </a>
         </div>
         <div class="hero__trust">
-          <span class="hero__trust-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Arresto para el incumplidor</span>
+          <span class="hero__trust-item">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            +2.000 clientes
+          </span>
           <span class="hero__trust-sep" aria-hidden="true">·</span>
-          <span class="hero__trust-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Todo Colombia</span>
+          <span class="hero__trust-item">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            UVT y tarifas vigentes
+          </span>
           <span class="hero__trust-sep" aria-hidden="true">·</span>
-          <span class="hero__trust-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Solo $12.900</span>
+          <span class="hero__trust-item">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Solo $12.900
+          </span>
         </div>
       </div>
 
+      <!-- Mockup de resultado -->
       <div class="hero__mockup" aria-hidden="true">
         <div class="mockup__chrome">
-          <div class="mockup__dot"></div><div class="mockup__dot"></div><div class="mockup__dot"></div>
+          <div class="mockup__dot"></div>
+          <div class="mockup__dot"></div>
+          <div class="mockup__dot"></div>
           <span class="mono" style="font-size:10px;color:var(--text-3);margin-left:auto;margin-right:auto;">chat.justiexpress.com</span>
         </div>
         <div class="mockup__body">
-          <div class="mockup__msg mockup__msg--ai"><div class="mockup__avatar">JE</div><div class="mockup__bubble">Hola 👋 ¿Te concedieron la tutela pero no la han cumplido?</div></div>
-          <div class="mockup__msg mockup__msg--user"><div class="mockup__bubble mockup__bubble--user">Sí, la EPS lleva 20 días sin entregar el medicamento</div></div>
-          <div class="mockup__msg mockup__msg--ai"><div class="mockup__avatar">JE</div><div class="mockup__bubble">Procedo a redactar el <strong>incidente de desacato</strong> por $12.900. El juez puede ordenar el arresto del responsable. ¿Tienes el número del juzgado y la fecha del fallo?</div></div>
-          <div class="mockup__typing"><span></span><span></span><span></span></div>
+          <div class="calcmock__title">Renta personas naturales · F-210</div>
+          <div class="calcmock__row"><span>Ingresos brutos del año</span><strong>$78.000.000</strong></div>
+          <div class="calcmock__row"><span>Deducciones y rentas exentas</span><strong>$24.560.000</strong></div>
+          <div class="calcmock__row"><span>Renta líquida gravable</span><strong>$53.440.000</strong></div>
+          <div class="calcmock__row"><span>Impuesto básico de renta</span><strong>$3.812.000</strong></div>
+          <div class="calcmock__row"><span>Retenciones ya practicadas</span><strong>$2.650.000</strong></div>
+          <div class="calcmock__row calcmock__row--total"><span>Saldo a pagar</span><strong>$1.162.000</strong></div>
         </div>
       </div>
     </section>
 
-    <section class="section" style="padding-top:0;" aria-label="Tipos de desacato">
+    <!-- ── MÓDULOS ── -->
+    <section class="section" style="padding-top: 0" aria-label="Qué puedes calcular">
       <div class="container">
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+        <header class="section__header">
+          <p class="mono section__eyebrow">Módulos</p>
+          <h2 class="section__title">Renta y retenciones.<br /><em>Todo en una calculadora.</em></h2>
+        </header>
+        <div class="services__grid">
           <div class="service-card">
-            <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7L12 2z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <h3 class="service-card__title">Desacato contra EPS</h3>
-            <p class="service-card__desc">La EPS no entregó el medicamento, no autorizó el procedimiento o no cumplió la orden del juez de tutela.</p>
-            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Renta personas naturales (F-210)</h3>
+            <p class="service-card__desc">Cédula general (trabajo, capital, no laborales), pensiones, dividendos y ganancias ocasionales. La liquidación completa de tu declaración.</p>
+            <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="service-card__cta">Calcular ahora
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
           <div class="service-card">
-            <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="#00E5D4" stroke-width="1.5"/><path d="M16 3H8L6 7h12l-2-4z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 13v4M10 15h4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <h3 class="service-card__title">Desacato contra entidades públicas</h3>
-            <p class="service-card__desc">Alcaldías, gobernaciones, Fuerzas Militares, entidades del Estado que ignoran órdenes judiciales de tutela.</p>
-            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M3 7h18v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Retención en la fuente — salarios</h3>
+            <p class="service-card__desc">Verifica cuánto deben retenerte cada mes según tu salario, deducciones y rentas exentas. Detecta si te están reteniendo de más.</p>
+            <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="service-card__cta">Calcular ahora
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
           <div class="service-card">
-            <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="#00E5D4" stroke-width="1.5"/><path d="M2 10h20M7 15h4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <h3 class="service-card__title">Desacato contra empresas privadas</h3>
-            <p class="service-card__desc">Bancos, empresas de servicios públicos, empleadores o cualquier particular que incumpla un fallo de tutela.</p>
-            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2z" stroke="#00E5D4" stroke-width="1.5"/><path d="M9 7h6M9 11h6M9 15h4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Retención en la fuente — honorarios</h3>
+            <p class="service-card__desc">¿Trabajas por prestación de servicios? Calcula la retención de tus cuentas de cobro y el valor neto que debes recibir.</p>
+            <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="service-card__cta">Calcular ahora
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── STATS ── -->
     <section class="stats" id="stats" aria-label="Estadísticas">
       <div class="container">
         <div class="stats__grid">
-          <div class="stat-card"><span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">clientes satisfechos</span></div>
-          <div class="stat-card"><span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">documentos entregados</span></div>
-          <div class="stat-card"><span class="stat-card__num" data-target="4000">0</span><span class="stat-card__label">asesorías realizadas</span></div>
-          <div class="stat-card"><span class="stat-card__num" data-target="24">0</span><span class="stat-card__unit">/7</span><span class="stat-card__label">disponibilidad</span></div>
+          <div class="stat-card">
+            <span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">clientes satisfechos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">documentos entregados</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__num" data-target="4000">0</span><span class="stat-card__label">asesorías realizadas</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__num" data-target="24">0</span><span class="stat-card__unit">/7</span><span class="stat-card__label">disponibilidad</span>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ── CÓMO FUNCIONA ── -->
     <section class="section how" id="como-funciona" aria-label="Cómo funciona">
       <div class="container">
         <header class="section__header">
           <p class="mono section__eyebrow">Proceso</p>
-          <h2 class="section__title">Tres pasos.<br/><em>El incumplimiento, sancionado.</em></h2>
+          <h2 class="section__title">Tres pasos.<br /><em>Tu cálculo listo.</em></h2>
         </header>
         <div class="how__steps">
-          <div class="how__step"><div class="how__step-num mono">01</div><div class="how__step-content"><h3>Confirma el incumplimiento</h3><p>Cuéntanos qué ordenó el juez, quién debe cumplirlo y cuántos días llevan sin hacerlo. Solo necesitas el número del expediente.</p></div></div>
-          <div class="how__connector" aria-hidden="true"></div>
-          <div class="how__step"><div class="how__step-num mono">02</div><div class="how__step-content"><h3>Redactamos el incidente</h3><p>Un abogado elabora el documento con los hechos, la orden incumplida y los fundamentos jurídicos para activar la sanción.</p></div></div>
-          <div class="how__connector" aria-hidden="true"></div>
-          <div class="how__step"><div class="how__step-num mono">03</div><div class="how__step-content"><h3>Presenta y exige la sanción</h3><p>Recibes el PDF listo para radicarlo ante el juzgado que conoció la tutela. El juez tiene que actuar.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about" id="sanciones" aria-label="Sanciones por desacato">
-      <div class="container">
-        <div class="about__grid">
-          <div class="about__text">
-            <p class="mono section__eyebrow">Las consecuencias</p>
-            <h2 class="about__title">El juez puede ordenar<br/><em>arresto y multa.</em></h2>
-            <p class="about__body">El incidente de desacato es una de las herramientas más poderosas del ordenamiento jurídico colombiano. Cuando una entidad ignora un fallo de tutela, el juez puede sancionar al responsable directo con <strong style="color:var(--cyan)">arresto de hasta 6 meses</strong> y <strong style="color:var(--cyan)">multa de hasta 20 salarios mínimos</strong>.</p>
-            <p class="about__body">Además, el juez puede remitir el expediente a la Procuraduría General de la Nación para que se adelante la correspondiente investigación disciplinaria.</p>
-            <div class="about__pills">
-              <span class="pill">Arresto hasta 6 meses</span>
-              <span class="pill">Multa hasta 20 SMLMV</span>
-              <span class="pill">Sanción disciplinaria</span>
-              <span class="pill">Cumplimiento forzado</span>
+          <div class="how__step">
+            <div class="how__step-num mono">01</div>
+            <div class="how__step-content">
+              <h3>Ingresa tus datos</h3>
+              <p>Ingresos, deducciones, aportes y retenciones. La calculadora te guía cédula por cédula, sin tecnicismos.</p>
             </div>
           </div>
-          <div class="about__visual" aria-hidden="true">
-            <div class="about__ring about__ring--1"></div>
-            <div class="about__ring about__ring--2"></div>
-            <div class="about__ring about__ring--3"></div>
-            <div class="about__core">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 4L5 12v10c0 8.75 6.25 16.92 15 18.75C29.75 38.92 36 30.75 36 22V12L20 4z" stroke="#00E5D4" stroke-width="2" stroke-linejoin="round"/><path d="M13 20l5 5 9-9" stroke="#00E5D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="how__connector" aria-hidden="true"></div>
+          <div class="how__step">
+            <div class="how__step-num mono">02</div>
+            <div class="how__step-content">
+              <h3>Obtén el resultado al instante</h3>
+              <p>Renta líquida, impuesto a cargo, retenciones y saldo a pagar o a favor, desglosados paso a paso.</p>
+            </div>
+          </div>
+          <div class="how__connector" aria-hidden="true"></div>
+          <div class="how__step">
+            <div class="how__step-num mono">03</div>
+            <div class="how__step-content">
+              <h3>Descarga tu informe</h3>
+              <p>Recibe el PDF detallado en pantalla y en tu correo. Puedes editar el cálculo cuando quieras.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section testimonials" id="testimonios" aria-label="Testimonios">
+    <!-- ── QUÉ INCLUYE ── -->
+    <section class="section" aria-label="Qué incluye">
       <div class="container">
         <header class="section__header">
-          <p class="mono section__eyebrow">Testimonios</p>
-          <h2 class="section__title">Lo que dicen<br/><em>nuestros clientes</em></h2>
+          <p class="mono section__eyebrow">Qué incluye</p>
+          <h2 class="section__title">Todo esto,<br /><em>por $12.900</em></h2>
         </header>
-        <div class="testimonials__track" id="testimonials-track">
-          <div class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div><p class="testimonial-card__text">"La EPS tenía dos meses sin entregarme el medicamento que ordenó el juez. Con el desacato de Justiexpress lo tuve en 48 horas."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar">RV</div><div><strong>Ricardo V.</strong><span class="mono">Bogotá</span></div></div></div>
-          <div class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div><p class="testimonial-card__text">"Mi empresa llevaba meses sin pagarme lo que ordenó el juez. Con el incidente de desacato cumplieron a la semana siguiente."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar">DM</div><div><strong>Diana M.</strong><span class="mono">Medellín</span></div></div></div>
-          <div class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div><p class="testimonial-card__text">"Rápido, económico y efectivo. Por $12.900 logré que la entidad cumpliera lo que llevaba meses ignorando."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar">CP</div><div><strong>Camila P.</strong><span class="mono">Cali</span></div></div></div>
-          <div class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div><p class="testimonial-card__text">"No sabía que podía presentarlo yo mismo. El asistente me explicó todo y el documento quedó perfecto para radicarlo."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar">JA</div><div><strong>Jorge A.</strong><span class="mono">Barranquilla</span></div></div></div>
-        </div>
-        <div class="testimonials__nav">
-          <button class="testimonials__btn" id="prev-btn" aria-label="Anterior">←</button>
-          <button class="testimonials__btn" id="next-btn" aria-label="Siguiente">→</button>
+        <div class="includes__list">
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>Resultado desglosado</strong> renglón por renglón, con los valores de UVT y tarifas vigentes.</p>
+          </div>
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>Informe en PDF</strong> descargable al instante y enviado a tu correo electrónico.</p>
+          </div>
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>Cálculo editable</strong>: ajusta los datos las veces que necesites sin pagar de nuevo.</p>
+          </div>
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>Pago único y seguro</strong> con Wompi. Sin suscripciones ni costos ocultos.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ── FAQ ── -->
     <section class="section faq" id="faq" aria-label="Preguntas frecuentes">
       <div class="container">
         <header class="section__header">
           <p class="mono section__eyebrow">FAQ</p>
-          <h2 class="section__title">Preguntas<br/><em>frecuentes</em></h2>
+          <h2 class="section__title">Preguntas<br /><em>frecuentes</em></h2>
         </header>
         <div class="faq__list">
-          <details class="faq__item"><summary class="faq__q">¿Qué es un incidente de desacato?</summary><p class="faq__a">Es el mecanismo legal para exigir el cumplimiento de una tutela que ya fue concedida pero que la entidad condenada no ha acatado. Se presenta ante el mismo juez que conoció la tutela y puede llevar a la sanción del responsable con arresto y multa.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Cuánto tiempo tiene la entidad para cumplir la tutela?</summary><p class="faq__a">El juez fija el plazo en la sentencia. Si no lo fija expresamente, la regla general es de 48 horas para cumplir. Vencido ese término sin cumplimiento, ya procede el incidente de desacato.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Qué sanciones puede imponer el juez?</summary><p class="faq__a">El juez puede imponer arresto de hasta 6 meses y multa de hasta 20 salarios mínimos mensuales al responsable del incumplimiento. Adicionalmente, puede remitir el expediente a la Procuraduría para investigación disciplinaria.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Cuánto cuesta en Justiexpress?</summary><p class="faq__a">Solo $12.900 COP. Sin costos ocultos. Pagas una vez y recibes tu incidente de desacato listo para radicar ante el juzgado que conoció la tutela.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Necesito haber presentado la tutela con Justiexpress para pedir el desacato?</summary><p class="faq__a">No. Si tu tutela fue redactada por otro abogado o por ti mismo, igualmente podemos redactar el incidente de desacato. Solo necesitas tener el número de radicado, el nombre del juzgado y el contenido del fallo.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Atienden en todo Colombia?</summary><p class="faq__a">Sí. El servicio es 100% digital. Puedes solicitar el documento desde cualquier ciudad del país y radicarlo ante el juzgado correspondiente de forma presencial o por correo electrónico.</p></details>
+          <details class="faq__item">
+            <summary class="faq__q">¿Qué calcula exactamente la Calculadora Tributaria?</summary>
+            <p class="faq__a">El impuesto de renta de personas naturales (formulario 210) con todas sus cédulas — trabajo, capital, no laborales, pensiones, dividendos y ganancias ocasionales — y la retención en la fuente mensual de salarios y honorarios.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">¿Cuánto cuesta?</summary>
+            <p class="faq__a">Solo $12.900 COP, pago único a través de Wompi. Sin suscripciones, sin mensualidades, sin costos ocultos. Pagas una vez y recibes tu cálculo completo con informe en PDF.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">¿Necesito saber de impuestos para usarla?</summary>
+            <p class="faq__a">No. La calculadora te guía campo por campo en lenguaje claro: solo necesitas tus ingresos, certificados y aportes. Ella aplica las fórmulas, los topes y las tarifas por ti.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">¿Sirve para saber si debo declarar renta?</summary>
+            <p class="faq__a">Sí. Con tus ingresos y movimientos del año, el resultado te muestra tu situación frente al impuesto y te orienta sobre tu obligación de declarar.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">¿Puedo modificar los datos después de pagar?</summary>
+            <p class="faq__a">Sí. Con el botón "Editar cálculo" puedes ajustar ingresos, deducciones o retenciones y recalcular las veces que necesites, sin pagar de nuevo.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">¿Cómo recibo el resultado?</summary>
+            <p class="faq__a">Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico.</p>
+          </details>
         </div>
       </div>
     </section>
 
+    <!-- ── CTA FINAL ── -->
     <section class="cta-final" aria-label="Llamada a la acción">
       <div class="cta-final__glow" aria-hidden="true"></div>
       <div class="container">
         <div class="cta-final__inner">
           <p class="mono cta-final__eyebrow">Solo $12.900</p>
-          <h2 class="cta-final__title">Que paguen las consecuencias<br/><em>de ignorarte.</em></h2>
-          <p class="cta-final__sub">Un incidente de desacato bien presentado es la diferencia entre el incumplimiento indefinido y la sanción inmediata.</p>
+          <h2 class="cta-final__title">Tus impuestos,<br /><em>claros de una vez.</em></h2>
+          <p class="cta-final__sub">Sin contador, sin hojas de cálculo, sin sorpresas de la DIAN. Calcula tu renta y retenciones hoy mismo.</p>
           <div class="cta-final__actions">
-            <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--hero">
-              Quiero mi desacato ahora
+            <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="btn btn--hero">
+              Calcular mi impuesto
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Contactar por WhatsApp</a>
+            <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Contactar por WhatsApp</a>
           </div>
         </div>
       </div>
@@ -484,7 +601,7 @@
     </div>
   </footer>
 
-  <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Contactar por WhatsApp">
+  <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20JustiExpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Contactar por WhatsApp">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
