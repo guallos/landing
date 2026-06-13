@@ -19,10 +19,10 @@
     <link rel="icon" href="../logo.png" type="image/png" />
 
     <!-- ════════════════════════════════════════════════
-       GOOGLE ADS TRACKING
-       INSTRUCCIONES:
-       1. Reemplaza "AW-XXXXXXXXXX" con tu ID de conversión
-       2. Reemplaza "CONVERSION_LABEL_PETICION" con la etiqueta específica de esta campaña
+       GOOGLE ADS — solo etiqueta base (atribución/remarketing).
+       Esta landing NO dispara conversiones: la conversión
+       "Compra Tutela Completada" se dispara únicamente en la app
+       (chat.justiexpress.com) cuando hay un pago Wompi real.
        ════════════════════════════════════════════════ -->
     <script
       async
@@ -35,14 +35,6 @@
       }
       gtag("js", new Date());
       gtag("config", "AW-18198394694");
-
-      function trackConversionPeticion() {
-        gtag("event", "conversion", {
-          send_to: "AW-18198394694/xbBKCPrrlrYcEMbu1eVD",
-          value: 12900,
-          currency: "COP",
-        });
-      }
 
       function getChatUrl() {
         const params = new URLSearchParams(window.location.search);
@@ -76,7 +68,6 @@
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll("a[data-chat-link]").forEach(function (el) {
           el.href = getChatUrl();
-          el.addEventListener("click", trackConversionPeticion);
         });
       });
     </script>

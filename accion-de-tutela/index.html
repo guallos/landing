@@ -19,11 +19,10 @@
     <link rel="icon" href="../logo.png" type="image/png" />
 
     <!-- ════════════════════════════════════════════════
-       GOOGLE ADS TRACKING
-       INSTRUCCIONES:
-       1. Reemplaza "AW-XXXXXXXXXX" con tu ID de conversión
-          (lo encuentras en Google Ads → Objetivos → Conversiones → tu acción → Etiqueta)
-       2. Reemplaza "CONVERSION_LABEL_TUTELA" con la etiqueta de conversión específica
+       GOOGLE ADS — solo etiqueta base (atribución/remarketing).
+       Esta landing NO dispara conversiones: la conversión
+       "Compra Tutela Completada" se dispara únicamente en la app
+       (chat.justiexpress.com) cuando hay un pago Wompi real.
        ════════════════════════════════════════════════ -->
     <script
       async
@@ -37,14 +36,10 @@
       gtag("js", new Date());
       gtag("config", "AW-18198394694");
 
-      // Función global para disparar conversión al hacer clic en chat
-      function trackConversionTutela() {
-        gtag("event", "conversion", {
-          send_to: "AW-18198394694/xbBKCPrrlrYcEMbu1eVD",
-          value: 12900,
-          currency: "COP",
-        });
-      }
+      // NOTA: esta landing NO dispara conversiones. La conversión
+      // "Compra Tutela Completada" se dispara únicamente en la app
+      // (chat.justiexpress.com) cuando hay un pago Wompi real.
+      // La etiqueta base se conserva solo para atribución/remarketing.
 
       // UTM passthrough: agrega parámetros UTM al link del chat
       function getChatUrl() {
@@ -81,7 +76,6 @@
         // Actualizar todos los links al chat con UTMs
         document.querySelectorAll("a[data-chat-link]").forEach(function (el) {
           el.href = getChatUrl();
-          el.addEventListener("click", trackConversionTutela);
         });
       });
     </script>
