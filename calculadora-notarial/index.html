@@ -19,6 +19,17 @@
       chatParams.set('categoria', 'calculadora-notarial');
       chatParams.set('origen', 'landing-calc-notarial');
       utmParams.forEach(p => { if (params.get(p)) chatParams.set(p, params.get(p)); });
+      // Atribución orgánica: el chat solo verá como referrer a ESTA landing.
+      // Si la persona llegó de un buscador, se lo marcamos para que el embudo
+      // lo cuente como "orgánico" y no como "directo".
+      if (!chatParams.get('gclid') && !chatParams.get('utm_medium')) {
+        var host = '';
+        try { host = new URL(document.referrer).hostname.replace(/^www\./, ''); } catch (e) {}
+        if (/(^|\.)(google|bing|yahoo|duckduckgo|ecosia|yandex|baidu|ask|aol|qwant|brave)\./i.test(host)) {
+          chatParams.set('utm_source', host.split('.')[0]);
+          chatParams.set('utm_medium', 'organic');
+        }
+      }
       return chatBase + '?' + chatParams.toString();
     }
     document.addEventListener('DOMContentLoaded', function () {

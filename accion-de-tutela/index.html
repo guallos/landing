@@ -41,7 +41,9 @@
       // (chat.justiexpress.com) cuando hay un pago Wompi real.
       // La etiqueta base se conserva solo para atribución/remarketing.
 
-      // UTM passthrough: agrega parámetros UTM al link del chat
+      // UTM passthrough: agrega parámetros al link del chat. Esta landing
+      // ahora recibe SOLO tráfico orgánico (los anuncios apuntan directo al
+      // chat), así que ya NO redirige a Ads — solo reenvía atribución.
       function getChatUrl() {
         const params = new URLSearchParams(window.location.search);
         const utmParams = [
@@ -54,24 +56,33 @@
         ];
         const chatBase = "https://chat.justiexpress.com/";
         const chatParams = new URLSearchParams();
-        chatParams.set("categoria", "tutela"); // ← NUEVO
-        chatParams.set("origen", "ads-tutela");
+        chatParams.set("categoria", "tutela");
+        chatParams.set("origen", "organico-tutela");
         utmParams.forEach((p) => {
           if (params.get(p)) chatParams.set(p, params.get(p));
         });
+
+        // Atribución orgánica: el chat solo verá como referrer a ESTA landing,
+        // no al buscador. Si la persona llegó de un buscador, se lo marcamos
+        // para que el embudo lo cuente como "orgánico" y no como "directo".
+        if (!chatParams.get("gclid") && !chatParams.get("utm_medium")) {
+          var host = "";
+          try {
+            host = new URL(document.referrer).hostname.replace(/^www\./, "");
+          } catch (e) {}
+          if (
+            /(^|\.)(google|bing|yahoo|duckduckgo|ecosia|yandex|baidu|ask|aol|qwant|brave)\./i.test(
+              host,
+            )
+          ) {
+            chatParams.set("utm_source", host.split(".")[0]);
+            chatParams.set("utm_medium", "organic");
+          }
+        }
+
         return chatBase + "?" + chatParams.toString();
       }
 
-      // Redirección automática si viene de Ads
-      (function () {
-        var params = new URLSearchParams(window.location.search);
-        if (params.get("gclid") || params.get("utm_source") === "google") {
-          window.location.replace(
-            "https://chat.justiexpress.com/?categoria=tutela",
-          );
-        }
-      })();
-      
       document.addEventListener("DOMContentLoaded", function () {
         // Actualizar todos los links al chat con UTMs
         document.querySelectorAll("a[data-chat-link]").forEach(function (el) {
