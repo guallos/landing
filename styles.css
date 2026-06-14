@@ -94,8 +94,9 @@ body *:not(svg):not(path):not(line):not(circle) {
 
 #theme-toggle {
   position: fixed;
-  left: max(16px, env(safe-area-inset-left));
-  bottom: max(16px, env(safe-area-inset-bottom));
+  /* Justo encima del botón flotante de WhatsApp (abajo-derecha). */
+  right: max(33px, env(safe-area-inset-right));
+  bottom: calc(28px + 56px + 14px + env(safe-area-inset-bottom));
   z-index: 200;
   width: 46px;
   height: 46px;
