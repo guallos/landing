@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   JustiExpress Landing — Design System
+   Justiexpress Landing — Design System
    ═══════════════════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
@@ -141,6 +141,8 @@ html[data-theme="dark"] #theme-toggle .tt-moon {
 
 @media (prefers-reduced-motion: reduce) {
   #theme-toggle svg { transition: opacity .2s ease; }
+  .nav__logo-wrap { animation: none; }
+  .nav__logo-wrap::after { display: none; }
 }
 
 /* ── BASE ── */
@@ -206,14 +208,85 @@ a { color: inherit; text-decoration: none; }
   flex-shrink: 0;
 }
 
+/* Logo de marca = membrete completo dentro de una píldora blanca (legible
+   en ambos temas: el banner tiene texto oscuro). Look premium: marco cian
+   degradado + glow respirante + barrido de brillo (sheen) + hover. */
 .nav__logo-wrap {
-  width: 40px; height: 40px;
-  border-radius: 11px;
+  position: relative;
+  height: 50px;
+  border-radius: 14px;
   overflow: hidden;
-  border: 1px solid rgba(var(--fg-rgb),0.08);
+  padding: 8px 16px;
   display: flex; align-items: center; justify-content: center;
-  background: var(--noir-3);
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(#ffffff, #f1fbfa) padding-box,
+    linear-gradient(135deg, var(--cyan), #8fe9e0 50%, var(--cyan)) border-box;
+  box-shadow:
+    0 4px 14px rgba(0,0,0,.10),
+    0 0 0 3px rgba(0,229,212,.06),
+    0 0 18px rgba(0,229,212,.16);
+  animation: navLogoGlow 3.6s ease-in-out infinite;
+  transition: transform .35s cubic-bezier(.34,1.56,.64,1), box-shadow .35s ease;
 }
+
+.nav__logo-wrap img {
+  height: 36px;
+  width: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sheen: destello diagonal que cruza periódicamente la píldora. */
+.nav__logo-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: -65%;
+  width: 50%;
+  background: linear-gradient(100deg,
+    transparent,
+    rgba(0,229,212,.30) 45%,
+    rgba(255,255,255,.55) 50%,
+    rgba(0,229,212,.30) 55%,
+    transparent);
+  transform: skewX(-18deg);
+  z-index: 2;
+  pointer-events: none;
+  animation: navLogoSheen 5s ease-in-out infinite;
+}
+
+.nav__brand:hover .nav__logo-wrap {
+  transform: translateY(-1px) scale(1.035);
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.14),
+    0 0 0 4px rgba(0,229,212,.12),
+    0 0 30px rgba(0,229,212,.42);
+}
+
+@keyframes navLogoGlow {
+  0%, 100% {
+    box-shadow:
+      0 4px 14px rgba(0,0,0,.10),
+      0 0 0 3px rgba(0,229,212,.06),
+      0 0 16px rgba(0,229,212,.16);
+  }
+  50% {
+    box-shadow:
+      0 6px 18px rgba(0,0,0,.12),
+      0 0 0 4px rgba(0,229,212,.12),
+      0 0 26px rgba(0,229,212,.34);
+  }
+}
+
+@keyframes navLogoSheen {
+  0%, 55% { left: -65%; }
+  100% { left: 130%; }
+}
+
+/* El membrete ya incluye el wordmark → ocultar el texto duplicado del nav
+   (el footer conserva su .nav__name). */
+.nav__brand .nav__name { display: none; }
 
 .nav__name {
   font-family: var(--ff-display);

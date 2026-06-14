@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   JustiExpress Landing — main.js
+   Justiexpress Landing — main.js
    ═══════════════════════════════════════════════════════ */
 
 /* ── NAV: estado al hacer scroll ── */

@@ -1,4 +1,4 @@
-/* theme.js — tema claro/oscuro de las landings JustiExpress.
+/* theme.js — tema claro/oscuro de las landings Justiexpress.
  *
  * Va en el <head> (script bloqueante) para aplicar el tema ANTES del primer
  * paint (sin parpadeo). Default: CLARO. Inyecta un toggle flotante sol/luna
