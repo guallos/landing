@@ -13,7 +13,7 @@
   <script>
     function getChatUrl() {
       const params = new URLSearchParams(window.location.search);
-      const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
+      const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
       const chatBase = 'https://chat.justiexpress.com/';
       const chatParams = new URLSearchParams();
       chatParams.set('categoria', 'tutela');        // ← desacato va a tutelas
@@ -22,7 +22,7 @@
       // Atribución orgánica: el chat solo verá como referrer a ESTA landing.
       // Si la persona llegó de un buscador, se lo marcamos para que el embudo
       // lo cuente como "orgánico" y no como "directo".
-      if (!chatParams.get('gclid') && !chatParams.get('utm_medium')) {
+      if (!chatParams.get('utm_medium')) {
         var host = '';
         try { host = new URL(document.referrer).hostname.replace(/^www\./, ''); } catch (e) {}
         if (/(^|\.)(google|bing|yahoo|duckduckgo|ecosia|yandex|baidu|ask|aol|qwant|brave)\./i.test(host)) {
