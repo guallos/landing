@@ -1,0 +1,7 @@
+# Artefactos de build (no versionar) — solo se publican tt-*.mp4 y tt-*.jpg
+raw/
+meta/
+_build.log
+_snippet_js.txt
+_snippet_schema.json
+_resumen.txt

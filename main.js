@@ -110,9 +110,41 @@ revealSelectors.forEach(selector => {
        mejor preview silenciado y no carga JS de terceros. Ejemplo comentado abajo. */
 
 const videoData = [
-  // { type: 'video', src: 'reels/tiktok-embargo.mp4', poster: 'reels/tiktok-embargo.jpg',
-  //   title: 'Ejemplo reel propio', tag: 'Laboral',
-  //   cta: { label: 'Protege tu derecho', href: 'https://chat.justiexpress.com/?categoria=tutela' } },
+  // ── Reels propios (TikTok @tucasolegal), auto-alojados en reels/ ──
+  { type: 'video', src: 'reels/tt-7658354115797437716.mp4', poster: 'reels/tt-7658354115797437716.jpg', title: 'Un testamento evita peleas familiares', tag: 'Familia',
+    cta: { label: 'Consulta tu caso', href: 'https://chat.justiexpress.com/' } },
+  { type: 'video', src: 'reels/tt-7658001775575747861.mp4', poster: 'reels/tt-7658001775575747861.jpg', title: '¿Vas a hacer escrituras? Calcula el costo', tag: 'Notarial',
+    cta: { label: 'Gastos notariales', href: 'https://chat.justiexpress.com/?categoria=calculadora-notarial' } },
+  { type: 'video', src: 'reels/tt-7657001169935404308.mp4', poster: 'reels/tt-7657001169935404308.jpg', title: '+100 documentos y calculadoras en tu bolsillo', tag: 'General',
+    cta: { label: 'Descúbrelo', href: 'https://chat.justiexpress.com/' } },
+  { type: 'video', src: 'reels/tt-7656789935915109653.mp4', poster: 'reels/tt-7656789935915109653.jpg', title: '¿Ganaste una tutela y no cumplen? Desacato', tag: 'Tutela',
+    cta: { label: 'Haz tu desacato', href: 'https://chat.justiexpress.com/?categoria=tutela' } },
+  { type: 'video', src: 'reels/tt-7656577260300143892.mp4', poster: 'reels/tt-7656577260300143892.jpg', title: 'Contratos, cartas y tutelas: todo en uno', tag: 'General',
+    cta: { label: 'Explóralos', href: 'https://chat.justiexpress.com/' } },
+  { type: 'video', src: 'reels/tt-7655713678376979733.mp4', poster: 'reels/tt-7655713678376979733.jpg', title: 'Crea documentos legales en 3 pasos', tag: 'General',
+    cta: { label: 'Empieza ahora', href: 'https://chat.justiexpress.com/' } },
+  { type: 'video', src: 'reels/tt-7655295586698087701.mp4', poster: 'reels/tt-7655295586698087701.jpg', title: 'Mete una tutela sin abogado', tag: 'Tutela',
+    cta: { label: 'Haz tu tutela', href: 'https://chat.justiexpress.com/?categoria=tutela' } },
+  { type: 'video', src: 'reels/tt-7655014000433876244.mp4', poster: 'reels/tt-7655014000433876244.jpg', title: 'Calcula tu liquidación tú mismo', tag: 'Laboral',
+    cta: { label: 'Saca tus cuentas', href: 'https://chat.justiexpress.com/?categoria=calculadora-laboral' } },
+  { type: 'video', src: 'reels/tt-7654603026652581140.mp4', poster: 'reels/tt-7654603026652581140.jpg', title: 'Deja de googlear tus dudas legales', tag: 'General',
+    cta: { label: 'Pregúntale a la IA', href: 'https://chat.justiexpress.com/' } },
+  { type: 'video', src: 'reels/tt-7653854050995408148.mp4', poster: 'reels/tt-7653854050995408148.jpg', title: 'Tu abogado, ahora en el bolsillo', tag: 'General',
+    cta: { label: 'Iniciar consulta', href: 'https://chat.justiexpress.com/' } },
+  { type: 'video', src: 'reels/tt-7653110144452037908.mp4', poster: 'reels/tt-7653110144452037908.jpg', title: '¿Te deben liquidación o cesantías?', tag: 'Laboral',
+    cta: { label: 'Saca tus cuentas', href: 'https://chat.justiexpress.com/?categoria=calculadora-laboral' } },
+  { type: 'video', src: 'reels/tt-7652751659998727445.mp4', poster: 'reels/tt-7652751659998727445.jpg', title: 'Documentos con IA, validados por abogados', tag: 'General',
+    cta: { label: 'Crea el tuyo', href: 'https://chat.justiexpress.com/' } },
+  { type: 'video', src: 'reels/tt-7652427139114863892.mp4', poster: 'reels/tt-7652427139114863892.jpg', title: 'Herramientas legales que todos deberían tener', tag: 'General',
+    cta: { label: 'Explóralas', href: 'https://chat.justiexpress.com/' } },
+  { type: 'video', src: 'reels/tt-7651990544960343317.mp4', poster: 'reels/tt-7651990544960343317.jpg', title: '¿Tu EPS te incumple? Mete una tutela', tag: 'Salud',
+    cta: { label: 'Protege tu derecho', href: 'https://chat.justiexpress.com/?categoria=tutela' } },
+  { type: 'video', src: 'reels/tt-7651666684855487765.mp4', poster: 'reels/tt-7651666684855487765.jpg', title: 'Resolver tu caso legal, así de fácil', tag: 'General',
+    cta: { label: 'Iniciar consulta', href: 'https://chat.justiexpress.com/' } },
+  { type: 'video', src: 'reels/tt-7658735599439875348.mp4', poster: 'reels/tt-7658735599439875348.jpg', title: 'Declarar renta siendo asalariado', tag: 'Tributaria',
+    cta: { label: 'Calcula tu renta', href: 'https://chat.justiexpress.com/?categoria=calculadora-tributaria' } },
+
+  // ── Shorts educativos (YouTube) ──
   { id: 'YBZ-CSoLCss', title: 'Tu Caso Legal', tag: 'General',
     cta: { label: 'Iniciar consulta', href: 'https://chat.justiexpress.com/' } },
   { id: 'Ls6kI-jiDcA', title: '¡Pilas! Si trabajas en casa, la ley cambió', tag: 'Laboral',
@@ -184,6 +216,7 @@ const videoData = [
       else scrollToCard(idx);                                  // clic en una lateral → centrarla
     });
     card.addEventListener('keydown', (e) => {
+      if (e.target.closest('.reel-cta, .reel-play')) return;   // dejar actuar al CTA / botón play
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); playFull(card, v); }
     });
 
@@ -298,7 +331,10 @@ const videoData = [
   // Reproducción con sonido y controles
   function playFull(card, v) {
     const idx = visible.indexOf(card);
-    if (idx > -1 && idx !== activeIdx) scrollToCard(idx);
+    if (idx > -1 && idx !== activeIdx) {
+      if (activeIdx > -1 && visible[activeIdx]) revertCard(visible[activeIdx]); // no dejar 2 medios vivos
+      scrollToCard(idx);
+    }
     const old = card.querySelector('iframe, video');
     if (old) old.remove();
     card.classList.add('is-playing');
