@@ -95,73 +95,269 @@ revealSelectors.forEach(selector => {
   });
 });
 
-/* ── VIDEOS: playlist ── */
+/* ── VIDEOS: Reels Rail ──
+   Riel horizontal de verticales enmarcados como teléfono. Patrón "facade":
+   por defecto solo se cargan miniaturas (rápido + bueno para SEO). Cuando la
+   sección entra en viewport, la tarjeta CENTRADA se convierte en un preview en
+   autoplay silenciado (un solo elemento vivo a la vez). Al hacer clic se
+   reproduce con sonido. Cada video lleva un CTA de conversión (editable en `cta`).
+
+   Cada tarjeta admite dos fuentes:
+   • YouTube (por defecto):  { id: 'VIDEO_ID', title, tag, cta }
+   • MP4 propio (IG/TikTok):  { type: 'video', src: 'reels/mi-reel.mp4',
+                                poster: 'reels/mi-reel.jpg', title, tag, cta }
+     → Exporta el reel vertical, súbelo a la carpeta y añade la línea. Da el
+       mejor preview silenciado y no carga JS de terceros. Ejemplo comentado abajo. */
 
 const videoData = [
-  { id: 'YBZ-CSoLCss', title: 'Tu Caso Legal', tag: 'General' },
-  { id: 'Ls6kI-jiDcA', title: '¡Pilas! Si trabajas en casa, la ley cambió', tag: 'Laboral' },
-  { id: '51Po7NEGzfA', title: '¿Vivieron juntos más de dos años?', tag: 'Familia' },
-  { id: 'wiyEbWDBcFM', title: 'Prescripción de deudas en Colombia', tag: 'Deudas' },
-  { id: 'X-LUOHPSYKo', title: 'Nueva ley de divorcio', tag: 'Familia' },
-  { id: 'njoVgALV9pw', title: 'Eliminar reportes negativos', tag: 'Crédito' },
-  { id: '4u7OzJJ8hlg', title: 'Embargo de salario', tag: 'Laboral' },
-  { id: 'B-SE77MnWPo', title: 'Devoluciones por Internet', tag: 'Consumidor' },
-  { id: 'w8wRLskbR7A', title: 'Protección laboral embarazo', tag: 'Laboral' },
-  { id: 'NGOg_5oLbuA', title: 'Garantía carro usado', tag: 'Consumidor' },
+  // { type: 'video', src: 'reels/tiktok-embargo.mp4', poster: 'reels/tiktok-embargo.jpg',
+  //   title: 'Ejemplo reel propio', tag: 'Laboral',
+  //   cta: { label: 'Protege tu derecho', href: 'https://chat.justiexpress.com/?categoria=tutela' } },
+  { id: 'YBZ-CSoLCss', title: 'Tu Caso Legal', tag: 'General',
+    cta: { label: 'Iniciar consulta', href: 'https://chat.justiexpress.com/' } },
+  { id: 'Ls6kI-jiDcA', title: '¡Pilas! Si trabajas en casa, la ley cambió', tag: 'Laboral',
+    cta: { label: 'Haz tu petición', href: 'https://chat.justiexpress.com/?categoria=derecho-peticion' } },
+  { id: '51Po7NEGzfA', title: '¿Vivieron juntos más de dos años?', tag: 'Familia',
+    cta: { label: 'Consulta tu caso', href: 'https://chat.justiexpress.com/' } },
+  { id: 'wiyEbWDBcFM', title: 'Prescripción de deudas en Colombia', tag: 'Deudas',
+    cta: { label: 'Consulta tu caso', href: 'https://chat.justiexpress.com/' } },
+  { id: 'X-LUOHPSYKo', title: 'Nueva ley de divorcio', tag: 'Familia',
+    cta: { label: 'Consulta tu caso', href: 'https://chat.justiexpress.com/' } },
+  { id: 'njoVgALV9pw', title: 'Eliminar reportes negativos', tag: 'Crédito',
+    cta: { label: 'Haz tu petición', href: 'https://chat.justiexpress.com/?categoria=derecho-peticion' } },
+  { id: '4u7OzJJ8hlg', title: 'Embargo de salario', tag: 'Laboral',
+    cta: { label: 'Protege tu derecho', href: 'https://chat.justiexpress.com/?categoria=tutela' } },
+  { id: 'B-SE77MnWPo', title: 'Devoluciones por Internet', tag: 'Consumidor',
+    cta: { label: 'Haz tu petición', href: 'https://chat.justiexpress.com/?categoria=derecho-peticion' } },
+  { id: 'w8wRLskbR7A', title: 'Protección laboral embarazo', tag: 'Laboral',
+    cta: { label: 'Protege tu derecho', href: 'https://chat.justiexpress.com/?categoria=tutela' } },
+  { id: 'NGOg_5oLbuA', title: 'Garantía carro usado', tag: 'Consumidor',
+    cta: { label: 'Haz tu petición', href: 'https://chat.justiexpress.com/?categoria=derecho-peticion' } },
 ];
 
-let currentVid = 0;
+(function initReels() {
+  const rail     = document.getElementById('reels-rail');
+  const dotsBox  = document.getElementById('reels-dots');
+  const chipsBox = document.getElementById('reels-filters');
+  if (!rail) return;
 
-function buildPlaylist() {
-  const pl = document.getElementById('playlist');
-  if (!pl) return;
-  pl.innerHTML = '';
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+  let cards = [];       // todas las tarjetas
+  let visible = [];     // tarjetas visibles según filtro
+  let activeIdx = -1;   // índice dentro de `visible`
+  let sectionSeen = false;
+  let raf = null;
+
+  // ── Construir tarjetas ──
   videoData.forEach((v, i) => {
-    const item = document.createElement('div');
-    item.className = 'playlist-item' + (i === 0 ? ' active' : '');
-    item.innerHTML = `
-      <span class="item-num">${String(i + 1).padStart(2, '0')}</span>
-      <div class="item-thumb">
-        <img src="https://img.youtube.com/vi/${v.id}/mqdefault.jpg" alt="" loading="lazy" />
-        <div class="item-play-icon">
-          <svg viewBox="0 0 14 14" fill="none" width="14" height="14"><path d="M4 2l8 5-8 5V2z" fill="#00E5D4"/></svg>
+    const card = document.createElement('article');
+    card.className = 'reel-card';
+    card.dataset.idx = i;
+    card.dataset.tag = v.tag;
+    card.tabIndex = 0;
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', `Reproducir: ${v.title}`);
+    const thumb = v.type === 'video' ? (v.poster || '') : `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`;
+    card.innerHTML = `
+      <div class="reel-phone">
+        <span class="reel-notch"></span>
+        <div class="reel-media">
+          <img class="reel-thumb" src="${esc(thumb)}" alt="${esc(v.title)}" loading="lazy" />
+          <span class="reel-tag">${esc(v.tag)}</span>
+          <button class="reel-play" type="button" aria-label="Reproducir ${esc(v.title)}">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <div class="reel-overlay">
+            <h3 class="reel-title">${esc(v.title)}</h3>
+            <a class="reel-cta" href="${esc(v.cta.href)}" target="_blank" rel="noopener noreferrer">${esc(v.cta.label)} →</a>
+          </div>
         </div>
-      </div>
-      <div class="item-info">
-        <div class="item-title">${v.title}</div>
-        <div class="item-tag">${v.tag}</div>
-      </div>
-      <div class="active-bar"></div>
-    `;
-    item.addEventListener('click', () => selectVideo(i));
-    pl.appendChild(item);
+      </div>`;
+
+    card.querySelector('.reel-play').addEventListener('click', (e) => { e.stopPropagation(); playFull(card, v); });
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.reel-cta')) return;               // dejar navegar el CTA
+      const idx = visible.indexOf(card);
+      if (idx === activeIdx) playFull(card, v);                // clic en la centrada → con sonido
+      else scrollToCard(idx);                                  // clic en una lateral → centrarla
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); playFull(card, v); }
+    });
+
+    rail.appendChild(card);
+    cards.push(card);
   });
-}
 
-function selectVideo(i) {
-  currentVid = i;
-  const v = videoData[i];
-  const frame = document.getElementById('main-video');
-  const cur   = document.getElementById('vid-cur');
-  const count = document.getElementById('count-label');
-  if (frame) frame.src = `https://www.youtube.com/embed/${v.id}?rel=0&modestbranding=1`;
-  if (cur)   cur.textContent = String(i + 1).padStart(2, '0');
-  if (count) count.textContent = `${i + 1} / ${videoData.length}`;
-  document.querySelectorAll('.playlist-item').forEach((el, idx) => {
-    el.classList.toggle('active', idx === i);
+  // Preservar el tracking de UTM/categoría en los CTA recién creados
+  if (typeof window.jeDecorarEnlacesChat === 'function') window.jeDecorarEnlacesChat(rail);
+
+  // ── Chips de filtro por tema ──
+  const tags = ['Todos', ...new Set(videoData.map((v) => v.tag))];
+  tags.forEach((t, i) => {
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'reels-chip' + (i === 0 ? ' active' : '');
+    chip.setAttribute('role', 'tab');
+    chip.textContent = t;
+    chip.addEventListener('click', () => applyFilter(t, chip));
+    chipsBox && chipsBox.appendChild(chip);
   });
-  const items = document.querySelectorAll('.playlist-item');
-  if (items[i]) items[i].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-}
 
-document.getElementById('vid-prev')?.addEventListener('click', () => {
-  selectVideo((currentVid - 1 + videoData.length) % videoData.length);
-});
-document.getElementById('vid-next')?.addEventListener('click', () => {
-  selectVideo((currentVid + 1) % videoData.length);
-});
+  function applyFilter(tag, chip) {
+    chipsBox.querySelectorAll('.reels-chip').forEach((c) => c.classList.remove('active'));
+    chip.classList.add('active');
+    cards.forEach((c) => {
+      revertCard(c);
+      c.style.display = (tag === 'Todos' || c.dataset.tag === tag) ? '' : 'none';
+    });
+    visible = cards.filter((c) => c.style.display !== 'none');
+    activeIdx = -1;
+    buildDots();
+    rail.scrollTo({ left: 0, behavior: 'auto' });
+    requestAnimationFrame(updateActive);
+  }
 
-buildPlaylist();
+  // ── Dots ──
+  function buildDots() {
+    if (!dotsBox) return;
+    dotsBox.innerHTML = '';
+    visible.forEach((c, i) => {
+      const d = document.createElement('button');
+      d.type = 'button';
+      d.className = 'reels-dot';
+      d.setAttribute('role', 'tab');
+      d.setAttribute('aria-label', `Ir al video ${i + 1}`);
+      d.addEventListener('click', () => scrollToCard(i));
+      dotsBox.appendChild(d);
+    });
+  }
+
+  function scrollToCard(i) {
+    const c = visible[i];
+    if (!c) return;
+    rail.scrollTo({ left: c.offsetLeft - (rail.clientWidth - c.clientWidth) / 2, behavior: reduce ? 'auto' : 'smooth' });
+  }
+
+  // ── Detectar la tarjeta centrada ──
+  function updateActive() {
+    if (!visible.length) return;
+    const center = rail.scrollLeft + rail.clientWidth / 2;
+    let best = 0, bestDist = Infinity;
+    visible.forEach((c, i) => {
+      const d = Math.abs(c.offsetLeft + c.clientWidth / 2 - center);
+      if (d < bestDist) { bestDist = d; best = i; }
+    });
+    if (best === activeIdx) return;
+    if (activeIdx > -1 && visible[activeIdx]) revertCard(visible[activeIdx]);
+    activeIdx = best;
+    visible.forEach((c, i) => c.classList.toggle('is-active', i === best));
+    dotsBox && dotsBox.querySelectorAll('.reels-dot').forEach((d, i) => d.classList.toggle('active', i === best));
+    previewCard(visible[best]);
+  }
+
+  // Construye el elemento de reproducción según la fuente (YouTube o MP4 propio)
+  function makeMedia(v, { sound }) {
+    if (v.type === 'video') {
+      const el = document.createElement('video');
+      el.src = v.src;
+      if (v.poster) el.poster = v.poster;
+      el.playsInline = true;
+      el.autoplay = true;
+      if (sound) { el.controls = true; }
+      else { el.muted = true; el.loop = true; el.tabIndex = -1; el.setAttribute('aria-hidden', 'true'); }
+      el.play && el.play().catch(() => {});
+      return el;
+    }
+    const f = document.createElement('iframe');
+    f.src = sound
+      ? `https://www.youtube.com/embed/${v.id}?autoplay=1&mute=0&controls=1&modestbranding=1&rel=0&playsinline=1`
+      : `https://www.youtube.com/embed/${v.id}?autoplay=1&mute=1&loop=1&playlist=${v.id}&controls=0&modestbranding=1&rel=0&playsinline=1&disablekb=1`;
+    f.title = sound ? v.title : 'Vista previa';
+    if (sound) {
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      f.allowFullscreen = true;
+    } else {
+      f.allow = 'autoplay; encrypted-media';
+      f.tabIndex = -1;
+      f.setAttribute('aria-hidden', 'true');
+    }
+    return f;
+  }
+
+  // Preview en movimiento (silenciado, en bucle) — solo la tarjeta centrada
+  function previewCard(card) {
+    if (reduce || !sectionSeen || !card) return;
+    if (card.classList.contains('is-playing') || card.querySelector('iframe, video')) return;
+    const v = videoData[card.dataset.idx];
+    card.querySelector('.reel-media').insertBefore(makeMedia(v, { sound: false }), card.querySelector('.reel-tag'));
+  }
+
+  // Reproducción con sonido y controles
+  function playFull(card, v) {
+    const idx = visible.indexOf(card);
+    if (idx > -1 && idx !== activeIdx) scrollToCard(idx);
+    const old = card.querySelector('iframe, video');
+    if (old) old.remove();
+    card.classList.add('is-playing');
+    card.querySelector('.reel-media').insertBefore(makeMedia(v, { sound: true }), card.querySelector('.reel-tag'));
+  }
+
+  // Vuelve al estado miniatura (libera el media → máx. 1 vivo)
+  function revertCard(card) {
+    card.classList.remove('is-playing');
+    const m = card.querySelector('iframe, video');
+    if (m) m.remove();
+  }
+
+  // ── Flechas ──
+  document.getElementById('vid-prev')?.addEventListener('click', () => scrollToCard(Math.max(0, activeIdx - 1)));
+  document.getElementById('vid-next')?.addEventListener('click', () => scrollToCard(Math.min(visible.length - 1, activeIdx + 1)));
+
+  const onScroll = () => { if (raf) cancelAnimationFrame(raf); raf = requestAnimationFrame(updateActive); };
+  rail.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+
+  // ── Facade: no cargar iframes hasta que la sección se vea ──
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        sectionSeen = true;
+        if (activeIdx > -1) previewCard(visible[activeIdx]);
+        io.disconnect();
+      }
+    });
+  }, { rootMargin: '0px 0px -15% 0px' });
+  io.observe(rail);
+
+  // ── Init ──
+  visible = cards.slice();
+  buildDots();
+  requestAnimationFrame(updateActive);
+})();
+
+/* ── VIDEO DESTACADO 16:9 (facade: clic → carga iframe con sonido) ── */
+(function initFeatured() {
+  const media = document.getElementById('featured-media');
+  if (!media) return;
+  const play = () => {
+    if (media.querySelector('iframe')) return;
+    const id = media.dataset.id;
+    const f = document.createElement('iframe');
+    f.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+    f.title = 'Cómo declarar renta en 2026';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    f.allowFullscreen = true;
+    media.appendChild(f);
+    media.classList.add('is-playing');
+  };
+  media.addEventListener('click', play);
+  media.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); }
+  });
+})();
 
 /* ── TESTIMONIOS: navegación por botones ── */
 
