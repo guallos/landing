@@ -33,7 +33,9 @@ def upload_date(idv):
     try:
         d = json.load(open(f"meta/{idv}.json", encoding="utf-8"))
         ud = d.get("upload_date")
-        if ud and len(ud) == 8: return f"{ud[:4]}-{ud[4:6]}-{ud[6:]}"
+        # ISO 8601 con hora y zona horaria (Colombia UTC-5): requisito de
+        # Search Console para VideoObject.uploadDate.
+        if ud and len(ud) == 8: return f"{ud[:4]}-{ud[4:6]}-{ud[6:]}T08:00:00-05:00"
     except Exception: pass
     return None
 
@@ -51,7 +53,7 @@ for idv, title, tag, label, href in ITEMS:
             "name": title,
             "description": title,
             "thumbnailUrl": f"{BASE}/reels/tt-{idv}.jpg",
-            "uploadDate": upload_date(idv) or "2026-01-01",
+            "uploadDate": upload_date(idv) or "2026-01-01T08:00:00-05:00",
             "duration": iso_dur(d.get("duration")),
             "contentUrl": f"{BASE}/reels/tt-{idv}.mp4",
             "publisher": {"@id": f"{BASE}/#organization"},
