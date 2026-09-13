@@ -3,25 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculadora Laboral en Colombia por $19.900 | Justiexpress</title>
-  <meta name="description" content="Calcula tu liquidación laboral, cesantías, prima, vacaciones e indemnización por despido en segundos por solo $19.900. Resultado detallado en PDF, válido en todo Colombia." />
-  <meta name="keywords" content="calculadora liquidacion laboral, calcular liquidacion colombia, calculadora cesantias, calculadora prima de servicios, indemnizacion por despido sin justa causa, calculadora prestaciones sociales, liquidacion contrato de trabajo, calculadora laboral colombia" />
-  <link rel="canonical" href="https://www.justiexpress.com/calculadora-laboral/" />
+  <title>Estudio de Riesgo de Arrendamiento y Documentos de Vivienda | Justiexpress</title>
+  <meta name="description" content="Antes de arrendar, sepa a quién: estudio de riesgo del arrendatario en minutos por $29.900, con veredicto, hallazgos citados y condiciones para arrendar. Además contrato de arrendamiento, promesa y minuta de compraventa y gastos notariales." />
+  <meta name="keywords" content="estudio de riesgo arrendamiento, estudio arrendatario, estudio de arriendo colombia, codeudor arriendo, contrato de arrendamiento vivienda urbana, ley 820 de 2003, deposito arriendo ilegal, promesa de compraventa, minuta de compraventa, gastos notariales" />
+  <link rel="canonical" href="https://www.justiexpress.com/vivienda/" />
   <link rel="icon" href="../brand-mark.png" type="image/png" />
 
-  <!-- UTM passthrough hacia el chat (sin Google Ads en esta landing) -->
+  <!-- UTM passthrough hacia el chat (misma mecánica que las demás landings) -->
   <script>
     function getChatUrl() {
       const params = new URLSearchParams(window.location.search);
       const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
       const chatBase = 'https://chat.justiexpress.com/';
       const chatParams = new URLSearchParams();
-      chatParams.set('categoria', 'calculadora-laboral');
-      chatParams.set('origen', 'landing-calc-laboral');
+      chatParams.set('categoria', 'vivienda');
+      chatParams.set('origen', 'landing-vivienda');
       utmParams.forEach(p => { if (params.get(p)) chatParams.set(p, params.get(p)); });
       // Atribución orgánica: el chat solo verá como referrer a ESTA landing.
-      // Si la persona llegó de un buscador, se lo marcamos para que el embudo
-      // lo cuente como "orgánico" y no como "directo".
       if (!chatParams.get('gclid') && !chatParams.get('utm_medium')) {
         var host = '';
         try { host = new URL(document.referrer).hostname.replace(/^www\./, ''); } catch (e) {}
@@ -41,9 +39,9 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.justiexpress.com/calculadora-laboral/" />
-  <meta property="og:title" content="Calculadora Laboral en Colombia por $19.900 | Justiexpress" />
-  <meta property="og:description" content="Liquidación laboral, cesantías, prima, vacaciones e indemnización por despido calculadas en segundos por solo $19.900." />
+  <meta property="og:url" content="https://www.justiexpress.com/vivienda/" />
+  <meta property="og:title" content="Estudio de Riesgo de Arrendamiento por $29.900 | Justiexpress" />
+  <meta property="og:description" content="Antes de entregar las llaves, sepa a quién. Veredicto con puntaje, hallazgos citados y condiciones para arrendar, en minutos." />
   <meta property="og:image" content="https://www.justiexpress.com/logo.png" />
   <meta property="og:locale" content="es_CO" />
   <meta property="og:site_name" content="Justiexpress" />
@@ -51,8 +49,8 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@justiexpress" />
-  <meta name="twitter:title" content="Calculadora Laboral en Colombia por $19.900 | Justiexpress" />
-  <meta name="twitter:description" content="Liquidación laboral, cesantías, prima, vacaciones e indemnización calculadas en segundos por solo $19.900." />
+  <meta name="twitter:title" content="Estudio de Riesgo de Arrendamiento por $29.900 | Justiexpress" />
+  <meta name="twitter:description" content="Antes de entregar las llaves, sepa a quién. Veredicto, hallazgos citados y condiciones para arrendar, en minutos." />
   <meta name="twitter:image" content="https://www.justiexpress.com/logo.png" />
 
   <!-- Geo -->
@@ -61,36 +59,34 @@
   <meta http-equiv="content-language" content="es-CO" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-  <!-- Schema JSON-LD -->
+  <!-- Schema JSON-LD: Servicio -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "name": "Calculadora Laboral — Justiexpress",
-    "description": "Cálculo de liquidación laboral, cesantías, prima, vacaciones, indemnización por despido y honorarios de contratistas en Colombia por $19.900.",
-    "url": "https://www.justiexpress.com/calculadora-laboral/",
+    "name": "Vivienda y arrendamiento — Justiexpress",
+    "description": "Estudio de riesgo de arrendamiento a partir de los documentos del solicitante y su codeudor, y documentos de vivienda: contrato de arrendamiento de vivienda urbana, promesa de compraventa, minuta de compraventa y calculadora notarial.",
+    "url": "https://www.justiexpress.com/vivienda/",
     "telephone": "+573185725324",
     "email": "justiexpress@gmail.com",
     "areaServed": "CO",
-    "priceRange": "$19.900 COP",
+    "priceRange": "$19.900 - $29.900 COP",
     "provider": {
       "@type": "Organization",
       "name": "Justiexpress",
       "url": "https://www.justiexpress.com",
-      "logo": "https://www.justiexpress.com/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/justiexpress",
-        "https://twitter.com/justiexpress",
-        "https://www.instagram.com/justiexpress.legal",
-        "https://www.linkedin.com/company/justiexpress"
-      ]
+      "logo": "https://www.justiexpress.com/logo.png"
     },
-    "offers": {
-      "@type": "Offer",
-      "price": "19900",
-      "priceCurrency": "COP",
-      "availability": "https://schema.org/InStock",
-      "description": "Cálculo laboral detallado con informe en PDF"
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Vivienda y arrendamiento",
+      "itemListElement": [
+        { "@type": "Offer", "price": "29900", "priceCurrency": "COP", "itemOffered": { "@type": "Service", "name": "Estudio de riesgo de arrendamiento" } },
+        { "@type": "Offer", "price": "19900", "priceCurrency": "COP", "itemOffered": { "@type": "Service", "name": "Contrato de arrendamiento de vivienda urbana" } },
+        { "@type": "Offer", "price": "19900", "priceCurrency": "COP", "itemOffered": { "@type": "Service", "name": "Promesa de compraventa" } },
+        { "@type": "Offer", "price": "19900", "priceCurrency": "COP", "itemOffered": { "@type": "Service", "name": "Minuta de compraventa" } },
+        { "@type": "Offer", "price": "19900", "priceCurrency": "COP", "itemOffered": { "@type": "Service", "name": "Calculadora notarial y registral", "url": "https://www.justiexpress.com/calculadora-notarial/" } }
+      ]
     }
   }
   </script>
@@ -102,47 +98,22 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.justiexpress.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Calculadora Laboral", "item": "https://www.justiexpress.com/calculadora-laboral/" }
+      { "@type": "ListItem", "position": 2, "name": "Vivienda y arrendamiento", "item": "https://www.justiexpress.com/vivienda/" }
     ]
   }
   </script>
 
-  <!-- Schema JSON-LD: FAQ -->
+  <!-- Schema JSON-LD: FAQ (en paridad con el bloque visible) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Qué calcula exactamente la Calculadora Laboral?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Tu liquidación laboral completa: cesantías, intereses de cesantías, prima de servicios, vacaciones, salarios pendientes e indemnización por despido sin justa causa. Incluye módulos para tiempo completo, trabajo por días y contratistas por honorarios." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánto cuesta la Calculadora Laboral?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Solo $19.900 COP, pago único a través de Wompi. Sin suscripciones, sin mensualidades, sin costos ocultos. Pagas una vez y recibes tu cálculo completo con informe en PDF." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Puedo modificar los datos después de pagar?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Con el botón Editar cálculo puedes ajustar salario, fechas o tipo de contrato y recalcular las veces que necesites, sin pagar de nuevo." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cómo recibo el resultado?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Sirve si trabajo por días o soy contratista?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. La calculadora tiene módulos específicos para trabajo por días (prestaciones proporcionales) y para contratistas por prestación de servicios (honorarios, seguridad social y retenciones)." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿El cálculo es válido legalmente?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El cálculo se realiza con las fórmulas de la normativa laboral colombiana vigente y te sirve como base sólida para negociar o reclamar. Si tu empleador no paga, en el mismo chat puedes generar la reclamación laboral lista para presentar." }
-      }
+      { "@type": "Question", "name": "¿Qué es el estudio de riesgo de arrendamiento?", "acceptedAnswer": { "@type": "Answer", "text": "Un análisis de los documentos de quien le pide el inmueble y de su codeudor que entrega un veredicto con puntaje, la exposición estimada si el contrato termina en restitución, los hallazgos con su cita textual y las condiciones concretas para arrendar." } },
+      { "@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": { "@type": "Answer", "text": "El estudio cuesta $29.900 COP, pago único. El contrato de arrendamiento, la promesa y la minuta de compraventa y la calculadora notarial cuestan $19.900 cada uno. Se paga con Wompi, sin tarjeta: Nequi, Bancolombia, PSE o Daviplata." } },
+      { "@type": "Question", "name": "¿Consultan las centrales de riesgo?", "acceptedAnswer": { "@type": "Answer", "text": "No. El estudio se hace únicamente con los documentos que usted aporta. Por eso suele recomendar pedir el reporte de DataCrédito de las partes, que cada persona puede descargar gratis." } },
+      { "@type": "Question", "name": "¿Qué pasa con los documentos que subo?", "acceptedAnswer": { "@type": "Answer", "text": "Se procesan para hacer el estudio y se descartan: no se almacenan en la plataforma. Lo único que se conserva es el estudio que usted compró. Al empezar usted declara contar con la autorización del titular (Ley 1581 de 2012)." } },
+      { "@type": "Question", "name": "¿Puedo pedir un depósito al arrendatario?", "acceptedAnswer": { "@type": "Answer", "text": "En vivienda urbana, no: el artículo 16 de la Ley 820 de 2003 prohíbe exigir depósitos en dinero o cauciones reales. Puede pedir codeudor solidario, póliza de arrendamiento o aval bancario." } }
     ]
   }
   </script>
@@ -176,7 +147,7 @@
       .nav__home--drawer { display: inline-flex !important; margin-top: 4px; width: 100%; justify-content: center; }
     }
 
-    /* ── ADS: BADGE MESSAGE MATCH ── */
+    /* ── BADGE MESSAGE MATCH ── */
     .ads-match-badge {
       display: inline-flex; align-items: center; gap: 6px;
       background: rgba(0,229,212,0.12); border: 1px solid rgba(0,229,212,0.35);
@@ -186,7 +157,7 @@
     }
     .ads-match-badge svg { flex-shrink: 0; }
 
-    /* ── ADS: PRECIO DESTACADO ── */
+    /* ── PRECIO DESTACADO ── */
     .ads-price-pill {
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(0,229,212,0.08); border: 1.5px solid rgba(0,229,212,0.4);
@@ -229,7 +200,8 @@
     .calcmock__row:nth-child(4) { animation-delay: 1.1s; }
     .calcmock__row:nth-child(5) { animation-delay: 1.3s; }
     .calcmock__row:nth-child(6) { animation-delay: 1.5s; }
-    .calcmock__row:nth-child(7) { animation-delay: 1.9s; }
+    .calcmock__row:nth-child(7) { animation-delay: 1.7s; }
+    .calcmock__row:nth-child(8) { animation-delay: 2.1s; }
 
     /* ── QUÉ INCLUYE ── */
     .includes__list {
@@ -247,6 +219,26 @@
     .includes__item svg { flex-shrink: 0; margin-top: 2px; }
     .includes__item p { font-size: 14px; color: var(--text-2); line-height: 1.55; }
     .includes__item p strong { color: var(--text-1); font-weight: 600; }
+
+    /* ── COMPARATIVA ── */
+    .compare-wrap { overflow-x: auto; max-width: 900px; margin-inline: auto; border: 1px solid var(--border); border-radius: 14px; }
+    .compare { width: 100%; border-collapse: collapse; min-width: 620px; }
+    .compare th, .compare td { padding: 14px 16px; text-align: left; font-size: 14px; border-bottom: 1px solid var(--border); color: var(--text-2); vertical-align: top; }
+    .compare thead th { font-family: var(--ff-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-3); background: var(--noir-3); }
+    .compare tbody th { color: var(--text-1); font-weight: 600; white-space: nowrap; }
+    .compare tr:last-child th, .compare tr:last-child td { border-bottom: none; }
+    .compare .compare__je { color: var(--text-1); font-weight: 600; background: rgba(0,229,212,0.06); }
+    .compare thead .compare__je { color: var(--cyan-ink); }
+    .compare__nota { max-width: 760px; margin: 18px auto 0; font-size: 12.5px; line-height: 1.6; color: var(--text-3); }
+
+    /* ── AVISO LEY 820 ── */
+    .aviso-ley { max-width: 860px; margin-inline: auto; padding: 36px 32px; border-radius: 18px; border: 1px solid var(--cyan-border); background: linear-gradient(160deg, rgba(0,229,212,0.07), transparent 60%), var(--noir-3); }
+    .aviso-ley__texto { font-size: 16px; line-height: 1.7; color: var(--text-2); margin: 14px 0 18px; }
+    .aviso-ley__texto strong { color: var(--text-1); }
+    .aviso-ley__si { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .aviso-ley__si span { font-size: 14px; line-height: 1.55; color: var(--text-2); padding: 14px 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--noir-2); }
+    .aviso-ley__si strong { display: block; color: var(--text-1); margin-bottom: 4px; }
+    @media (max-width: 720px) { .aviso-ley { padding: 28px 20px; } .aviso-ley__si { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -265,8 +257,8 @@
         </span>
         Inicio
       </a>
-      <a href="https://chat.justiexpress.com/?categoria=calculadora-laboral" data-chat-link class="btn btn--cyan nav__cta">
-        Calcular ahora
+      <a href="https://chat.justiexpress.com/?categoria=vivienda" data-chat-link class="btn btn--cyan nav__cta">
+        Hacer el estudio
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" id="burger">
@@ -274,7 +266,7 @@
       </button>
     </div>
     <div class="nav__drawer" id="drawer" aria-hidden="true">
-      <a href="https://chat.justiexpress.com/?categoria=calculadora-laboral" data-chat-link class="btn btn--cyan">Calcular ahora →</a>
+      <a href="https://chat.justiexpress.com/?categoria=vivienda" data-chat-link class="btn btn--cyan">Hacer el estudio →</a>
     </div>
   </nav>
 
@@ -302,42 +294,40 @@
 
   <main>
     <!-- ── HERO ── -->
-    <section class="hero" aria-label="Calculadora Laboral">
+    <section class="hero" aria-label="Vivienda y arrendamiento">
       <div class="hero__grid-bg" aria-hidden="true"></div>
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__inner">
-        <!-- ADS: Badge de message match con el anuncio -->
         <div class="ads-match-badge">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#00e5d4" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#00e5d4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Calculadora laboral por $19.900 · Resultado inmediato
+          Estudio de riesgo de arrendamiento · En minutos
         </div>
 
         <div class="hero__badge">
           <span class="badge__dot"></span>
-          <span class="mono">Solo $19.900 · Resultado al instante</span>
+          <span class="mono">Nuevo · Vivienda y arriendo</span>
         </div>
         <h1 class="hero__title">
-          Calculadora Laboral:<br />
-          <em class="hero__title--em">tu liquidación, exacta.</em>
+          Antes de entregar las llaves,<br />
+          <em class="hero__title--em">sepa a quién.</em>
         </h1>
         <p class="hero__sub">
-          ¿Terminó tu contrato? ¿Te despidieron sin justa causa? Calcula tus cesantías, prima, vacaciones, indemnización y liquidación completa en segundos por solo
-          <strong style="color: var(--cyan)">$19.900</strong>. Con informe detallado en PDF, listo para reclamar lo tuyo.
+          Suba los soportes de quien le pide el inmueble y de su codeudor, desde el celular. En minutos recibe un estudio razonado: veredicto con puntaje, hallazgos citados del documento de donde salieron y
+          <strong style="color: var(--cyan)">las condiciones para arrendar</strong>. Y del estudio pasa al contrato, la promesa, la minuta y los gastos de escritura, todo en un solo lugar.
         </p>
 
-        <!-- ADS: Precio grande y claro -->
         <div class="ads-price-pill">
           <span>Precio fijo:</span>
-          <span class="ads-price-pill__amount">$19.900</span>
+          <span class="ads-price-pill__amount">$29.900</span>
           <span>COP · Pago único</span>
         </div>
 
         <div class="hero__actions" style="margin-top: 28px">
-          <a href="https://chat.justiexpress.com/?categoria=calculadora-laboral" data-chat-link class="btn btn--hero">
-            <span>Calcular mi liquidación</span>
+          <a href="https://chat.justiexpress.com/?categoria=vivienda" data-chat-link class="btn btn--hero">
+            <span>Hacer el estudio</span>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20liquidaci%C3%B3n%20laboral" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+          <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20quiero%20hacer%20el%20estudio%20de%20riesgo%20de%20un%20arrendatario" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Preguntar por WhatsApp
           </a>
@@ -345,22 +335,22 @@
         <div class="hero__trust">
           <span class="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            +2.000 clientes
+            Minutos, no días hábiles
           </span>
           <span class="hero__trust-sep" aria-hidden="true">·</span>
           <span class="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Normativa laboral vigente
+            Cada hallazgo con su cita
           </span>
           <span class="hero__trust-sep" aria-hidden="true">·</span>
           <span class="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Solo $19.900
+            Sin tarjeta: Nequi, PSE, Daviplata
           </span>
         </div>
       </div>
 
-      <!-- Mockup de resultado -->
+      <!-- Mockup del estudio (ejemplo ilustrativo) -->
       <div class="hero__mockup" aria-hidden="true">
         <div class="mockup__chrome">
           <div class="mockup__dot"></div>
@@ -369,99 +359,169 @@
           <span class="mono" style="font-size:10px;color:var(--text-3);margin-left:auto;margin-right:auto;">chat.justiexpress.com</span>
         </div>
         <div class="mockup__body">
-          <div class="calcmock__title">Liquidación laboral · Resultado</div>
-          <div class="calcmock__row"><span>Salario base</span><strong>$1.800.000</strong></div>
-          <div class="calcmock__row"><span>Cesantías</span><strong>$1.200.000</strong></div>
-          <div class="calcmock__row"><span>Intereses de cesantías</span><strong>$96.000</strong></div>
-          <div class="calcmock__row"><span>Prima de servicios</span><strong>$1.200.000</strong></div>
-          <div class="calcmock__row"><span>Vacaciones</span><strong>$600.000</strong></div>
-          <div class="calcmock__row calcmock__row--total"><span>Total liquidación</span><strong>$3.096.000</strong></div>
+          <div class="calcmock__title">Estudio de riesgo · Ejemplo ilustrativo</div>
+          <div class="calcmock__row"><span>Canon mensual</span><strong>$1.800.000</strong></div>
+          <div class="calcmock__row"><span>Capacidad de pago</span><strong>Suficiente</strong></div>
+          <div class="calcmock__row"><span>Respaldo del codeudor</span><strong>Parcial</strong></div>
+          <div class="calcmock__row"><span>Hallazgos citados</span><strong>4</strong></div>
+          <div class="calcmock__row"><span>Condiciones para arrendar</span><strong>5</strong></div>
+          <div class="calcmock__row"><span>Exposición si hay restitución</span><strong>$14M – $25M</strong></div>
+          <div class="calcmock__row calcmock__row--total"><span>Arrendar con condiciones</span><strong>62/100</strong></div>
         </div>
       </div>
     </section>
 
-    <!-- ── MÓDULOS ── -->
-    <section class="section" style="padding-top: 0" aria-label="Qué puedes calcular">
+    <!-- ── LA RUTA COMPLETA ── -->
+    <section class="section" style="padding-top: 0" id="ruta" aria-label="Del estudio a la escritura">
       <div class="container">
         <header class="section__header">
-          <p class="mono section__eyebrow">Módulos</p>
-          <h2 class="section__title">Cinco cálculos.<br /><em>Una sola calculadora.</em></h2>
+          <p class="mono section__eyebrow">La ruta completa</p>
+          <h2 class="section__title">Del estudio a la escritura,<br /><em>en un solo lugar.</em></h2>
+          <p class="section__sub">Cinco piezas enlazadas: al terminar el estudio, el contrato arranca con el canon y los datos ya puestos.</p>
         </header>
         <div class="services__grid">
-          <div class="service-card">
+          <article class="service-card">
+            <span class="calc-card__badge">Nuevo</span>
             <div class="service-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12h6M9 16h4M7 3H4a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V8l-5-5H7z" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 3v5h5" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="#00E5D4" stroke-width="1.5"/><path d="M21 21l-4.35-4.35M8.5 11l1.8 1.8L14 9" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h3 class="service-card__title">Liquidación laboral</h3>
-            <p class="service-card__desc">Cesantías, intereses, prima, vacaciones y salarios pendientes al terminar tu contrato. El cálculo completo, paso a paso.</p>
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-laboral" data-chat-link class="service-card__cta">Calcular ahora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
+            <h3 class="service-card__title">Estudio de riesgo de arrendamiento</h3>
+            <p class="service-card__desc">A quién le arrienda y con qué condiciones: veredicto con puntaje, exposición estimada en pesos y hallazgos citados del documento de donde salieron.</p>
+            <div class="calc-card__price"><strong>$29.900</strong><span>COP · Pago único</span></div>
+            <a href="https://chat.justiexpress.com/?categoria=vivienda" data-chat-link class="service-card__cta">Hacer el estudio
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="service-card">
             <div class="service-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#00E5D4" stroke-width="1.5"/><path d="M12 8v4M12 16h.01" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2z" stroke="#00E5D4" stroke-width="1.5"/><path d="M9 7h6M9 11h6M9 15h4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
             </div>
-            <h3 class="service-card__title">Indemnización por despido</h3>
-            <p class="service-card__desc">¿Despido sin justa causa? Calcula la indemnización que te corresponde según tu tipo de contrato y antigüedad.</p>
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-laboral" data-chat-link class="service-card__cta">Calcular ahora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
+            <h3 class="service-card__title">Contrato de arrendamiento</h3>
+            <p class="service-card__desc">Vivienda urbana con las cláusulas de la Ley 820 de 2003: canon, incrementos, duración, servicios y garantías que sí se pueden exigir.</p>
+            <div class="calc-card__price"><strong>$19.900</strong><span>COP · Pago único</span></div>
+            <a href="https://chat.justiexpress.com/?categoria=vivienda" data-chat-link class="service-card__cta">Hacer el contrato
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="service-card">
             <div class="service-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#00E5D4" stroke-width="1.5"/><path d="M12 7v5l3 3" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4v5c0 4.5-3.2 8.3-8 9-4.8-.7-8-4.5-8-9V7l8-4z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12h6M12 9v6" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
             </div>
-            <h3 class="service-card__title">Tiempo completo</h3>
-            <p class="service-card__desc">Prestaciones sociales de trabajadores con contrato a término fijo o indefinido: todo lo que tu empleador debe pagarte.</p>
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-laboral" data-chat-link class="service-card__cta">Calcular ahora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
+            <h3 class="service-card__title">Promesa de compraventa</h3>
+            <p class="service-card__desc">El acuerdo previo a la escritura: precio, forma de pago, arras y plazos, para comprar o vender con reglas claras desde el principio.</p>
+            <div class="calc-card__price"><strong>$19.900</strong><span>COP · Pago único</span></div>
+            <a href="https://chat.justiexpress.com/?categoria=vivienda" data-chat-link class="service-card__cta">Hacer la promesa
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="service-card">
             <div class="service-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M3 7h18v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 2v6h6M8 13h8M8 17h5" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
             </div>
-            <h3 class="service-card__title">Trabajo por días</h3>
-            <p class="service-card__desc">¿Trabajas por días u horas? Calcula tus prestaciones proporcionales: también tienes derecho a ellas.</p>
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-laboral" data-chat-link class="service-card__cta">Calcular ahora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
+            <h3 class="service-card__title">Minuta de compraventa</h3>
+            <p class="service-card__desc">La minuta lista para llevar a la notaría, con los datos del inmueble, las partes y el precio pactado.</p>
+            <div class="calc-card__price"><strong>$19.900</strong><span>COP · Pago único</span></div>
+            <a href="https://chat.justiexpress.com/?categoria=vivienda" data-chat-link class="service-card__cta">Hacer la minuta
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="service-card">
             <div class="service-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2z" stroke="#00E5D4" stroke-width="1.5"/><path d="M9 7h6M9 11h6M9 15h4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 22V12h6v10" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/></svg>
             </div>
-            <h3 class="service-card__title">Contratistas y honorarios</h3>
-            <p class="service-card__desc">Prestación de servicios: calcula el valor real de tus honorarios, descuentos de seguridad social y retenciones.</p>
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-laboral" data-chat-link class="service-card__cta">Calcular ahora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
+            <h3 class="service-card__title">Calculadora notarial</h3>
+            <p class="service-card__desc">Cuánto cuesta escriturar y registrar: derechos notariales, retención, beneficencia y registro, y quién paga qué.</p>
+            <div class="calc-card__price"><strong>$19.900</strong><span>COP · Pago único</span></div>
+            <a href="/calculadora-notarial/" class="service-card__cta">Ver la calculadora
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="service-card">
             <div class="service-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 11l3 3L22 4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h3 class="service-card__title">¿Te deben dinero?</h3>
-            <p class="service-card__desc">Con tu cálculo en mano, genera también la reclamación laboral lista para presentar a tu empleador.</p>
-            <a href="https://chat.justiexpress.com/?categoria=derecho-peticion" target="_blank" rel="noopener noreferrer" class="service-card__cta">Reclamar ahora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
+            <h3 class="service-card__title">Lista de documentos, gratis</h3>
+            <p class="service-card__desc">¿No sabe qué pedirle al interesado? Descargue sin costo y sin dar ningún dato la lista exacta de soportes, lista para reenviar por WhatsApp.</p>
+            <div class="calc-card__price"><strong>Gratis</strong><span>PDF · Sin registro</span></div>
+            <a href="https://chat.justiexpress.com/?categoria=vivienda" data-chat-link class="service-card__cta">Descargar la lista
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ── STATS ── -->
-    <section class="stats" id="stats" aria-label="Estadísticas">
+    <!-- ── COMPARATIVA ── -->
+    <section class="section" aria-label="Cómo se hace hoy">
       <div class="container">
-        <div class="stats__grid">
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">clientes satisfechos</span>
+        <header class="section__header">
+          <p class="mono section__eyebrow">Cómo se hace hoy</p>
+          <h2 class="section__title">Dos opciones.<br /><em>Ninguna buena, hasta ahora.</em></h2>
+        </header>
+        <div class="compare-wrap">
+          <table class="compare">
+            <thead>
+              <tr><th scope="col"></th><th scope="col">Arrendar a ciegas</th><th scope="col">Estudio de aseguradora</th><th scope="col" class="compare__je">Justiexpress</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Lo que cuesta</th><td>Nada… hasta que cuesta el año</td><td>≈ $107.000*</td><td class="compare__je">$29.900</td></tr>
+              <tr><th scope="row">Lo que tarda</th><td>—</td><td>1 a 2 días hábiles</td><td class="compare__je">Minutos</td></tr>
+              <tr><th scope="row">Lo que recibe</th><td>Su intuición</td><td>Una palabra: «asegurable»</td><td class="compare__je">Un estudio razonado en PDF</td></tr>
+              <tr><th scope="row">Si la respuesta es no</th><td>—</td><td>Puerta cerrada</td><td class="compare__je">Las condiciones para volverlo un sí</td></tr>
+              <tr><th scope="row">Cómo entrega los papeles</th><td>—</td><td>Formulario firmado y fotocopias</td><td class="compare__je">Fotos desde el celular</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="compare__nota">* Tarifa de referencia publicada por el sector asegurador: 5% del canon más IVA para cánones entre $1.100.000 y $8.000.000. Sobre un canon de $1.800.000 son unos $107.000. Justiexpress no consulta centrales de riesgo ni emite pólizas.</p>
+      </div>
+    </section>
+
+    <!-- ── QUÉ INCLUYE ── -->
+    <section class="section" aria-label="Qué incluye el estudio">
+      <div class="container">
+        <header class="section__header">
+          <p class="mono section__eyebrow">El estudio</p>
+          <h2 class="section__title">No un veredicto.<br /><em>Un expediente razonado.</em></h2>
+        </header>
+        <div class="includes__list">
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>Veredicto con puntaje</strong> sobre 100: arrendar, arrendar con condiciones, alto riesgo o no recomendado.</p>
           </div>
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">documentos entregados</span>
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>Exposición estimada</strong>: cuánto dinero está en juego si el contrato termina en restitución. En pesos, no en adjetivos.</p>
           </div>
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="4000">0</span><span class="stat-card__label">asesorías realizadas</span>
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>Hallazgos citados</strong>: cada uno con la línea textual del documento y su página, para que usted lo verifique.</p>
           </div>
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="24">0</span><span class="stat-card__unit">/7</span><span class="stat-card__label">disponibilidad</span>
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>Condiciones para arrendar</strong>: exigencias concretas y negociables, como vincular un codeudor o pedir una póliza.</p>
           </div>
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>¿Es la misma persona en todos los papeles?</strong> Cotejamos nombre y documento entre cédula, certificados y extractos.</p>
+          </div>
+          <div class="includes__item">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>¿El ingreso declarado aparece en la cuenta?</strong> Contrastamos lo que dicen los documentos contra el movimiento real.</p>
+          </div>
+        </div>
+        <p class="compare__nota" style="text-align:center">Siempre describimos el documento, nunca a la persona: las señales se reportan para verificar, no como acusaciones. La decisión sigue siendo suya.</p>
+      </div>
+    </section>
+
+    <!-- ── ADVERTENCIA LEY 820 ── -->
+    <section class="section" aria-label="Garantías permitidas">
+      <div class="container">
+        <div class="aviso-ley">
+          <p class="mono section__eyebrow">La advertencia que casi nadie da</p>
+          <h2 class="section__title">La garantía más pedida<br /><em>es ilegal en vivienda urbana.</em></h2>
+          <p class="aviso-ley__texto">
+            El artículo 16 de la Ley 820 de 2003 prohíbe exigir <strong>depósitos en dinero o cauciones reales</strong> para garantizar las obligaciones del arrendatario de vivienda urbana, incluso pactados en documento separado. Lo que sí puede pedir:
+          </p>
+          <div class="aviso-ley__si">
+            <span><strong>Codeudor solidario</strong> — garantía personal.</span>
+            <span><strong>Póliza de arrendamiento</strong> — traslada el riesgo a una aseguradora.</span>
+            <span><strong>Aval bancario</strong> — garantía de una entidad financiera.</span>
+          </div>
+          <p class="compare__nota">Cada estudio le dice qué puede exigir en su contrato concreto: en local comercial las reglas son otras.</p>
         </div>
       </div>
     </section>
@@ -471,59 +531,31 @@
       <div class="container">
         <header class="section__header">
           <p class="mono section__eyebrow">Proceso</p>
-          <h2 class="section__title">Tres pasos.<br /><em>Tu cálculo listo.</em></h2>
+          <h2 class="section__title">Suelte los papeles.<br /><em>Del resto nos encargamos.</em></h2>
         </header>
         <div class="how__steps">
           <div class="how__step">
             <div class="how__step-num mono">01</div>
             <div class="how__step-content">
-              <h3>Ingresa tus datos</h3>
-              <p>Salario, fechas de inicio y fin, tipo de contrato. La calculadora te guía campo por campo.</p>
+              <h3>Diga el canon y el perfil</h3>
+              <p>Empleado, independiente, pensionado o empresa. La lista de documentos se arma sola, con los codeudores que correspondan.</p>
             </div>
           </div>
           <div class="how__connector" aria-hidden="true"></div>
           <div class="how__step">
             <div class="how__step-num mono">02</div>
             <div class="how__step-content">
-              <h3>Obtén el resultado al instante</h3>
-              <p>Cesantías, intereses, prima, vacaciones e indemnización, desglosados concepto por concepto.</p>
+              <h3>Suba los archivos</h3>
+              <p>Una bandeja por persona, en cualquier orden, desde la galería del celular. Cada archivo se identifica solo.</p>
             </div>
           </div>
           <div class="how__connector" aria-hidden="true"></div>
           <div class="how__step">
             <div class="how__step-num mono">03</div>
             <div class="how__step-content">
-              <h3>Descarga tu informe</h3>
-              <p>Recibe el PDF detallado en pantalla y en tu correo. Puedes editar el cálculo cuando quieras.</p>
+              <h3>Reciba el estudio</h3>
+              <p>En pantalla y en su correo, en PDF. Si decide arrendar, el contrato arranca con el canon y los datos ya puestos.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── QUÉ INCLUYE ── -->
-    <section class="section" aria-label="Qué incluye">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">Qué incluye</p>
-          <h2 class="section__title">Todo esto,<br /><em>por $19.900</em></h2>
-        </header>
-        <div class="includes__list">
-          <div class="includes__item">
-            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p><strong>Resultado desglosado</strong> concepto por concepto, con las fórmulas de la normativa laboral vigente.</p>
-          </div>
-          <div class="includes__item">
-            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p><strong>Informe en PDF</strong> descargable al instante y enviado a tu correo electrónico.</p>
-          </div>
-          <div class="includes__item">
-            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p><strong>Cálculo editable</strong>: ajusta los datos las veces que necesites sin pagar de nuevo.</p>
-          </div>
-          <div class="includes__item">
-            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p><strong>Pago único y seguro</strong> con Wompi. Sin suscripciones ni costos ocultos.</p>
           </div>
         </div>
       </div>
@@ -538,28 +570,32 @@
         </header>
         <div class="faq__list">
           <details class="faq__item">
-            <summary class="faq__q">¿Qué calcula exactamente la Calculadora Laboral?</summary>
-            <p class="faq__a">Tu liquidación laboral completa: cesantías, intereses de cesantías, prima de servicios, vacaciones, salarios pendientes e indemnización por despido sin justa causa. Incluye módulos para tiempo completo, trabajo por días y contratistas por honorarios.</p>
+            <summary class="faq__q">¿Qué es el estudio de riesgo de arrendamiento?</summary>
+            <p class="faq__a">Un análisis de los documentos de quien le pide el inmueble y de su codeudor —certificados laborales o de ingresos, extractos, declaración de renta, cédula— que entrega un veredicto con puntaje, la exposición estimada si el contrato termina en restitución, los hallazgos con su cita textual y las condiciones concretas para arrendar.</p>
           </details>
           <details class="faq__item">
             <summary class="faq__q">¿Cuánto cuesta?</summary>
-            <p class="faq__a">Solo $19.900 COP, pago único a través de Wompi. Sin suscripciones, sin mensualidades, sin costos ocultos. Pagas una vez y recibes tu cálculo completo con informe en PDF.</p>
+            <p class="faq__a">El estudio cuesta $29.900 COP, pago único. El contrato de arrendamiento, la promesa y la minuta de compraventa y la calculadora notarial cuestan $19.900 cada uno. Se paga con Wompi, sin tarjeta: Nequi, Bancolombia, PSE o Daviplata.</p>
           </details>
           <details class="faq__item">
-            <summary class="faq__q">¿Puedo modificar los datos después de pagar?</summary>
-            <p class="faq__a">Sí. Con el botón "Editar cálculo" puedes ajustar salario, fechas o tipo de contrato y recalcular las veces que necesites, sin pagar de nuevo.</p>
+            <summary class="faq__q">¿Consultan las centrales de riesgo?</summary>
+            <p class="faq__a">No, y lo decimos de frente. El estudio se hace únicamente con los documentos que usted aporta. Por eso una de las condiciones que suele recomendar es pedir el reporte de DataCrédito de las partes, que cada persona puede descargar gratis.</p>
           </details>
           <details class="faq__item">
-            <summary class="faq__q">¿Cómo recibo el resultado?</summary>
-            <p class="faq__a">Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico.</p>
+            <summary class="faq__q">¿Qué documentos necesito?</summary>
+            <p class="faq__a">Depende del perfil y del canon: sobre ciertos valores de canon el estándar pide más de un codeudor. Desde la primera pantalla puede descargar gratis y sin dar ningún dato la lista exacta en PDF, para reenviarla a quien le pide el inmueble.</p>
           </details>
           <details class="faq__item">
-            <summary class="faq__q">¿Sirve si trabajo por días o soy contratista?</summary>
-            <p class="faq__a">Sí. La calculadora tiene módulos específicos para trabajo por días (prestaciones proporcionales) y para contratistas por prestación de servicios (honorarios, seguridad social y retenciones).</p>
+            <summary class="faq__q">¿Qué pasa con los documentos que subo?</summary>
+            <p class="faq__a">Se procesan para hacer el estudio y se descartan: no se almacenan en la plataforma. Lo único que se conserva es el estudio que usted compró. Como los soportes suelen ser de un tercero, al empezar usted declara contar con la autorización del titular (Ley 1581 de 2012).</p>
           </details>
           <details class="faq__item">
-            <summary class="faq__q">¿El cálculo es válido legalmente?</summary>
-            <p class="faq__a">El cálculo se realiza con las fórmulas de la normativa laboral colombiana vigente y te sirve como base sólida para negociar o reclamar. Si tu empleador no paga, en el mismo chat puedes generar la reclamación laboral lista para presentar.</p>
+            <summary class="faq__q">¿Puedo pedir un depósito al arrendatario?</summary>
+            <p class="faq__a">En vivienda urbana, no: el artículo 16 de la Ley 820 de 2003 prohíbe exigir depósitos en dinero o cauciones reales. Puede pedir codeudor solidario, póliza de arrendamiento o aval bancario.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">¿El estudio reemplaza una póliza?</summary>
+            <p class="faq__a">No. Es un análisis prudencial de apoyo a su decisión: no es un dictamen actuarial, ni un reporte de central de riesgo, ni un compromiso de aseguramiento, y no acredita la autenticidad de los soportes. Si el riesgo no se subsana, el propio estudio puede recomendarle exigir una póliza.</p>
           </details>
         </div>
       </div>
@@ -570,16 +606,17 @@
       <div class="cta-final__glow" aria-hidden="true"></div>
       <div class="container">
         <div class="cta-final__inner">
-          <p class="mono cta-final__eyebrow">Solo $19.900</p>
-          <h2 class="cta-final__title">Lo que te deben,<br /><em>al peso.</em></h2>
-          <p class="cta-final__sub">Sin fórmulas confusas, sin Excel, sin dudas. Calcula tu liquidación laboral hoy mismo.</p>
+          <p class="mono cta-final__eyebrow">Estudio · $29.900</p>
+          <h2 class="cta-final__title">Entregar las llaves es fácil.<br /><em>Recuperarlas puede tomar un año.</em></h2>
+          <p class="cta-final__sub">Sepa a quién se las entrega y con qué condiciones: hoy, en minutos.</p>
           <div class="cta-final__actions">
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-laboral" data-chat-link class="btn btn--hero">
-              Calcular mi liquidación
+            <a href="https://chat.justiexpress.com/?categoria=vivienda" data-chat-link class="btn btn--hero">
+              Hacer el estudio
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20liquidaci%C3%B3n%20laboral" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Contactar por WhatsApp</a>
+            <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20quiero%20hacer%20el%20estudio%20de%20riesgo%20de%20un%20arrendatario" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Contactar por WhatsApp</a>
           </div>
+          <p class="compare__nota" style="margin-top:28px">El estudio es un análisis prudencial de apoyo a la decisión de arrendamiento, elaborado únicamente con los documentos que aporta el usuario y sin verificación ante las entidades emisoras. El rango de exposición es una estimación aritmética sobre el canon pactado, no una estadística propia.</p>
         </div>
       </div>
     </section>
@@ -643,7 +680,7 @@
     </div>
   </footer>
 
-  <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20liquidaci%C3%B3n%20laboral" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Contactar por WhatsApp">
+  <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20quiero%20hacer%20el%20estudio%20de%20riesgo%20de%20un%20arrendatario" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Contactar por WhatsApp">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
