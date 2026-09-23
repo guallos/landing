@@ -1,625 +1,506 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculadora de Impuesto de Renta y Retención por $19.900 | Justiexpress</title>
-  <meta name="description" content="Calcula tu impuesto de renta (formulario 210) y la retención en la fuente de salarios y honorarios en segundos por solo $19.900. Resultado detallado en PDF, todo Colombia." />
-  <meta name="keywords" content="calculadora impuesto de renta, calcular declaracion de renta colombia, formulario 210, calculadora retencion en la fuente, retencion salarios, retencion honorarios, renta personas naturales, calculadora tributaria colombia, cuanto pago de renta" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Calculadora de Impuesto de Renta por $19.900 | Justiexpress</title>
+  <meta name="description" content="Calcula tu impuesto de renta (formulario 210) y la retención en la fuente de salarios y honorarios desde $19.900, con informe detallado en PDF." />
+  <meta name="keywords" content="calculadora impuesto de renta, calcular renta personas naturales, formulario 210, calculadora retencion en la fuente, retencion en la fuente salarios, retencion honorarios, declaracion de renta colombia, debo declarar renta" />
   <link rel="canonical" href="https://www.justiexpress.com/calculadora-tributaria/" />
-  <link rel="icon" href="../brand-mark.png" type="image/png" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#F5F2EA" />
 
-  <!-- UTM passthrough hacia el chat (sin Google Ads en esta landing) -->
-  <script>
-    function getChatUrl() {
-      const params = new URLSearchParams(window.location.search);
-      const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
-      const chatBase = 'https://chat.justiexpress.com/';
-      const chatParams = new URLSearchParams();
-      chatParams.set('categoria', 'calculadora-tributaria');
-      chatParams.set('origen', 'landing-calc-tributaria');
-      utmParams.forEach(p => { if (params.get(p)) chatParams.set(p, params.get(p)); });
-      // Atribución orgánica: el chat solo verá como referrer a ESTA landing.
-      // Si la persona llegó de un buscador, se lo marcamos para que el embudo
-      // lo cuente como "orgánico" y no como "directo".
-      if (!chatParams.get('gclid') && !chatParams.get('utm_medium')) {
-        var host = '';
-        try { host = new URL(document.referrer).hostname.replace(/^www\./, ''); } catch (e) {}
-        if (/(^|\.)(google|bing|yahoo|duckduckgo|ecosia|yandex|baidu|ask|aol|qwant|brave)\./i.test(host)) {
-          chatParams.set('utm_source', host.split('.')[0]);
-          chatParams.set('utm_medium', 'organic');
-        }
-      }
-      return chatBase + '?' + chatParams.toString();
-    }
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('a[data-chat-link]').forEach(function (el) {
-        el.href = getChatUrl();
-      });
-    });
-  </script>
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.justiexpress.com/calculadora-tributaria/" />
-  <meta property="og:title" content="Calculadora de Impuesto de Renta y Retención por $19.900 | Justiexpress" />
-  <meta property="og:description" content="Impuesto de renta (F-210) y retención en la fuente de salarios y honorarios calculados en segundos por solo $19.900." />
-  <meta property="og:image" content="https://www.justiexpress.com/logo.png" />
+  <meta property="og:title" content="Calculadora de renta y retención desde $19.900 | Justiexpress" />
+  <meta property="og:description" content="Impuesto de renta cédula por cédula (F-210) y retención en la fuente de salarios y honorarios, sin contador." />
+  <meta property="og:image" content="https://www.justiexpress.com/og/tributaria.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Calculadora tributaria: tu renta, sin sustos" />
   <meta property="og:locale" content="es_CO" />
   <meta property="og:site_name" content="Justiexpress" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@justiexpress" />
-  <meta name="twitter:title" content="Calculadora de Impuesto de Renta y Retención por $19.900 | Justiexpress" />
-  <meta name="twitter:description" content="Impuesto de renta (F-210) y retención en la fuente calculados en segundos por solo $19.900." />
-  <meta name="twitter:image" content="https://www.justiexpress.com/logo.png" />
-
-  <!-- Geo -->
+  <meta name="twitter:title" content="Calculadora de renta y retención desde $19.900 | Justiexpress" />
+  <meta name="twitter:description" content="Impuesto de renta cédula por cédula (F-210) y retención en la fuente de salarios y honorarios, sin contador." />
+  <meta name="twitter:image" content="https://www.justiexpress.com/og/tributaria.png" />
   <meta name="geo.region" content="CO" />
   <meta name="geo.placename" content="Colombia" />
   <meta http-equiv="content-language" content="es-CO" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-  <!-- Schema JSON-LD -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="preload" href="/assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/manrope-700.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="/theme.js"></script>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/main.js" defer></script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "Calculadora Tributaria — Justiexpress",
-    "description": "Cálculo del impuesto de renta de personas naturales (formulario 210) por cédulas y de la retención en la fuente de salarios y honorarios en Colombia por $19.900.",
-    "url": "https://www.justiexpress.com/calculadora-tributaria/",
-    "telephone": "+573185725324",
-    "email": "justiexpress@gmail.com",
-    "areaServed": "CO",
-    "priceRange": "$19.900 COP",
-    "provider": {
-      "@type": "Organization",
-      "name": "Justiexpress",
-      "url": "https://www.justiexpress.com",
-      "logo": "https://www.justiexpress.com/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/justiexpress",
-        "https://twitter.com/justiexpress",
-        "https://www.instagram.com/justiexpress.legal",
-        "https://www.linkedin.com/company/justiexpress"
-      ]
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "19900",
-      "priceCurrency": "COP",
-      "availability": "https://schema.org/InStock",
-      "description": "Cálculo tributario detallado con informe en PDF"
-    }
-  }
-  </script>
-
-  <!-- Schema JSON-LD: Breadcrumb -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.justiexpress.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Calculadora Tributaria", "item": "https://www.justiexpress.com/calculadora-tributaria/" }
-    ]
-  }
-  </script>
-
-  <!-- Schema JSON-LD: FAQ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "¿Qué calcula exactamente la Calculadora Tributaria?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El impuesto de renta de personas naturales (formulario 210) con todas sus cédulas — trabajo, capital, no laborales, pensiones, dividendos y ganancias ocasionales — y la retención en la fuente mensual de salarios y honorarios." }
+        "@type": "LegalService",
+        "@id": "https://www.justiexpress.com/#organization",
+        "name": "Justiexpress",
+        "legalName": "Justiexpress S.A.S.",
+        "url": "https://www.justiexpress.com/",
+        "logo": "https://www.justiexpress.com/assets/icon-512.png",
+        "telephone": "+573185725324",
+        "email": "justiexpress@gmail.com",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Colombia"
+        },
+        "priceRange": "$19.900 - $29.900 COP",
+        "sameAs": [
+          "https://www.facebook.com/justiexpress",
+          "https://twitter.com/justiexpress",
+          "https://www.instagram.com/justiexpress.legal",
+          "https://www.linkedin.com/company/justiexpress",
+          "https://www.tiktok.com/@tucasolegal",
+          "https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w"
+        ]
       },
       {
-        "@type": "Question",
-        "name": "¿Cuánto cuesta la Calculadora Tributaria?",
-        "acceptedAnswer": { "@type": "Answer", "text": "$19.900 COP por los resultados con informe en PDF, o $25.000 si además quieres el Formulario 210 oficial diligenciado con tus valores. Pago único a través de Wompi, sin suscripciones ni costos ocultos." }
+        "@type": "WebSite",
+        "@id": "https://www.justiexpress.com/#website",
+        "name": "Justiexpress",
+        "url": "https://www.justiexpress.com/",
+        "inLanguage": "es-CO",
+        "publisher": {
+          "@id": "https://www.justiexpress.com/#organization"
+        }
       },
       {
-        "@type": "Question",
-        "name": "¿Necesito saber de impuestos para usarla?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. La calculadora te guía campo por campo en lenguaje claro: solo necesitas tus ingresos, certificados y aportes. Ella aplica las fórmulas, los topes y las tarifas por ti." }
+        "@type": "WebPage",
+        "@id": "https://www.justiexpress.com/calculadora-tributaria/#webpage",
+        "url": "https://www.justiexpress.com/calculadora-tributaria/",
+        "name": "Calculadora de Impuesto de Renta por $19.900 | Justiexpress",
+        "description": "Calcula tu impuesto de renta (formulario 210) y la retención en la fuente de salarios y honorarios desde $19.900, con informe detallado en PDF.",
+        "inLanguage": "es-CO",
+        "isPartOf": {
+          "@id": "https://www.justiexpress.com/#website"
+        },
+        "about": {
+          "@id": "https://www.justiexpress.com/calculadora-tributaria/#service"
+        },
+        "breadcrumb": {
+          "@id": "https://www.justiexpress.com/calculadora-tributaria/#breadcrumb"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.justiexpress.com/og/tributaria.png",
+          "width": 1200,
+          "height": 630
+        }
       },
       {
-        "@type": "Question",
-        "name": "¿Sirve para saber si debo declarar renta?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Con tus ingresos y movimientos del año, el resultado te muestra tu situación frente al impuesto y te orienta sobre tu obligación de declarar." }
+        "@type": "Service",
+        "@id": "https://www.justiexpress.com/calculadora-tributaria/#service",
+        "name": "Calculadora Tributaria",
+        "serviceType": "Cálculo de impuesto de renta y retención en la fuente",
+        "description": "Cálculo del impuesto de renta de personas naturales (formulario 210) y de la retención en la fuente de salarios y honorarios en Colombia, con informe en PDF.",
+        "url": "https://www.justiexpress.com/calculadora-tributaria/",
+        "provider": {
+          "@id": "https://www.justiexpress.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Colombia"
+        },
+        "audience": {
+          "@type": "Audience",
+          "geographicArea": {
+            "@type": "Country",
+            "name": "Colombia"
+          }
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Calculadora Tributaria",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "price": "19900",
+              "priceCurrency": "COP",
+              "availability": "https://schema.org/InStock",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Calculadora tributaria · resultados con informe PDF"
+              }
+            },
+            {
+              "@type": "Offer",
+              "price": "25000",
+              "priceCurrency": "COP",
+              "availability": "https://schema.org/InStock",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Calculadora tributaria · con Formulario 210 diligenciado"
+              }
+            }
+          ]
+        }
       },
       {
-        "@type": "Question",
-        "name": "¿Puedo modificar los datos después de pagar?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Con el botón Editar cálculo puedes ajustar ingresos, deducciones o retenciones y recalcular las veces que necesites, sin pagar de nuevo." }
+        "@type": "BreadcrumbList",
+        "@id": "https://www.justiexpress.com/calculadora-tributaria/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.justiexpress.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Calculadora tributaria",
+            "item": "https://www.justiexpress.com/calculadora-tributaria/"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "¿Cómo recibo el resultado?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico." }
+        "@type": "FAQPage",
+        "@id": "https://www.justiexpress.com/calculadora-tributaria/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué calcula exactamente la Calculadora Tributaria?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El impuesto de renta de personas naturales (formulario 210) con todas sus cédulas —trabajo, capital, no laborales, pensiones, dividendos y ganancias ocasionales— y la retención en la fuente mensual de salarios y honorarios."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "$19.900 COP por los resultados con informe en PDF, o $25.000 si además quieres el Formulario 210 oficial diligenciado con tus valores. Pago único a través de Wompi, sin suscripciones ni costos ocultos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito saber de impuestos para usarla?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La calculadora te guía campo por campo en lenguaje claro: solo necesitas tus ingresos, certificados y aportes. Ella aplica las fórmulas, los topes y las tarifas por ti."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Sirve para saber si debo declarar renta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Con tus ingresos y movimientos del año, el resultado te muestra tu situación frente al impuesto y te orienta sobre tu obligación de declarar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo modificar los datos después de pagar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Con el botón Editar cálculo puedes ajustar ingresos, deducciones o retenciones y recalcular las veces que necesites, sin pagar de nuevo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo recibo el resultado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
-
-  <link rel="preload" as="image" href="../membrete.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-  <script src="/assets/legacy-theme.js"></script>
-  <link rel="stylesheet" href="/assets/legacy.css" />
-
-  <style>
-    /* ── BOTÓN HOME ── */
-    .nav__home {
-      display: inline-flex; align-items: center; gap: 7px;
-      font-family: var(--ff-mono); font-size: 10px; font-weight: 500;
-      letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-2);
-      padding: 7px 14px 7px 10px; border-radius: 999px;
-      border: 1px solid var(--border); background: var(--noir-3);
-      transition: all 0.25s var(--ease-out); white-space: nowrap;
-      flex-shrink: 0; position: relative; overflow: hidden;
-    }
-    .nav__home::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,229,212,0.06), transparent); opacity: 0; transition: opacity 0.3s; }
-    .nav__home:hover { color: var(--cyan); border-color: var(--cyan-border); background: var(--noir-4); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,229,212,0.10); }
-    .nav__home:hover::before { opacity: 1; }
-    .nav__home:active { transform: translateY(0); }
-    .nav__home-icon { width: 22px; height: 22px; border-radius: 7px; background: var(--cyan-dim); border: 1px solid var(--cyan-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.25s; }
-    .nav__home:hover .nav__home-icon { background: rgba(0,229,212,0.18); }
-    @media (max-width: 860px) {
-      .nav__home { display: none; }
-      .nav__home--drawer { display: inline-flex !important; margin-top: 4px; width: 100%; justify-content: center; }
-    }
-
-    /* ── ADS: BADGE MESSAGE MATCH ── */
-    .ads-match-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: rgba(0,229,212,0.12); border: 1px solid rgba(0,229,212,0.35);
-      border-radius: 6px; padding: 5px 12px;
-      font-family: var(--ff-mono, monospace); font-size: 11px; font-weight: 500;
-      color: var(--cyan-ink); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 18px;
-    }
-    .ads-match-badge svg { flex-shrink: 0; }
-
-    /* ── ADS: PRECIO DESTACADO ── */
-    .ads-price-pill {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(0,229,212,0.08); border: 1.5px solid rgba(0,229,212,0.4);
-      border-radius: 999px; padding: 8px 20px; margin-top: 20px;
-      font-family: var(--ff-mono, monospace); font-size: 13px; font-weight: 600; color: var(--cyan-ink);
-    }
-    .ads-price-pill__amount { font-size: 22px; font-weight: 800; color: var(--text-1); }
-
-    /* ── MOCKUP DE RESULTADO (calculadora) ── */
-    .calcmock__title {
-      font-family: var(--ff-mono); font-size: 10px; letter-spacing: 0.16em;
-      text-transform: uppercase; color: var(--cyan);
-      padding: 4px 2px 10px; border-bottom: 1px solid var(--border); margin-bottom: 4px;
-    }
-    .calcmock__row {
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
-      padding: 9px 2px; border-bottom: 1px solid var(--border);
-      animation: fade-up 0.5s var(--ease-out) both;
-    }
-    .calcmock__row span {
-      font-size: 13px; color: var(--text-2);
-    }
-    .calcmock__row strong {
-      font-family: var(--ff-mono); font-size: 13px; font-weight: 500; color: var(--text-1);
-      white-space: nowrap;
-    }
-    .calcmock__row--total {
-      border-bottom: none; margin-top: 4px; padding-top: 14px;
-      border-top: 1px solid var(--border-lit);
-    }
-    .calcmock__row--total span {
-      font-family: var(--ff-display); font-weight: 700; color: var(--text-1); font-size: 14px;
-    }
-    .calcmock__row--total strong {
-      font-family: var(--ff-display); font-size: 20px; font-weight: 800; color: var(--cyan);
-      text-shadow: 0 0 18px rgba(0,229,212,0.35);
-    }
-    .calcmock__row:nth-child(2) { animation-delay: 0.7s; }
-    .calcmock__row:nth-child(3) { animation-delay: 0.9s; }
-    .calcmock__row:nth-child(4) { animation-delay: 1.1s; }
-    .calcmock__row:nth-child(5) { animation-delay: 1.3s; }
-    .calcmock__row:nth-child(6) { animation-delay: 1.5s; }
-    .calcmock__row:nth-child(7) { animation-delay: 1.9s; }
-
-    /* ── QUÉ INCLUYE ── */
-    .includes__list {
-      max-width: 720px; margin-inline: auto;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
-    }
-    @media (max-width: 640px) { .includes__list { grid-template-columns: 1fr; } }
-    .includes__item {
-      display: flex; align-items: flex-start; gap: 12px;
-      background: var(--noir-3); border: 1px solid var(--border);
-      border-radius: 12px; padding: 16px 18px;
-      transition: border-color 0.3s, transform 0.3s var(--ease-out);
-    }
-    .includes__item:hover { border-color: var(--cyan-border); transform: translateY(-2px); }
-    .includes__item svg { flex-shrink: 0; margin-top: 2px; }
-    .includes__item p { font-size: 14px; color: var(--text-2); line-height: 1.55; }
-    .includes__item p strong { color: var(--text-1); font-weight: 600; }
-  </style>
 </head>
-<body>
-  <!-- ── NAV ── -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="/" class="nav__brand">
-        <div class="nav__logo-wrap">
-          <img src="../membrete.png" alt="Justiexpress · Tu Caso Legal" loading="eager" />
-        </div>
-        <span class="nav__name">Justiexpress</span>
-      </a>
-      <a href="/" class="nav__home" aria-label="Volver al inicio">
-        <span class="nav__home-icon">
-          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1.5 6.5L7 1.5l5.5 5M3 5.5V12h3V8.5h2V12h3V5.5" stroke="#00E5D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-        Inicio
-      </a>
-      <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="btn btn--cyan nav__cta">
-        Calcular ahora
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" id="burger">
-        <span></span><span></span><span></span>
+
+<body data-categoria="calculadora-tributaria" data-origen="landing-calc-tributaria">
+<!-- @partial nav -->
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="nav" id="nav">
+  <div class="wrap nav__bar">
+    <a href="/" class="nav__brand" aria-label="Justiexpress · Tu Caso Legal — inicio">
+      <picture>
+        <source type="image/webp" srcset="/assets/logo-76.webp 2x, /assets/logo-114.webp 3x" />
+        <img src="/assets/logo-76.png" width="74" height="34" alt="Justiexpress · Tu Caso Legal" />
+      </picture>
+    </a>
+    <nav aria-label="Principal" class="nav__main">
+      <ul class="nav__links">
+        <li><a class="nav__link" href="/accion-de-tutela/">Tutela</a></li>
+        <li><a class="nav__link" href="/derecho-de-peticion/">Petición</a></li>
+        <li><a class="nav__link" href="/desacato/">Desacato</a></li>
+        <li class="nav__menu" data-menu>
+          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-calc">Calculadoras <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-chevron"/></svg></button>
+          <ul class="nav__pop" id="menu-calc">
+            <li><a href="/calculadora-laboral/"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-case"/></svg><strong>Laboral</strong><span>Liquidación, cesantías, prima</span></a></li>
+            <li><a href="/calculadora-tributaria/"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-percent"/></svg><strong>Tributaria</strong><span>Renta F-210 y retención</span></a></li>
+            <li><a href="/calculadora-notarial/"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-house"/></svg><strong>Notarial y registral</strong><span>Gastos de escritura</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav__link" href="/vivienda/">Vivienda</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro" aria-pressed="false">
+        <svg class="icon i-sun" aria-hidden="true"><use href="/assets/icons.svg#i-sun"/></svg>
+        <svg class="icon i-moon" aria-hidden="true"><use href="/assets/icons.svg#i-moon"/></svg>
       </button>
+      <a class="btn btn--primary btn--sm" href="https://chat.justiexpress.com/" data-chat>Empezar mi caso <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+      <button class="nav__burger" type="button" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><span></span></button>
     </div>
-    <div class="nav__drawer" id="drawer" aria-hidden="true">
-      <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="btn btn--cyan">Calcular ahora →</a>
+  </div>
+  <div class="nav__drawer" id="drawer">
+    <div class="wrap">
+      <span class="mono">Documentos</span>
+      <ul>
+        <li><a href="/accion-de-tutela/">Acción de tutela <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/derecho-de-peticion/">Derecho de petición <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/desacato/">Incidente de desacato <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+      </ul>
+      <span class="mono">Calculadoras y vivienda</span>
+      <ul>
+        <li><a href="/calculadora-laboral/">Calculadora laboral <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/calculadora-tributaria/">Calculadora tributaria <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/calculadora-notarial/">Calculadora notarial <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/vivienda/">Vivienda y arriendo <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+      </ul>
+      <a class="btn btn--primary" href="https://chat.justiexpress.com/" data-chat>Empezar mi caso <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
     </div>
+  </div>
+</header>
+<!-- /@partial -->
+
+<main id="contenido">
+
+  <nav class="crumbs wrap" aria-label="Migas de pan">
+    <ol>
+      <li><a href="/">Inicio</a></li>
+      <li aria-current="page">Calculadora tributaria</li>
+    </ol>
   </nav>
 
-  <!-- ── BARRA SOCIAL LATERAL ── -->
-  <aside class="social-bar" aria-label="Redes sociales">
-    <a href="https://www.facebook.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-bar__link social-bar__link--facebook">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
-    </a>
-    <a href="https://twitter.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="social-bar__link social-bar__link--x">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg>
-    </a>
-    <a href="https://www.tiktok.com/@tucasolegal" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-bar__link social-bar__link--tiktok">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>
-    </a>
-    <a href="https://www.linkedin.com/company/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-bar__link social-bar__link--linkedin">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
-    </a>
-    <a href="https://www.instagram.com/justiexpress.legal" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-bar__link social-bar__link--instagram">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
-    </a>
-    <a href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-bar__link social-bar__link--youtube">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
-    </a>
-  </aside>
-
-  <main>
-    <!-- ── HERO ── -->
-    <section class="hero" aria-label="Calculadora Tributaria">
-      <div class="hero__grid-bg" aria-hidden="true"></div>
-      <div class="hero__glow" aria-hidden="true"></div>
-      <div class="hero__inner">
-        <!-- ADS: Badge de message match con el anuncio -->
-        <div class="ads-match-badge">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#00e5d4" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#00e5d4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Calculadora tributaria por $19.900 · Resultado inmediato
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow mono">Calculadora tributaria · Formulario 210</p>
+        <h1 class="hero__title" id="hero-title">Tu impuesto de renta, <em class="hl hl--draw">sin sustos</em>.</h1>
+        <p class="hero__lede">¿Debes declarar renta? ¿Te retienen de más en tu salario u honorarios? Calcula tu impuesto de renta cédula por cédula y tu retención en la fuente, con UVT y tarifas vigentes, <strong>sin contador</strong>.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat>Calcular mi impuesto <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="https://api.whatsapp.com/send?phone=573185725324&amp;text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg> Preguntar por WhatsApp</a>
         </div>
-
-        <div class="hero__badge">
-          <span class="badge__dot"></span>
-          <span class="mono">Solo $19.900 · Resultado al instante</span>
+        <div class="receipt">
+          <span class="receipt__label mono">Precio del cálculo</span>
+          <span class="receipt__price">$19.900<small>COP</small></span>
+          <span class="receipt__terms">Con el <strong>Formulario 210</strong> oficial<br />diligenciado: $25.000. Pago único.</span>
         </div>
-        <h1 class="hero__title">
-          Calculadora Tributaria:<br />
-          <em class="hero__title--em">tu renta, sin sustos.</em>
-        </h1>
-        <p class="hero__sub">
-          ¿Debes declarar renta? ¿Te retienen de más en tu salario u honorarios? Calcula tu impuesto de renta (formulario 210) y tus retenciones en la fuente en segundos por solo
-          <strong style="color: var(--cyan)">$19.900</strong>. Con informe detallado en PDF, cédula por cédula.
-        </p>
-
-        <!-- ADS: Precio grande y claro -->
-        <div class="ads-price-pill">
-          <span>Precio fijo:</span>
-          <span class="ads-price-pill__amount">$19.900</span>
-          <span>COP · Pago único</span>
-        </div>
-
-        <div class="hero__actions" style="margin-top: 28px">
-          <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="btn btn--hero">
-            <span>Calcular mi impuesto</span>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Preguntar por WhatsApp
-          </a>
-        </div>
-        <div class="hero__trust">
-          <span class="hero__trust-item">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            +2.000 clientes
-          </span>
-          <span class="hero__trust-sep" aria-hidden="true">·</span>
-          <span class="hero__trust-item">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            UVT y tarifas vigentes
-          </span>
-          <span class="hero__trust-sep" aria-hidden="true">·</span>
-          <span class="hero__trust-item">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Solo $19.900
-          </span>
-        </div>
+        <ul class="hero__trust"><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-edit"/></svg>Editas el cálculo sin pagar de nuevo</li><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-file"/></svg>Informe en PDF y en tu correo</li><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-lock"/></svg>Pago seguro con Wompi</li></ul>
       </div>
 
-      <!-- Mockup de resultado -->
-      <div class="hero__mockup" aria-hidden="true">
-        <div class="mockup__chrome">
-          <div class="mockup__dot"></div>
-          <div class="mockup__dot"></div>
-          <div class="mockup__dot"></div>
-          <span class="mono" style="font-size:10px;color:var(--text-3);margin-left:auto;margin-right:auto;">chat.justiexpress.com</span>
+      <div class="doc-stage" role="img" aria-label="Ejemplo ilustrativo de declaración de renta, año gravable 2025: saldo a pagar de $2.472.000">
+        <div class="note" aria-hidden="true"><small>Tu caso</small>Soy asalariado y contratista, ¿cuánto pago de renta?</div>
+        <div class="sheet" aria-hidden="true">
+          <div class="sheet__head"><span>Renta personas naturales</span><span>F-210</span></div>
+          <p class="sheet__ref"><b>Año gravable 2025</b></p>
+          <div class="sheet__rows"><div class="sheet__row" style="--i:0"><span>Ingresos brutos del año</span><b>$165.000.000</b></div><div class="sheet__row" style="--i:1"><span>Deducciones y rentas exentas</span><b>$45.000.000</b></div><div class="sheet__row" style="--i:2"><span>Renta líquida gravable</span><b>$120.000.000</b></div><div class="sheet__row" style="--i:3"><span>Impuesto sobre la renta</span><b>$15.672.000</b></div><div class="sheet__row" style="--i:4"><span>Retenciones ya practicadas</span><b>$13.200.000</b></div><div class="sheet__row sheet__row--total" style="--i:5"><span>Saldo a pagar</span><b>$2.472.000</b></div></div>
+          <p class="sheet__note">Ejemplo ilustrativo · UVT 2025: $49.799</p>
         </div>
-        <div class="mockup__body">
-          <div class="calcmock__title">Renta personas naturales · F-210</div>
-          <div class="calcmock__row"><span>Ingresos brutos del año</span><strong>$78.000.000</strong></div>
-          <div class="calcmock__row"><span>Deducciones y rentas exentas</span><strong>$24.560.000</strong></div>
-          <div class="calcmock__row"><span>Renta líquida gravable</span><strong>$53.440.000</strong></div>
-          <div class="calcmock__row"><span>Impuesto básico de renta</span><strong>$3.812.000</strong></div>
-          <div class="calcmock__row"><span>Retenciones ya practicadas</span><strong>$2.650.000</strong></div>
-          <div class="calcmock__row calcmock__row--total"><span>Saldo a pagar</span><strong>$1.162.000</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── MÓDULOS ── -->
-    <section class="section" style="padding-top: 0" aria-label="Qué puedes calcular">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">Módulos</p>
-          <h2 class="section__title">Renta y retenciones.<br /><em>Todo en una calculadora.</em></h2>
-        </header>
-        <div class="services__grid">
-          <div class="service-card">
-            <div class="service-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <h3 class="service-card__title">Renta personas naturales (F-210)</h3>
-            <p class="service-card__desc">Cédula general (trabajo, capital, no laborales), pensiones, dividendos y ganancias ocasionales. La liquidación completa de tu declaración.</p>
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="service-card__cta">Calcular ahora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
-            <div class="service-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M3 7h18v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/></svg>
-            </div>
-            <h3 class="service-card__title">Retención en la fuente — salarios</h3>
-            <p class="service-card__desc">Verifica cuánto deben retenerte cada mes según tu salario, deducciones y rentas exentas. Detecta si te están reteniendo de más.</p>
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="service-card__cta">Calcular ahora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
-            <div class="service-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2z" stroke="#00E5D4" stroke-width="1.5"/><path d="M9 7h6M9 11h6M9 15h4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <h3 class="service-card__title">Retención en la fuente — honorarios</h3>
-            <p class="service-card__desc">¿Trabajas por prestación de servicios? Calcula la retención de tus cuentas de cobro y el valor neto que debes recibir.</p>
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="service-card__cta">Calcular ahora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── STATS ── -->
-    <section class="stats" id="stats" aria-label="Estadísticas">
-      <div class="container">
-        <div class="stats__grid">
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">clientes satisfechos</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">documentos entregados</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="4000">0</span><span class="stat-card__label">asesorías realizadas</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__num" data-target="24">0</span><span class="stat-card__unit">/7</span><span class="stat-card__label">disponibilidad</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── CÓMO FUNCIONA ── -->
-    <section class="section how" id="como-funciona" aria-label="Cómo funciona">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">Proceso</p>
-          <h2 class="section__title">Tres pasos.<br /><em>Tu cálculo listo.</em></h2>
-        </header>
-        <div class="how__steps">
-          <div class="how__step">
-            <div class="how__step-num mono">01</div>
-            <div class="how__step-content">
-              <h3>Ingresa tus datos</h3>
-              <p>Ingresos, deducciones, aportes y retenciones. La calculadora te guía cédula por cédula, sin tecnicismos.</p>
-            </div>
-          </div>
-          <div class="how__connector" aria-hidden="true"></div>
-          <div class="how__step">
-            <div class="how__step-num mono">02</div>
-            <div class="how__step-content">
-              <h3>Obtén el resultado al instante</h3>
-              <p>Renta líquida, impuesto a cargo, retenciones y saldo a pagar o a favor, desglosados paso a paso.</p>
-            </div>
-          </div>
-          <div class="how__connector" aria-hidden="true"></div>
-          <div class="how__step">
-            <div class="how__step-num mono">03</div>
-            <div class="how__step-content">
-              <h3>Descarga tu informe</h3>
-              <p>Recibe el PDF detallado en pantalla y en tu correo. Puedes editar el cálculo cuando quieras.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── QUÉ INCLUYE ── -->
-    <section class="section" aria-label="Qué incluye">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">Qué incluye</p>
-          <h2 class="section__title">Todo esto,<br /><em>por $19.900</em></h2>
-        </header>
-        <div class="includes__list">
-          <div class="includes__item">
-            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p><strong>Resultado desglosado</strong> renglón por renglón, con los valores de UVT y tarifas vigentes.</p>
-          </div>
-          <div class="includes__item">
-            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p><strong>Informe en PDF</strong> descargable al instante y enviado a tu correo electrónico.</p>
-          </div>
-          <div class="includes__item">
-            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p><strong>Cálculo editable</strong>: ajusta los datos las veces que necesites sin pagar de nuevo.</p>
-          </div>
-          <div class="includes__item">
-            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p><strong>Pago único y seguro</strong> con Wompi. Sin suscripciones ni costos ocultos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── FAQ ── -->
-    <section class="section faq" id="faq" aria-label="Preguntas frecuentes">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">FAQ</p>
-          <h2 class="section__title">Preguntas<br /><em>frecuentes</em></h2>
-        </header>
-        <div class="faq__list">
-          <details class="faq__item">
-            <summary class="faq__q">¿Qué calcula exactamente la Calculadora Tributaria?</summary>
-            <p class="faq__a">El impuesto de renta de personas naturales (formulario 210) con todas sus cédulas — trabajo, capital, no laborales, pensiones, dividendos y ganancias ocasionales — y la retención en la fuente mensual de salarios y honorarios.</p>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__q">¿Cuánto cuesta?</summary>
-            <p class="faq__a">$19.900 COP por los resultados con informe en PDF, o $25.000 si además quieres el Formulario 210 oficial diligenciado con tus valores. Pago único a través de Wompi, sin suscripciones ni costos ocultos.</p>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__q">¿Necesito saber de impuestos para usarla?</summary>
-            <p class="faq__a">No. La calculadora te guía campo por campo en lenguaje claro: solo necesitas tus ingresos, certificados y aportes. Ella aplica las fórmulas, los topes y las tarifas por ti.</p>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__q">¿Sirve para saber si debo declarar renta?</summary>
-            <p class="faq__a">Sí. Con tus ingresos y movimientos del año, el resultado te muestra tu situación frente al impuesto y te orienta sobre tu obligación de declarar.</p>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__q">¿Puedo modificar los datos después de pagar?</summary>
-            <p class="faq__a">Sí. Con el botón "Editar cálculo" puedes ajustar ingresos, deducciones o retenciones y recalcular las veces que necesites, sin pagar de nuevo.</p>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__q">¿Cómo recibo el resultado?</summary>
-            <p class="faq__a">Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── CTA FINAL ── -->
-    <section class="cta-final" aria-label="Llamada a la acción">
-      <div class="cta-final__glow" aria-hidden="true"></div>
-      <div class="container">
-        <div class="cta-final__inner">
-          <p class="mono cta-final__eyebrow">Solo $19.900</p>
-          <h2 class="cta-final__title">Tus impuestos,<br /><em>claros de una vez.</em></h2>
-          <p class="cta-final__sub">Sin contador, sin hojas de cálculo, sin sorpresas de la DIAN. Calcula tu renta y retenciones hoy mismo.</p>
-          <div class="cta-final__actions">
-            <a href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat-link class="btn btn--hero">
-              Calcular mi impuesto
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Contactar por WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ── FOOTER ── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <span class="nav__name">Justiexpress</span>
-          <p class="footer__tagline mono">Innovación legal respaldada por abogados expertos.</p>
-          <div class="footer__social">
-            <a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer__social-link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            </a>
-            <a href="https://www.instagram.com/justiexpress.legal" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
-            </a>
-            <a href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
-            </a>
-            <a href="https://www.tiktok.com/@tucasolegal" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/company/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer__col">
-          <h4 class="footer__heading mono">Servicios</h4>
-          <ul class="footer__links" role="list">
-            <li><a href="/accion-de-tutela/">Acción de Tutela</a></li>
-            <li><a href="/derecho-de-peticion/">Derecho de Petición</a></li>
-            <li><a href="/desacato/">Desacato</a></li>
-            <li><a href="/calculadora-laboral/">Calculadora Laboral</a></li>
-            <li><a href="/calculadora-tributaria/">Calculadora Tributaria</a></li>
-            <li><a href="/calculadora-notarial/">Calculadora Notarial</a></li>
-            <li><a href="/vivienda/">Vivienda y arriendo</a></li>
-            <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer">Contratos</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4 class="footer__heading mono">Empresa</h4>
-          <ul class="footer__links" role="list">
-            <li><a href="/#nosotros">Quiénes somos</a></li>
-            <li><a href="/#faq">FAQ</a></li>
-            <li><a href="mailto:justiexpress@gmail.com">justiexpress@gmail.com</a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer">+57 318 572 5324</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span class="mono">© 2024 Justiexpress. Todos los derechos reservados.</span>
-        <div class="footer__legal">
-          <a href="../TyC.html">Términos y condiciones</a>
-          <a href="../PP.html">Política de privacidad</a>
+        <div class="seal" style="--n:6" aria-hidden="true">
+          <svg viewBox="0 0 140 140"><defs><path id="seal-c" d="M70 70m-52 0a52 52 0 1 1 104 0a52 52 0 1 1-104 0"/></defs><circle cx="70" cy="70" r="66" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="70" cy="70" r="40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 3"/><text><textPath href="#seal-c">CÁLCULO AL INSTANTE · JUSTIEXPRESS ·</textPath></text><path d="m54 71 11 11 22-24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Contactar por WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+  <section class="section" id="casos" aria-labelledby="cases-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 01</b> Módulos</p>
+        <h2 class="h2" id="cases-title">Renta y retenciones, <em>en una calculadora</em>.</h2>
+      </header>
+      <ul class="cases" role="list">
+        <li class="case">
+          <span class="case__icon"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-percent"/></svg></span>
+          <h3>Renta personas naturales (F-210)</h3>
+          <p>Cédula general (trabajo, capital, no laborales), pensiones, dividendos y ganancias ocasionales.</p>
+          <a class="link-arrow" href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat><span>Calcular ahora</span> <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+        </li>
+        <li class="case">
+          <span class="case__icon"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-case"/></svg></span>
+          <h3>Retención en la fuente — salarios</h3>
+          <p>Cuánto deben retenerte cada mes según tu salario, deducciones y rentas exentas. Detecta si te retienen de más.</p>
+          <a class="link-arrow" href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat><span>Calcular ahora</span> <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+        </li>
+        <li class="case">
+          <span class="case__icon"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg></span>
+          <h3>Retención en la fuente — honorarios</h3>
+          <p>¿Trabajas por prestación de servicios? La retención de tus cuentas de cobro y el neto que debes recibir.</p>
+          <a class="link-arrow" href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat><span>Calcular ahora</span> <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  <script src="/assets/legacy.js"></script>
+  <section class="section section--alt" id="fundamento" aria-labelledby="law-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 02</b> Fundamento legal</p>
+        <h2 class="h2" id="law-title">Una tarifa <em>por tramos</em>.</h2>
+      </header>
+      <div class="law">
+        <p class="law__art">Art. 241<small>Estatuto Tributario</small></p>
+        <div>
+          <p class="law__plain">La renta de las personas naturales residentes se grava con una tarifa progresiva por rangos de UVT: del 0 % hasta 1.090 UVT de renta líquida gravable, subiendo por tramos hasta el 39 %.</p>
+          <p class="law__src">La calculadora aplica los topes de deducciones y rentas exentas, y la tabla del artículo 383 para la retención en la fuente.</p>
+          <ul class="law__facts" role="list"><li><b>0 %</b><span>hasta 1.090 UVT de renta líquida gravable</span></li><li><b>39 %</b><span>tarifa marginal del tramo más alto</span></li><li><b>$49.799</b><span>valor de la UVT para el año gravable 2025</span></li><li><b>F-210</b><span>formulario de declaración de personas naturales</span></li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="incluye" aria-labelledby="inc-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 03</b> Qué incluye</p>
+        <h2 class="h2" id="inc-title">Todo esto, <em>desde $19.900</em>.</h2>
+      </header>
+      <ul class="includes" role="list"><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check-c"/></svg><p><strong>Resultado desglosado</strong> renglón por renglón, con los valores de UVT y tarifas vigentes.</p></li><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check-c"/></svg><p><strong>Informe en PDF</strong> descargable al instante y enviado a tu correo electrónico.</p></li><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check-c"/></svg><p><strong>Cálculo editable</strong>: ajusta los datos las veces que necesites sin pagar de nuevo.</p></li><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-check-c"/></svg><p><strong>Formulario 210 diligenciado</strong> con tus valores, si eliges la opción de $25.000.</p></li></ul>
+      <p class="fine">El cálculo es una estimación referencial a partir de los datos que ingresas; no es un dictamen contable ni reemplaza la declaración que presentas ante la DIAN.</p>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="como-funciona" aria-labelledby="how-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 04</b> Cómo funciona</p>
+        <h2 class="h2" id="how-title">Cuatro pasos. <em>Tus impuestos claros.</em></h2>
+      </header>
+      <ol class="steps" role="list" style="--cols:4"><li class="step"><span class="step__n" aria-hidden="true">1</span><h3>Ingresa tus datos</h3><p>Ingresos, deducciones, aportes y retenciones. Te guía cédula por cédula, sin tecnicismos.</p></li><li class="step"><span class="step__n" aria-hidden="true">2</span><h3>Obtén el resultado</h3><p>Renta líquida, impuesto, retenciones y saldo a pagar o a favor, desglosados.</p></li><li class="step"><span class="step__n" aria-hidden="true">3</span><h3>Paga y descarga</h3><p>Desde $19.900 por el informe en PDF; $25.000 con el Formulario 210 diligenciado.</p></li><li class="step"><span class="step__n" aria-hidden="true">4</span><h3>Declara tranquilo</h3><p>Llegas a la declaración con los números claros. Puedes editar el cálculo cuando quieras.</p></li></ol>
+    </div>
+  </section>
+
+  <section class="section" id="preguntas" aria-labelledby="faq-title">
+    <div class="wrap faq">
+      <div class="faq__side">
+        <p class="mono" style="color:var(--teal)">§ 05 Preguntas frecuentes</p>
+        <h2 class="h2" id="faq-title" style="margin-top:12px">Lo que todos <em>preguntan</em>.</h2>
+        <p>¿Tu duda no está aquí? Pregúntale al asistente en el chat o escríbenos por WhatsApp.</p>
+        <a class="btn btn--ghost" href="https://api.whatsapp.com/send?phone=573185725324&amp;text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg> Preguntar por WhatsApp</a>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item"><summary>¿Qué calcula exactamente la Calculadora Tributaria?</summary><div class="faq__a"><p>El impuesto de renta de personas naturales (formulario 210) con todas sus cédulas —trabajo, capital, no laborales, pensiones, dividendos y ganancias ocasionales— y la retención en la fuente mensual de salarios y honorarios.</p></div></details>
+        <details class="faq__item"><summary>¿Cuánto cuesta?</summary><div class="faq__a"><p>$19.900 COP por los resultados con informe en PDF, o $25.000 si además quieres el Formulario 210 oficial diligenciado con tus valores. Pago único a través de Wompi, sin suscripciones ni costos ocultos.</p></div></details>
+        <details class="faq__item"><summary>¿Necesito saber de impuestos para usarla?</summary><div class="faq__a"><p>No. La calculadora te guía campo por campo en lenguaje claro: solo necesitas tus ingresos, certificados y aportes. Ella aplica las fórmulas, los topes y las tarifas por ti.</p></div></details>
+        <details class="faq__item"><summary>¿Sirve para saber si debo declarar renta?</summary><div class="faq__a"><p>Sí. Con tus ingresos y movimientos del año, el resultado te muestra tu situación frente al impuesto y te orienta sobre tu obligación de declarar.</p></div></details>
+        <details class="faq__item"><summary>¿Puedo modificar los datos después de pagar?</summary><div class="faq__a"><p>Sí. Con el botón Editar cálculo puedes ajustar ingresos, deducciones o retenciones y recalcular las veces que necesites, sin pagar de nuevo.</p></div></details>
+        <details class="faq__item"><summary>¿Cómo recibo el resultado?</summary><div class="faq__a"><p>Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight section--alt" aria-labelledby="rel-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 06</b> Sigue tu caso</p>
+        <h2 class="h2" id="rel-title">También te <em>puede servir</em>.</h2>
+      </header>
+      <ul class="related" role="list"><li><a href="/#videos"><span class="mono">Guía en video</span><strong>¿Cómo declarar renta en 2026?</strong><span>Paso a paso para asalariados, contratistas y pensionados.</span></a></li><li><a href="/calculadora-laboral/"><span class="mono">Tu contrato</span><strong>Calculadora laboral</strong><span>Liquidación, cesantías, prima e indemnización.</span></a></li><li><a href="/calculadora-notarial/"><span class="mono">Tu inmueble</span><strong>Calculadora notarial</strong><span>Gastos de escritura y la retención del 1 % en la venta.</span></a></li></ul>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-title">
+    <div class="wrap">
+      <div class="closing__panel">
+        <div>
+          <p class="mono">Desde $19.900 · pago único</p>
+          <h2 id="closing-title">Tus impuestos, <em>claros de una vez.</em></h2>
+          <p>Sin contador, sin hojas de cálculo, sin sorpresas de la DIAN. Calcula tu renta y retenciones hoy mismo.</p>
+        </div>
+        <div class="closing__actions">
+          <a class="btn btn--primary btn--lg" href="https://chat.justiexpress.com/?categoria=calculadora-tributaria" data-chat>Calcular mi impuesto <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="https://api.whatsapp.com/send?phone=573185725324&amp;text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg> Escribir por WhatsApp</a>
+          <span class="closing__fine">Informe en PDF · F-210 diligenciado por $25.000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- @partial footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <picture>
+          <source type="image/webp" srcset="/assets/logo-76.webp 2x, /assets/logo-114.webp 3x" />
+          <img src="/assets/logo-76.png" width="83" height="38" alt="Justiexpress · Tu Caso Legal" loading="lazy" decoding="async" />
+        </picture>
+        <p>Asistente legal con inteligencia artificial para Colombia: documentos jurídicos y calculadoras legales listos en minutos, con precio fijo y pago único.</p>
+        <ul class="footer__social">
+          <li><a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg></a></li>
+          <li><a href="https://www.instagram.com/justiexpress.legal" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-ig"/></svg></a></li>
+          <li><a href="https://www.tiktok.com/@tucasolegal" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-tt"/></svg></a></li>
+          <li><a href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-yt"/></svg></a></li>
+          <li><a href="https://www.facebook.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-fb"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/company/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-li"/></svg></a></li>
+          <li><a href="https://twitter.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-x"/></svg></a></li>
+        </ul>
+      </div>
+      <nav class="footer__col" aria-labelledby="ft-docs">
+        <h2 id="ft-docs">Documentos</h2>
+        <ul>
+          <li><a href="/accion-de-tutela/">Acción de tutela</a></li>
+          <li><a href="/derecho-de-peticion/">Derecho de petición</a></li>
+          <li><a href="/desacato/">Incidente de desacato</a></li>
+          <li><a href="https://chat.justiexpress.com/?categoria=centrales-riesgo" target="_blank" rel="noopener">Reporte en Datacrédito</a></li>
+          <li><a href="https://chat.justiexpress.com/?categoria=multas-transito" target="_blank" rel="noopener">Multas de tránsito</a></li>
+          <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener">Contratos y minutas</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="ft-calc">
+        <h2 id="ft-calc">Calculadoras y vivienda</h2>
+        <ul>
+          <li><a href="/calculadora-laboral/">Calculadora laboral</a></li>
+          <li><a href="/calculadora-tributaria/">Calculadora tributaria</a></li>
+          <li><a href="/calculadora-notarial/">Calculadora notarial</a></li>
+          <li><a href="/vivienda/">Estudio de arrendamiento</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="ft-emp">
+        <h2 id="ft-emp">Justiexpress</h2>
+        <ul>
+          <li><a href="/#nosotros">Quiénes somos</a></li>
+          <li><a href="/#preguntas">Preguntas frecuentes</a></li>
+          <li><a href="mailto:justiexpress@gmail.com">justiexpress@gmail.com</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer">+57 318 572 5324</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__legal">
+      <p>© 2026 Justiexpress S.A.S. · Justiexpress es una plataforma tecnológica de asistencia jurídica: sus documentos y cálculos se generan con inteligencia artificial, no constituyen asesoría jurídica definitiva ni crean una relación abogado-cliente, y no incluyen representación judicial.</p>
+      <nav aria-label="Legal">
+        <a href="/TyC.html">Términos y condiciones</a>
+        <a href="/PP.html">Política de privacidad</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /@partial -->
+<!-- @partial fab {"wa": "Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta"} -->
+<a class="fab-wa" href="https://api.whatsapp.com/send?phone=573185725324&amp;text=Hola%20Justiexpress%2C%20quiero%20calcular%20mi%20impuesto%20de%20renta" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg></a>
+<!-- /@partial -->
 </body>
 </html>

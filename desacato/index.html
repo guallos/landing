@@ -1,506 +1,509 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Incidente de Desacato de Tutela en Colombia por $19.900 | Justiexpress</title>
-  <meta name="description" content="¿No cumplieron tu tutela? Presentamos tu incidente de desacato en Colombia por solo $19.900. Obligamos al juez a sancionar al incumplido. Abogados expertos, todo Colombia." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Incidente de Desacato de Tutela por $19.900 | Justiexpress</title>
+  <meta name="description" content="¿No cumplieron tu tutela? Tu incidente de desacato redactado en minutos por $19.900, para que el juez exija el cumplimiento. Todo Colombia." />
   <meta name="keywords" content="incidente de desacato, desacato tutela, no cumplieron mi tutela, sancion por desacato, incumplimiento fallo de tutela, desacato eps, como presentar un desacato, desacato colombia" />
   <link rel="canonical" href="https://www.justiexpress.com/desacato/" />
-  <link rel="icon" href="../brand-mark.png" type="image/png" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#F5F2EA" />
 
-  <!-- UTM passthrough hacia el chat (sin Google Ads en esta landing) -->
-  <script>
-    function getChatUrl() {
-      const params = new URLSearchParams(window.location.search);
-      const utmParams = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
-      const chatBase = 'https://chat.justiexpress.com/';
-      const chatParams = new URLSearchParams();
-      chatParams.set('categoria', 'tutela');        // ← desacato va a tutelas
-      chatParams.set('origen', 'landing-desacato');
-      utmParams.forEach(p => { if(params.get(p)) chatParams.set(p, params.get(p)); });
-      // Atribución orgánica: el chat solo verá como referrer a ESTA landing.
-      // Si la persona llegó de un buscador, se lo marcamos para que el embudo
-      // lo cuente como "orgánico" y no como "directo".
-      if (!chatParams.get('utm_medium')) {
-        var host = '';
-        try { host = new URL(document.referrer).hostname.replace(/^www\./, ''); } catch (e) {}
-        if (/(^|\.)(google|bing|yahoo|duckduckgo|ecosia|yandex|baidu|ask|aol|qwant|brave)\./i.test(host)) {
-          chatParams.set('utm_source', host.split('.')[0]);
-          chatParams.set('utm_medium', 'organic');
-        }
-      }
-      return chatBase + '?' + chatParams.toString();
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[data-chat-link]').forEach(function(el) {
-        el.href = getChatUrl();
-      });
-    });
-  </script>
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.justiexpress.com/desacato/" />
-  <meta property="og:title" content="Incidente de Desacato de Tutela en Colombia por $19.900 | Justiexpress" />
-  <meta property="og:description" content="¿No cumplieron tu tutela? Presentamos tu incidente de desacato por solo $19.900. Abogados expertos, entrega inmediata en todo Colombia." />
-  <meta property="og:image" content="https://www.justiexpress.com/logo.png" />
+  <meta property="og:title" content="Incidente de desacato de tutela por $19.900 | Justiexpress" />
+  <meta property="og:description" content="¿Ganaste la tutela y no la cumplen? Tu incidente de desacato redactado en minutos, listo para radicar ante el juez." />
+  <meta property="og:image" content="https://www.justiexpress.com/og/desacato.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Incidente de desacato: ganaste la tutela, que la cumplan" />
   <meta property="og:locale" content="es_CO" />
   <meta property="og:site_name" content="Justiexpress" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@justiexpress" />
-  <meta name="twitter:title" content="Incidente de Desacato de Tutela en Colombia por $19.900 | Justiexpress" />
-  <meta name="twitter:description" content="¿No cumplieron tu tutela? Presentamos tu incidente de desacato por solo $19.900. Abogados expertos, entrega inmediata." />
-  <meta name="twitter:image" content="https://www.justiexpress.com/logo.png" />
-
+  <meta name="twitter:title" content="Incidente de desacato de tutela por $19.900 | Justiexpress" />
+  <meta name="twitter:description" content="¿Ganaste la tutela y no la cumplen? Tu incidente de desacato redactado en minutos, listo para radicar ante el juez." />
+  <meta name="twitter:image" content="https://www.justiexpress.com/og/desacato.png" />
   <meta name="geo.region" content="CO" />
   <meta name="geo.placename" content="Colombia" />
   <meta http-equiv="content-language" content="es-CO" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="preload" href="/assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/manrope-700.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="/theme.js"></script>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/main.js" defer></script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "Incidente de Desacato — Justiexpress",
-    "description": "Redacción de incidentes de desacato de tutela en Colombia por $19.900.",
-    "url": "https://www.justiexpress.com/desacato/",
-    "telephone": "+573185725324",
-    "areaServed": "CO",
-    "priceRange": "$19.900 COP",
-    "provider": {
-      "@type": "Organization",
-      "name": "Justiexpress",
-      "url": "https://www.justiexpress.com",
-      "logo": "https://www.justiexpress.com/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/justiexpress",
-        "https://twitter.com/justiexpress",
-        "https://www.instagram.com/justiexpress.legal",
-        "https://www.linkedin.com/company/justiexpress"
-      ]
-    },
-    "offers": { "@type": "Offer", "price": "19900", "priceCurrency": "COP", "availability": "https://schema.org/InStock" }
-  }
-  </script>
-
-  <!-- Schema JSON-LD: Breadcrumb -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.justiexpress.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Incidente de Desacato", "item": "https://www.justiexpress.com/desacato/" }
-    ]
-  }
-  </script>
-
-  <!-- Schema JSON-LD: FAQ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "¿Qué es un incidente de desacato?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Es el mecanismo legal para exigir el cumplimiento de una tutela que ya fue concedida pero que la entidad condenada no ha acatado. Se presenta ante el mismo juez que conoció la tutela y puede llevar a la sanción del responsable con arresto y multa." }
+        "@type": "LegalService",
+        "@id": "https://www.justiexpress.com/#organization",
+        "name": "Justiexpress",
+        "legalName": "Justiexpress S.A.S.",
+        "url": "https://www.justiexpress.com/",
+        "logo": "https://www.justiexpress.com/assets/icon-512.png",
+        "telephone": "+573185725324",
+        "email": "justiexpress@gmail.com",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Colombia"
+        },
+        "priceRange": "$19.900 - $29.900 COP",
+        "sameAs": [
+          "https://www.facebook.com/justiexpress",
+          "https://twitter.com/justiexpress",
+          "https://www.instagram.com/justiexpress.legal",
+          "https://www.linkedin.com/company/justiexpress",
+          "https://www.tiktok.com/@tucasolegal",
+          "https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w"
+        ]
       },
       {
-        "@type": "Question",
-        "name": "¿Cuánto tiempo tiene la entidad para cumplir la tutela?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El juez fija el plazo en la sentencia. Si no lo fija expresamente, la regla general es de 48 horas para cumplir. Vencido ese término sin cumplimiento, ya procede el incidente de desacato." }
+        "@type": "WebSite",
+        "@id": "https://www.justiexpress.com/#website",
+        "name": "Justiexpress",
+        "url": "https://www.justiexpress.com/",
+        "inLanguage": "es-CO",
+        "publisher": {
+          "@id": "https://www.justiexpress.com/#organization"
+        }
       },
       {
-        "@type": "Question",
-        "name": "¿Qué sanciones puede imponer el juez?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El juez puede imponer arresto de hasta 6 meses y multa de hasta 20 salarios mínimos mensuales al responsable del incumplimiento. Adicionalmente, puede remitir el expediente a la Procuraduría para investigación disciplinaria." }
+        "@type": "WebPage",
+        "@id": "https://www.justiexpress.com/desacato/#webpage",
+        "url": "https://www.justiexpress.com/desacato/",
+        "name": "Incidente de Desacato de Tutela por $19.900 | Justiexpress",
+        "description": "¿No cumplieron tu tutela? Tu incidente de desacato redactado en minutos por $19.900, para que el juez exija el cumplimiento. Todo Colombia.",
+        "inLanguage": "es-CO",
+        "isPartOf": {
+          "@id": "https://www.justiexpress.com/#website"
+        },
+        "about": {
+          "@id": "https://www.justiexpress.com/desacato/#service"
+        },
+        "breadcrumb": {
+          "@id": "https://www.justiexpress.com/desacato/#breadcrumb"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.justiexpress.com/og/desacato.png",
+          "width": 1200,
+          "height": 630
+        }
       },
       {
-        "@type": "Question",
-        "name": "¿Cuánto cuesta en Justiexpress?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Solo $19.900 COP. Sin costos ocultos. Pagas una vez y recibes tu incidente de desacato listo para radicar ante el juzgado que conoció la tutela." }
+        "@type": "Service",
+        "@id": "https://www.justiexpress.com/desacato/#service",
+        "name": "Incidente de Desacato",
+        "serviceType": "Redacción de incidente de desacato",
+        "description": "Redacción de incidentes de desacato de tutela en Colombia con inteligencia artificial, con fundamento en los artículos 27 y 52 del Decreto 2591 de 1991.",
+        "url": "https://www.justiexpress.com/desacato/",
+        "provider": {
+          "@id": "https://www.justiexpress.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Colombia"
+        },
+        "audience": {
+          "@type": "Audience",
+          "geographicArea": {
+            "@type": "Country",
+            "name": "Colombia"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "19900",
+          "priceCurrency": "COP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.justiexpress.com/desacato/",
+          "description": "Incidente de desacato listo para radicar ante el juzgado que conoció la tutela"
+        }
       },
       {
-        "@type": "Question",
-        "name": "¿Necesito haber presentado la tutela con Justiexpress para pedir el desacato?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. Si tu tutela fue redactada por otro abogado o por ti mismo, igualmente podemos redactar el incidente de desacato. Solo necesitas tener el número de radicado, el nombre del juzgado y el contenido del fallo." }
+        "@type": "BreadcrumbList",
+        "@id": "https://www.justiexpress.com/desacato/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.justiexpress.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Incidente de desacato",
+            "item": "https://www.justiexpress.com/desacato/"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "¿Atienden en todo Colombia?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. El servicio es 100% digital. Puedes solicitar el documento desde cualquier ciudad del país y radicarlo ante el juzgado correspondiente de forma presencial o por correo electrónico." }
+        "@type": "FAQPage",
+        "@id": "https://www.justiexpress.com/desacato/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es un incidente de desacato?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es el mecanismo legal para exigir el cumplimiento de una tutela que ya fue concedida pero que la entidad condenada no ha acatado. Se presenta ante el mismo juez que conoció la tutela y puede llevar a la sanción del responsable con arresto y multa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo tiene la entidad para cumplir la tutela?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El juez fija el plazo en la sentencia, que no puede exceder de 48 horas. Vencido ese término sin cumplimiento, ya procede el incidente de desacato."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué sanciones puede imponer el juez?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El juez puede imponer arresto de hasta 6 meses y multa de hasta 20 salarios mínimos mensuales al responsable del incumplimiento. Adicionalmente, puede remitir el expediente a la Procuraduría para investigación disciplinaria."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta en Justiexpress?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "$19.900 COP. Sin costos ocultos. Pagas una vez, cuando el incidente ya está redactado, y lo recibes listo para radicar ante el juzgado que conoció la tutela."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito haber presentado la tutela con Justiexpress para pedir el desacato?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Si tu tutela fue redactada por otro abogado o por ti mismo, igualmente podemos redactar el incidente de desacato. Solo necesitas tener el número de radicado, el nombre del juzgado y el contenido del fallo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Atienden en todo Colombia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. El servicio es 100 % digital. Puedes solicitar el documento desde cualquier ciudad del país y radicarlo ante el juzgado correspondiente de forma presencial o por correo electrónico."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
-
-  <link rel="preload" as="image" href="../membrete.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-  <script src="/assets/legacy-theme.js"></script>
-  <link rel="stylesheet" href="/assets/legacy.css" />
-
-  <style>
-    .nav__home {
-      display: inline-flex; align-items: center; gap: 7px;
-      font-family: var(--ff-mono); font-size: 10px; font-weight: 500;
-      letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-2);
-      padding: 7px 14px 7px 10px; border-radius: 999px;
-      border: 1px solid var(--border); background: var(--noir-3);
-      transition: all 0.25s var(--ease-out); white-space: nowrap;
-      flex-shrink: 0; position: relative; overflow: hidden;
-    }
-    .nav__home::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,229,212,0.06), transparent); opacity: 0; transition: opacity 0.3s; }
-    .nav__home:hover { color: var(--cyan); border-color: var(--cyan-border); background: var(--noir-4); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,229,212,0.10); }
-    .nav__home:hover::before { opacity: 1; }
-    .nav__home:active { transform: translateY(0); }
-    .nav__home-icon { width: 22px; height: 22px; border-radius: 7px; background: var(--cyan-dim); border: 1px solid var(--cyan-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.25s; }
-    .nav__home:hover .nav__home-icon { background: rgba(0,229,212,0.18); }
-    @media (max-width: 860px) {
-      .nav__home { display: none; }
-      .nav__home--drawer { display: inline-flex !important; margin-top: 4px; width: 100%; justify-content: center; }
-    }
-
-.ads-match-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: rgba(0,229,212,0.12); border: 1px solid rgba(0,229,212,0.35);
-      border-radius: 6px; padding: 5px 12px;
-      font-family: var(--ff-mono, monospace); font-size: 11px; font-weight: 500;
-      color: var(--cyan-ink); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 18px;
-    }
-    .ads-price-pill {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(0,229,212,0.08); border: 1.5px solid rgba(0,229,212,0.4);
-      border-radius: 999px; padding: 8px 20px; margin-top: 20px;
-      font-family: var(--ff-mono, monospace); font-size: 13px; font-weight: 600; color: var(--cyan-ink);
-    }
-    .ads-price-pill__amount { font-size: 22px; font-weight: 800; color: var(--text-1); }
-  </style>
 </head>
-<body>
 
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="/" class="nav__brand">
-        <div class="nav__logo-wrap">
-          <img src="../membrete.png" alt="Justiexpress · Tu Caso Legal" loading="eager" />
-        </div>
-        <span class="nav__name">Justiexpress</span>
-      </a>
-      <a href="/" class="nav__home" aria-label="Volver al inicio">
-        <span class="nav__home-icon">
-          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M1.5 6.5L7 1.5l5.5 5M3 5.5V12h3V8.5h2V12h3V5.5" stroke="#00E5D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        Inicio
-      </a>
-      <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--cyan nav__cta">
-        Iniciar consulta
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" id="burger">
-        <span></span><span></span><span></span>
+<body data-categoria="tutela" data-origen="landing-desacato">
+<!-- @partial nav -->
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="nav" id="nav">
+  <div class="wrap nav__bar">
+    <a href="/" class="nav__brand" aria-label="Justiexpress · Tu Caso Legal — inicio">
+      <picture>
+        <source type="image/webp" srcset="/assets/logo-76.webp 2x, /assets/logo-114.webp 3x" />
+        <img src="/assets/logo-76.png" width="74" height="34" alt="Justiexpress · Tu Caso Legal" />
+      </picture>
+    </a>
+    <nav aria-label="Principal" class="nav__main">
+      <ul class="nav__links">
+        <li><a class="nav__link" href="/accion-de-tutela/">Tutela</a></li>
+        <li><a class="nav__link" href="/derecho-de-peticion/">Petición</a></li>
+        <li><a class="nav__link" href="/desacato/" aria-current="page">Desacato</a></li>
+        <li class="nav__menu" data-menu>
+          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-calc">Calculadoras <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-chevron"/></svg></button>
+          <ul class="nav__pop" id="menu-calc">
+            <li><a href="/calculadora-laboral/"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-case"/></svg><strong>Laboral</strong><span>Liquidación, cesantías, prima</span></a></li>
+            <li><a href="/calculadora-tributaria/"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-percent"/></svg><strong>Tributaria</strong><span>Renta F-210 y retención</span></a></li>
+            <li><a href="/calculadora-notarial/"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-house"/></svg><strong>Notarial y registral</strong><span>Gastos de escritura</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav__link" href="/vivienda/">Vivienda</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro" aria-pressed="false">
+        <svg class="icon i-sun" aria-hidden="true"><use href="/assets/icons.svg#i-sun"/></svg>
+        <svg class="icon i-moon" aria-hidden="true"><use href="/assets/icons.svg#i-moon"/></svg>
       </button>
+      <a class="btn btn--primary btn--sm" href="https://chat.justiexpress.com/" data-chat>Empezar mi caso <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+      <button class="nav__burger" type="button" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><span></span></button>
     </div>
-    <div class="nav__drawer" id="drawer" aria-hidden="true">
-      <a href="/" class="nav__home nav__home--drawer" style="display:none;" aria-label="Volver al inicio">
-        <span class="nav__home-icon">
-          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M1.5 6.5L7 1.5l5.5 5M3 5.5V12h3V8.5h2V12h3V5.5" stroke="#00E5D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        Volver al inicio
-      </a>
-      <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--cyan">Iniciar consulta →</a>
+  </div>
+  <div class="nav__drawer" id="drawer">
+    <div class="wrap">
+      <span class="mono">Documentos</span>
+      <ul>
+        <li><a href="/accion-de-tutela/">Acción de tutela <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/derecho-de-peticion/">Derecho de petición <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/desacato/">Incidente de desacato <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+      </ul>
+      <span class="mono">Calculadoras y vivienda</span>
+      <ul>
+        <li><a href="/calculadora-laboral/">Calculadora laboral <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/calculadora-tributaria/">Calculadora tributaria <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/calculadora-notarial/">Calculadora notarial <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+        <li><a href="/vivienda/">Vivienda y arriendo <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
+      </ul>
+      <a class="btn btn--primary" href="https://chat.justiexpress.com/" data-chat>Empezar mi caso <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
     </div>
+  </div>
+</header>
+<!-- /@partial -->
+
+<main id="contenido">
+
+  <nav class="crumbs wrap" aria-label="Migas de pan">
+    <ol>
+      <li><a href="/">Inicio</a></li>
+      <li aria-current="page">Incidente de desacato</li>
+    </ol>
   </nav>
 
-  <!-- ── BARRA SOCIAL LATERAL ── -->
-  <aside class="social-bar" aria-label="Redes sociales">
-    <a href="https://www.facebook.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-bar__link social-bar__link--facebook">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
-    </a>
-    <a href="https://twitter.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="social-bar__link social-bar__link--x">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg>
-    </a>
-    <a href="https://www.tiktok.com/@tucasolegal" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-bar__link social-bar__link--tiktok">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>
-    </a>
-    <a href="https://www.linkedin.com/company/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-bar__link social-bar__link--linkedin">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
-    </a>
-    <a href="https://www.instagram.com/justiexpress.legal" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-bar__link social-bar__link--instagram">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
-    </a>
-    <a href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-bar__link social-bar__link--youtube">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
-    </a>
-  </aside>
-
-  <main>
-    <section class="hero" aria-label="Incidente de Desacato">
-      <div class="hero__grid-bg" aria-hidden="true"></div>
-      <div class="hero__glow" aria-hidden="true"></div>
-      <div class="hero__inner">
-
-        <div class="ads-match-badge">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#00e5d4" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#00e5d4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Desacato de Tutela por $19.900 · Arresto al incumplidor
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow mono">Incidente de desacato · Decreto 2591 de 1991</p>
+        <h1 class="hero__title" id="hero-title">Incidente de desacato <em class="hl hl--draw">para que cumplan tu tutela</em>.</h1>
+        <p class="hero__lede">¿Te concedieron la tutela y la entidad no la cumple? El asistente redacta tu incidente de desacato para que el mismo juez que falló exija el cumplimiento. <strong>El juez puede sancionar al responsable</strong> con arresto de hasta seis meses y multa de hasta 20 salarios mínimos.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="https://chat.justiexpress.com/?categoria=tutela" data-chat>Quiero mi desacato <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="https://api.whatsapp.com/send?phone=573185725324&amp;text=Hola%20Justiexpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg> Preguntar por WhatsApp</a>
         </div>
-
-        <div class="hero__badge">
-          <span class="badge__dot"></span>
-          <span class="mono">Solo $19.900 · Entrega inmediata</span>
+        <div class="receipt">
+          <span class="receipt__label mono">Precio del desacato</span>
+          <span class="receipt__price">$19.900<small>COP</small></span>
+          <span class="receipt__terms"><strong>Pago único</strong>, cuando esté redactado.<br />Nequi, Bancolombia, PSE o Daviplata.</span>
         </div>
-        <h1 class="hero__title">
-          Incidente de Desacato<br/>
-          <em class="hero__title--em">que obliga a cumplir.</em>
-        </h1>
-        <p class="hero__sub">
-          ¿Te concedieron la tutela pero la entidad no la cumplió? Presentamos tu incidente de desacato por solo <strong style="color:var(--cyan)">$19.900</strong>. El juez puede sancionar con arresto y multa al responsable del incumplimiento.
-        </p>
-
-        <div class="ads-price-pill">
-          <span>Precio fijo:</span>
-          <span class="ads-price-pill__amount">$19.900</span>
-          <span>COP · Sin costos ocultos</span>
-        </div>
-
-        <div class="hero__actions" style="margin-top:28px;">
-          <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--hero">
-            <span>Quiero mi desacato ahora</span>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Preguntar por WhatsApp
-          </a>
-        </div>
-        <div class="hero__trust">
-          <span class="hero__trust-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Arresto para el incumplidor</span>
-          <span class="hero__trust-sep" aria-hidden="true">·</span>
-          <span class="hero__trust-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Todo Colombia</span>
-          <span class="hero__trust-sep" aria-hidden="true">·</span>
-          <span class="hero__trust-item"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#00E5D4" stroke-width="1.2"/><path d="M4.5 7l2 2 3-3" stroke="#00E5D4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Solo $19.900</span>
-        </div>
+        <ul class="hero__trust"><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-gavel"/></svg>Ante el mismo juez</li><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-map"/></svg>Todo Colombia</li><li><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-file"/></svg>Sirve aunque la tutela no la hicieras aquí</li></ul>
       </div>
 
-      <div class="hero__mockup" aria-hidden="true">
-        <div class="mockup__chrome">
-          <div class="mockup__dot"></div><div class="mockup__dot"></div><div class="mockup__dot"></div>
-          <span class="mono" style="font-size:10px;color:var(--text-3);margin-left:auto;margin-right:auto;">chat.justiexpress.com</span>
+      <div class="doc-stage" role="img" aria-label="Ejemplo: a partir del mensaje «La EPS lleva 20 días sin entregar el medicamento», el asistente redacta un incidente de desacato">
+        <div class="note" aria-hidden="true"><small>Tu mensaje</small>La EPS lleva 20 días sin entregar el medicamento</div>
+        <div class="sheet" aria-hidden="true">
+          <div class="sheet__head"><span>Folio 1 de 3</span><span>Cali</span></div>
+          <p class="sheet__to">Señor(a)<br />Juez que conoció la tutela</p>
+          <p class="sheet__ref">Ref.: <b>Incidente de desacato</b></p>
+          <dl class="sheet__meta"><dt>Radicado</dt><dd>2026-00123</dd><dt>Accionada</dt><dd>EPS · Régimen subsidiado</dd><dt>Orden</dt><dd>Entregar medicamento en 48 h</dd></dl>
+          <p class="sheet__h">Hechos del incumplimiento</p>
+          <span class="ln ln--90" style="--i:0"></span>
+          <span class="ln ln--80" style="--i:1"></span>
+          <span class="ln ln--60" style="--i:2"></span>
+          <p class="sheet__h">Solicitud</p>
+          <span class="ln ln--90" style="--i:3"></span>
+          <span class="ln ln--45" style="--i:4"></span>
+          <p class="sheet__h">Fundamentos</p>
+          <div class="sheet__cite"><span>Art. 27 Dto. 2591</span><span>Art. 52 Dto. 2591</span></div>
         </div>
-        <div class="mockup__body">
-          <div class="mockup__msg mockup__msg--ai"><div class="mockup__avatar">JE</div><div class="mockup__bubble">Hola 👋 ¿Te concedieron la tutela pero no la han cumplido?</div></div>
-          <div class="mockup__msg mockup__msg--user"><div class="mockup__bubble mockup__bubble--user">Sí, la EPS lleva 20 días sin entregar el medicamento</div></div>
-          <div class="mockup__msg mockup__msg--ai"><div class="mockup__avatar">JE</div><div class="mockup__bubble">Procedo a redactar el <strong>incidente de desacato</strong> por $19.900. El juez puede ordenar el arresto del responsable. ¿Tienes el número del juzgado y la fecha del fallo?</div></div>
-          <div class="mockup__typing"><span></span><span></span><span></span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top:0;" aria-label="Tipos de desacato">
-      <div class="container">
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-          <div class="service-card">
-            <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7L12 2z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <h3 class="service-card__title">Desacato contra EPS</h3>
-            <p class="service-card__desc">La EPS no entregó el medicamento, no autorizó el procedimiento o no cumplió la orden del juez de tutela.</p>
-            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
-            <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="#00E5D4" stroke-width="1.5"/><path d="M16 3H8L6 7h12l-2-4z" stroke="#00E5D4" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 13v4M10 15h4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <h3 class="service-card__title">Desacato contra entidades públicas</h3>
-            <p class="service-card__desc">Alcaldías, gobernaciones, Fuerzas Militares, entidades del Estado que ignoran órdenes judiciales de tutela.</p>
-            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="service-card">
-            <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="#00E5D4" stroke-width="1.5"/><path d="M2 10h20M7 15h4" stroke="#00E5D4" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <h3 class="service-card__title">Desacato contra empresas privadas</h3>
-            <p class="service-card__desc">Bancos, empresas de servicios públicos, empleadores o cualquier particular que incumpla un fallo de tutela.</p>
-            <a href="https://chat.justiexpress.com/" data-chat-link class="service-card__cta">Iniciar ahora <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats" id="stats" aria-label="Estadísticas">
-      <div class="container">
-        <div class="stats__grid">
-          <div class="stat-card"><span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">clientes satisfechos</span></div>
-          <div class="stat-card"><span class="stat-card__num" data-target="2000">0</span><span class="stat-card__label">documentos entregados</span></div>
-          <div class="stat-card"><span class="stat-card__num" data-target="4000">0</span><span class="stat-card__label">asesorías realizadas</span></div>
-          <div class="stat-card"><span class="stat-card__num" data-target="24">0</span><span class="stat-card__unit">/7</span><span class="stat-card__label">disponibilidad</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section how" id="como-funciona" aria-label="Cómo funciona">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">Proceso</p>
-          <h2 class="section__title">Tres pasos.<br/><em>El incumplimiento, sancionado.</em></h2>
-        </header>
-        <div class="how__steps">
-          <div class="how__step"><div class="how__step-num mono">01</div><div class="how__step-content"><h3>Confirma el incumplimiento</h3><p>Cuéntanos qué ordenó el juez, quién debe cumplirlo y cuántos días llevan sin hacerlo. Solo necesitas el número del expediente.</p></div></div>
-          <div class="how__connector" aria-hidden="true"></div>
-          <div class="how__step"><div class="how__step-num mono">02</div><div class="how__step-content"><h3>Redactamos el incidente</h3><p>Un abogado elabora el documento con los hechos, la orden incumplida y los fundamentos jurídicos para activar la sanción.</p></div></div>
-          <div class="how__connector" aria-hidden="true"></div>
-          <div class="how__step"><div class="how__step-num mono">03</div><div class="how__step-content"><h3>Presenta y exige la sanción</h3><p>Recibes el PDF listo para radicarlo ante el juzgado que conoció la tutela. El juez tiene que actuar.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about" id="sanciones" aria-label="Sanciones por desacato">
-      <div class="container">
-        <div class="about__grid">
-          <div class="about__text">
-            <p class="mono section__eyebrow">Las consecuencias</p>
-            <h2 class="about__title">El juez puede ordenar<br/><em>arresto y multa.</em></h2>
-            <p class="about__body">El incidente de desacato es una de las herramientas más poderosas del ordenamiento jurídico colombiano. Cuando una entidad ignora un fallo de tutela, el juez puede sancionar al responsable directo con <strong style="color:var(--cyan)">arresto de hasta 6 meses</strong> y <strong style="color:var(--cyan)">multa de hasta 20 salarios mínimos</strong>.</p>
-            <p class="about__body">Además, el juez puede remitir el expediente a la Procuraduría General de la Nación para que se adelante la correspondiente investigación disciplinaria.</p>
-            <div class="about__pills">
-              <span class="pill">Arresto hasta 6 meses</span>
-              <span class="pill">Multa hasta 20 SMLMV</span>
-              <span class="pill">Sanción disciplinaria</span>
-              <span class="pill">Cumplimiento forzado</span>
-            </div>
-          </div>
-          <div class="about__visual" aria-hidden="true">
-            <div class="about__ring about__ring--1"></div>
-            <div class="about__ring about__ring--2"></div>
-            <div class="about__ring about__ring--3"></div>
-            <div class="about__core">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 4L5 12v10c0 8.75 6.25 16.92 15 18.75C29.75 38.92 36 30.75 36 22V12L20 4z" stroke="#00E5D4" stroke-width="2" stroke-linejoin="round"/><path d="M13 20l5 5 9-9" stroke="#00E5D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section testimonials" id="testimonios" aria-label="Testimonios">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">Testimonios</p>
-          <h2 class="section__title">Lo que dicen<br/><em>nuestros clientes</em></h2>
-        </header>
-        <div class="testimonials__track" id="testimonials-track">
-          <div class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div><p class="testimonial-card__text">"La EPS tenía dos meses sin entregarme el medicamento que ordenó el juez. Con el desacato de Justiexpress lo tuve en 48 horas."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar">RV</div><div><strong>Ricardo V.</strong><span class="mono">Bogotá</span></div></div></div>
-          <div class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div><p class="testimonial-card__text">"Mi empresa llevaba meses sin pagarme lo que ordenó el juez. Con el incidente de desacato cumplieron a la semana siguiente."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar">DM</div><div><strong>Diana M.</strong><span class="mono">Medellín</span></div></div></div>
-          <div class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div><p class="testimonial-card__text">"Rápido, económico y efectivo. Por $19.900 logré que la entidad cumpliera lo que llevaba meses ignorando."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar">CP</div><div><strong>Camila P.</strong><span class="mono">Cali</span></div></div></div>
-          <div class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div><p class="testimonial-card__text">"No sabía que podía presentarlo yo mismo. El asistente me explicó todo y el documento quedó perfecto para radicarlo."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar">JA</div><div><strong>Jorge A.</strong><span class="mono">Barranquilla</span></div></div></div>
-        </div>
-        <div class="testimonials__nav">
-          <button class="testimonials__btn" id="prev-btn" aria-label="Anterior">←</button>
-          <button class="testimonials__btn" id="next-btn" aria-label="Siguiente">→</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq" id="faq" aria-label="Preguntas frecuentes">
-      <div class="container">
-        <header class="section__header">
-          <p class="mono section__eyebrow">FAQ</p>
-          <h2 class="section__title">Preguntas<br/><em>frecuentes</em></h2>
-        </header>
-        <div class="faq__list">
-          <details class="faq__item"><summary class="faq__q">¿Qué es un incidente de desacato?</summary><p class="faq__a">Es el mecanismo legal para exigir el cumplimiento de una tutela que ya fue concedida pero que la entidad condenada no ha acatado. Se presenta ante el mismo juez que conoció la tutela y puede llevar a la sanción del responsable con arresto y multa.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Cuánto tiempo tiene la entidad para cumplir la tutela?</summary><p class="faq__a">El juez fija el plazo en la sentencia. Si no lo fija expresamente, la regla general es de 48 horas para cumplir. Vencido ese término sin cumplimiento, ya procede el incidente de desacato.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Qué sanciones puede imponer el juez?</summary><p class="faq__a">El juez puede imponer arresto de hasta 6 meses y multa de hasta 20 salarios mínimos mensuales al responsable del incumplimiento. Adicionalmente, puede remitir el expediente a la Procuraduría para investigación disciplinaria.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Cuánto cuesta en Justiexpress?</summary><p class="faq__a">Solo $19.900 COP. Sin costos ocultos. Pagas una vez y recibes tu incidente de desacato listo para radicar ante el juzgado que conoció la tutela.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Necesito haber presentado la tutela con Justiexpress para pedir el desacato?</summary><p class="faq__a">No. Si tu tutela fue redactada por otro abogado o por ti mismo, igualmente podemos redactar el incidente de desacato. Solo necesitas tener el número de radicado, el nombre del juzgado y el contenido del fallo.</p></details>
-          <details class="faq__item"><summary class="faq__q">¿Atienden en todo Colombia?</summary><p class="faq__a">Sí. El servicio es 100% digital. Puedes solicitar el documento desde cualquier ciudad del país y radicarlo ante el juzgado correspondiente de forma presencial o por correo electrónico.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-final" aria-label="Llamada a la acción">
-      <div class="cta-final__glow" aria-hidden="true"></div>
-      <div class="container">
-        <div class="cta-final__inner">
-          <p class="mono cta-final__eyebrow">Solo $19.900</p>
-          <h2 class="cta-final__title">Que paguen las consecuencias<br/><em>de ignorarte.</em></h2>
-          <p class="cta-final__sub">Un incidente de desacato bien presentado es la diferencia entre el incumplimiento indefinido y la sanción inmediata.</p>
-          <div class="cta-final__actions">
-            <a href="https://chat.justiexpress.com/" data-chat-link class="btn btn--hero">
-              Quiero mi desacato ahora
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Contactar por WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ── FOOTER ── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <span class="nav__name">Justiexpress</span>
-          <p class="footer__tagline mono">Innovación legal respaldada por abogados expertos.</p>
-          <div class="footer__social">
-            <a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer__social-link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            </a>
-            <a href="https://www.instagram.com/justiexpress.legal" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
-            </a>
-            <a href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
-            </a>
-            <a href="https://www.tiktok.com/@tucasolegal" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/company/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer__social-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer__col">
-          <h4 class="footer__heading mono">Servicios</h4>
-          <ul class="footer__links" role="list">
-            <li><a href="/accion-de-tutela/">Acción de Tutela</a></li>
-            <li><a href="/derecho-de-peticion/">Derecho de Petición</a></li>
-            <li><a href="/desacato/">Desacato</a></li>
-            <li><a href="/calculadora-laboral/">Calculadora Laboral</a></li>
-            <li><a href="/calculadora-tributaria/">Calculadora Tributaria</a></li>
-            <li><a href="/calculadora-notarial/">Calculadora Notarial</a></li>
-            <li><a href="/vivienda/">Vivienda y arriendo</a></li>
-            <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener noreferrer">Contratos</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4 class="footer__heading mono">Empresa</h4>
-          <ul class="footer__links" role="list">
-            <li><a href="/#nosotros">Quiénes somos</a></li>
-            <li><a href="/#faq">FAQ</a></li>
-            <li><a href="mailto:justiexpress@gmail.com">justiexpress@gmail.com</a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer">+57 318 572 5324</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span class="mono">© 2024 Justiexpress. Todos los derechos reservados.</span>
-        <div class="footer__legal">
-          <a href="../TyC.html">Términos y condiciones</a>
-          <a href="../PP.html">Política de privacidad</a>
+        <div class="seal" style="--n:5" aria-hidden="true">
+          <svg viewBox="0 0 140 140"><defs><path id="seal-c" d="M70 70m-52 0a52 52 0 1 1 104 0a52 52 0 1 1-104 0"/></defs><circle cx="70" cy="70" r="66" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="70" cy="70" r="40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 3"/><text><textPath href="#seal-c">LISTO PARA RADICAR · JUSTIEXPRESS ·</textPath></text><path d="m54 71 11 11 22-24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <a href="https://api.whatsapp.com/send?phone=573185725324&text=Hola%20Justiexpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Contactar por WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+  <section class="section" id="casos" aria-labelledby="cases-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 01</b> Contra quién</p>
+        <h2 class="h2" id="cases-title">Nadie está por encima <em>de un fallo</em>.</h2>
+      </header>
+      <ul class="cases" role="list">
+        <li class="case">
+          <span class="case__icon"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-heart"/></svg></span>
+          <h3>Desacato contra la EPS</h3>
+          <p>No entregó el medicamento, no autorizó el procedimiento o no cumplió la orden del juez de tutela.</p>
+          <a class="link-arrow" href="https://chat.justiexpress.com/?categoria=tutela" data-chat><span>Hacer mi desacato</span> <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+        </li>
+        <li class="case">
+          <span class="case__icon"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-building"/></svg></span>
+          <h3>Contra entidades públicas</h3>
+          <p>Alcaldías, gobernaciones, Fuerzas Militares y entidades del Estado que ignoran órdenes judiciales.</p>
+          <a class="link-arrow" href="https://chat.justiexpress.com/?categoria=tutela" data-chat><span>Hacer mi desacato</span> <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+        </li>
+        <li class="case">
+          <span class="case__icon"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-bank"/></svg></span>
+          <h3>Contra empresas privadas</h3>
+          <p>Bancos, empresas de servicios públicos, empleadores o cualquier particular que incumpla un fallo de tutela.</p>
+          <a class="link-arrow" href="https://chat.justiexpress.com/?categoria=tutela" data-chat><span>Hacer mi desacato</span> <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  <script src="/assets/legacy.js"></script>
+  <section class="section section--alt" id="fundamento" aria-labelledby="law-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 02</b> Las consecuencias</p>
+        <h2 class="h2" id="law-title">El juez puede ordenar <em>arresto y multa</em>.</h2>
+      </header>
+      <div class="law">
+        <p class="law__art">Art. 52<small>Decreto 2591 de 1991</small></p>
+        <div>
+          <blockquote class="law__quote"><p>La persona que incumpliere una orden de un juez proferida con base en el presente decreto incurrirá en desacato sancionable con arresto hasta de seis meses y multa hasta de 20 salarios mínimos mensuales…</p></blockquote>
+          <p class="law__src">El juez también puede remitir el expediente a la Procuraduría para investigación disciplinaria.</p>
+          <ul class="law__facts" role="list"><li><b>6 meses</b><span>de arresto como sanción máxima</span></li><li><b>20 SMLMV</b><span>de multa como sanción máxima</span></li><li><b>48 h</b><span>plazo máximo que puede fijar el fallo para cumplir</span></li><li><b>1 juez</b><span>el mismo que conoció la tutela</span></li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="documento" aria-labelledby="anat-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 03</b> Qué recibes</p>
+        <h2 class="h2" id="anat-title">Un desacato <em>que activa la sanción</em>.</h2>
+      </header>
+      <div class="anatomy">
+        <div class="anatomy__doc" aria-hidden="true"><ol><li><span><b>Juzgado y radicado</b><span class="ln ln--90"></span></span></li><li><span><b>La orden del fallo</b><span class="ln ln--80"></span></span></li><li><span><b>Hechos del incumplimiento</b><span class="ln ln--60"></span></span></li><li><span><b>Solicitud</b><span class="ln ln--90"></span></span></li><li><span><b>Fundamentos</b><span class="ln ln--45"></span></span></li><li><span><b>Pruebas</b><span class="ln ln--80"></span></span></li></ol></div>
+        <ol class="anatomy__list" role="list"><li><h3>Juzgado y radicado</h3><p>El despacho que conoció la tutela y el número del proceso.</p></li><li><h3>La orden del fallo</h3><p>Lo que el juez ordenó y el plazo que dio, tal como quedó en la sentencia.</p></li><li><h3>Hechos del incumplimiento</h3><p>Qué no se ha cumplido, desde cuándo y qué gestiones hiciste.</p></li><li><h3>Solicitud</h3><p>La apertura del incidente y la sanción al responsable del incumplimiento.</p></li><li><h3>Fundamentos</h3><p>Los artículos 27 y 52 del Decreto 2591 de 1991.</p></li><li><h3>Pruebas</h3><p>El fallo de tutela y las comunicaciones que demuestran el incumplimiento.</p></li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="como-funciona" aria-labelledby="how-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 04</b> Cómo funciona</p>
+        <h2 class="h2" id="how-title">Cuatro pasos. <em>El incumplimiento, ante el juez.</em></h2>
+      </header>
+      <ol class="steps" role="list" style="--cols:4"><li class="step"><span class="step__n" aria-hidden="true">1</span><h3>Confirma el incumplimiento</h3><p>Qué ordenó el juez, quién debe cumplirlo y cuántos días lleva sin hacerlo.</p></li><li class="step"><span class="step__n" aria-hidden="true">2</span><h3>Responde preguntas cerradas</h3><p>Radicado, juzgado y lo que falta por cumplir. Nada más.</p></li><li class="step"><span class="step__n" aria-hidden="true">3</span><h3>Revisa y paga</h3><p>El asistente redacta el incidente completo. Lo revisas y pagas $19.900 para descargarlo.</p></li><li class="step"><span class="step__n" aria-hidden="true">4</span><h3>Radícalo</h3><p>Ante el juzgado que conoció la tutela, por correo electrónico o en ventanilla.</p></li></ol>
+    </div>
+  </section>
+
+  <section class="section" id="testimonios" aria-labelledby="quotes-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 05</b> Testimonios</p>
+        <h2 class="h2" id="quotes-title">Lo que dicen <em>nuestros clientes</em>.</h2>
+      </header>
+      <ul class="quotes" role="list"><li><figure class="quote"><span class="quote__stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span><blockquote>“La EPS tenía dos meses sin entregarme el medicamento que ordenó el juez. Con el desacato de Justiexpress lo tuve en 48 horas.”</blockquote><figcaption><span class="quote__avatar" aria-hidden="true">RV</span><span><b>Ricardo V.</b><span>Bogotá</span></span></figcaption></figure></li><li><figure class="quote"><span class="quote__stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span><blockquote>“Mi empresa llevaba meses sin pagarme lo que ordenó el juez. Con el incidente de desacato cumplieron a la semana siguiente.”</blockquote><figcaption><span class="quote__avatar" aria-hidden="true">DM</span><span><b>Diana M.</b><span>Medellín</span></span></figcaption></figure></li><li><figure class="quote"><span class="quote__stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span><blockquote>“Rápido, económico y efectivo. Por $19.900 logré que la entidad cumpliera lo que llevaba meses ignorando.”</blockquote><figcaption><span class="quote__avatar" aria-hidden="true">CP</span><span><b>Camila P.</b><span>Cali</span></span></figcaption></figure></li><li><figure class="quote"><span class="quote__stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span><blockquote>“No sabía que podía presentarlo yo mismo. El asistente me explicó todo y el documento quedó perfecto para radicarlo.”</blockquote><figcaption><span class="quote__avatar" aria-hidden="true">JA</span><span><b>Jorge A.</b><span>Barranquilla</span></span></figcaption></figure></li></ul>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="preguntas" aria-labelledby="faq-title">
+    <div class="wrap faq">
+      <div class="faq__side">
+        <p class="mono" style="color:var(--teal)">§ 06 Preguntas frecuentes</p>
+        <h2 class="h2" id="faq-title" style="margin-top:12px">Lo que todos <em>preguntan</em>.</h2>
+        <p>¿Tu duda no está aquí? Pregúntale al asistente en el chat o escríbenos por WhatsApp.</p>
+        <a class="btn btn--ghost" href="https://api.whatsapp.com/send?phone=573185725324&amp;text=Hola%20Justiexpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg> Preguntar por WhatsApp</a>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item"><summary>¿Qué es un incidente de desacato?</summary><div class="faq__a"><p>Es el mecanismo legal para exigir el cumplimiento de una tutela que ya fue concedida pero que la entidad condenada no ha acatado. Se presenta ante el mismo juez que conoció la tutela y puede llevar a la sanción del responsable con arresto y multa.</p></div></details>
+        <details class="faq__item"><summary>¿Cuánto tiempo tiene la entidad para cumplir la tutela?</summary><div class="faq__a"><p>El juez fija el plazo en la sentencia, que no puede exceder de 48 horas. Vencido ese término sin cumplimiento, ya procede el incidente de desacato.</p></div></details>
+        <details class="faq__item"><summary>¿Qué sanciones puede imponer el juez?</summary><div class="faq__a"><p>El juez puede imponer arresto de hasta 6 meses y multa de hasta 20 salarios mínimos mensuales al responsable del incumplimiento. Adicionalmente, puede remitir el expediente a la Procuraduría para investigación disciplinaria.</p></div></details>
+        <details class="faq__item"><summary>¿Cuánto cuesta en Justiexpress?</summary><div class="faq__a"><p>$19.900 COP. Sin costos ocultos. Pagas una vez, cuando el incidente ya está redactado, y lo recibes listo para radicar ante el juzgado que conoció la tutela.</p></div></details>
+        <details class="faq__item"><summary>¿Necesito haber presentado la tutela con Justiexpress para pedir el desacato?</summary><div class="faq__a"><p>No. Si tu tutela fue redactada por otro abogado o por ti mismo, igualmente podemos redactar el incidente de desacato. Solo necesitas tener el número de radicado, el nombre del juzgado y el contenido del fallo.</p></div></details>
+        <details class="faq__item"><summary>¿Atienden en todo Colombia?</summary><div class="faq__a"><p>Sí. El servicio es 100 % digital. Puedes solicitar el documento desde cualquier ciudad del país y radicarlo ante el juzgado correspondiente de forma presencial o por correo electrónico.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight" aria-labelledby="rel-title">
+    <div class="wrap">
+      <header class="head">
+        <p class="head__kicker mono"><b>§ 07</b> Sigue tu caso</p>
+        <h2 class="h2" id="rel-title">También te <em>puede servir</em>.</h2>
+      </header>
+      <ul class="related" role="list"><li><a href="/accion-de-tutela/"><span class="mono">¿Aún no tienes tutela?</span><strong>Acción de tutela</strong><span>Protege tu derecho fundamental ante un juez.</span></a></li><li><a href="/derecho-de-peticion/"><span class="mono">Antes de la tutela</span><strong>Derecho de petición</strong><span>Exige respuesta a entidades públicas y privadas.</span></a></li><li><a href="/#servicios"><span class="mono">Todo el catálogo</span><strong>Más de 100 documentos</strong><span>Contratos, minutas, reclamaciones y calculadoras.</span></a></li></ul>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-title">
+    <div class="wrap">
+      <div class="closing__panel">
+        <div>
+          <p class="mono">$19.900 · pago único</p>
+          <h2 id="closing-title">Que el fallo <em>se cumpla.</em></h2>
+          <p>Un incidente de desacato bien presentado es la diferencia entre el incumplimiento indefinido y la actuación del juez.</p>
+        </div>
+        <div class="closing__actions">
+          <a class="btn btn--primary btn--lg" href="https://chat.justiexpress.com/?categoria=tutela" data-chat>Quiero mi desacato <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="https://api.whatsapp.com/send?phone=573185725324&amp;text=Hola%20Justiexpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg> Escribir por WhatsApp</a>
+          <span class="closing__fine">Pagas solo cuando el desacato está redactado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- @partial footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <picture>
+          <source type="image/webp" srcset="/assets/logo-76.webp 2x, /assets/logo-114.webp 3x" />
+          <img src="/assets/logo-76.png" width="83" height="38" alt="Justiexpress · Tu Caso Legal" loading="lazy" decoding="async" />
+        </picture>
+        <p>Asistente legal con inteligencia artificial para Colombia: documentos jurídicos y calculadoras legales listos en minutos, con precio fijo y pago único.</p>
+        <ul class="footer__social">
+          <li><a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg></a></li>
+          <li><a href="https://www.instagram.com/justiexpress.legal" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-ig"/></svg></a></li>
+          <li><a href="https://www.tiktok.com/@tucasolegal" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-tt"/></svg></a></li>
+          <li><a href="https://www.youtube.com/channel/UCSQYCc0FrL8CrdIAySmNX0w" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-yt"/></svg></a></li>
+          <li><a href="https://www.facebook.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-fb"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/company/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-li"/></svg></a></li>
+          <li><a href="https://twitter.com/justiexpress" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-x"/></svg></a></li>
+        </ul>
+      </div>
+      <nav class="footer__col" aria-labelledby="ft-docs">
+        <h2 id="ft-docs">Documentos</h2>
+        <ul>
+          <li><a href="/accion-de-tutela/">Acción de tutela</a></li>
+          <li><a href="/derecho-de-peticion/">Derecho de petición</a></li>
+          <li><a href="/desacato/">Incidente de desacato</a></li>
+          <li><a href="https://chat.justiexpress.com/?categoria=centrales-riesgo" target="_blank" rel="noopener">Reporte en Datacrédito</a></li>
+          <li><a href="https://chat.justiexpress.com/?categoria=multas-transito" target="_blank" rel="noopener">Multas de tránsito</a></li>
+          <li><a href="https://chat.justiexpress.com/" target="_blank" rel="noopener">Contratos y minutas</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="ft-calc">
+        <h2 id="ft-calc">Calculadoras y vivienda</h2>
+        <ul>
+          <li><a href="/calculadora-laboral/">Calculadora laboral</a></li>
+          <li><a href="/calculadora-tributaria/">Calculadora tributaria</a></li>
+          <li><a href="/calculadora-notarial/">Calculadora notarial</a></li>
+          <li><a href="/vivienda/">Estudio de arrendamiento</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="ft-emp">
+        <h2 id="ft-emp">Justiexpress</h2>
+        <ul>
+          <li><a href="/#nosotros">Quiénes somos</a></li>
+          <li><a href="/#preguntas">Preguntas frecuentes</a></li>
+          <li><a href="mailto:justiexpress@gmail.com">justiexpress@gmail.com</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=573185725324" target="_blank" rel="noopener noreferrer">+57 318 572 5324</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__legal">
+      <p>© 2026 Justiexpress S.A.S. · Justiexpress es una plataforma tecnológica de asistencia jurídica: sus documentos y cálculos se generan con inteligencia artificial, no constituyen asesoría jurídica definitiva ni crean una relación abogado-cliente, y no incluyen representación judicial.</p>
+      <nav aria-label="Legal">
+        <a href="/TyC.html">Términos y condiciones</a>
+        <a href="/PP.html">Política de privacidad</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /@partial -->
+<!-- @partial fab {"wa": "Hola%20Justiexpress%2C%20necesito%20un%20incidente%20de%20desacato"} -->
+<a class="fab-wa" href="https://api.whatsapp.com/send?phone=573185725324&amp;text=Hola%20Justiexpress%2C%20necesito%20un%20incidente%20de%20desacato" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg class="icon icon--fill" aria-hidden="true"><use href="/assets/icons.svg#i-wa"/></svg></a>
+<!-- /@partial -->
 </body>
 </html>

@@ -132,7 +132,7 @@ for (const file of listPages()) {
   // Breadcrumb visible ↔ BreadcrumbList
   const bc = nodes.find(n => n['@type'] === 'BreadcrumbList');
   if (route !== '/' && !bc) fail(file, 'sin BreadcrumbList');
-  if (bc && !/class="crumbs"/.test(body)) fail(file, 'BreadcrumbList sin migas visibles');
+  if (bc && !/class="crumbs[\s"]/.test(body)) fail(file, 'BreadcrumbList sin migas visibles');
 
   if (/Syne/.test(html)) fail(file, 'todavía referencia la fuente Syne');
   if (failures === before) console.log('  ✓');
