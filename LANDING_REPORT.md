@@ -146,3 +146,24 @@ Los rangos son la variación entre corridas en esta máquina: el TBT de laborato
 - **Páginas de video por reel:** descartadas antes por ti (contenido delgado). No se tocó.
 - **Framework o SSR:** no se justifica. El HTML estático ya es la estrategia óptima para estas rutas, y un build en Vercel agregaría riesgo de despliegue sin ganar SEO.
 - **Medición de campo e INP real:** requieren tráfico real; queda para el seguimiento del punto 7.
+
+---
+
+## 9. Segunda iteración de diseño: efectos 3D y de agencia (23 sep 2026, rama `efectos-3d`)
+
+| Efecto | Técnica | Protección de rendimiento |
+|---|---|---|
+| Pila de documentos en 3D en cada hero, que se inclina con el cursor y cuyo papel refleja la luz | CSS 3D real (`perspective` + `preserve-3d` + `translateZ` por capa) | Solo con mouse; la animación se detiene al llegar a su posición; en táctil, una "respiración" lenta solo con CSS |
+| Sello de lacre (cera) que cae girando | SVG con borde orgánico generado y relieve | Animación de entrada solo con `transform` |
+| Tinta que fluye detrás del hero | Shader WebGL propio (~3 KB, sin librerías) | Carga después del `load`; se pausa fuera de pantalla; se omite con movimiento reducido, ahorro de datos, renderizado por software o menos de 4 GB de RAM |
+| Estante de libros 3D para los tomos del catálogo | CSS 3D | Estático; gira al pasar el cursor |
+| Franja cinética de servicios | CSS | Decorativa (`aria-hidden`), se pausa al pasar el cursor, apagada con movimiento reducido |
+| Tarjetas que se apilan en "Cómo funciona" | `position: sticky` | Solo CSS, desde 900 px |
+| Revelado al hacer scroll | Animaciones ligadas al scroll (`animation-timeline: view()`) | Solo CSS; usa `translate`, así que no pisa los efectos hover |
+| Transiciones entre páginas y al cambiar el tema | View Transitions API | Apagadas con movimiento reducido |
+| Textura de papel | WebP con transparencia de 8 KB | Sin `mix-blend-mode` (lo medí: costaba 700 ms de TBT); se activa después de la carga |
+| Luz que sigue al cursor en tarjetas y botones magnéticos | CSS custom properties desde `fx.js` | Solo con mouse |
+
+- **Tema:** el sol sale del menú y pasa a un selector "Claro / Oscuro" en el footer y en el menú móvil.
+- **Contenido:** la home dice **5 calculadoras y herramientas con 11 módulos** (laboral 5, tributaria 3, notarial 3, más el estudio de arrendamiento y el verificador de reporte), como las presenta la app.
+- **Rendimiento:** mediana de 5 corridas de Lighthouse móvil. Home: 97 publicada → 97 nueva (LCP 2,3 s, TBT 42 ms). Tutela: 97 → 93 (LCP 2,1 s); la diferencia es gtag más los efectos. Todas las rutas quedan en rango "bueno".

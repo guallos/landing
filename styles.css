@@ -258,7 +258,7 @@ em.serif, .serif { font-family: var(--ff-serif); font-weight: 400; }
   line-height: 1.15;
   text-decoration: none;
   white-space: nowrap;
-  transition: transform .25s var(--ease), background-color .2s, border-color .2s, box-shadow .25s, color .2s;
+  transition: transform .25s var(--ease), translate .35s var(--ease), background-color .2s, border-color .2s, box-shadow .25s, color .2s;
 }
 .btn .icon { width: 1.1em; height: 1.1em; transition: transform .25s var(--ease); }
 .btn:hover .icon--go { transform: translateX(3px); }
@@ -353,20 +353,6 @@ em.serif, .serif { font-family: var(--ff-serif); font-weight: 400; }
 
 .nav__actions { display: flex; align-items: center; gap: 8px; margin-left: 8px; }
 
-.theme-toggle {
-  width: 42px; height: 42px; flex: none;
-  display: grid; place-items: center;
-  border-radius: 50%;
-  border: 1px solid var(--rule);
-  background: transparent;
-  color: var(--ink-2);
-  transition: background-color .2s, color .2s, border-color .2s;
-}
-.theme-toggle:hover { color: var(--ink); border-color: var(--ink-3); }
-.theme-toggle .icon { width: 19px; height: 19px; grid-area: 1 / 1; transition: opacity .3s, transform .45s var(--ease); }
-.theme-toggle .i-moon { opacity: 0; transform: rotate(-60deg) scale(.6); }
-html[data-theme="dark"] .theme-toggle .i-sun { opacity: 0; transform: rotate(60deg) scale(.6); }
-html[data-theme="dark"] .theme-toggle .i-moon { opacity: 1; transform: none; }
 
 .nav__burger {
   display: none;
@@ -495,32 +481,55 @@ html[data-theme="dark"] .theme-toggle .i-moon { opacity: 1; transform: none; }
 .receipt__terms { font-size: .82rem; line-height: 1.45; color: var(--ink-2); border-left: 1px dashed var(--rule); padding-left: 18px; }
 .receipt__terms strong { color: var(--ink); }
 
-/* ── HOJA: el documento que se redacta solo ───────────────────── */
+/* ── HOJA 3D: el documento que se redacta solo ───────────────────
+   Escena CSS 3D real: .doc-stage da la perspectiva, .stack conserva el
+   espacio 3D (preserve-3d) y cada capa vive a su profundidad (translateZ):
+   hojas de atrás, la hoja principal, la nota del chat y el sello de cera.
+   fx.js inclina la pila siguiendo el puntero (solo con mouse) y mueve el
+   brillo del papel; sin JS o con movimiento reducido queda en su pose. */
 
-.doc-stage { position: relative; padding: 46px 0 64px; }
+.doc-stage { position: relative; padding: 56px 0 72px; perspective: 1500px; perspective-origin: 50% 40%; }
+.stack {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rx, 7deg)) rotateY(var(--ry, -13deg)) rotateZ(.4deg);
+  will-change: transform;
+}
 .sheet {
   position: relative;
   background: var(--sheet);
   border-radius: 6px;
-  box-shadow: var(--shadow-sheet);
+  box-shadow: 0 1px 0 rgba(16,24,27,.04), 0 30px 60px -30px rgba(16,24,27,.35);
   padding: clamp(22px, 3vw, 38px) clamp(22px, 3vw, 40px) clamp(26px, 3vw, 42px);
   font-family: var(--ff-serif);
   color: var(--ink);
-  transform: rotate(.6deg);
-  isolation: isolate;
+  transform: translateZ(0);
 }
-/* Hoja de atrás (pila de papel) */
+/* Brillo del papel: una luz que sigue al puntero (--mx/--my los pone fx.js) */
 .sheet::before {
-  content: ""; position: absolute; inset: 0; z-index: -1;
-  background: var(--sheet); border-radius: 6px;
-  box-shadow: 0 0 0 1px var(--rule-2), 0 20px 40px -26px rgba(16,24,27,.35);
-  transform: rotate(-2.4deg) translate(-8px, 6px);
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 2;
+  background: radial-gradient(520px circle at var(--mx, 78%) var(--my, 12%), rgba(255,255,255,.55), transparent 55%);
+  mix-blend-mode: soft-light;
 }
+html[data-theme="dark"] .sheet::before { background: radial-gradient(520px circle at var(--mx, 78%) var(--my, 12%), rgba(0,229,212,.10), transparent 55%); mix-blend-mode: normal; }
 /* Renglón del margen, como papel oficio */
 .sheet::after {
   content: ""; position: absolute; top: 0; bottom: 0; left: clamp(12px, 1.6vw, 20px); width: 1px;
   background: var(--lacre); opacity: .25;
 }
+/* Hojas de atrás, cada una a su profundidad */
+.sheet--back { position: absolute; inset: 0; padding: 0; box-shadow: 0 0 0 1px var(--rule-2), 0 24px 50px -30px rgba(16,24,27,.4); }
+.sheet--back::before, .sheet--back::after { display: none; }
+.sheet--b1 { transform: translateZ(-46px) translate(-14px, 12px) rotate(-3.2deg); }
+.sheet--b2 { transform: translateZ(-96px) translate(18px, 22px) rotate(3.6deg); background: color-mix(in srgb, var(--sheet) 94%, var(--ink)); }
+/* Sombra de la pila sobre el "escritorio" */
+.stage-shadow {
+  position: absolute; left: 8%; right: 6%; bottom: 26px; height: 60px; z-index: -1;
+  background: radial-gradient(closest-side, rgba(16,24,27,.28), transparent);
+  filter: blur(14px); transform: scaleY(.5);
+}
+html[data-theme="dark"] .stage-shadow { background: radial-gradient(closest-side, rgba(0,0,0,.7), transparent); }
+
 .sheet__head { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 18px; font-family: var(--ff-mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
 .sheet__to { font-size: 1rem; line-height: 1.35; }
 .sheet__ref { margin: 14px 0 12px; font-size: clamp(1.35rem, 1rem + 1vw, 1.75rem); line-height: 1.1; }
@@ -543,29 +552,28 @@ html[data-theme="dark"] .theme-toggle .i-moon { opacity: 1; transform: none; }
 .sheet__row--total b { font-family: var(--ff-serif); font-weight: 400; font-size: 1.9rem; line-height: 1; color: var(--teal); }
 .sheet__note { margin-top: 10px; font-family: var(--ff-mono); font-size: .64rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
 
-/* Sello */
+/* Sello de lacre (cera): flota por delante de la hoja */
 .seal {
-  position: absolute; right: clamp(-34px, -2.4vw, -8px); bottom: -8px;
-  width: clamp(104px, 10vw, 136px); aspect-ratio: 1;
-  color: var(--lacre);
-  transform: rotate(-14deg);
-  z-index: 3;
+  position: absolute; right: clamp(-40px, -3vw, -10px); bottom: -34px;
+  width: clamp(112px, 10.5vw, 146px); aspect-ratio: 1;
+  transform: translateZ(120px) rotate(-14deg);
+  filter: drop-shadow(0 14px 12px rgba(90, 24, 8, .35)) drop-shadow(0 2px 2px rgba(90, 24, 8, .4));
   pointer-events: none;
 }
-.seal svg { width: 100%; height: 100%; }
-.seal text { font-family: var(--ff-mono); font-size: 10.5px; letter-spacing: 2.6px; fill: currentColor; font-weight: 500; }
+.seal svg { width: 100%; height: 100%; overflow: visible; }
+.seal text { font-family: var(--ff-mono); font-size: 8.6px; letter-spacing: 1.9px; font-weight: 500; }
 
 /* Nota adhesiva: el mensaje del usuario que originó el documento */
 .note {
   position: absolute; z-index: 4;
-  left: clamp(-18px, -2vw, -4px); top: 0;
+  left: clamp(-26px, -2.4vw, -6px); top: 10px;
   max-width: 250px;
   padding: 12px 14px;
   border-radius: 14px 14px 14px 4px;
   background: var(--ink); color: var(--paper);
   font-size: .86rem; font-weight: 600; line-height: 1.4;
-  box-shadow: var(--shadow-soft);
-  transform: rotate(-2deg);
+  box-shadow: 0 24px 40px -18px rgba(16,24,27,.55);
+  transform: translateZ(80px) rotate(-2deg);
 }
 .note small { display: block; margin-bottom: 4px; font-family: var(--ff-mono); font-size: .62rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; opacity: .7; }
 
@@ -573,15 +581,30 @@ html[data-theme="dark"] .theme-toggle .i-moon { opacity: 1; transform: none; }
   .js .doc-stage .ln::after, .js .doc-stage .sheet__p::after, .js .doc-stage .sheet__row::after {
     content: ""; position: absolute; inset: -2px; background: var(--sheet);
     transform-origin: right; animation: wipe .55s var(--ease) forwards;
-    animation-delay: calc(.5s + var(--i, 0) * .14s);
+    animation-delay: calc(.9s + var(--i, 0) * .14s);
   }
   .js .doc-stage .sheet__p, .js .doc-stage .sheet__row { position: relative; }
-  .js .doc-stage .seal { animation: stamp .5s calc(.9s + var(--n, 8) * .14s) cubic-bezier(.3, 1.6, .5, 1) both; }
-  .js .doc-stage .note { animation: note-in .6s .15s var(--ease) both; }
+  /* Montaje: las hojas llegan desde el fondo y se apilan; el sello cae girando */
+  .js .doc-stage .sheet--b2 { animation: fly-b2 1s .05s var(--ease) both; }
+  .js .doc-stage .sheet--b1 { animation: fly-b1 1s .15s var(--ease) both; }
+  .js .doc-stage .sheet:not(.sheet--back) { animation: fly-main 1s .25s var(--ease) both; }
+  .js .doc-stage .note { animation: note-in .8s .7s var(--ease) both; }
+  .js .doc-stage .seal { animation: stamp .9s calc(1.2s + var(--n, 8) * .14s) cubic-bezier(.2, 1.4, .4, 1) both; }
+  /* En pantallas táctiles (sin puntero que la incline) la pila respira */
+  @media (hover: none) { .js .stack { animation: breathe 9s 2.4s ease-in-out infinite alternate; } }
 }
 @keyframes wipe { to { transform: scaleX(0); } }
-@keyframes stamp { from { opacity: 0; transform: rotate(-4deg) scale(1.7); } to { opacity: 1; transform: rotate(-14deg) scale(1); } }
-@keyframes note-in { from { opacity: 0; transform: translateY(10px) rotate(-6deg); } to { opacity: 1; transform: rotate(-2deg); } }
+@keyframes fly-b2 { from { opacity: 0; transform: translateZ(-420px) translate(60px, 80px) rotate(14deg); } }
+@keyframes fly-b1 { from { opacity: 0; transform: translateZ(-360px) translate(-60px, 70px) rotate(-12deg); } }
+@keyframes fly-main { from { opacity: 0; transform: translateZ(-260px) translateY(60px) rotateX(18deg); } }
+@keyframes note-in { from { opacity: 0; transform: translateZ(220px) translate(-30px, 24px) rotate(-10deg); } }
+@keyframes stamp {
+  0% { opacity: 0; transform: translateZ(420px) rotateY(180deg) rotate(20deg) scale(1.2); }
+  70% { opacity: 1; transform: translateZ(100px) rotateY(-8deg) rotate(-16deg) scale(.98); }
+  100% { opacity: 1; transform: translateZ(120px) rotate(-14deg); }
+}
+@keyframes breathe { from { transform: rotateX(6deg) rotateY(-9deg) rotateZ(.4deg); } to { transform: rotateX(9deg) rotateY(-17deg) rotateZ(-.2deg); } }
+
 
 /* ── SECCIONES ────────────────────────────────────────────────── */
 
@@ -1199,6 +1222,169 @@ html[data-theme="dark"] .closing .mono { color: #0A6E63; }
 /* Página 404 */
 .lost { min-height: 60vh; display: grid; align-content: center; justify-items: start; gap: 18px; padding-block: var(--section); }
 
+/* ═══════════════════════════════════════════════════════════════
+   EFECTOS (sep 2026) — todos con mejora progresiva:
+   sin soporte, sin JS o con movimiento reducido, la página se ve completa.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Selector de tema "Claro / Oscuro" (footer y menú móvil) ──── */
+.theme-switch {
+  position: relative; display: inline-flex; padding: 4px; gap: 2px;
+  border-radius: 999px; border: 1px solid var(--rule); background: var(--sheet);
+}
+.theme-switch button {
+  display: inline-flex; align-items: center; gap: 7px;
+  min-height: 36px; padding: 0 14px; border: 0; border-radius: 999px;
+  background: transparent; color: var(--ink-3); font-size: .84rem; font-weight: 700;
+  transition: background-color .25s, color .25s;
+}
+.theme-switch button .icon { width: 16px; height: 16px; }
+.theme-switch button:hover { color: var(--ink); }
+.theme-switch button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.nav__drawer .theme-switch { margin-top: 18px; }
+.footer__legal .theme-switch { order: 3; }
+
+/* ── Hero: lienzo del shader (tinta que fluye) ────────────────── */
+.hero { isolation: isolate; overflow-x: clip; }
+.hero::before {
+  /* respaldo estático y base del shader */
+  content: ""; position: absolute; inset: -10% 0 0; z-index: -2; pointer-events: none;
+  background:
+    radial-gradient(40% 50% at 78% 38%, color-mix(in srgb, var(--cyan) 16%, transparent), transparent 70%),
+    radial-gradient(35% 45% at 92% 80%, color-mix(in srgb, var(--lacre) 8%, transparent), transparent 70%);
+}
+.hero-fx {
+  position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%;
+  pointer-events: none; opacity: 0; transition: opacity 1.6s var(--ease);
+  -webkit-mask-image: radial-gradient(120% 90% at 70% 45%, #000 45%, transparent 80%);
+  mask-image: radial-gradient(120% 90% at 70% 45%, #000 45%, transparent 80%);
+}
+.hero-fx.is-on { opacity: 1; }
+
+/* ── Franja cinética de servicios ─────────────────────────────── */
+.marquee {
+  overflow: hidden; padding: clamp(18px, 2.4vw, 30px) 0;
+  border-top: 1px solid var(--rule);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee__track { display: flex; width: max-content; }
+.marquee__group { display: flex; align-items: center; gap: clamp(22px, 3vw, 44px); padding-right: clamp(22px, 3vw, 44px); }
+.marquee span {
+  font-family: var(--ff-serif); font-size: clamp(2rem, 1.2rem + 3vw, 4rem); line-height: 1; white-space: nowrap; letter-spacing: -.01em;
+}
+.marquee span:nth-child(4n+3) { font-style: italic; color: var(--teal); }
+.marquee span:nth-child(4n+1) { color: transparent; -webkit-text-stroke: 1px var(--ink); }
+.marquee i { font-style: normal; color: var(--lacre); font-size: clamp(1rem, .8rem + 1vw, 1.6rem); }
+@media (prefers-reduced-motion: no-preference) {
+  .marquee__track { animation: marquee 48s linear infinite; }
+  .marquee:hover .marquee__track { animation-play-state: paused; }
+}
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* ── Estante: los tomos del catálogo como libros 3D ───────────── */
+.book { --w: 148px; --h: 200px; --d: 34px; width: var(--w); height: var(--h); margin: 6px 0 26px 14px; perspective: 900px; }
+.book__inner {
+  position: relative; width: 100%; height: 100%; transform-style: preserve-3d;
+  transform: rotateY(28deg) rotateX(4deg);
+  transition: transform .8s var(--ease);
+}
+.tome:hover .book__inner, .tome:focus-within .book__inner { transform: rotateY(8deg) rotateX(2deg) translateY(-6px); }
+.book__cover, .book__back, .book__spine, .book__pages { position: absolute; }
+.book__cover {
+  inset: 0; transform: translateZ(calc(var(--d) / 2)); border-radius: 2px 6px 6px 2px;
+  padding: 20px 16px; display: flex; flex-direction: column; justify-content: space-between;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.28), transparent 9%, rgba(255,255,255,.06) 11%, transparent 14%),
+    radial-gradient(120% 90% at 30% 10%, rgba(255,255,255,.14), transparent 55%),
+    var(--book, #0B4A43);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08), inset 0 0 30px rgba(0,0,0,.35);
+  color: #e7c98a;
+}
+.book__cover::before { content: ""; position: absolute; inset: 10px 10px 10px 18px; border: 1px solid rgba(231, 201, 138, .55); border-radius: 2px; }
+.book__cover small { position: relative; font-family: var(--ff-mono); font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; opacity: .85; }
+.book__cover b { position: relative; font-family: var(--ff-serif); font-weight: 400; font-size: 1.28rem; line-height: 1.05; }
+.book__back { inset: 0; transform: rotateY(180deg) translateZ(calc(var(--d) / 2)); background: var(--book, #0B4A43); border-radius: 6px 2px 2px 6px; }
+.book__spine {
+  top: 0; left: calc(50% - var(--d) / 2); width: var(--d); height: 100%;
+  transform: rotateY(-90deg) translateZ(calc(var(--w) / 2));
+  background: linear-gradient(90deg, rgba(0,0,0,.35), rgba(255,255,255,.08) 45%, rgba(0,0,0,.3)), var(--book, #0B4A43);
+  display: grid; place-items: center;
+}
+.book__spine span { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--ff-mono); font-size: .56rem; letter-spacing: .22em; text-transform: uppercase; color: #e7c98a; }
+.book__pages {
+  top: 4px; left: calc(50% - var(--d) / 2 + 2px); width: calc(var(--d) - 4px); height: calc(100% - 8px);
+  transform: rotateY(90deg) translateZ(calc(var(--w) / 2 - 4px));
+  background: repeating-linear-gradient(90deg, #f3eee2 0 2px, #ddd5c3 2px 3px);
+}
+.book--2 { --book: #1c2a31; }
+.book--3 { --book: #7d2a18; }
+.book--4 { --book: #3a3a2c; }
+@media (max-width: 860px) { .book { --w: 112px; --h: 150px; --d: 26px; margin-bottom: 18px; } .book__cover b { font-size: 1rem; } }
+
+/* ── Cómo funciona: tarjetas que se apilan al hacer scroll ────── */
+@media (min-width: 901px) {
+  .steps { grid-template-columns: 1fr; gap: 26px; }
+  .step, .step + .step {
+    position: sticky; top: calc(var(--nav-h) + 28px + var(--k, 0) * 16px);
+    display: grid; grid-template-columns: minmax(180px, .5fr) minmax(0, 1fr); gap: 0 clamp(32px, 5vw, 80px); align-items: center;
+    min-height: 260px; padding: clamp(28px, 3.5vw, 48px) clamp(28px, 4vw, 56px);
+    border: 1px solid var(--rule); border-radius: var(--radius-lg);
+    background: var(--sheet); box-shadow: 0 -10px 40px -24px rgba(16,24,27,.35);
+  }
+  .step__n { grid-row: span 2; font-size: clamp(6rem, 4rem + 5vw, 10rem); }
+  .step__n::after { display: none; }
+  .step h3 { margin-top: 0; font-size: clamp(1.4rem, 1rem + 1.2vw, 2rem); font-family: var(--ff-serif); font-weight: 400; }
+  .step p { font-size: 1.05rem; max-width: 34em; align-self: start; }
+  .step:nth-child(2) { --k: 1; } .step:nth-child(3) { --k: 2; } .step:nth-child(4) { --k: 3; }
+}
+
+/* ── Transiciones entre páginas (View Transitions) ────────────── */
+@view-transition { navigation: auto; }
+.nav { view-transition-name: nav; }
+::view-transition-old(root) { animation: vt-out .28s var(--ease) both; }
+::view-transition-new(root) { animation: vt-in .5s var(--ease) both; }
+@keyframes vt-out { to { opacity: 0; transform: translateY(-12px); } }
+@keyframes vt-in { from { opacity: 0; transform: translateY(18px); } }
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}
+
+/* ── Textura de papel (grano sutil) ───────────────────────────── */
+.fx-ready body::after {
+  content: ""; position: fixed; inset: 0; z-index: 300; pointer-events: none;
+  background: url("/assets/grain.webp") repeat; background-size: 128px;
+  /* PNG/WebP con transparencia, SIN mix-blend-mode: un modo de fusión en una
+     capa fija obligaba a recomponer toda la pantalla en cada cuadro animado. */
+}
+html.fx-ready[data-theme="dark"] body::after { opacity: .6; filter: invert(1); }
+
+/* ── Luz que sigue al cursor en tarjetas (--sx/--sy desde fx.js) ── */
+.spot { position: relative; }
+.spot::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: radial-gradient(380px circle at var(--sx, 50%) var(--sy, 50%), color-mix(in srgb, var(--cyan) 14%, transparent), transparent 60%);
+  opacity: 0; transition: opacity .35s;
+}
+.spot:hover::after { opacity: 1; }
+
+/* ── Revelado al hacer scroll (solo CSS, scroll-driven animations) ─
+   Usa la propiedad `translate` (no `transform`) para no pisar los
+   efectos hover que ya usan transform. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .head, .case, .index li, .triage li, .related li, .quote, .spec, .catalog__group,
+    .law__facts li, .anatomy__list li, .includes li, .truth__col, .facts li, .notice, .featured {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 45%;
+    }
+    .law__art { animation: art-in linear both; animation-timeline: view(); animation-range: entry 0% cover 45%; }
+  }
+}
+@keyframes reveal { from { opacity: .001; translate: 0 34px; } to { opacity: 1; translate: 0 0; } }
+@keyframes art-in { from { opacity: .001; translate: -40px 0; letter-spacing: .04em; } to { opacity: 1; translate: 0 0; } }
+
 /* ── RESPONSIVE DEL HERO ──────────────────────────────────────── */
 
 @media (max-width: 960px) {
@@ -1210,8 +1396,8 @@ html[data-theme="dark"] .closing .mono { color: #0A6E63; }
   .hero__cta .btn { width: 100%; }
   .receipt { display: grid; width: 100%; grid-template-columns: auto 1fr; gap: 4px 16px; }
   .note { left: -4px; max-width: 210px; }
-  .sheet { transform: none; }
-  .sheet::before { transform: rotate(-2deg) translate(-4px, 6px); }
+  .stack { --rx: 5deg; --ry: -7deg; }
+  .seal { right: -4px; bottom: -58px; width: 104px; }
 }
 
 /* ── MOVIMIENTO REDUCIDO ──────────────────────────────────────── */
@@ -1223,6 +1409,7 @@ html[data-theme="dark"] .closing .mono { color: #0A6E63; }
 /* ── IMPRESIÓN ────────────────────────────────────────────────── */
 
 @media print {
-  .nav, .fab-wa, .closing, .reels, .theme-toggle { display: none !important; }
+  .nav, .fab-wa, .closing, .reels, .theme-switch, .hero-fx, .marquee { display: none !important; }
+  body::after { display: none; }
   body { background: #fff; color: #000; }
 }

@@ -113,10 +113,6 @@
       </ul>
     </nav>
     <div class="nav__actions">
-      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro" aria-pressed="false">
-        <svg class="icon i-sun" aria-hidden="true"><use href="/assets/icons.svg#i-sun"/></svg>
-        <svg class="icon i-moon" aria-hidden="true"><use href="/assets/icons.svg#i-moon"/></svg>
-      </button>
       <a class="btn btn--primary btn--sm" href="https://chat.justiexpress.com/" data-chat>Empezar mi caso <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
       <button class="nav__burger" type="button" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><span></span></button>
     </div>
@@ -137,6 +133,10 @@
         <li><a href="/vivienda/">Vivienda y arriendo <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a></li>
       </ul>
       <a class="btn btn--primary" href="https://chat.justiexpress.com/" data-chat>Empezar mi caso <svg class="icon icon--go" aria-hidden="true"><use href="/assets/icons.svg#i-arrow"/></svg></a>
+      <div class="theme-switch" role="group" aria-label="Tema de color">
+        <button type="button" data-theme-set="light" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-sun"/></svg>Claro</button>
+        <button type="button" data-theme-set="dark" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-moon"/></svg>Oscuro</button>
+      </div>
     </div>
   </div>
 </header>
@@ -314,6 +314,10 @@
         <a href="/TyC.html">Términos y condiciones</a>
         <a href="/PP.html">Política de privacidad</a>
       </nav>
+      <div class="theme-switch" role="group" aria-label="Tema de color">
+        <button type="button" data-theme-set="light" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-sun"/></svg>Claro</button>
+        <button type="button" data-theme-set="dark" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-moon"/></svg>Oscuro</button>
+      </div>
     </div>
   </div>
 </footer>

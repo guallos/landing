@@ -401,3 +401,11 @@ const videoData = [
   media.addEventListener('click', play);
   media.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); } });
 })();
+
+/* ── 5. EFECTOS VISUALES (fx.js) ───────────────────────────────────
+   Se cargan después del load y en tiempo libre: el primer render y la
+   interactividad no esperan por la escena 3D ni por el shader. */
+window.addEventListener('load', function () {
+  var cargar = function () { var s = document.createElement('script'); s.src = '/fx.js'; s.async = true; document.head.appendChild(s); };
+  if ('requestIdleCallback' in window) requestIdleCallback(cargar, { timeout: 1500 }); else setTimeout(cargar, 600);
+});
