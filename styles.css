@@ -1261,66 +1261,83 @@ html[data-theme="dark"] .closing .mono { color: #0A6E63; }
 }
 .hero-fx.is-on { opacity: 1; }
 
-/* ── Franja cinética de servicios ─────────────────────────────── */
+/* ── Franja cinética: dos capas, dos escalas, dos direcciones ────
+   Arriba, los servicios en serif sólida y uniforme separados por § en
+   lacre; abajo, en mono, los fundamentos legales en sentido contrario.
+   fx.js inclina y acelera la franja según la velocidad del scroll
+   (--skew, en el contenedor para no pisar la animación del track). */
 .marquee {
-  overflow: hidden; padding: clamp(18px, 2.4vw, 30px) 0;
+  position: relative; overflow: hidden;
+  padding: clamp(26px, 3.2vw, 44px) 0 clamp(20px, 2.4vw, 30px);
   border-top: 1px solid var(--rule);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
 }
-.marquee__track { display: flex; width: max-content; }
-.marquee__group { display: flex; align-items: center; gap: clamp(22px, 3vw, 44px); padding-right: clamp(22px, 3vw, 44px); }
-.marquee span {
-  font-family: var(--ff-serif); font-size: clamp(2rem, 1.2rem + 3vw, 4rem); line-height: 1; white-space: nowrap; letter-spacing: -.01em;
+.marquee__row { transform: skewX(var(--skew, 0deg)); transform-origin: 50% 50%; }
+.marquee__track { display: flex; width: max-content; will-change: transform; }
+.marquee__group { display: flex; align-items: center; flex: none; }
+.marquee__row--big .marquee__group { gap: clamp(26px, 3vw, 48px); padding-right: clamp(26px, 3vw, 48px); }
+.marquee__row--big span {
+  font-family: var(--ff-serif); font-weight: 400;
+  font-size: clamp(2.6rem, 1.4rem + 4.6vw, 6.2rem); line-height: 1.02; letter-spacing: -.02em;
+  color: var(--ink); white-space: nowrap;
 }
-.marquee span:nth-child(4n+3) { font-style: italic; color: var(--teal); }
-.marquee span:nth-child(4n+1) { color: transparent; -webkit-text-stroke: 1px var(--ink); }
-.marquee i { font-style: normal; color: var(--lacre); font-size: clamp(1rem, .8rem + 1vw, 1.6rem); }
+.marquee__row--big i {
+  font-family: var(--ff-serif); font-style: italic; color: var(--lacre);
+  font-size: clamp(1.6rem, 1rem + 2.4vw, 3.4rem); line-height: 1; transform: translateY(-.08em);
+}
+.marquee__row--refs { margin-top: clamp(10px, 1.4vw, 18px); }
+.marquee__row--refs .marquee__group { gap: 22px; padding-right: 22px; }
+.marquee__row--refs span, .marquee__row--refs i {
+  font-family: var(--ff-mono); font-style: normal; font-size: clamp(.68rem, .62rem + .2vw, .8rem);
+  letter-spacing: .18em; text-transform: uppercase; white-space: nowrap; color: var(--teal);
+}
+.marquee__row--refs i { color: var(--ink-3); }
 @media (prefers-reduced-motion: no-preference) {
-  .marquee__track { animation: marquee 48s linear infinite; }
+  .marquee__row--big .marquee__track { animation: marquee 70s linear infinite; }
+  .marquee__row--refs .marquee__track { animation: marquee-rev 55s linear infinite; }
   .marquee:hover .marquee__track { animation-play-state: paused; }
 }
 @keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes marquee-rev { from { transform: translateX(-50%); } to { transform: translateX(0); } }
 
-/* ── Estante: los tomos del catálogo como libros 3D ───────────── */
-.book { --w: 148px; --h: 200px; --d: 34px; width: var(--w); height: var(--h); margin: 6px 0 26px 14px; perspective: 900px; }
-.book__inner {
-  position: relative; width: 100%; height: 100%; transform-style: preserve-3d;
-  transform: rotateY(28deg) rotateX(4deg);
-  transition: transform .8s var(--ease);
+/* ── Tomos: numeral romano editorial ──────────────────────────── */
+.tome__roman {
+  display: block; margin: -.1em 0 10px -.03em;
+  font-family: var(--ff-serif); font-weight: 400; font-style: normal;
+  font-size: clamp(5.5rem, 3.2rem + 7vw, 11rem); line-height: .8; letter-spacing: .02em;
+  color: var(--ink);
 }
-.tome:hover .book__inner, .tome:focus-within .book__inner { transform: rotateY(8deg) rotateX(2deg) translateY(-6px); }
-.book__cover, .book__back, .book__spine, .book__pages { position: absolute; }
-.book__cover {
-  inset: 0; transform: translateZ(calc(var(--d) / 2)); border-radius: 2px 6px 6px 2px;
-  padding: 20px 16px; display: flex; flex-direction: column; justify-content: space-between;
-  background:
-    linear-gradient(90deg, rgba(0,0,0,.28), transparent 9%, rgba(255,255,255,.06) 11%, transparent 14%),
-    radial-gradient(120% 90% at 30% 10%, rgba(255,255,255,.14), transparent 55%),
-    var(--book, #0B4A43);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08), inset 0 0 30px rgba(0,0,0,.35);
-  color: #e7c98a;
+.tome__roman::after { content: ""; display: block; width: 44px; height: 2px; margin-top: 18px; background: var(--lacre); }
+.tome__num span { color: var(--ink-3); letter-spacing: .08em; }
+
+/* ── Vista previa flotante del documento (índice del catálogo) ── */
+.preview {
+  position: fixed; left: 0; top: 0; z-index: 150; pointer-events: none;
+  width: 250px; padding: 22px 22px 26px;
+  background: var(--sheet); border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(16,24,27,.05), 0 30px 60px -24px rgba(16,24,27,.45), 0 0 0 1px var(--rule-2);
+  opacity: 0; scale: .86;
+  transition: opacity .25s var(--ease), scale .35s var(--ease);
+  will-change: transform;
 }
-.book__cover::before { content: ""; position: absolute; inset: 10px 10px 10px 18px; border: 1px solid rgba(231, 201, 138, .55); border-radius: 2px; }
-.book__cover small { position: relative; font-family: var(--ff-mono); font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; opacity: .85; }
-.book__cover b { position: relative; font-family: var(--ff-serif); font-weight: 400; font-size: 1.28rem; line-height: 1.05; }
-.book__back { inset: 0; transform: rotateY(180deg) translateZ(calc(var(--d) / 2)); background: var(--book, #0B4A43); border-radius: 6px 2px 2px 6px; }
-.book__spine {
-  top: 0; left: calc(50% - var(--d) / 2); width: var(--d); height: 100%;
-  transform: rotateY(-90deg) translateZ(calc(var(--w) / 2));
-  background: linear-gradient(90deg, rgba(0,0,0,.35), rgba(255,255,255,.08) 45%, rgba(0,0,0,.3)), var(--book, #0B4A43);
-  display: grid; place-items: center;
+.preview.is-on { opacity: 1; scale: 1; }
+.preview::after {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 14px; width: 1px; background: var(--lacre); opacity: .25;
 }
-.book__spine span { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--ff-mono); font-size: .56rem; letter-spacing: .22em; text-transform: uppercase; color: #e7c98a; }
-.book__pages {
-  top: 4px; left: calc(50% - var(--d) / 2 + 2px); width: calc(var(--d) - 4px); height: calc(100% - 8px);
-  transform: rotateY(90deg) translateZ(calc(var(--w) / 2 - 4px));
-  background: repeating-linear-gradient(90deg, #f3eee2 0 2px, #ddd5c3 2px 3px);
-}
-.book--2 { --book: #1c2a31; }
-.book--3 { --book: #7d2a18; }
-.book--4 { --book: #3a3a2c; }
-@media (max-width: 860px) { .book { --w: 112px; --h: 150px; --d: 26px; margin-bottom: 18px; } .book__cover b { font-size: 1rem; } }
+.preview__kind { font-family: var(--ff-mono); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+.preview__title { margin-top: 10px; font-family: var(--ff-serif); font-style: italic; font-size: 1.55rem; line-height: 1.05; color: var(--ink); }
+.preview__ref { display: inline-block; margin-top: 12px; padding: 4px 8px; border-radius: 6px; background: var(--teal-wash); color: var(--teal); font-family: var(--ff-mono); font-size: .64rem; letter-spacing: .04em; }
+.preview .ln { height: 6px; margin: 7px 0; }
+.preview__lines { margin-top: 14px; }
+.preview__price { margin-top: 14px; display: flex; align-items: baseline; gap: 8px; font-weight: 800; font-size: 1.2rem; letter-spacing: -.02em; color: var(--ink); }
+.preview__price small { font-size: .7rem; font-weight: 600; color: var(--ink-3); letter-spacing: 0; }
+.preview__seal { position: absolute; right: -18px; bottom: -18px; width: 64px; height: 64px; rotate: -14deg; filter: drop-shadow(0 6px 6px rgba(90,24,8,.35)); }
+.preview__seal svg { width: 100%; height: 100%; }
+.preview__seal text { font-family: var(--ff-mono); font-size: 8.6px; letter-spacing: 1.9px; }
+/* La fila activa se oscurece levemente para acompañar la hoja */
+.index.has-preview a { transition: opacity .3s, background-color .2s, padding .3s var(--ease); }
+.index.has-preview:hover a:not(:hover) { opacity: .45; }
 
 /* ── Cómo funciona: tarjetas que se apilan al hacer scroll ────── */
 @media (min-width: 901px) {

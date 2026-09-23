@@ -12,6 +12,8 @@
       movimiento reducido o ahorro de datos.
    3. Luz que sigue al cursor sobre tarjetas y filas del catálogo.
    4. Botones principales "magnéticos".
+   5. Franja cinética que se inclina y acelera con la velocidad del scroll.
+   6. Vista previa flotante del documento al recorrer el índice del catálogo.
    ═══════════════════════════════════════════════════════════════ */
 (function () {
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -169,5 +171,93 @@
       });
       b.addEventListener('pointerleave', function () { b.style.translate = ''; });
     });
+  })();
+
+  /* ── 5. Franja cinética sensible a la velocidad del scroll ─────
+     Al hacer scroll la franja se inclina (skew) y acelera; en reposo
+     vuelve suavemente a su ritmo. Solo trabaja mientras se ve. */
+  (function marqueeVelocity() {
+    if (reduce) return;
+    var m = document.querySelector('.marquee');
+    if (!m) return;
+    var anims = [];
+    m.querySelectorAll('.marquee__track').forEach(function (t) { anims = anims.concat(t.getAnimations ? t.getAnimations() : []); });
+    var visible = false, lastY = scrollY, lastT = performance.now(), skew = 0, boost = 0, raf = 0, prev = 0;
+    new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(m);
+    function loop(now) {
+      // Amortiguación por tiempo real (no por cuadro): igual a 30 o 120 fps.
+      var k = prev ? Math.min(4, (now - prev) / 16.7) : 1; prev = now;
+      skew *= Math.pow(0.9, k); boost *= Math.pow(0.92, k);
+      m.style.setProperty('--skew', skew.toFixed(2) + 'deg');
+      anims.forEach(function (a) { a.playbackRate = 1 + boost; });
+      raf = (Math.abs(skew) > 0.02 || boost > 0.01) ? requestAnimationFrame(loop) : 0;
+      if (!raf) { prev = 0; m.style.setProperty('--skew', '0deg'); anims.forEach(function (a) { a.playbackRate = 1; }); }
+    }
+    addEventListener('scroll', function () {
+      var now = performance.now(), dy = scrollY - lastY, dt = Math.max(16, now - lastT);
+      lastY = scrollY; lastT = now;
+      if (!visible) return;
+      var v = dy / dt; // px por ms
+      skew = Math.max(-7, Math.min(7, skew + v * -2.2));
+      boost = Math.min(6, boost + Math.abs(v) * 1.6);
+      if (!raf) raf = requestAnimationFrame(loop);
+    }, { passive: true });
+  })();
+
+  /* ── 6. Vista previa flotante del documento (índice del catálogo) ─
+     Al pasar sobre un servicio, una hoja en miniatura con su fundamento
+     legal, su precio y un sello sigue al cursor, inclinándose con la
+     velocidad del movimiento. Solo con mouse. */
+  (function preview() {
+    if (reduce || !finePointer) return;
+    var lists = document.querySelectorAll('.index');
+    if (!lists.length || !document.querySelector('.index a[data-ref]')) return;
+    var card = document.createElement('div');
+    card.className = 'preview';
+    card.setAttribute('aria-hidden', 'true');
+    card.innerHTML =
+      '<p class="preview__kind"></p><p class="preview__title"></p><span class="preview__ref"></span>' +
+      '<div class="preview__lines"><span class="ln ln--90"></span><span class="ln ln--80"></span><span class="ln ln--60"></span></div>' +
+      '<p class="preview__price"></p>' +
+      '<div class="preview__seal"><svg viewBox="0 0 140 140"><defs><radialGradient id="wax-p" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#dd6a4c"/><stop offset=".5" stop-color="#a63a22"/><stop offset="1" stop-color="#6a220f"/></radialGradient></defs>' +
+      '<circle cx="70" cy="70" r="64" fill="url(#wax-p)"/><circle cx="70" cy="70" r="50" fill="none" stroke="#f4c3b0" stroke-opacity=".5" stroke-width="2"/>' +
+      '<path d="m50 71 13 13 27-29" fill="none" stroke="#fde7dd" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></div>';
+    document.body.appendChild(card);
+    var q = function (s) { return card.querySelector(s); };
+    var pos = { x: 0, y: 0 }, tgt = { x: 0, y: 0 }, rot = 0, lastX = 0, raf = 0, on = false;
+
+    function loop() {
+      pos.x += (tgt.x - pos.x) * 0.16; pos.y += (tgt.y - pos.y) * 0.16;
+      rot += ((tgt.x - lastX) * 0.25 - rot) * 0.12; lastX = pos.x;
+      rot = Math.max(-6, Math.min(6, rot));
+      card.style.transform = 'translate3d(' + pos.x.toFixed(1) + 'px,' + pos.y.toFixed(1) + 'px,0) rotate(' + rot.toFixed(2) + 'deg)';
+      raf = (on || Math.abs(tgt.x - pos.x) > 0.3) ? requestAnimationFrame(loop) : 0;
+    }
+    function place(e) {
+      var w = card.offsetWidth, h = card.offsetHeight;
+      var x = e.clientX + 28, y = e.clientY - h / 2;
+      if (x + w > innerWidth - 16) x = e.clientX - w - 28;
+      tgt.x = x; tgt.y = Math.max(76, Math.min(innerHeight - h - 16, y));
+    }
+    lists.forEach(function (list) {
+      list.classList.add('has-preview');
+      list.addEventListener('pointerover', function (e) {
+        var a = e.target.closest('a[data-ref]');
+        if (!a) return;
+        var tome = a.closest('.tome');
+        var name = a.querySelector('.index__name').cloneNode(true);
+        name.querySelectorAll('.tag').forEach(function (t) { t.remove(); });
+        q('.preview__kind').textContent = tome ? tome.querySelector('.tome__num').firstChild.textContent.trim() + ' · ' + tome.querySelector('.tome__title').textContent : '';
+        q('.preview__title').textContent = name.textContent.trim();
+        q('.preview__ref').textContent = a.dataset.ref;
+        q('.preview__price').innerHTML = a.querySelector('.index__price').textContent.trim().replace(/^desde/, '<small>desde</small>');
+        if (!on) { place(e); pos.x = tgt.x; pos.y = tgt.y; lastX = pos.x; }
+        on = true; card.classList.add('is-on');
+        if (!raf) raf = requestAnimationFrame(loop);
+      });
+      list.addEventListener('pointermove', function (e) { if (on) place(e); }, { passive: true });
+      list.addEventListener('pointerleave', function () { on = false; card.classList.remove('is-on'); });
+    });
+    addEventListener('scroll', function () { if (on) { on = false; card.classList.remove('is-on'); } }, { passive: true });
   })();
 })();

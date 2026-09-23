@@ -156,8 +156,8 @@ Los rangos son la variación entre corridas en esta máquina: el TBT de laborato
 | Pila de documentos en 3D en cada hero, que se inclina con el cursor y cuyo papel refleja la luz | CSS 3D real (`perspective` + `preserve-3d` + `translateZ` por capa) | Solo con mouse; la animación se detiene al llegar a su posición; en táctil, una "respiración" lenta solo con CSS |
 | Sello de lacre (cera) que cae girando | SVG con borde orgánico generado y relieve | Animación de entrada solo con `transform` |
 | Tinta que fluye detrás del hero | Shader WebGL propio (~3 KB, sin librerías) | Carga después del `load`; se pausa fuera de pantalla; se omite con movimiento reducido, ahorro de datos, renderizado por software o menos de 4 GB de RAM |
-| Estante de libros 3D para los tomos del catálogo | CSS 3D | Estático; gira al pasar el cursor |
-| Franja cinética de servicios | CSS | Decorativa (`aria-hidden`), se pausa al pasar el cursor, apagada con movimiento reducido |
+| Tomos del catálogo con numeral romano de capítulo (I–IV) y **vista previa flotante del documento** que sigue al cursor por el índice, con su fundamento legal, precio y sello (se inclina con la velocidad) | CSS + `fx.js` | Solo con mouse; sin movimiento reducido |
+| Franja cinética de dos capas: los servicios en serif y los fundamentos legales en mono, en direcciones opuestas; se inclina y acelera con la velocidad del scroll | CSS + Web Animations (`playbackRate`) | Decorativa (`aria-hidden`); amortiguación por tiempo real; se pausa al pasar el cursor |
 | Tarjetas que se apilan en "Cómo funciona" | `position: sticky` | Solo CSS, desde 900 px |
 | Revelado al hacer scroll | Animaciones ligadas al scroll (`animation-timeline: view()`) | Solo CSS; usa `translate`, así que no pisa los efectos hover |
 | Transiciones entre páginas y al cambiar el tema | View Transitions API | Apagadas con movimiento reducido |
