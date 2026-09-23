@@ -60,17 +60,28 @@
   src: url("/assets/fonts/dm-mono-500.woff2") format("woff2");
   font-weight: 500; font-style: normal; font-display: swap;
 }
-/* Respaldos con métricas ajustadas (medidas en navegador): el texto
-   ocupa lo mismo antes y después del swap → CLS ≈ 0. */
+/* Respaldos con métricas ajustadas (anchos medidos en navegador contra
+   cada estilo real: regular, itálica, 400 y 700). El texto ocupa lo mismo
+   antes y después del swap → sin saltos de línea → CLS ≈ 0. */
 @font-face {
-  font-family: "Serif Fallback";
+  font-family: "Serif Fallback"; font-style: normal;
   src: local("Times New Roman"), local("TimesNewRomanPSMT"), local("Liberation Serif");
-  size-adjust: 82.8%; ascent-override: 119.6%; descent-override: 37.4%; line-gap-override: 0%;
+  size-adjust: 83.3%; ascent-override: 118.8%; descent-override: 37.2%; line-gap-override: 0%;
 }
 @font-face {
-  font-family: "Sans Fallback";
+  font-family: "Serif Fallback"; font-style: italic;
+  src: local("Times New Roman Italic"), local("TimesNewRomanPS-ItalicMT"), local("Liberation Serif Italic");
+  size-adjust: 87.5%; ascent-override: 113.1%; descent-override: 35.4%; line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Sans Fallback"; font-weight: 400 500;
   src: local("Arial"), local("ArialMT"), local("Liberation Sans"), local("Helvetica");
-  size-adjust: 103.1%; ascent-override: 103.4%; descent-override: 29.1%; line-gap-override: 0%;
+  size-adjust: 101.9%; ascent-override: 104.6%; descent-override: 29.4%; line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Sans Fallback"; font-weight: 600 800;
+  src: local("Arial Bold"), local("Arial-BoldMT"), local("Liberation Sans Bold"), local("Helvetica Bold");
+  size-adjust: 100.8%; ascent-override: 105.8%; descent-override: 29.8%; line-gap-override: 0%;
 }
 
 /* ── TOKENS ───────────────────────────────────────────────────── */
@@ -611,6 +622,11 @@ html[data-theme="dark"] .theme-toggle .i-moon { opacity: 1; transform: none; }
   }
 }
 @keyframes rise { from { opacity: .001; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+
+/* Rendimiento: lo que está fuera de pantalla no se maqueta ni se pinta
+   hasta acercarse (el HTML completo sigue llegando al crawler). Baja el
+   trabajo de layout inicial de la home a menos de la mitad (medido). */
+.section, .closing, .footer { content-visibility: auto; contain-intrinsic-size: auto 900px; }
 
 /* ── BANDA DE HECHOS ──────────────────────────────────────────── */
 

@@ -80,11 +80,15 @@
   // Desplegable "Calculadoras": clic/teclado en todos lados, hover con puntero fino.
   document.querySelectorAll('[data-menu]').forEach(function (menu) {
     var btn = menu.querySelector('button');
-    var timer;
+    var timer, abiertoPorHover = 0;
     var set = function (open) { menu.classList.toggle('is-open', open); btn.setAttribute('aria-expanded', String(open)); };
-    btn.addEventListener('click', function () { set(!menu.classList.contains('is-open')); });
+    btn.addEventListener('click', function () {
+      // Con mouse, el hover ya lo abrió: el clic que llega justo después no debe cerrarlo.
+      if (menu.classList.contains('is-open') && Date.now() - abiertoPorHover < 600) return;
+      set(!menu.classList.contains('is-open'));
+    });
     if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-      menu.addEventListener('mouseenter', function () { clearTimeout(timer); set(true); });
+      menu.addEventListener('mouseenter', function () { clearTimeout(timer); if (!menu.classList.contains('is-open')) abiertoPorHover = Date.now(); set(true); });
       menu.addEventListener('mouseleave', function () { timer = setTimeout(function () { set(false); }, 180); });
     }
     menu.addEventListener('focusout', function (e) { if (!menu.contains(e.relatedTarget)) set(false); });

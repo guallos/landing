@@ -45,6 +45,7 @@ const server = http.createServer((req, res) => {
 await new Promise(r => server.listen(0, r));
 const base = `http://localhost:${server.address().port}`;
 
+const ADS_ROUTES = new Set(['/accion-de-tutela/', '/derecho-de-peticion/']);
 const EXTERNAL_OK = /youtube|ytimg|googletagmanager|google-analytics|doubleclick|google\.com\/(rmkt|ccm)|googleadservices/;
 const viewports = [{ name: 'movil', width: 390, height: 844 }, { name: 'escritorio', width: 1440, height: 900 }];
 const routes = listPages().map(routeOf).filter(r => r !== '/404.html').concat(['/ruta-que-no-existe/']);
@@ -58,12 +59,16 @@ for (const bn of browsers) {
     for (const r of routes) {
       const page = await ctx.newPage();
       const errs = [];
+      let gtagSeen = false;
+      page.on('request', q => { if (q.url().includes('googletagmanager.com/gtag/js?id=AW-')) gtagSeen = true; });
       page.on('console', m => { if (m.type() === 'error' && !/404 \(Not Found\)/.test(m.text()) ) errs.push('consola: ' + m.text()); });
       page.on('pageerror', e => errs.push('JS: ' + e.message));
       page.on('response', resp => { if (resp.status() >= 400 && resp.url().startsWith(base) && !resp.url().includes('ruta-que-no-existe')) errs.push(`HTTP ${resp.status()} ${resp.url().replace(base, '')}`); });
       page.on('requestfailed', q => { if (!EXTERNAL_OK.test(q.url())) errs.push('falló: ' + q.url()); });
       await page.goto(base + r, { waitUntil: 'load', timeout: 30000 }).catch(e => errs.push('navegación: ' + e.message));
-      await page.waitForTimeout(600);
+      await page.waitForTimeout(ADS_ROUTES.has(r) ? 2500 : 600);
+      // Guardia: en tutela y petición gtag.js DEBE cargar (diferido tras el load).
+      if (ADS_ROUTES.has(r) && !gtagSeen) errs.push('gtag.js de Google Ads no se cargó');
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth).catch(() => 0);
       if (overflow > 1) errs.push(`scroll horizontal de ${overflow}px`);
       if (shots) await page.screenshot({ path: path.join(path.resolve(shots), `${bn}-${vp.name}-${r.replace(/[\/.]+/g, '_').replace(/^_|_$/g, '') || 'home'}.png`) });

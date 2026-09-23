@@ -17,12 +17,37 @@
        (chat.justiexpress.com) cuando hay un pago Wompi real.
        El reenvío de utm/gclid al chat vive en main.js (data-* del <body>).
        ════════════════════════════════════════════════ -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18198394694"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag("js", new Date());
     gtag("config", "AW-18198394694");
+
+    // Carga DIFERIDA de gtag.js (sep 2026): la etiqueta competía con el
+    // primer render y en móvil subía el LCP a 3,3–4,3 s (Lighthouse). Los
+    // comandos de arriba quedan en dataLayer y se envían en cuanto el script
+    // carga: tras el evento load (en tiempo libre, máx. 2 s) o con la primera
+    // interacción, lo que ocurra antes. Para volver a la carga inmediata:
+    // reemplazar este bloque (function) por la etiqueta async estándar de
+    // gtag.js con el mismo src. (Ojo: no escribir la etiqueta de cierre de
+    // script dentro de este comentario: el HTML la toma como fin del bloque.)
+    (function () {
+      var done = false;
+      function cargar() {
+        if (done) return; done = true;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=AW-18198394694";
+        document.head.appendChild(s);
+      }
+      ["pointerdown", "keydown", "scroll", "touchstart"].forEach(function (ev) {
+        addEventListener(ev, cargar, { once: true, passive: true });
+      });
+      addEventListener("load", function () {
+        if ("requestIdleCallback" in window) requestIdleCallback(cargar, { timeout: 2000 });
+        else setTimeout(cargar, 1200);
+      });
+    })();
   </script>
 
   <meta property="og:type" content="website" />
