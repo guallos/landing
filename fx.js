@@ -244,10 +244,10 @@
       list.addEventListener('pointerover', function (e) {
         var a = e.target.closest('a[data-ref]');
         if (!a) return;
-        var tome = a.closest('.tome');
+        var grupo = a.closest('.catgroup');
         var name = a.querySelector('.index__name').cloneNode(true);
         name.querySelectorAll('.tag').forEach(function (t) { t.remove(); });
-        q('.preview__kind').textContent = tome ? tome.querySelector('.tome__num').firstChild.textContent.trim() + ' · ' + tome.querySelector('.tome__title').textContent : '';
+        q('.preview__kind').textContent = grupo ? grupo.querySelector('h3').textContent.trim() : '';
         q('.preview__title').textContent = name.textContent.trim();
         q('.preview__ref').textContent = a.dataset.ref;
         q('.preview__price').innerHTML = a.querySelector('.index__price').textContent.trim().replace(/^desde/, '<small>desde</small>');

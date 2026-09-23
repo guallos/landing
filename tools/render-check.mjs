@@ -71,6 +71,15 @@ for (const bn of browsers) {
       if (ADS_ROUTES.has(r) && !gtagSeen) errs.push('gtag.js de Google Ads no se cargó');
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth).catch(() => 0);
       if (overflow > 1) errs.push(`scroll horizontal de ${overflow}px`);
+      // Contenido recortado: body usa overflow-x: clip, así que un desborde no
+      // genera scroll pero sí esconde texto. Se excluyen los carriles horizontales.
+      if (vp.width < 500) {
+        const cut = await page.evaluate(() => [...document.querySelectorAll('main *')].filter(e => {
+          if (e.closest('.marquee, .reels-rail, .catnav ul, .compare-wrap, .quotes, .doc-stage, .hero-fx')) return false;
+          const r = e.getBoundingClientRect(); return r.width > 0 && r.right > innerWidth + 1;
+        }).slice(0, 3).map(e => (e.className || e.tagName).toString().slice(0, 40))).catch(() => []);
+        if (cut.length) errs.push('contenido recortado a la derecha: ' + cut.join(', '));
+      }
       if (shots) await page.screenshot({ path: path.join(path.resolve(shots), `${bn}-${vp.name}-${r.replace(/[\/.]+/g, '_').replace(/^_|_$/g, '') || 'home'}.png`) });
       if (errs.length) { problems += errs.length; console.log(`✗ ${bn} ${vp.name} ${r}\n    ${errs.join('\n    ')}`); }
       else console.log(`✓ ${bn} ${vp.name} ${r}`);

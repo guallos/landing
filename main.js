@@ -133,6 +133,27 @@
   filtrar();
 })();
 
+/* ── 2c. MENÚ DE CATEGORÍAS DEL CATÁLOGO (home) ─────────────────────
+   Resalta la categoría que se está leyendo. En móvil, además, desplaza
+   la fila de chips para que la activa quede a la vista. */
+(function () {
+  var nav = document.querySelector('.catnav');
+  if (!nav || !('IntersectionObserver' in window)) return;
+  var links = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#cat-"]'));
+  var byId = {};
+  links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+  var activar = function (id) {
+    links.forEach(function (a) { var on = a === byId[id]; a.classList.toggle('is-active', on); if (on) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+    var a = byId[id], ul = nav.querySelector('ul');
+    if (a && ul.scrollWidth > ul.clientWidth) ul.scrollTo({ left: a.offsetLeft - 16, behavior: 'smooth' });
+  };
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) activar(e.target.id); });
+  }, { rootMargin: '-35% 0px -55% 0px' });
+  Object.keys(byId).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+  activar(links[0].getAttribute('href').slice(1));
+})();
+
 /* ── 3. WHATSAPP FLOTANTE ──────────────────────────────────────────
    No tapa el CTA del hero en el primer pantallazo: aparece tras 360 px. */
 (function () {
