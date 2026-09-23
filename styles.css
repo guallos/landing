@@ -623,10 +623,11 @@ html[data-theme="dark"] .theme-toggle .i-moon { opacity: 1; transform: none; }
 }
 @keyframes rise { from { opacity: .001; transform: translateY(28px); } to { opacity: 1; transform: none; } }
 
-/* Rendimiento: lo que está fuera de pantalla no se maqueta ni se pinta
-   hasta acercarse (el HTML completo sigue llegando al crawler). Baja el
-   trabajo de layout inicial de la home a menos de la mitad (medido). */
-.section, .closing, .footer { content-visibility: auto; contain-intrinsic-size: auto 900px; }
+/* Rendimiento: el riel de videos (pesado y armado por JS, sin texto que
+   indexar) no se maqueta ni se pinta hasta acercarse. Se limita a esta
+   sección a propósito: en las demás, content-visibility sacaría el texto
+   de innerText y no queremos ninguna duda de rastreo. */
+.reels { content-visibility: auto; contain-intrinsic-size: auto 1400px; }
 
 /* ── BANDA DE HECHOS ──────────────────────────────────────────── */
 
