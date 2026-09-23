@@ -97,6 +97,42 @@
   });
 })();
 
+/* ── 2b. BUSCADOR DEL ÍNDICE DE DOCUMENTOS (home) ───────────────────
+   Mejora progresiva: sin JS el índice se ve completo y la barra de
+   búsqueda (hidden en el HTML) no aparece. Ignora tildes y mayúsculas. */
+(function () {
+  var bar = document.querySelector('[data-catalog-bar]');
+  var input = document.getElementById('catalog-q');
+  if (!bar || !input) return;
+  var grid = document.getElementById('catalog-grid');
+  var count = document.getElementById('catalog-count');
+  var empty = document.getElementById('catalog-empty');
+  var norm = function (s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); };
+  var groups = Array.prototype.slice.call(grid.querySelectorAll('.catalog__group'));
+  var total = grid.querySelectorAll('li').length;
+  bar.hidden = false;
+
+  function filtrar() {
+    var q = norm(input.value.trim());
+    var shown = 0;
+    groups.forEach(function (g) {
+      var titulo = norm(g.querySelector('h3').textContent);
+      var n = 0;
+      g.querySelectorAll('li').forEach(function (li) {
+        var ok = !q || norm(li.textContent).indexOf(q) > -1 || titulo.indexOf(q) > -1;
+        li.hidden = !ok;
+        if (ok) n++;
+      });
+      g.hidden = n === 0;
+      shown += n;
+    });
+    count.textContent = q ? shown + ' de ' + total + ' documentos' : total + ' documentos y herramientas';
+    empty.hidden = shown > 0;
+  }
+  input.addEventListener('input', filtrar);
+  filtrar();
+})();
+
 /* ── 3. WHATSAPP FLOTANTE ──────────────────────────────────────────
    No tapa el CTA del hero en el primer pantallazo: aparece tras 360 px. */
 (function () {

@@ -848,6 +848,48 @@ html[data-theme="dark"] .theme-toggle .i-moon { opacity: 1; transform: none; }
 .includes strong { color: var(--ink); }
 @media (max-width: 700px) { .includes { grid-template-columns: 1fr; } }
 
+/* ── FICHA TÉCNICA (opciones de cada calculadora) ───────────── */
+
+.specs { border-top: 1px solid var(--ink); }
+.spec {
+  display: grid; grid-template-columns: minmax(0, .36fr) minmax(0, 1fr);
+  gap: 8px clamp(20px, 4vw, 56px);
+  padding: 22px 0 24px; border-bottom: 1px solid var(--rule);
+}
+.spec dt { font-weight: 800; font-size: 1.05rem; letter-spacing: -.01em; }
+.spec dt small { display: block; margin-top: 4px; font-family: var(--ff-mono); font-size: .68rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); }
+.spec dd p { color: var(--ink-2); font-size: .97rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; padding: 0; list-style: none; }
+.chips li { padding: 5px 10px; border-radius: 999px; background: var(--sheet); border: 1px solid var(--rule); font-size: .82rem; color: var(--ink-2); }
+.spec__who { margin-top: clamp(28px, 3vw, 40px); display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; padding: 0; list-style: none; }
+.spec__who li { padding: 18px 20px; border-radius: var(--radius); background: var(--sheet); border: 1px solid var(--rule); font-size: .94rem; color: var(--ink-2); }
+.spec__who strong { display: block; color: var(--ink); margin-bottom: 4px; font-size: 1rem; }
+@media (max-width: 700px) { .spec { grid-template-columns: 1fr; } }
+
+/* ── ÍNDICE GENERAL DE DOCUMENTOS (home) ─────────────────────── */
+
+.catalog__bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 26px; }
+.catalog__search { position: relative; flex: 1 1 320px; max-width: 460px; }
+.catalog__search input {
+  width: 100%; min-height: 52px; padding: 0 18px 0 46px;
+  border-radius: 999px; border: 1.5px solid var(--rule); background: var(--sheet); color: var(--ink);
+  font: inherit; font-size: 1rem;
+}
+.catalog__search input:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 4px var(--teal-wash); }
+.catalog__search .icon { position: absolute; left: 17px; top: 50%; transform: translateY(-50%); color: var(--ink-3); pointer-events: none; }
+.catalog__count { font-size: var(--fs-small); color: var(--ink-3); }
+.catalog__grid { columns: 3 300px; column-gap: clamp(24px, 3vw, 44px); }
+.catalog__group { break-inside: avoid; margin-bottom: 30px; }
+.catalog__group h3 { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding-bottom: 10px; margin-bottom: 6px; border-bottom: 1px solid var(--ink); font-family: var(--ff-serif); font-weight: 400; font-size: 1.55rem; line-height: 1.1; }
+.catalog__group h3 span { font-family: var(--ff-mono); font-size: .72rem; color: var(--teal); letter-spacing: .08em; }
+.catalog__group ul { list-style: none; padding: 0; }
+.catalog__group li { padding: 7px 0; border-bottom: 1px dashed var(--rule-2); font-size: .93rem; color: var(--ink-2); }
+.catalog__group li a { color: var(--ink); font-weight: 700; text-decoration: none; }
+.catalog__group li a:hover { color: var(--teal); text-decoration: underline; }
+.catalog__group .link-arrow { margin-top: 12px; font-size: .9rem; }
+.catalog__empty { padding: 24px; border-radius: var(--radius); border: 1px dashed var(--rule); color: var(--ink-2); }
+.catalog mark { background: var(--cyan-hl); color: inherit; border-radius: 3px; }
+
 /* ── COMPARATIVA ──────────────────────────────────────────────── */
 
 .compare-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--sheet); -webkit-overflow-scrolling: touch; }

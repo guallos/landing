@@ -134,6 +134,7 @@ for (const file of listPages()) {
   if (route !== '/' && !bc) fail(file, 'sin BreadcrumbList');
   if (bc && !/class="crumbs[\s"]/.test(body)) fail(file, 'BreadcrumbList sin migas visibles');
 
+  if (/<a\b[^>]*>(?:(?!<\/a>)[\s\S])*?<a\b/.test(body)) fail(file, 'enlace dentro de otro enlace (HTML inválido)');
   if (/Syne/.test(html)) fail(file, 'todavía referencia la fuente Syne');
   if (failures === before) console.log('  ✓');
 }
