@@ -1,0 +1,15 @@
+{
+  "name": "justiexpress-landing-tools",
+  "private": true,
+  "description": "Herramientas locales de la landing (no se despliegan): parciales, verificación, imágenes OG y chequeo de render.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node build.mjs --check && node check.mjs",
+    "og": "node og.mjs",
+    "render": "node render-check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}

@@ -1,0 +1,6 @@
+# No publicar herramientas ni documentos internos (Vercel sirve la raíz tal cual).
+tools/
+partials/
+*.md
+reels/*.py
+reels/.gitignore
