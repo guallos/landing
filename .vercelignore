@@ -4,3 +4,4 @@ partials/
 *.md
 reels/*.py
 reels/.gitignore
+docs/
