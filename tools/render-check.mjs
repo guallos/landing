@@ -45,7 +45,7 @@ const server = http.createServer((req, res) => {
 await new Promise(r => server.listen(0, r));
 const base = `http://localhost:${server.address().port}`;
 
-const EXTERNAL_OK = /youtube|ytimg|googletagmanager|google-analytics|doubleclick|google\.com\/rmkt|googleadservices/;
+const EXTERNAL_OK = /youtube|ytimg|googletagmanager|google-analytics|doubleclick|google\.com\/(rmkt|ccm)|googleadservices/;
 const viewports = [{ name: 'movil', width: 390, height: 844 }, { name: 'escritorio', width: 1440, height: 900 }];
 const routes = listPages().map(routeOf).filter(r => r !== '/404.html').concat(['/ruta-que-no-existe/']);
 if (shots) fs.mkdirSync(path.resolve(shots), { recursive: true });
