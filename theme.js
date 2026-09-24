@@ -19,18 +19,28 @@
       b.setAttribute("aria-pressed", String(b.getAttribute("data-theme-set") === cur));
     });
   }
-  function set(next) {
+  function set(next, from) {
+    if (d.getAttribute("data-theme") === next) return;
     var swap = function () { d.setAttribute("data-theme", next); sync(); };
-    // Transición suave del cambio de tema donde el navegador la soporta.
-    if (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.startViewTransition(swap);
-    else swap();
+    // El tema nuevo se revela en un círculo que nace del botón pulsado
+    // (View Transitions); sin soporte o con movimiento reducido, cambio directo.
+    if (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      if (from) {
+        var r = from.getBoundingClientRect();
+        d.style.setProperty("--vx", Math.round(r.left + r.width / 2) + "px");
+        d.style.setProperty("--vy", Math.round(r.top + r.height / 2) + "px");
+      }
+      d.classList.add("vt-theme");
+      var t = document.startViewTransition(swap);
+      t.finished.then(function () { d.classList.remove("vt-theme"); }, function () { d.classList.remove("vt-theme"); });
+    } else swap();
     try { localStorage.setItem("tcl_theme", next); } catch (e) { /* almacenamiento bloqueado */ }
   }
   function bind() {
     sync();
     document.addEventListener("click", function (e) {
       var b = e.target.closest && e.target.closest("[data-theme-set]");
-      if (b) set(b.getAttribute("data-theme-set"));
+      if (b) set(b.getAttribute("data-theme-set"), b);
     });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);

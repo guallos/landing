@@ -164,6 +164,7 @@ Los rangos son la variación entre corridas en esta máquina: el TBT de laborato
 | Textura de papel | WebP con transparencia de 8 KB | Sin `mix-blend-mode` (lo medí: costaba 700 ms de TBT); se activa después de la carga |
 | Luz que sigue al cursor en tarjetas y botones magnéticos | CSS custom properties desde `fx.js` | Solo con mouse |
 
-- **Tema:** el sol sale del menú y pasa a un selector "Claro / Oscuro" en el footer y en el menú móvil.
+- **Tema:** el sol sale del menú y pasa a una cápsula flotante "Claro / Oscuro", siempre visible abajo a la izquierda (en móvil, solo íconos). El tema nuevo se revela en círculo desde el botón (View Transitions).
+- **Pasos:** el número serif gigante se reemplaza por placas "01–04" en sans sobre un cuadro cian, coherentes con los íconos del catálogo.
 - **Contenido:** la home dice **5 calculadoras y herramientas con 11 módulos** (laboral 5, tributaria 3, notarial 3, más el estudio de arrendamiento y el verificador de reporte), como las presenta la app.
 - **Rendimiento:** mediana de 5 corridas de Lighthouse móvil. Home: 97 publicada → 97 nueva (LCP 2,3 s, TBT 42 ms). Tutela: 97 → 93 (LCP 2,1 s); la diferencia es gtag más los efectos. Todas las rutas quedan en rango "bueno".

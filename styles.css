@@ -797,12 +797,22 @@ html[data-theme="dark"] .stage-shadow { background: radial-gradient(closest-side
 .steps { display: grid; grid-template-columns: repeat(var(--cols, 4), minmax(0, 1fr)); gap: 0; list-style: none; padding: 0; counter-reset: step; }
 .step { position: relative; padding: 0 clamp(14px, 2vw, 28px) 0 0; }
 .step + .step { padding-left: clamp(14px, 2vw, 28px); border-left: 1px solid var(--rule); }
+.step { counter-increment: step; }
+/* El número se dibuja con un contador ("01", "02"…) sobre una placa cian:
+   el texto original queda en el HTML pero sin tamaño. */
 .step__n {
-  display: block;
-  font-family: var(--ff-serif); font-size: clamp(3.2rem, 2.4rem + 2.4vw, 4.8rem); line-height: .9;
-  color: var(--teal);
+  /* flex (no grid): el número original, de tamaño 0, no crea una fila extra */
+  display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 16px; flex: none;
+  font-size: 0; color: transparent; align-self: start;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--cyan) 55%, var(--sheet)), var(--cyan));
+  box-shadow: 0 12px 24px -14px rgba(0, 150, 138, .8), inset 0 1px 0 rgba(255,255,255,.5);
 }
-.step__n::after { content: ""; display: block; width: 36px; height: 2px; margin-top: 18px; background: var(--cyan); }
+.step__n::before {
+  content: counter(step, decimal-leading-zero);
+  display: block;
+  font-family: var(--ff-sans); font-size: 1.1rem; font-weight: 800; line-height: 1; letter-spacing: -.02em;
+  color: var(--on-cyan); font-variant-numeric: tabular-nums;
+}
 .step h3 { margin-top: 20px; font-size: var(--fs-h3); line-height: 1.25; letter-spacing: -.01em; }
 .step p { margin-top: 10px; font-size: .95rem; color: var(--ink-2); }
 @media (max-width: 900px) {
@@ -812,8 +822,7 @@ html[data-theme="dark"] .stage-shadow { background: radial-gradient(closest-side
 @media (max-width: 560px) {
   .steps { grid-template-columns: 1fr; row-gap: 0; }
   .step, .step + .step { display: grid; grid-template-columns: 64px 1fr; column-gap: 16px; padding: 22px 0; border-left: 0; border-top: 1px solid var(--rule); }
-  .step__n { grid-row: span 2; font-size: 3rem; }
-  .step__n::after { display: none; }
+  .step__n { grid-row: span 2; width: 48px; height: 48px; border-radius: 14px; }
   .step h3 { margin-top: 2px; }
   .step p { margin-top: 4px; }
 }
@@ -1278,8 +1287,19 @@ html[data-theme="dark"] .closing .mono { color: #0A6E63; }
 .theme-switch button .icon { width: 16px; height: 16px; }
 .theme-switch button:hover { color: var(--ink); }
 .theme-switch button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-.nav__drawer .theme-switch { margin-top: 18px; }
-.footer__legal .theme-switch { order: 3; }
+/* Cápsula flotante, siempre visible abajo a la izquierda (WhatsApp va a la derecha) */
+.theme-switch--float {
+  position: fixed; z-index: 95;
+  left: max(18px, env(safe-area-inset-left)); bottom: max(18px, env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--sheet) 82%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+  box-shadow: 0 12px 30px -14px rgba(16,24,27,.45);
+}
+@media (max-width: 700px) {
+  .theme-switch--float button { padding: 0 11px; min-height: 40px; }
+  .theme-switch--float button span { display: none; }
+  .theme-switch--float button .icon { width: 18px; height: 18px; }
+}
 
 /* ── Hero: lienzo del shader (tinta que fluye) ────────────────── */
 .hero { isolation: isolate; overflow-x: clip; }
@@ -1372,13 +1392,13 @@ html[data-theme="dark"] .closing .mono { color: #0A6E63; }
   .steps { grid-template-columns: 1fr; gap: 26px; }
   .step, .step + .step {
     position: sticky; top: calc(var(--nav-h) + 28px + var(--k, 0) * 16px);
-    display: grid; grid-template-columns: minmax(180px, .5fr) minmax(0, 1fr); gap: 0 clamp(32px, 5vw, 80px); align-items: center;
-    min-height: 260px; padding: clamp(28px, 3.5vw, 48px) clamp(28px, 4vw, 56px);
+    display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px clamp(24px, 3vw, 44px); align-items: start;
+    min-height: 220px; padding: clamp(28px, 3.5vw, 48px) clamp(28px, 4vw, 56px);
     border: 1px solid var(--rule); border-radius: var(--radius-lg);
     background: var(--sheet); box-shadow: 0 -10px 40px -24px rgba(16,24,27,.35);
   }
-  .step__n { grid-row: span 2; font-size: clamp(6rem, 4rem + 5vw, 10rem); }
-  .step__n::after { display: none; }
+  .step__n { grid-row: span 2; align-self: start; width: 72px; height: 72px; border-radius: 20px; }
+  .step__n::before { font-size: 1.45rem; }
   .step h3 { margin-top: 0; font-size: clamp(1.4rem, 1rem + 1.2vw, 2rem); font-family: var(--ff-serif); font-weight: 400; }
   .step p { font-size: 1.05rem; max-width: 34em; align-self: start; }
   .step:nth-child(2) { --k: 1; } .step:nth-child(3) { --k: 2; } .step:nth-child(4) { --k: 3; }
@@ -1391,6 +1411,14 @@ html[data-theme="dark"] .closing .mono { color: #0A6E63; }
 ::view-transition-new(root) { animation: vt-in .5s var(--ease) both; }
 @keyframes vt-out { to { opacity: 0; transform: translateY(-12px); } }
 @keyframes vt-in { from { opacity: 0; transform: translateY(18px); } }
+/* Cambio de tema: revelado circular desde el botón (no la transición de página) */
+.vt-theme .nav { view-transition-name: none; }
+.vt-theme::view-transition-old(root) { animation: none; }
+.vt-theme::view-transition-new(root) { animation: theme-reveal .65s cubic-bezier(.65, 0, .35, 1) both; }
+@keyframes theme-reveal {
+  from { clip-path: circle(0 at var(--vx, 50%) var(--vy, 100%)); }
+  to { clip-path: circle(150vmax at var(--vx, 50%) var(--vy, 100%)); }
+}
 @media (prefers-reduced-motion: reduce) {
   @view-transition { navigation: none; }
 }
