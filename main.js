@@ -4,6 +4,7 @@
    1. Atribución hacia el chat (utm/gclid + marca de orgánico)
    2. Navegación (menú móvil, desplegable de calculadoras)
    3. Botón flotante de WhatsApp (aparece al hacer scroll)
+   3b. Selector de tema flotante (se aparta de los botones)
    4. Videos: destacado 16:9 + riel de reels (solo en la home)
 
    Nada de lo visible depende de este archivo: si falla, la página
@@ -166,6 +167,32 @@
   var ticking = false;
   var update = function () { fab.classList.toggle('is-visible', window.scrollY > 360); ticking = false; };
   window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  update();
+})();
+
+/* ── 3b. SELECTOR DE TEMA FLOTANTE ─────────────────────────────────
+   Siempre visible, salvo cuando quedaría ENCIMA de un botón: según el
+   alto de la pantalla, el CTA del hero cae justo en su franja al cargar.
+   Mientras un botón pasa por debajo, se desvanece (solo opacidad: si se
+   moviera, cambiaría su propia caja y parpadearía). */
+(function () {
+  var sw = document.querySelector('.theme-switch--float');
+  if (!sw) return;
+  var btns = Array.prototype.slice.call(document.querySelectorAll('.btn'));
+  var ticking = false;
+  var update = function () {
+    ticking = false;
+    var s = sw.getBoundingClientRect(), m = 8;
+    sw.classList.toggle('is-apartado', btns.some(function (b) {
+      var r = b.getBoundingClientRect();
+      return r.width > 0 && r.bottom > s.top - m && r.top < s.bottom + m && r.right > s.left - m && r.left < s.right + m;
+    }));
+  };
+  var pedir = function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+  window.addEventListener('scroll', pedir, { passive: true });
+  window.addEventListener('resize', pedir);
+  window.addEventListener('load', pedir);
+  if (document.fonts) document.fonts.ready.then(pedir);
   update();
 })();
 

@@ -1294,7 +1294,10 @@ html[data-theme="dark"] .closing .mono { color: #0A6E63; }
   background: color-mix(in srgb, var(--sheet) 82%, transparent);
   -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
   box-shadow: 0 12px 30px -14px rgba(16,24,27,.45);
+  transition: opacity .25s var(--ease);
 }
+/* Se aparta mientras un botón pasa por debajo (main.js §3b) */
+.theme-switch--float.is-apartado:not(:focus-within) { opacity: 0; pointer-events: none; }
 @media (max-width: 700px) {
   .theme-switch--float button { padding: 0 11px; min-height: 40px; }
   .theme-switch--float button span { display: none; }

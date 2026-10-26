@@ -68,9 +68,10 @@ jerarquía la dan las migas y el `BreadcrumbList` (Inicio › hub › página).
 
 ## Cola (prioridad del plan SEO de oct 2026)
 
-Hecha: 1. Tutela contra la EPS. Siguen: 2. Derecho de petición a Datacrédito ·
-3. Pagué y sigo reportado · 4. Suplantación en centrales de riesgo ·
-5. Caducidad del reporte negativo · 6. Impugnar una fotomulta · 7. Prescripción
+Hechas: 1. Tutela contra la EPS · 2. Derecho de petición a Datacrédito (hub del
+bloque: las 3–5 cuelgan de ella en las migas) · 3. Pagué y sigo reportado ·
+4. Suplantación en centrales de riesgo (con la Ley 2573 de 2026) ·
+5. Caducidad del reporte negativo. Siguen: 6. Impugnar una fotomulta · 7. Prescripción
 de multas de tránsito · 8. Tutela por derecho de petición · 9. Derecho de
 petición a la EPS · 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto cuesta un
 derecho de petición? · 12. Contrato de arrendamiento de vivienda urbana ·
