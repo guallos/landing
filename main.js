@@ -20,6 +20,9 @@
      los enlaces con [data-chat] se reescriben al chat con esa
      categoría y ese origen (mismos valores que usaba cada landing —
      el embudo del chat depende de ellos: NO cambiarlos).
+   · <body data-plantilla="accion-tutela-salud">: las páginas por
+     documento llevan además la plantilla exacta (?plantilla=). La
+     categoría se conserva como respaldo para apps que no la lean.
    · Cualquier otro enlace al chat conserva su ?categoria= y solo
      recibe los utm/gclid y la marca de orgánico.                    */
 (function () {
@@ -45,6 +48,7 @@
   function urlDePagina() {
     var u = new URL('https://chat.justiexpress.com/');
     u.searchParams.set('categoria', body.dataset.categoria);
+    if (body.dataset.plantilla) u.searchParams.set('plantilla', body.dataset.plantilla);
     if (body.dataset.origen) u.searchParams.set('origen', body.dataset.origen);
     return marcar(u).toString();
   }

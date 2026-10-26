@@ -6,6 +6,12 @@
     { "source": "/terminos", "destination": "/TyC.html", "permanent": true },
     { "source": "/terminos/", "destination": "/TyC.html", "permanent": true },
     { "source": "/privacidad", "destination": "/PP.html", "permanent": true },
-    { "source": "/privacidad/", "destination": "/PP.html", "permanent": true }
+    { "source": "/privacidad/", "destination": "/PP.html", "permanent": true },
+    { "source": "/derecho-de-petición", "destination": "/derecho-de-peticion/", "permanent": true },
+    { "source": "/derecho-de-petición/", "destination": "/derecho-de-peticion/", "permanent": true },
+    { "source": "/derecho-de-petici%C3%B3n", "destination": "/derecho-de-peticion/", "permanent": true },
+    { "source": "/derecho-de-petici%C3%B3n/", "destination": "/derecho-de-peticion/", "permanent": true },
+    { "source": "/calculadora-laboral-", "destination": "/calculadora-laboral/", "permanent": true },
+    { "source": "/calculadora-laboral-/", "destination": "/calculadora-laboral/", "permanent": true }
   ]
 }

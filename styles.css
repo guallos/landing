@@ -1473,6 +1473,18 @@ html.fx-ready[data-theme="dark"] body::after { opacity: .6; filter: invert(1); }
   .seal { right: -4px; bottom: -58px; width: 104px; }
 }
 
+/* ── PÁGINA POR DOCUMENTO: fecha y fuentes ─────────────────────── */
+/* La fecha visible y las fuentes con enlace son señales de confianza en
+   temas legales (Google los trata como "tu dinero o tu vida"). */
+
+.actualizado { margin-top: 18px; font-size: .74rem; letter-spacing: .08em; color: var(--ink-3); }
+.fuentes { margin-top: clamp(40px, 5vw, 64px); padding-top: 24px; border-top: 1px solid var(--rule); max-width: 46em; }
+.fuentes h3 { font-size: .74rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); }
+.fuentes ul { margin-top: 12px; padding-left: 1.1em; display: grid; gap: 6px; font-size: .92rem; }
+.fuentes a { color: var(--ink-2); }
+.fuentes a:hover { color: var(--teal); }
+.fuentes p { margin-top: 16px; font-size: .86rem; color: var(--ink-3); line-height: 1.6; }
+
 /* ── MOVIMIENTO REDUCIDO ──────────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {

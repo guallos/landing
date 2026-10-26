@@ -21,6 +21,7 @@ catch { console.error('Falta Playwright: cd tools && npm install'); process.exit
 const PAGES = [
   { slug: 'home', kicker: 'Asistente legal con IA · Colombia', title: 'Defiende tus derechos <em>por escrito</em>, en minutos.', price: '$19.900', unit: 'por documento', doc: 'Acción de tutela' },
   { slug: 'tutela', kicker: 'Acción de tutela · Art. 86 C.P.', title: 'Tu tutela, <em>lista para radicar</em>.', price: '$19.900', unit: 'pago único', doc: 'Acción de tutela' },
+  { slug: 'tutela-eps', kicker: 'Tutela en salud · Ley 1751 de 2015', title: 'Tutela contra la EPS, <em>lista para radicar</em>.', price: '$19.900', unit: 'pago único', doc: 'Tutela contra la EPS' },
   { slug: 'peticion', kicker: 'Derecho de petición · Art. 23 C.P.', title: 'Que te respondan, <em>por escrito</em>.', price: '$19.900', unit: 'pago único', doc: 'Derecho de petición' },
   { slug: 'desacato', kicker: 'Incidente de desacato · Decreto 2591/91', title: 'Ganaste la tutela. <em>Que la cumplan.</em>', price: '$19.900', unit: 'pago único', doc: 'Incidente de desacato' },
   { slug: 'laboral', seal: 'CÁLCULO AL INSTANTE · JUSTIEXPRESS', kicker: 'Calculadora laboral', title: 'Lo que te deben, <em>al peso</em>.', price: '$19.900', unit: 'con informe PDF', doc: 'Liquidación laboral' },
