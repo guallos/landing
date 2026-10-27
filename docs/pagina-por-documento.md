@@ -71,9 +71,28 @@ jerarquía la dan las migas y el `BreadcrumbList` (Inicio › hub › página).
 Hechas: 1. Tutela contra la EPS · 2. Derecho de petición a Datacrédito (hub del
 bloque: las 3–5 cuelgan de ella en las migas) · 3. Pagué y sigo reportado ·
 4. Suplantación en centrales de riesgo (con la Ley 2573 de 2026) ·
-5. Caducidad del reporte negativo. Siguen: 6. Impugnar una fotomulta · 7. Prescripción
-de multas de tránsito · 8. Tutela por derecho de petición · 9. Derecho de
-petición a la EPS · 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto cuesta un
-derecho de petición? · 12. Contrato de arrendamiento de vivienda urbana ·
-13. Liquidación por despido sin justa causa · 14. Tutela de pensión ·
+5. Caducidad del reporte negativo · 6. Impugnar un comparendo o fotomulta (hub
+del bloque de multas: la 7 cuelga de ella en las migas) · 7. Prescripción y
+caducidad de multas de tránsito. Siguen: 8. Tutela por derecho de petición ·
+9. Derecho de petición a la EPS · 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto
+cuesta un derecho de petición? · 12. Contrato de arrendamiento de vivienda
+urbana · 13. Liquidación por despido sin justa causa · 14. Tutela de pensión ·
 15. Calculadora notarial (rehacer).
+
+## Lo que enseñaron las dos de multas (oct 2026)
+
+- **El plazo se verifica en el texto consolidado, no en la plantilla de la app.**
+  Los 5 y 20 días del artículo 136 son los del DESCUENTO y solo aplican «si el
+  inculpado acepta la comisión de la infracción»; el término para comparecer es
+  el del artículo 135 (3 días hábiles) más los 6 días hábiles adicionales del
+  artículo 137 cuando la detección fue electrónica. La página dice eso y además
+  advierte que pagar el descuento cierra la impugnación, que es la duda real.
+- **Cuando las fuentes se contradicen, se muestra la contradicción.** El artículo
+  159 dice que la prescripción «se interrumpirá con la presentación de la
+  demanda», redacción pensada para un proceso judicial que no encaja con el cobro
+  coactivo. La página tiene una sección propia para eso en vez de afirmar una
+  tesis: es más honesto y es el punto donde se gana la solicitud.
+- **`secretariasenado.gov.co` no siempre responde.** El texto consolidado se
+  verificó en el Gestor Normativo de Función Pública
+  (`funcionpublica.gov.co/eva/gestornormativo/norma.php?i=5557` para la Ley 769),
+  que es igual de oficial. Enlazar solo fuentes cuya URL se haya comprobado.

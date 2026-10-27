@@ -27,6 +27,8 @@ const PAGES = [
   { slug: 'pague-reportado', kicker: 'Hábeas data · Art. 13 Ley 1266', title: 'Pagué y sigo reportado: <em>qué exigir</em>.', price: '$19.900', unit: 'pago único', doc: 'Deuda pagada' },
   { slug: 'suplantacion', kicker: 'Suplantación · Ley 2573 de 2026', title: 'Te reportaron por una deuda <em>que no es tuya</em>.', price: '$19.900', unit: 'pago único', doc: 'Víctima de falsedad personal' },
   { slug: 'caducidad', kicker: 'Caducidad del dato · Art. 13 Ley 1266', title: '¿Cuánto dura un reporte <em>en Datacrédito</em>?', price: '$19.900', unit: 'pago único', doc: 'Caducidad del dato' },
+  { slug: 'impugnar-comparendo', kicker: 'Comparendos · Arts. 135 y 136 Ley 769', title: 'No la pagues <em>sin pelearla</em>.', price: '$19.900', unit: 'pago único', doc: 'Impugnación de comparendo' },
+  { slug: 'prescripcion-multas', kicker: 'Prescripción y caducidad · Ley 769 de 2002', title: '¿Cuándo prescribe <em>una multa</em>?', price: '$19.900', unit: 'pago único', doc: 'Prescripción de la multa' },
   { slug: 'desacato', kicker: 'Incidente de desacato · Decreto 2591/91', title: 'Ganaste la tutela. <em>Que la cumplan.</em>', price: '$19.900', unit: 'pago único', doc: 'Incidente de desacato' },
   { slug: 'laboral', seal: 'CÁLCULO AL INSTANTE · JUSTIEXPRESS', kicker: 'Calculadora laboral', title: 'Lo que te deben, <em>al peso</em>.', price: '$19.900', unit: 'con informe PDF', doc: 'Liquidación laboral' },
   { slug: 'tributaria', seal: 'CÁLCULO AL INSTANTE · JUSTIEXPRESS', kicker: 'Calculadora tributaria · F-210', title: 'Tu renta, <em>sin sustos</em>.', price: '$19.900', unit: 'con informe PDF', doc: 'Renta · Formulario 210' },
