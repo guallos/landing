@@ -74,8 +74,8 @@ bloque: las 3–5 cuelgan de ella en las migas) · 3. Pagué y sigo reportado ·
 5. Caducidad del reporte negativo · 6. Impugnar un comparendo o fotomulta (hub
 del bloque de multas: la 7 cuelga de ella en las migas) · 7. Prescripción y
 caducidad de multas de tránsito · 8. Tutela por derecho de petición ·
-9. Derecho de petición a la EPS. Siguen: 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto
-cuesta un derecho de petición? · 12. Contrato de arrendamiento de vivienda
+9. Derecho de petición a la EPS · 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto
+cuesta un derecho de petición? Siguen: 12. Contrato de arrendamiento de vivienda
 urbana · 13. Liquidación por despido sin justa causa · 14. Tutela de pensión ·
 15. Calculadora notarial (rehacer).
 
@@ -110,6 +110,32 @@ urbana · 13. Liquidación por despido sin justa causa · 14. Tutela de pensión
   entenderá, para todos los efectos legales, que la respectiva solicitud ha sido
   aceptada» y las copias se entregan en tres días. Eso no estaba en ninguna de
   nuestras guías y es la respuesta exacta a «mi EPS no me da la historia clínica».
+
+
+## Páginas de PRECIO (10 y 11)
+
+Responden «cuánto cuesta X» en consultas donde ya rankeábamos 3-7 sin página
+propia. **Su regla es que abren diciendo que el trámite es GRATIS**, con la norma
+que lo dice, y el precio del hero es `$0` (el de radicar), no $19.900. Esquivar
+eso para empujar el producto es justo lo que Google degrada, y se nota: la página
+se gana la posición respondiendo la pregunta, y el precio aparece después como lo
+que es —el costo de redactar, no el del derecho—.
+
+- **Tutela:** art. 14 del Decreto 2591 de 1991 («sin ninguna formalidad o
+  autenticación», «no será necesario actuar por medio de apoderado», franquicia,
+  y verbal si no sabe escribir o es menor). Más **quién la hace gratis**: la
+  Defensoría (art. 46) y el personero municipal por delegación (art. 49). Sí, se
+  nombra a la competencia: es lo que hace creíble el resto.
+- **Petición:** art. 13 de la Ley 1755 («el ejercicio del derecho de petición es
+  gratuito y puede realizarse sin necesidad de representación a través de
+  abogado»), los seis mínimos del art. 16 y las tres negativas ilegales (no
+  recibirla —art. 15 par. 2—, rechazarla por mala redacción —art. 16 par. 2— y
+  cobrar el formato o el sello).
+- **No se inventa el honorario de un abogado:** no hay tarifa oficial, se pactan
+  libremente, y eso es lo que se dice.
+- El enlace desde el hub va en el renglón de «Actualizado», no dentro del bloque
+  del precio (ahí queda en una columna de 70 px y se parte en cuatro líneas). Y
+  **agregar ese enlace NO es motivo para subir la fecha** del hub.
 
 ## Páginas de CONFIANZA (no de documento)
 

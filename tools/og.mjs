@@ -27,6 +27,8 @@ const PAGES = [
   { slug: 'pague-reportado', kicker: 'Hábeas data · Art. 13 Ley 1266', title: 'Pagué y sigo reportado: <em>qué exigir</em>.', price: '$19.900', unit: 'pago único', doc: 'Deuda pagada' },
   { slug: 'suplantacion', kicker: 'Suplantación · Ley 2573 de 2026', title: 'Te reportaron por una deuda <em>que no es tuya</em>.', price: '$19.900', unit: 'pago único', doc: 'Víctima de falsedad personal' },
   { slug: 'caducidad', kicker: 'Caducidad del dato · Art. 13 Ley 1266', title: '¿Cuánto dura un reporte <em>en Datacrédito</em>?', price: '$19.900', unit: 'pago único', doc: 'Caducidad del dato' },
+  { slug: 'cuanto-cuesta-tutela', seal: 'RADICARLA ES GRATIS · JUSTIEXPRESS', kicker: 'Gratuidad · Art. 14 Decreto 2591 de 1991', title: '¿Cuánto cuesta <em>una tutela</em>?', price: '$0', unit: 'radicarla', doc: 'Acción de tutela' },
+  { slug: 'cuanto-cuesta-peticion', seal: 'EL DERECHO ES GRATIS · JUSTIEXPRESS', kicker: 'Gratuidad · Art. 13 Ley 1755 de 2015', title: '¿Cuánto cuesta <em>una petición</em>?', price: '$0', unit: 'presentarla', doc: 'Derecho de petición' },
   { slug: 'tutela-peticion', kicker: 'Derecho de petición · Art. 23 C.P.', title: 'Tutela cuando <em>no te responden</em>.', price: '$19.900', unit: 'pago único', doc: 'Tutela · Derecho de petición' },
   { slug: 'peticion-eps', kicker: 'Petición ante particulares · Art. 32 Ley 1755', title: 'Derecho de petición <em>a la EPS</em>.', price: '$19.900', unit: 'pago único', doc: 'Petición a la EPS' },
   { slug: 'impugnar-comparendo', kicker: 'Comparendos · Arts. 135 y 136 Ley 769', title: 'No la pagues <em>sin pelearla</em>.', price: '$19.900', unit: 'pago único', doc: 'Impugnación de comparendo' },
