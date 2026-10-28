@@ -73,8 +73,8 @@ bloque: las 3–5 cuelgan de ella en las migas) · 3. Pagué y sigo reportado ·
 4. Suplantación en centrales de riesgo (con la Ley 2573 de 2026) ·
 5. Caducidad del reporte negativo · 6. Impugnar un comparendo o fotomulta (hub
 del bloque de multas: la 7 cuelga de ella en las migas) · 7. Prescripción y
-caducidad de multas de tránsito. Siguen: 8. Tutela por derecho de petición ·
-9. Derecho de petición a la EPS · 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto
+caducidad de multas de tránsito · 8. Tutela por derecho de petición ·
+9. Derecho de petición a la EPS. Siguen: 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto
 cuesta un derecho de petición? · 12. Contrato de arrendamiento de vivienda
 urbana · 13. Liquidación por despido sin justa causa · 14. Tutela de pensión ·
 15. Calculadora notarial (rehacer).
@@ -96,6 +96,20 @@ urbana · 13. Liquidación por despido sin justa causa · 14. Tutela de pensión
   verificó en el Gestor Normativo de Función Pública
   (`funcionpublica.gov.co/eva/gestornormativo/norma.php?i=5557` para la Ley 769),
   que es igual de oficial. Enlazar solo fuentes cuya URL se haya comprobado.
+
+
+- **La relatoría de la Corte Constitucional SÍ se puede consultar, y hay que hacerlo.**
+  `corteconstitucional.gov.co/relatoria/<año>/T-XXX-YY.htm` (p. ej.
+  `/relatoria/1998/T-301-98.htm`) devuelve el texto completo. Las búsquedas web NO
+  confirmaron T-301 de 1998 ni el pasaje de T-357 de 2018 —una incluso sugirió que
+  el año estaba mal—, y las dos resultaron correctas al abrirlas. **Ninguna
+  sentencia se cita sin abrir su providencia**, y el enlace a la relatoría va en
+  las fuentes, que es lo que permite al lector comprobarlo.
+- **Leer el artículo completo deja regalos.** El numeral 1 del artículo 14 de la
+  Ley 1755 dice que si una petición de DOCUMENTOS no se responde en diez días «se
+  entenderá, para todos los efectos legales, que la respectiva solicitud ha sido
+  aceptada» y las copias se entregan en tres días. Eso no estaba en ninguna de
+  nuestras guías y es la respuesta exacta a «mi EPS no me da la historia clínica».
 
 ## Páginas de CONFIANZA (no de documento)
 
