@@ -29,6 +29,7 @@ const PAGES = [
   { slug: 'caducidad', kicker: 'Caducidad del dato · Art. 13 Ley 1266', title: '¿Cuánto dura un reporte <em>en Datacrédito</em>?', price: '$19.900', unit: 'pago único', doc: 'Caducidad del dato' },
   { slug: 'impugnar-comparendo', kicker: 'Comparendos · Arts. 135 y 136 Ley 769', title: 'No la pagues <em>sin pelearla</em>.', price: '$19.900', unit: 'pago único', doc: 'Impugnación de comparendo' },
   { slug: 'prescripcion-multas', kicker: 'Prescripción y caducidad · Ley 769 de 2002', title: '¿Cuándo prescribe <em>una multa</em>?', price: '$19.900', unit: 'pago único', doc: 'Prescripción de la multa' },
+  { slug: 'quienes-somos', seal: 'JUSTIEXPRESS · COLOMBIA · 2026', kicker: 'Justiexpress S.A.S. · Colombia', title: 'Quiénes somos <em>y cómo trabajamos</em>.', doc: 'Quiénes somos' },
   { slug: 'desacato', kicker: 'Incidente de desacato · Decreto 2591/91', title: 'Ganaste la tutela. <em>Que la cumplan.</em>', price: '$19.900', unit: 'pago único', doc: 'Incidente de desacato' },
   { slug: 'laboral', seal: 'CÁLCULO AL INSTANTE · JUSTIEXPRESS', kicker: 'Calculadora laboral', title: 'Lo que te deben, <em>al peso</em>.', price: '$19.900', unit: 'con informe PDF', doc: 'Liquidación laboral' },
   { slug: 'tributaria', seal: 'CÁLCULO AL INSTANTE · JUSTIEXPRESS', kicker: 'Calculadora tributaria · F-210', title: 'Tu renta, <em>sin sustos</em>.', price: '$19.900', unit: 'con informe PDF', doc: 'Renta · Formulario 210' },

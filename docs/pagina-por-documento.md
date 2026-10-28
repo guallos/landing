@@ -96,3 +96,20 @@ urbana · 13. Liquidación por despido sin justa causa · 14. Tutela de pensión
   verificó en el Gestor Normativo de Función Pública
   (`funcionpublica.gov.co/eva/gestornormativo/norma.php?i=5557` para la Ley 769),
   que es igual de oficial. Enlazar solo fuentes cuya URL se haya comprobado.
+
+## Páginas de CONFIANZA (no de documento)
+
+`/quienes-somos/` (oct 2026) no sigue la tabla de arriba: no tiene vías, ni
+anexos, ni guía de radicación. Usa el mismo esqueleto (hero · secciones · FAQ ·
+aside · cierre) y `AboutPage` en vez de `WebPage` + `Service`, sin `data-categoria`
+ni `data-plantilla` (sus CTA van al chat sin preseleccionar nada, y `main.js` los
+deja pasar solo con los utm).
+
+**Su regla es más dura que la de las demás: aquí SOLO van datos verificables.**
+Nada de NIT, año de fundación, número de clientes, calificaciones ni «revisado
+por abogado» mientras no existan y se puedan comprobar. La página declara que no
+publicamos cifras ni reseñas inventadas, así que cualquier dato sin respaldo en
+el resto del sitio la contradice y le quita valor a todas.
+
+Pendiente del dueño: el **NIT** (no está en ninguna parte del sitio, así que se
+escribió sin él) y decidir si existe un revisor legal al que se pueda nombrar.
