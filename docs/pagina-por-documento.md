@@ -76,7 +76,7 @@ del bloque de multas: la 7 cuelga de ella en las migas) · 7. Prescripción y
 caducidad de multas de tránsito · 8. Tutela por derecho de petición ·
 9. Derecho de petición a la EPS · 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto
 cuesta un derecho de petición? · 12. Contrato de arrendamiento de vivienda
-urbana. Siguen: 13. Liquidación por despido sin justa causa · 14. Tutela de
+urbana · 13. Liquidación por despido sin justa causa. Siguen: 14. Tutela de
 pensión · 15. Calculadora notarial (rehacer).
 
 ## Lo que enseñaron las dos de multas (oct 2026)
