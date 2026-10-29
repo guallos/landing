@@ -77,8 +77,9 @@ caducidad de multas de tránsito · 8. Tutela por derecho de petición ·
 9. Derecho de petición a la EPS · 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto
 cuesta un derecho de petición? · 12. Contrato de arrendamiento de vivienda
 urbana · 13. Liquidación por despido sin justa causa ·
-14. Tutela de pensión (hub del bloque pensional: doce plantillas).
-Sigue: 15. Calculadora notarial (rehacer).
+14. Tutela de pensión (hub del bloque pensional: doce plantillas) ·
+15. Calculadora notarial, rehecha como producto GRATUITO. **La cola de las 15
+está completa.**
 
 ## Lo que enseñaron las dos de multas (oct 2026)
 
@@ -179,6 +180,30 @@ los numerales 1 y 2 de su art. 1, y de ahí se concluiría que ya no se exigen
 las 50 semanas. Lo que la **Sentencia C-428 de 2009** declaró inexequible es
 solo la **fidelidad de cotización** del 20 %; las 50 semanas dentro de los tres
 años quedaron exequibles. Hay que abrir el *resuelve*, no fiarse del rótulo.
+
+
+## Página de un producto GRATUITO (15)
+
+La calculadora notarial pasó a ser gratis (oct 2026, estrategia de marca y SEO:
+«calculadora notarial» traía miles de impresiones con CTR de 0,1 % porque la
+gente la busca gratis). La página se rehízo con tres reglas:
+
+- **«Gratis» va en el title, el H1, el eyebrow, el receipt ($0) y el JSON-LD**
+  (`Offer.price: "0"`), y se quita del sitio TODO lo que la ponía a $19.900:
+  home (catálogo, `Offer` y FAQ), `/vivienda/` (tarjeta, `Offer` y FAQ) y la
+  imagen OG.
+- **Gratis sin letra pequeña:** se dice qué SÍ se pide (el celular, antes del
+  primer cálculo, con la Política de Privacidad) y que «puede que te
+  escribamos». Esconderlo es justo lo que convierte un regalo en una trampa.
+- **Se borra lo que dejó de ser cierto:** la versión de pago prometía el
+  informe «en tu correo»; la gratuita no pide correo, así que el informe se
+  descarga y la página ya no lo promete.
+
+El ejemplo del hero ya no es «ilustrativo»: son las cifras que da la propia
+herramienta con sus valores por defecto ($350.000.000 → $12.891.340, el 3,68 %).
+Y de la Resolución 000964 de 2026 solo se afirma lo verificado (número, vigencia
+desde febrero y el tres por mil): el 3,5 por mil de las sucesiones que traía la
+versión anterior no se pudo confirmar en el texto oficial y salió.
 
 
 ## Páginas de PRECIO (10 y 11)
