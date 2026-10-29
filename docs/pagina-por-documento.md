@@ -76,8 +76,9 @@ del bloque de multas: la 7 cuelga de ella en las migas) · 7. Prescripción y
 caducidad de multas de tránsito · 8. Tutela por derecho de petición ·
 9. Derecho de petición a la EPS · 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto
 cuesta un derecho de petición? · 12. Contrato de arrendamiento de vivienda
-urbana · 13. Liquidación por despido sin justa causa. Siguen: 14. Tutela de
-pensión · 15. Calculadora notarial (rehacer).
+urbana · 13. Liquidación por despido sin justa causa ·
+14. Tutela de pensión (hub del bloque pensional: doce plantillas).
+Sigue: 15. Calculadora notarial (rehacer).
 
 ## Lo que enseñaron las dos de multas (oct 2026)
 
@@ -137,6 +138,48 @@ a firmar.
 - **La fecha se pone el día que se PUBLICA, no el día que se escribió.** Si pasa
   la medianoche entre redactar y publicar, se suben `<time>`,
   `article:modified_time`, el JSON-LD y el `lastmod` del sitemap.
+
+## Páginas HUB de un bloque de plantillas (14)
+
+`/tutela-de-pension/` no sirve a una plantilla sino a **doce**: el catálogo
+tiene una tutela distinta para vejez, invalidez, sobrevivientes, indemnización
+sustitutiva, bono pensional, prepensionado, hijo con discapacidad, mora del
+empleador, acto administrativo, compatibilidad, indexación y debido proceso.
+
+- **Cada tarjeta del § 01 entra por su `?plantilla=` exacto**, y por eso esos
+  enlaces **NO llevan `data-chat`**: `main.js` reescribe TODO enlace con
+  `data-chat` a la plantilla del `<body>`, así que las doce habrían caído en la
+  misma. Sin `data-chat` el enlace conserva sus parámetros y solo recibe los
+  utm, de modo que el `origen=` hay que escribirlo a mano.
+- El `data-plantilla` del `<body>` es la plantilla **genérica**
+  (`accion-tutela-ss-pension`, la que pregunta qué pensión se reclama): es la
+  que abren el CTA del hero y el del cierre, que sí llevan `data-chat`.
+- `?categoria=tutela` queda como respaldo aunque no liste pensiones: solo actúa
+  si el id de la plantilla no existe, y los doce existen.
+
+**El gancho fueron los PLAZOS, y son tres normas distintas:** cuatro meses para
+reconocer la pensión (parágrafo 1 del art. 9 de la Ley 797 de 2003), **dos** si
+es de sobrevivientes (art. 1 de la Ley 717 de 2001, norma especial) y seis para
+los trámites del pago de las mesadas (art. 4 de la Ley 700 de 2001). El remate
+no estaba en ninguna guía: el **parágrafo** de ese art. 4 hace que el
+funcionario que los incumpla sin justa causa incurra en causal de mala
+conducta, responda **solidariamente** por la indemnización moratoria y cargue
+con las costas si el afiliado tuvo que recurrir a los tribunales.
+
+**Una reforma aprobada que todavía no rige se dice con su fecha, no con
+adjetivos.** La Ley 2381 de 2024 fue declarada exequible por la **Sentencia
+C-264 de 2026**, que difirió su vigencia **al 1º de abril de 2027** y devolvió
+nueve artículos a la plenaria de la Cámara. La página le dedica una sección
+corta: hoy rigen la Ley 100 de 1993, la Ley 797 de 2003 y la Ley 860 de 2003, y
+eso es verificable. No se especula con cómo quedará el sistema.
+
+⚠️ **Las compilaciones marcan como INEXEQUIBLE el numeral entero cuando la
+Corte solo tumbó una frase.** La compilación de la Ley 860 de 2003 rotula así
+los numerales 1 y 2 de su art. 1, y de ahí se concluiría que ya no se exigen
+las 50 semanas. Lo que la **Sentencia C-428 de 2009** declaró inexequible es
+solo la **fidelidad de cotización** del 20 %; las 50 semanas dentro de los tres
+años quedaron exequibles. Hay que abrir el *resuelve*, no fiarse del rótulo.
+
 
 ## Páginas de PRECIO (10 y 11)
 

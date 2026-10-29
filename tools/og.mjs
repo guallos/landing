@@ -21,6 +21,7 @@ catch { console.error('Falta Playwright: cd tools && npm install'); process.exit
 const PAGES = [
   { slug: 'home', kicker: 'Asistente legal con IA · Colombia', title: 'Defiende tus derechos <em>por escrito</em>, en minutos.', price: '$19.900', unit: 'por documento', doc: 'Acción de tutela' },
   { slug: 'tutela', kicker: 'Acción de tutela · Art. 86 C.P.', title: 'Tu tutela, <em>lista para radicar</em>.', price: '$19.900', unit: 'pago único', doc: 'Acción de tutela' },
+  { slug: 'tutela-pension', kicker: 'Pensiones · Par. 1 art. 9 Ley 797 de 2003', title: 'Cuatro meses <em>para reconocer tu pensión</em>.', price: '$19.900', unit: 'pago único', doc: 'Tutela de pensión' },
   { slug: 'tutela-eps', kicker: 'Tutela en salud · Ley 1751 de 2015', title: 'Tutela contra la EPS, <em>lista para radicar</em>.', price: '$19.900', unit: 'pago único', doc: 'Tutela contra la EPS' },
   { slug: 'peticion', kicker: 'Derecho de petición · Art. 23 C.P.', title: 'Que te respondan, <em>por escrito</em>.', price: '$19.900', unit: 'pago único', doc: 'Derecho de petición' },
   { slug: 'peticion-datacredito', kicker: 'Hábeas data · Ley 1266 de 2008', title: 'Derecho de petición <em>a Datacrédito</em>.', price: '$19.900', unit: 'pago único', doc: 'Reclamo de hábeas data' },
