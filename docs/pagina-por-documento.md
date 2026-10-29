@@ -75,9 +75,9 @@ bloque: las 3–5 cuelgan de ella en las migas) · 3. Pagué y sigo reportado ·
 del bloque de multas: la 7 cuelga de ella en las migas) · 7. Prescripción y
 caducidad de multas de tránsito · 8. Tutela por derecho de petición ·
 9. Derecho de petición a la EPS · 10. ¿Cuánto cuesta una tutela? · 11. ¿Cuánto
-cuesta un derecho de petición? Siguen: 12. Contrato de arrendamiento de vivienda
-urbana · 13. Liquidación por despido sin justa causa · 14. Tutela de pensión ·
-15. Calculadora notarial (rehacer).
+cuesta un derecho de petición? · 12. Contrato de arrendamiento de vivienda
+urbana. Siguen: 13. Liquidación por despido sin justa causa · 14. Tutela de
+pensión · 15. Calculadora notarial (rehacer).
 
 ## Lo que enseñaron las dos de multas (oct 2026)
 
@@ -111,6 +111,32 @@ urbana · 13. Liquidación por despido sin justa causa · 14. Tutela de pensión
   aceptada» y las copias se entregan en tres días. Eso no estaba en ninguna de
   nuestras guías y es la respuesta exacta a «mi EPS no me da la historia clínica».
 
+
+
+## Páginas de CONTRATO (12)
+
+Un contrato no es adversarial, así que no tiene «vías» ni guía de radicación. Lo
+que reemplaza a esas secciones es **lo que la ley fija por encima de lo que las
+partes pacten** frente a **lo que sí se pacta**, que es la duda real de quien va
+a firmar.
+
+- **El gancho de arrendamiento es el art. 16 de la Ley 820** (prohibición de
+  depósitos), y lo que lo hace valioso es el SEGUNDO inciso: tampoco vale
+  pactarlo indirectamente, por interpuesta persona, en documento aparte ni bajo
+  otra denominación. Eso mata el «mes de depósito» en recibo suelto y el «fondo
+  de reparaciones», que es lo que de verdad le pasó al lector.
+- Leer la ley completa dio cuatro reglas más que nadie reúne: término de un año
+  a falta de pacto (art. 5), prórroga automática (art. 6), tope del canon en el
+  1 % del valor comercial y ese valor topado en dos veces el avalúo catastral
+  (art. 18), e incremento máximo del 100 % del IPC con deber de informarlo «so
+  pena de ser inoponible» (art. 20).
+- **Si el producto le quita una herramienta a una de las partes, hay que darle la
+  alternativa:** como el arrendador no puede pedir depósito, la página tiene una
+  sección con lo que sí permite la ley (codeudores solidarios, póliza) y enlaza
+  el estudio de arrendamiento. Sin eso la página solo le dice que no.
+- **La fecha se pone el día que se PUBLICA, no el día que se escribió.** Si pasa
+  la medianoche entre redactar y publicar, se suben `<time>`,
+  `article:modified_time`, el JSON-LD y el `lastmod` del sitemap.
 
 ## Páginas de PRECIO (10 y 11)
 
