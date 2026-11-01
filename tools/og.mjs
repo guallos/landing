@@ -41,6 +41,7 @@ const PAGES = [
   { slug: 'laboral', seal: 'CÁLCULO AL INSTANTE · JUSTIEXPRESS', kicker: 'Calculadora laboral', title: 'Lo que te deben, <em>al peso</em>.', price: '$19.900', unit: 'con informe PDF', doc: 'Liquidación laboral' },
   { slug: 'tributaria', seal: 'CÁLCULO AL INSTANTE · JUSTIEXPRESS', kicker: 'Calculadora tributaria · F-210', title: 'Tu renta, <em>sin sustos</em>.', price: '$19.900', unit: 'con informe PDF', doc: 'Renta · Formulario 210' },
   { slug: 'notarial', seal: 'CÁLCULO AL INSTANTE · JUSTIEXPRESS', kicker: 'Calculadora notarial y registral', title: 'Calculadora notarial <em>gratis</em>.', price: 'Gratis', unit: 'informe en PDF', doc: 'Gastos de escritura' },
+  { slug: 'tradicion', seal: 'ANOTACION POR ANOTACION · JUSTIEXPRESS', kicker: 'Folio de matrícula · Ley 1579 de 2012', title: 'Tu certificado dice más <em>de lo que parece</em>.', price: '$19.900', unit: 'pago único', doc: 'Certificado de tradición' },
   { slug: 'vivienda', seal: 'ESTUDIO EN MINUTOS · JUSTIEXPRESS', kicker: 'Estudio de riesgo de arrendamiento', title: 'Antes de entregar las llaves, <em>sepa a quién</em>.', price: '$29.900', unit: 'pago único', doc: 'Estudio del arrendatario' },
   { slug: 'terminos', seal: 'JUSTIEXPRESS · COLOMBIA · 2026', kicker: 'Justiexpress · Documento legal', title: 'Términos y <em>condiciones</em>.', doc: 'Términos y condiciones' },
   { slug: 'privacidad', seal: 'JUSTIEXPRESS · COLOMBIA · 2026', kicker: 'Justiexpress · Documento legal', title: 'Política de <em>privacidad</em>.', doc: 'Política de privacidad' },
