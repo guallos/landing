@@ -265,6 +265,34 @@ gratis» 6.600, «consultar cifin gratis» 2.400 (+25 %).
   con el JSON-LD: un enlace seguido de coma, punto y coma o dos puntos descuadra
   el espejo. El enlace va al final de la frase con el punto DENTRO.
 
+## Página explicativa con fórmulas (21): liquidación de prestaciones sociales
+
+`/liquidacion-de-prestaciones-sociales/` (4.400/mes, −28 %; familia: «calcular
+prima» 6.600, «calcular cesantías» 2.900, «calcular vacaciones» 1.300). **Decisión
+del dueño (7-nov-2026): solo contenido, sin tocar el precio de la calculadora.**
+
+- **Por qué no se espera tráfico grande:** la familia «calculadora laboral» suma
+  ~120.000 búsquedas/mes, pero `/calculadora-laboral/` tuvo 205 impresiones en 90
+  días (posición 16, 0 clics) y todo el sitio 30 en consultas de «liquidaci…». La
+  gente escribe «calculadora de liquidación laboral **gratis**» y la nuestra dice
+  «por $19.900»: el choque con las herramientas gratuitas. La palanca real sería un
+  estimado gratis (opción A del plan §4.4), que NO se tomó. Medir esta página como
+  prueba de si el contenido solo alcanza.
+- **Las fórmulas coinciden con la calculadora línea por línea** (`Calculadora_laboral.html`:
+  `base×días/360`, `ces×días×0,12/360`, `sal×días/720`). Si se cambia una, cambia la
+  otra. El ejemplo ($4.000.000, 270 días → $5.770.000) está hecho a mano y es
+  reproducible.
+- **Verificado:** CST arts. 249, 253, 306, 307, 186, 189, 192, 127, 128 (Función
+  Pública); Ley 995 de 2005 (vacaciones proporcionales al terminar; derogó el num. 2
+  del art. 189 y su «exceda de tres meses»); Decreto 116 de 1976 (12 % y art. 5, suma
+  igual si no se pagan); y tres comunicados del Ministerio del Trabajo abiertos en su
+  sitio (fórmula de cesantías y prima, auxilio de transporte hasta 2 SMMLV, día por
+  día del art. 99 Ley 50). ⚠️ La fórmula de **vacaciones ÷720 no es del Ministerio**:
+  se deriva del art. 186 y la página lo dice. Y **no se afirma nada de la reforma
+  laboral (Ley 2466 de 2025)** sobre estas fórmulas: no se verificó.
+- **No se dan cifras absolutas de salario mínimo ni de auxilio de transporte:** el
+  ejemplo usa un salario por encima de 2 SMMLV para que no dependa del valor del año.
+
 ## Páginas de PRECIO (10 y 11)
 
 Responden «cuánto cuesta X» en consultas donde ya rankeábamos 3-7 sin página
