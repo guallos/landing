@@ -239,6 +239,32 @@ tránsito › página).
   de multas de la app (ver memoria `seo-baseline-y-plan`); el hub y las páginas 6 y 7
   ya usan la versión correcta, el generador no.
 
+## Página PUERTA de un producto (19): consultar Datacrédito gratis
+
+`/consultar-datacredito-gratis/` no sirve a una plantilla: es la **puerta del
+verificador de reporte** (`?categoria=verificador-reporte`, entrada creada en la
+app el 7-nov-2026). Medido: «consultar datacrédito» 22.200/mes, «datacrédito
+gratis» 18.100, **«cómo saber si estoy reportado» 12.100**, «consultar datacrédito
+gratis» 6.600, «consultar cifin gratis» 2.400 (+25 %).
+
+- **Por qué es una página y no un botón:** el verificador perdió conversiones en
+  sep-2026 porque la gente lo abría sin el reporte a la mano. La página hace ese
+  trabajo antes: enseña a sacar el reporte gratis (el valor real) y solo entonces
+  ofrece revisarlo. El saludo del chat repite el requisito.
+- **Se abre diciendo que consultar es GRATIS** (`$0` en el `receipt`) y la ley que
+  lo dice (par. 2 art. 10 Ley 1266, texto de la Ley 2157). Lo de pago —puntaje y
+  alertas antifraude de Experian, plan Premium de TransUnion— se nombra como lo
+  que es, citando el propio portal.
+- **Verificado en los portales oficiales (7-nov-2026):** midatacredito.com
+  («Accede gratis a tu historial», extras de pago en nota al pie), transunion.co
+  («Tu reporte de crédito gratuito»; «el reporte puede variar de una central a
+  otra»; la regla del doble de la mora con tope de 4 años) y transunion.co/
+  quienes-somos/historia (adquirió a CIFIN en febrero de 2016). ⚠️ La prensa de
+  2017-2022 se contradice sobre límites de consultas: no se cita.
+- **`check.mjs` convierte cada etiqueta en un espacio** al comparar el FAQ visible
+  con el JSON-LD: un enlace seguido de coma, punto y coma o dos puntos descuadra
+  el espejo. El enlace va al final de la frase con el punto DENTRO.
+
 ## Páginas de PRECIO (10 y 11)
 
 Responden «cuánto cuesta X» en consultas donde ya rankeábamos 3-7 sin página
