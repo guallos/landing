@@ -34,6 +34,7 @@ const PAGES = [
   { slug: 'cuanto-cuesta-peticion', seal: 'EL DERECHO ES GRATIS · JUSTIEXPRESS', kicker: 'Gratuidad · Art. 13 Ley 1755 de 2015', title: '¿Cuánto cuesta <em>una petición</em>?', price: '$0', unit: 'presentarla', doc: 'Derecho de petición' },
   { slug: 'tutela-peticion', kicker: 'Derecho de petición · Art. 23 C.P.', title: 'Tutela cuando <em>no te responden</em>.', price: '$19.900', unit: 'pago único', doc: 'Tutela · Derecho de petición' },
   { slug: 'peticion-eps', kicker: 'Petición ante particulares · Art. 32 Ley 1755', title: 'Derecho de petición <em>a la EPS</em>.', price: '$19.900', unit: 'pago único', doc: 'Petición a la EPS' },
+  { slug: 'multas-de-transito', kicker: 'Comparendos y fotomultas · Ley 769 de 2002', title: 'Te llegó una multa: <em>mira tus opciones</em>.', price: '$19.900', unit: 'pago único', doc: 'Multas de tránsito' },
   { slug: 'impugnar-comparendo', kicker: 'Comparendos · Arts. 135 y 136 Ley 769', title: 'No la pagues <em>sin pelearla</em>.', price: '$19.900', unit: 'pago único', doc: 'Impugnación de comparendo' },
   { slug: 'prescripcion-multas', kicker: 'Prescripción y caducidad · Ley 769 de 2002', title: '¿Cuándo prescribe <em>una multa</em>?', price: '$19.900', unit: 'pago único', doc: 'Prescripción de la multa' },
   { slug: 'quienes-somos', seal: 'JUSTIEXPRESS · COLOMBIA · 2026', kicker: 'Justiexpress S.A.S. · Colombia', title: 'Quiénes somos <em>y cómo trabajamos</em>.', doc: 'Quiénes somos' },

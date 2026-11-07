@@ -206,6 +206,39 @@ desde febrero y el tres por mil): el 3,5 por mil de las sucesiones que traía la
 versión anterior no se pudo confirmar en el texto oficial y salió.
 
 
+## Hub de multas de tránsito (16)
+
+`/multas-de-transito/` es la primera página elegida **por volumen medido**, no por
+impresiones de Ads: «multas de tránsito» 74.000/mes (+17 %), «comparendo» 74.000,
+«consultar comparendos» 40.500 y «fotomultas» 22.200 (Keyword Planner, 7-nov-2026).
+«simit» (2,2 M) es navegacional y no se persigue: la página lo enlaza como fuente.
+Es la hermana mayor de `/impugnar-comparendo/` y `/prescripcion-multas-transito/`,
+que ahora cuelgan de ella en las migas (Inicio › Derecho de petición › Multas de
+tránsito › página).
+
+- **Intención consultiva, tráfico de volumen:** la página gana el clic respondiendo
+  «¿qué debo hacer?» (consultar → pagar o pelear → fotomulta → multa vieja) y
+  reparte a las dos páginas de intención. El CTA no es lo primero que pide.
+- **Lo verificado esta vez** (texto del Senado y de Función Pública, nov 2026):
+  art. 136 con los numerales del Decreto 2106 de 2019 (50 % a 5 días y 75 % a 20,
+  ambos con curso; el texto dice «días», no «hábiles»); **art. 8 de la Ley 1843 de
+  2017** (envío en 3 días hábiles tras validar, **11 días hábiles** desde el recibo,
+  aviso si no se identifica al propietario, par. 3: el propietario mantiene su
+  dirección del RUNT); art. 7 de esa ley (par. 2 del 136: si no se notificó bien,
+  los términos del descuento corren desde la notificación); art. 10 (señales) y
+  art. 12 (comparecencia a distancia); **C-038 de 2020** (relatoría abierta: el
+  *resuelve* declara inexequible el par. 1 del art. 8, la solidaridad del
+  propietario con el conductor).
+- ⚠️ **Corrección a la página 6:** decía «seis días hábiles adicionales» (art. 137)
+  para la fotomulta. La ley especial, el art. 8 de la Ley 1843, da **11 días hábiles
+  desde el recibo**; la página ahora dice los dos. El generador de la app ya usaba 11.
+- **`secretariasenado.gov.co` SÍ respondió el 7-nov** (la Ley 1843 se leyó ahí,
+  con «Última actualización 15-oct-2026»); en octubre no respondía, así que
+  parece intermitente. Las dos fuentes (Senado y Función Pública) sirven.
+- **Pendiente de decisión del dueño:** las cuatro citas mal puestas de la plantilla
+  de multas de la app (ver memoria `seo-baseline-y-plan`); el hub y las páginas 6 y 7
+  ya usan la versión correcta, el generador no.
+
 ## Páginas de PRECIO (10 y 11)
 
 Responden «cuánto cuesta X» en consultas donde ya rankeábamos 3-7 sin página
