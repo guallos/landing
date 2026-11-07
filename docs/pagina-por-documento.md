@@ -293,6 +293,29 @@ del dueño (7-nov-2026): solo contenido, sin tocar el precio de la calculadora.*
 - **No se dan cifras absolutas de salario mínimo ni de auxilio de transporte:** el
   ejemplo usa un salario por encima de 2 SMMLV para que no dependa del valor del año.
 
+## Página de LEY (22): Ley 1266 de 2008
+
+`/ley-1266-de-2008/` explica la ley base del hábeas data financiero por lo que
+hace, no artículo por artículo. Medido (7-nov-2026): `ley 1266 de 2008` 8.100/mes
+(−6 %), `habeas data` 9.900, `habeas data ley` 2.400, `qué es habeas data` 2.000.
+Cuelga del hub de Datacrédito y apunta a las páginas 3, 4, 5, 18 y 19.
+
+- **Estructura que funcionó:** los cuatro papeles (titular, fuente, operador,
+  usuario: es lo que más confunde y define a quién se reclama) → derechos →
+  condiciones de quien reporta → el reclamo con plazos → tres confusiones
+  frecuentes → quién vigila → qué cambió después (Ley 2157 y Ley 2573).
+- **Tres hallazgos del texto vigente que la gente no sabe:** (1) el dato
+  financiero y crediticio **no requiere autorización del titular** (parágrafo del
+  num. 1 del art. 6): lo que la ley exige es la **comunicación previa** y los 20
+  días calendario del art. 12; (2) para pedirle a la Superintendencia que ordene
+  corregir un dato hay que acreditar **antes** que se presentó el reclamo por los
+  mismos hechos (art. 17, num. 5); (3) la Ley 1581 de 2012 **excluye** de su
+  ámbito a las bases reguladas por la 1266 (su art. 2): para el reporte rige la 1266.
+- ⚠️ **Los numerales 7 y 8 del art. 16 ya aparecen con el texto de la Ley 2573 de
+  2026** en el Senado (el 8 dice «resuelta favorablemente»; la 2157 decía
+  «aceptada»). La página cita el 8 con el texto actual.
+- **Fuentes por `http://`:** el Senado falla por `https://` desde aquí.
+
 ## Páginas de PRECIO (10 y 11)
 
 Responden «cuánto cuesta X» en consultas donde ya rankeábamos 3-7 sin página

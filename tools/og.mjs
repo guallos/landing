@@ -26,6 +26,7 @@ const PAGES = [
   { slug: 'peticion', kicker: 'Derecho de petición · Art. 23 C.P.', title: 'Que te respondan, <em>por escrito</em>.', price: '$19.900', unit: 'pago único', doc: 'Derecho de petición' },
   { slug: 'peticion-datacredito', kicker: 'Hábeas data · Ley 1266 de 2008', title: 'Derecho de petición <em>a Datacrédito</em>.', price: '$19.900', unit: 'pago único', doc: 'Reclamo de hábeas data' },
   { slug: 'consultar-datacredito-gratis', kicker: 'Hábeas data · Art. 10 Ley 1266 de 2008', title: 'Consulta tu reporte <em>gratis</em>.', price: '$0', unit: 'consultar es gratis', doc: 'Consulta de reporte' },
+  { slug: 'ley-1266-de-2008', kicker: 'Hábeas data · Ley Estatutaria 1266 de 2008', title: 'Ley 1266: tus derechos <em>ante las centrales</em>.', price: '$19.900', unit: 'pago único', doc: 'Reclamación de hábeas data' },
   { slug: 'pague-reportado', kicker: 'Hábeas data · Art. 13 Ley 1266', title: 'Pagué y sigo reportado: <em>qué exigir</em>.', price: '$19.900', unit: 'pago único', doc: 'Deuda pagada' },
   { slug: 'suplantacion', kicker: 'Suplantación · Ley 2573 de 2026', title: 'Te reportaron por una deuda <em>que no es tuya</em>.', price: '$19.900', unit: 'pago único', doc: 'Víctima de falsedad personal' },
   { slug: 'caducidad', kicker: 'Ley 2157 de 2021 · Art. 13 Ley 1266', title: 'Ley 2157: ¿cuánto dura <em>tu reporte</em>?', price: '$19.900', unit: 'pago único', doc: 'Caducidad del dato' },
