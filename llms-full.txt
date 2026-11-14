@@ -1,0 +1,1070 @@
+# Justiexpress — Tu Caso Legal
+
+> Tutelas, derechos de petición, contratos y calculadoras legales con IA. Cuenta tu caso, revisa el documento y paga $19.900 COP solo cuando esté listo. Servicio colombiano, en español: la persona cuenta su caso en https://chat.justiexpress.com, responde preguntas guiadas y recibe el documento redactado con inteligencia artificial sobre plantillas jurídicas propias, listo para radicar o firmar, en PDF y Word. Pago único, sin suscripción, y solo cuando el documento ya está redactado.
+
+English: Justiexpress (Tu Caso Legal) is a Colombian legal-document service. People describe their case in plain Spanish and get a ready-to-file acción de tutela, derecho de petición, contract or legal calculation, drafted by AI on proprietary legal templates, for a flat one-time fee. Colombia only.
+
+## Lo esencial
+
+- No es una firma de abogados ni presta representación judicial, y no garantiza el resultado: la persona radica o firma el documento por su cuenta. Presentar una tutela o un derecho de petición es gratis y no exige abogado; lo que se paga aquí es la redacción.
+- El documento se genera antes de pagar y se muestra un adelanto; el pago (Nequi, Bancolombia, PSE, Daviplata o tarjeta, procesado por Wompi) desbloquea la descarga.
+- Los escritos que se radican incluyen una guía paso a paso de dónde y cómo presentarlos.
+- Cada página de este sitio cita la norma colombiana en que se apoya y lleva su fecha de última revisión.
+- Catálogo completo (más de 100 documentos y herramientas), con el enlace directo para empezar cada uno: https://chat.justiexpress.com/llms.txt
+- Atención por WhatsApp: +57 318 572 5324.
+
+## Tutelas
+
+### Acción de Tutela en Colombia por $19.900
+
+Página: https://www.justiexpress.com/accion-de-tutela/ · Revisada: 2026-09-23
+
+Tu acción de tutela en minutos por $19.900 COP: salud, pensiones, incapacidades, educación y 28 casos más, con jurisprudencia. Pagas cuando esté lista.
+
+**¿Qué es una acción de tutela?**
+
+La acción de tutela es el mecanismo constitucional para proteger tus derechos fundamentales en Colombia (artículo 86 de la Constitución). Cualquier persona puede presentarla cuando sus derechos están siendo vulnerados o amenazados. El juez tiene 10 días para resolverla.
+
+**¿Cuánto cuesta la tutela en Justiexpress?**
+
+$19.900 COP. Sin costos ocultos ni mensualidades. Pagas una vez, cuando la tutela ya está redactada, y la descargas lista para presentar.
+
+**¿Cuánto tiempo toma elaborar la tutela?**
+
+Unos minutos. Respondes preguntas cerradas sobre tu caso y el asistente redacta la tutela al instante.
+
+**¿Necesito un abogado para presentarla?**
+
+No. La tutela fue diseñada para que cualquier ciudadano pueda presentarla sin representación legal. Te entregamos el documento listo para llevar al juzgado o enviar por correo electrónico.
+
+**¿Qué pasa si me niegan la tutela?**
+
+Tienes derecho a impugnar dentro de los 3 días siguientes al fallo. La impugnación la resuelve el superior jerárquico en máximo 20 días.
+
+**¿Y si la ganan pero no cumplen?**
+
+Puedes presentar un incidente de desacato ante el mismo juez, que puede sancionar al responsable con arresto y multa. Así funciona el desacato .
+
+**¿Atienden en todo Colombia?**
+
+Sí. El servicio es 100 % digital y la tutela puede radicarse en cualquier ciudad del país, por correo electrónico o en la oficina judicial de reparto.
+
+### Tutela contra la EPS: medicamentos y cirugías
+
+Página: https://www.justiexpress.com/tutela-contra-eps/ · Revisada: 2026-10-26
+
+Cómo poner una tutela contra la EPS por medicamentos, citas, cirugías o transporte: qué anexar, plazos y cómo radicarla. Redáctala en minutos por $19.900 COP.
+
+**¿Cómo poner una tutela contra la EPS?**
+
+Necesitas el escrito de tutela, la orden de tu médico y, si la tienes, la negación de la EPS. La radicas tú mismo, sin abogado, en la plataforma Tutela en Línea de la Rama Judicial o en la oficina judicial de reparto de tu ciudad. El escrito lo redacta el asistente en minutos a partir de tus respuestas.
+
+**¿Cuánto cuesta una tutela contra la EPS?**
+
+Presentarla no cuesta nada: la tutela no tiene costo judicial ni exige abogado. En Justiexpress, la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+**¿Cuánto se demora el juez en resolverla?**
+
+El juez tiene diez días para fallar (artículo 29 del Decreto 2591 de 1991). Si tu salud no puede esperar, la tutela pide una medida provisional, que el juez puede ordenar desde que la recibe (artículo 7).
+
+**¿Tengo que presentar primero un derecho de petición?**
+
+No hace falta un derecho de petición formal. Sí debe existir una solicitud ante la EPS —la orden médica radicada o la autorización pedida— que fue negada, demorada o no respondida. Si no tienes la negación por escrito, igual puedes presentarla: la EPS debe rendirle un informe al juez y, si no lo hace, los hechos se tienen por ciertos (artículo 20 del Decreto 2591).
+
+**¿La tutela va contra la EPS o contra la IPS?**
+
+Contra la EPS, que es la responsable de garantizar el servicio. Si la EPS ya autorizó y es la clínica u hospital (la IPS) el que demora la atención, conviene dirigirla contra las dos.
+
+**¿Puedo presentarla por mi hijo o por un familiar?**
+
+Sí. Por un menor de edad la presenta su madre, su padre o su representante. Por un adulto que no está en condiciones de defenderse por sí mismo —por ejemplo, por su estado de salud—, un familiar puede actuar como agente oficioso (artículo 10 del Decreto 2591). El escrito lo declara expresamente.
+
+**¿Qué pasa si gano y la EPS no cumple?**
+
+Le pides al mismo juez que abra un incidente de desacato, que puede terminar en arresto y multa para el funcionario responsable. Así funciona el desacato.
+
+**¿Tutela o queja ante la Superintendencia de Salud?**
+
+La Superintendencia de Salud recibe quejas y tiene una función jurisdiccional para algunos conflictos con la EPS. Cuando el servicio es urgente, la tutela suele ser la vía más rápida: el juez debe fallar en diez días y puede ordenar una medida provisional desde el primer día.
+
+### Tutela de pensión: Colpensiones y fondos
+
+Página: https://www.justiexpress.com/tutela-de-pension/ · Revisada: 2026-10-29
+
+Tutela cuando niegan o demoran tu pensión de vejez, invalidez o sobrevivientes: plazos legales, qué anexar y cómo radicarla. Lista en minutos por $19.900 COP.
+
+**¿Cuánto tiempo tiene Colpensiones o mi fondo para responder?**
+
+Cuatro meses desde que radicas la solicitud con los documentos que acreditan tu derecho: el parágrafo 1 del artículo 9 de la Ley 797 de 2003 dice que «los fondos encargados reconocerán la pensión en un tiempo no superior a cuatro (4) meses después de radicada la solicitud». Si es pensión de sobrevivientes el plazo es de dos meses (artículo 1 de la Ley 717 de 2001), y el artículo 4 de la Ley 700 de 2001 da seis meses para adelantar los trámites del pago de las mesadas. Vencido el término sin respuesta, la demora misma es lo que la tutela le reprocha al fondo.
+
+**¿La tutela sirve para que me reconozcan la pensión?**
+
+Sí, pero es excepcional. La Corte Constitucional exige cuatro cosas (Sentencia T-125 de 2018): que la falta de pago afecte gravemente tus derechos, en especial el mínimo vital; que ya hayas hecho gestiones ante el fondo; que el proceso ordinario no sea eficaz para tu caso; y que exista mediana certeza de que cumples los requisitos. El escrito desarrolla esos cuatro puntos con tu situación concreta.
+
+**Mi empleador no pagó los aportes, ¿pierdo la pensión?**
+
+No. Si la administradora aceptó pagos extemporáneos o nunca adelantó el cobro al empleador moroso, asume las consecuencias de su propia negligencia: es la teoría del allanamiento a la mora (Sentencia T-433 de 2015). La mora del empleador no es razón válida para negar la pensión a quien cumple los requisitos.
+
+**Colpensiones dice que no aparecen mis semanas o que perdió mi historia laboral**
+
+La reconstrucción del expediente debe hacerse de manera ágil, y el tiempo de servicio y el salario se pueden probar con cualquiera de los medios de prueba que permite la ley (Sentencia T-207A de 2018). La tutela pide las dos cosas: que reconstruyan el expediente y que expidan los certificados laborales.
+
+**Me negaron la pensión de invalidez porque me faltan semanas**
+
+Hay dos argumentos. El primero: el requisito de fidelidad al sistema ya no existe, porque la Sentencia C-428 de 2009 lo declaró inexequible, y todavía hay negativas que lo invocan. El segundo: por el principio de la condición más beneficiosa puede aplicarse el régimen anterior cuando resulte más favorable (Sentencia T-323 de 2018).
+
+**¿La reforma pensional cambia mi caso?**
+
+Hoy no. La Ley 2381 de 2024 fue declarada exequible por la Sentencia C-264 de 2026, que fijó su entrada en vigencia a partir del 1º de abril de 2027 y devolvió nueve artículos a la plenaria de la Cámara de Representantes. Mientras tanto, los requisitos y los plazos de tu solicitud son los de la Ley 100 de 1993, la Ley 797 de 2003 y la Ley 860 de 2003.
+
+**¿Necesito abogado y cuánto cuesta?**
+
+No necesitas abogado: la tutela se presenta sin formalidades y sin apoderado, y radicarla no cuesta nada. La Defensoría del Pueblo y el personero municipal también la redactan gratis. En Justiexpress la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo. Así se compara con las otras opciones.
+
+**¿Qué pasa si gano y el fondo no cumple?**
+
+Le pides al mismo juez que abra un incidente de desacato, que puede terminar en arresto y multa para el funcionario responsable. Así funciona el desacato.
+
+### Tutela por derecho de petición
+
+Página: https://www.justiexpress.com/tutela-derecho-de-peticion/ · Revisada: 2026-10-27
+
+Si no te respondieron el derecho de petición en el término legal, la tutela obliga a contestar. Cuándo procede, qué alegar y el escrito listo por $19.900 COP.
+
+**¿Cuánto tiempo tienen para responder un derecho de petición?**
+
+Quince (15) días hábiles como regla general. Diez (10) si pediste documentos o información, y treinta (30) si elevaste una consulta. Son los términos del artículo 14 de la Ley 1755 de 2015, y solo cambian si una norma especial fija otro plazo.
+
+**¿Me contestaron, pero no resolvieron nada. ¿Puedo tutelar?**
+
+Sí. Una respuesta evasiva, incongruente o que no atiende materialmente lo pedido equivale, para efectos constitucionales, a no haber respondido. La Corte Constitucional exige que la contestación sea oportuna, de fondo, clara, precisa, congruente y puesta en conocimiento del peticionario.
+
+**¿El silencio administrativo cuenta como respuesta?**
+
+No. La Corte Constitucional fue expresa en la Sentencia T-301 de 1998: el silencio administrativo no puede entenderse como resolución o pronunciamiento de la administración, porque no define material ni sustancialmente lo solicitado. La entidad sigue obligada a contestar y a comunicarte la respuesta.
+
+**¿Y si pedí documentos y no me los entregaron en diez días?**
+
+La ley te da algo más fuerte que una tutela: según el numeral 1 del artículo 14, si no responden en ese lapso se entiende para todos los efectos legales que la solicitud fue aceptada, la administración ya no puede negar la entrega y las copias deben entregarse dentro de los tres días siguientes.
+
+**¿Sirve contra empresas privadas?**
+
+Sí. El derecho de petición también se ejerce ante particulares, y es el caso de bancos, EPS, operadores de telefonía, aseguradoras, colegios y administraciones de propiedad horizontal, entre otros.
+
+**¿Cuánto se demora el juez?**
+
+La tutela se falla en diez (10) días hábiles contados desde su presentación, y es el trámite más rápido de la justicia colombiana. Si el juez la concede, suele dar a la entidad 48 horas para responder.
+
+**¿Necesito abogado para presentarla?**
+
+No. La acción de tutela se presenta sin abogado y sin formalidades: cualquier persona puede radicarla ante cualquier juez, incluso a mano.
+
+**¿Cuánto cuesta?**
+
+Radicar la tutela ante el juez es gratis y no exige abogado. En Justiexpress, la redacción completa del escrito cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+### Incidente de Desacato de Tutela por $19.900
+
+Página: https://www.justiexpress.com/desacato/ · Revisada: 2026-09-23
+
+¿No cumplieron tu tutela? Tu incidente de desacato redactado en minutos por $19.900 COP, para que el juez exija el cumplimiento. Todo Colombia.
+
+**¿Qué es un incidente de desacato?**
+
+Es el mecanismo legal para exigir el cumplimiento de una tutela que ya fue concedida pero que la entidad condenada no ha acatado. Se presenta ante el mismo juez que conoció la tutela y puede llevar a la sanción del responsable con arresto y multa.
+
+**¿Cuánto tiempo tiene la entidad para cumplir la tutela?**
+
+El juez fija el plazo en la sentencia, que no puede exceder de 48 horas. Vencido ese término sin cumplimiento, ya procede el incidente de desacato.
+
+**¿Qué sanciones puede imponer el juez?**
+
+El juez puede imponer arresto de hasta 6 meses y multa de hasta 20 salarios mínimos mensuales al responsable del incumplimiento. Adicionalmente, puede remitir el expediente a la Procuraduría para investigación disciplinaria.
+
+**¿Cuánto cuesta en Justiexpress?**
+
+$19.900 COP. Sin costos ocultos. Pagas una vez, cuando el incidente ya está redactado, y lo recibes listo para radicar ante el juzgado que conoció la tutela.
+
+**¿Necesito haber presentado la tutela con Justiexpress para pedir el desacato?**
+
+No. Si tu tutela fue redactada por otro abogado o por ti mismo, igualmente podemos redactar el incidente de desacato. Solo necesitas tener el número de radicado, el nombre del juzgado y el contenido del fallo.
+
+**¿Atienden en todo Colombia?**
+
+Sí. El servicio es 100 % digital. Puedes solicitar el documento desde cualquier ciudad del país y radicarlo ante el juzgado correspondiente de forma presencial o por correo electrónico.
+
+### ¿Cuánto cuesta una tutela en Colombia?
+
+Página: https://www.justiexpress.com/cuanto-cuesta-una-tutela/ · Revisada: 2026-10-27
+
+Presentar una tutela es gratis: la ley dice que no necesitas abogado ni formalidades. Qué cuesta cada opción, quién la hace gratis y qué no deberías pagar.
+
+**¿Cuánto cuesta presentar una tutela en Colombia?**
+
+Nada. Radicar una tutela ante el juez no tiene ningún costo: no se pagan expensas, ni estampillas, ni autenticación en notaría. El artículo 14 del Decreto 2591 de 1991 añade que la acción se ejerce sin ninguna formalidad y que no es necesario actuar por medio de apoderado.
+
+**¿Necesito un abogado para una tutela?**
+
+No. La ley lo dice con todas las letras: no será necesario actuar por medio de apoderado. Cualquier persona puede presentarla a su propio nombre, y si no sabe escribir o es menor de edad, incluso de forma verbal ante el juez.
+
+**¿Cuánto cobra un abogado por hacer una tutela?**
+
+No existe una tarifa oficial: los honorarios se pactan libremente, así que varían mucho de un profesional a otro y de una ciudad a otra. Por eso conviene pedir el valor por escrito antes de encargar nada, y recordar que la radicación en sí no cuesta.
+
+**¿Quién hace tutelas gratis?**
+
+La Defensoría del Pueblo puede interponerla en nombre de cualquier persona que se lo solicite (artículo 46 del Decreto 2591 de 1991) y los personeros municipales pueden hacerlo por delegación del Defensor (artículo 49). También la asesoran gratis los consultorios jurídicos de las universidades.
+
+**Entonces, ¿por qué pagarle a alguien?**
+
+Porque el trámite es gratis pero el escrito hay que hacerlo, y de cómo esté redactado depende que el juez entienda el caso. Lo que se paga nunca es el derecho a tutelar: es el tiempo de redactarla con sus hechos, sus fundamentos y sus pretensiones.
+
+**¿Cuánto cuesta en Justiexpress?**
+
+$19.900 COP, pago único, y pagas solo cuando el documento ya está redactado. Incluye el escrito en PDF y Word y la guía de radicación. No cobramos por radicar, porque radicar no se cobra.
+
+**¿Hay que autenticar la tutela en notaría?**
+
+No. El artículo 14 del Decreto 2591 de 1991 dispone que la acción se ejerce sin ninguna formalidad o autenticación. Si alguien te cobra por autenticarla para la tutela, te está cobrando algo que la ley no exige.
+
+**¿Cuánto se demora?**
+
+El juez debe fallar dentro de los diez (10) días siguientes a la presentación. Es el trámite más rápido de la justicia colombiana, y si hay un riesgo inminente el juez puede ordenar medidas desde antes del fallo.
+
+## Derechos de petición
+
+### Derecho de Petición en Colombia por $19.900
+
+Página: https://www.justiexpress.com/derecho-de-peticion/ · Revisada: 2026-09-23
+
+Tu derecho de petición redactado en minutos por $19.900 COP. Exige respuesta a entidades públicas, bancos, EPS y empresas. Pagas cuando esté listo.
+
+**¿Qué es un derecho de petición?**
+
+Es un derecho fundamental que permite a cualquier persona solicitar información o respuestas a entidades públicas y privadas en Colombia. La entidad tiene entre 10 y 30 días hábiles para responder según el tipo de solicitud.
+
+**¿Cuánto cuesta en Justiexpress?**
+
+$19.900 COP. Sin costos adicionales. Pagas una vez, cuando el documento ya está redactado, y lo recibes listo para presentar o enviar por correo electrónico.
+
+**¿Cuánto tiempo tiene la entidad para responder?**
+
+15 días hábiles para peticiones generales, 10 días para solicitudes de información y documentos, y 30 días para consultas. Si no responden, puedes presentar una tutela.
+
+**¿Las empresas privadas están obligadas a responder?**
+
+Sí. Empresas que prestan servicios públicos, entidades financieras y empresas que manejan datos personales están obligadas. El incumplimiento da lugar a una acción de tutela.
+
+**¿Qué pasa si no me responden?**
+
+La falta de respuesta vulnera tu derecho fundamental de petición y da lugar a una acción de tutela. En los casos que la ley lo prevé expresamente, el silencio puede entenderse además como respuesta positiva. Haz tu tutela .
+
+**¿Atienden en todo Colombia?**
+
+Sí. El servicio es 100 % digital y puedes solicitar el documento desde cualquier ciudad del país.
+
+### Derecho de petición a la EPS
+
+Página: https://www.justiexpress.com/derecho-de-peticion-eps/ · Revisada: 2026-10-27
+
+Cómo pedirle a tu EPS la historia clínica, una autorización o las razones de una negativa, con los plazos que fija la ley. Escrito listo por $19.900 COP.
+
+**¿Puedo hacerle un derecho de petición a una EPS si es privada?**
+
+Sí. El artículo 32 de la Ley 1755 de 2015 permite ejercer el derecho de petición ante organizaciones privadas para garantizar los derechos fundamentales, y dispone que su trámite y resolución se someten a las mismas reglas y términos de las peticiones ante autoridades.
+
+**¿En cuánto tiempo tiene que responder la EPS?**
+
+Quince (15) días hábiles como regla general, diez (10) si pediste documentos o información —como la historia clínica— y treinta (30) si elevaste una consulta. Son los términos del artículo 14 de la Ley 1755 de 2015.
+
+**¿Cómo pido mi historia clínica?**
+
+Es una petición de documentos, con término de diez días hábiles. Y tiene una ventaja que casi nadie usa: si no te responden en ese lapso, la ley entiende que la solicitud fue aceptada, la entidad ya no puede negarte la entrega y las copias deben entregarse dentro de los tres días siguientes.
+
+**¿Me pueden negar la historia clínica alegando reserva?**
+
+El artículo 32 de la Ley 1755 es claro en que las organizaciones privadas solo pueden invocar la reserva de la información solicitada en los casos expresamente establecidos en la Constitución y la ley. La historia clínica es tuya como paciente, y la reserva existe para protegerte frente a terceros, no frente a ti.
+
+**Necesito que me autoricen un procedimiento. ¿Sirve la petición?**
+
+Sirve para dejar constancia y obligar a una respuesta motivada, pero si el servicio ya fue ordenado por tu médico y la demora pone en riesgo tu salud, el instrumento adecuado es la tutela, que se falla en diez días. La petición es la vía cuando quieres documentos, razones o un trámite, no cuando hay urgencia clínica.
+
+**¿Qué hago si la EPS no responde?**
+
+Vencido el término, procede la acción de tutela por violación del derecho de petición. También puedes poner la queja ante la Superintendencia Nacional de Salud, que vigila a las EPS, pero la tutela es la que obliga a responder y es mucho más rápida.
+
+**¿Necesito abogado?**
+
+No. El derecho de petición no exige abogado ni autenticación en notaría: basta con que esté firmado, identifique quién lo presenta y diga con claridad qué se solicita y a dónde responder.
+
+**¿Cuánto cuesta?**
+
+Radicarlo ante la EPS es gratis. En Justiexpress, la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+### ¿Cuánto cuesta un derecho de petición?
+
+Página: https://www.justiexpress.com/cuanto-cuesta-un-derecho-de-peticion/ · Revisada: 2026-10-27
+
+La ley lo dice en un renglón: el derecho de petición es gratuito y no necesita abogado. Qué debe contener, qué no te pueden cobrar y qué cuesta aquí.
+
+**¿Cuánto cuesta un derecho de petición en Colombia?**
+
+Nada. El artículo 13 de la Ley 1755 de 2015 lo dice expresamente: el ejercicio del derecho de petición es gratuito y puede realizarse sin necesidad de representación a través de abogado. Presentarlo ante cualquier entidad, pública o privada, no tiene costo.
+
+**¿Necesito abogado para un derecho de petición?**
+
+No. La misma norma lo descarta. Tampoco hace falta autenticarlo en notaría, ni usar un formato especial: puedes presentarlo por escrito, por correo electrónico o incluso verbalmente, y la entidad debe dejar constancia.
+
+**¿Qué debe contener como mínimo?**
+
+Según el artículo 16 de la Ley 1755: a quién va dirigido, tus nombres completos con documento y dirección para recibir correspondencia, el objeto de la petición, las razones en que la fundamentas, la relación de documentos que anexas y tu firma cuando corresponda.
+
+**¿Me pueden rechazar la petición por estar mal redactada?**
+
+No. El parágrafo 2 del artículo 16 es categórico: en ningún caso podrá ser rechazada la petición por motivos de fundamentación inadecuada o incompleta. Y ninguna autoridad puede negarse a recibir y radicar una petición respetuosa.
+
+**¿Me pueden cobrar por el formato o por la copia sellada?**
+
+No. Las autoridades deben poner los formularios a disposición sin costo, y la copia que te sellan con la fecha y hora de presentación tiene el mismo valor legal del original sin que esa autenticación le cueste nada al peticionario.
+
+**¿Cuánto tienen para responderme?**
+
+Quince (15) días hábiles como regla general, diez (10) si pides documentos o información y treinta (30) si elevas una consulta, según el artículo 14 de la Ley 1755 de 2015.
+
+**Entonces, ¿qué estoy pagando aquí?**
+
+La redacción, nunca el derecho. Lo que cuesta es convertir tu caso en un escrito con los hechos ordenados, el objeto claro y el término legal correcto, más la guía de radicación y el correo listo para enviar.
+
+**¿Cuánto cuesta en Justiexpress?**
+
+$19.900 COP, pago único, y pagas solo cuando el documento ya está redactado. Si al verlo no te sirve, no pagas.
+
+## Reporte en Datacrédito y hábeas data
+
+### Derecho de petición a Datacrédito
+
+Página: https://www.justiexpress.com/derecho-de-peticion-datacredito/ · Revisada: 2026-10-26
+
+Cuándo puedes exigir que corrijan o borren tu reporte en Datacrédito o TransUnion, a qué correos se envía y qué plazos tienen. Redáctalo por $19.900 COP.
+
+**¿Cómo salir de Datacrédito?**
+
+Depende de por qué estás reportado. Si ya pagaste, el dato sale cuando se cumple el término de permanencia; si pasaron ocho años desde la mora, caducó; si la deuda no es tuya o nunca te avisaron, puedes pedir el retiro con un derecho de petición. Si la deuda es tuya y sigue vigente, el reporte es legal: lo que procede es pagarla o negociarla.
+
+**¿A qué correo envío el derecho de petición a Datacrédito?**
+
+A servicioalcliente@datacredito.com. A TransUnion, a notificaciones@transunion.com. Y siempre también a la entidad que te reportó, a su correo de PQR: las centrales solo publican lo que esa entidad les informa.
+
+**¿Cuánto tiempo tienen para responder?**
+
+Quince días hábiles desde el día siguiente a recibirlo, prorrogables por ocho días hábiles más si te avisan antes de que venza el plazo (artículo 16 de la Ley 1266 de 2008).
+
+**¿Qué pasa si no me responden?**
+
+Se entiende que la solicitud fue resuelta a tu favor (artículo 16, numeral 8, de la Ley 1266). Además puedes quejarte ante la Superintendencia Financiera o la de Industria y Comercio, o presentar una tutela de hábeas data.
+
+**¿Cuánto cuesta?**
+
+Radicarlo es gratis: no exige abogado ni tiene costo. En Justiexpress, la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+**¿Necesito abogado o autenticarlo en notaría?**
+
+No. Lo presentas tú, y la Ley 1266 no exige autenticarlo. Si una central te lo pide, radícalo también por su plataforma, donde validas tu identidad en línea.
+
+**¿A los cuántos años se borra un reporte negativo?**
+
+Si pagaste, el dato dura el doble del tiempo de la mora, con un máximo de cuatro años desde el pago. Si no pagaste, caduca a los ocho años de haber entrado en mora. Cómo se cuenta la caducidad.
+
+### Consultar Datacrédito gratis y TransUnion
+
+Página: https://www.justiexpress.com/consultar-datacredito-gratis/ · Revisada: 2026-11-07
+
+Cómo consultar tu historial en Datacrédito y TransUnion gratis, saber si estás reportado y qué mirar. Si hay un dato negativo, revísalo por $19.900 COP.
+
+**¿Cómo consultar Datacrédito gratis?**
+
+El portal de Experian Colombia, Midatacrédito, ofrece «acceso gratis a tu historial de crédito»: ingresas o te registras en midatacredito.com. Es la consulta del titular, y la ley la declara gratuita. El puntaje y las alertas antifraude que ese portal también ofrece son planes de pago aparte.
+
+**¿Cómo saber si estoy reportado en Datacrédito?**
+
+Consultando tu reporte en las dos centrales principales, Datacrédito y TransUnion, porque cada una puede mostrar información distinta. Busca obligaciones con estado de mora o cartera castigada: esos son los datos negativos. Si no aparece ninguna, no estás reportado en esa central.
+
+**¿Consultar mi reporte me baja el puntaje?**
+
+No. El parágrafo 2 del artículo 10 de la Ley 1266 de 2008, modificado por la Ley 2157 de 2021, dice que la revisión continua de tu información no puede ser causal de disminución en tu calificación de riesgo ni alterar los estudios crediticios, y que ni siquiera puede consultarse para decisiones laborales.
+
+**¿Datacrédito y TransUnion muestran lo mismo?**
+
+No necesariamente. La propia TransUnion explica que no todas las entidades reportan a todas las centrales, así que tu reporte puede variar de una a otra, y que cada entidad reporta en momentos distintos del mes. Por eso conviene mirar los dos.
+
+**¿Qué pasó con Cifin?**
+
+TransUnion adquirió la sociedad colombiana CIFIN en febrero de 2016, según su propia página de historia. Por eso mucha gente sigue buscando «consultar Cifin»: hoy esa consulta se hace en TransUnion.
+
+**¿Cuánto tiempo dura un reporte negativo?**
+
+Si pagaste, el doble del tiempo que estuviste en mora, con un máximo de cuatro años desde el pago; si no pagaste, caduca a los ocho años de haber entrado en mora (artículo 13 de la Ley 1266, modificado por la Ley 2157 de 2021). Con ejemplos, en la Ley 2157 de 2021 y la caducidad del reporte.
+
+**¿Qué hago si aparezco reportado y no debo o ya pagué?**
+
+Depende del caso. Si ya pagaste, mira qué exigir cuando sigues reportado después de pagar. Si la deuda no es tuya, mira qué hacer ante una suplantación. En ambos casos el reclamo es gratis de radicar y no exige abogado.
+
+**¿Cuánto cuesta revisar mi reporte con Justiexpress?**
+
+Consultar tu reporte en las centrales no cuesta nada. Si quieres que lo revisemos, subes los pantallazos o el PDF y pagas $19.900 COP, un solo pago que incluye el diagnóstico y el escrito que elijas, tutela de hábeas data o reclamación. Pagas solo cuando el resultado está listo.
+
+### Pagué y sigo reportado en Datacrédito
+
+Página: https://www.justiexpress.com/pague-y-sigo-reportado/ · Revisada: 2026-10-26
+
+Ya pagaste y sigues en Datacrédito: cuánto dura el reporte después del pago, cuándo deben retirarlo de inmediato y cómo exigirlo. Redáctalo por $19.900 COP.
+
+**¿Cuánto tiempo dura el reporte después de pagar?**
+
+El doble del tiempo que estuviste en mora, con un máximo de cuatro años contados desde el pago (artículo 13 de la Ley 1266 de 2008, modificado por la Ley 2157 de 2021).
+
+**¿Por qué sigo apareciendo si ya pagué?**
+
+Porque el dato negativo queda como historia durante ese término, aunque debe mostrar que pagaste. Si después de pagar el reporte sigue diciendo que estás en mora, la información no es veraz y puedes exigir que la actualicen.
+
+**¿Me pueden quitar el reporte de inmediato?**
+
+Sí, en un caso: si la entidad te reportó sin avisarte antes y la deuda ya está pagada, la ley ordena retirarlo de inmediato (parágrafo del artículo 12 de la Ley 1266).
+
+**¿Sigue vigente la ley de borrón y cuenta nueva?**
+
+Su régimen especial de transición ya terminó: beneficiaba a quienes pagaran dentro de los doce meses siguientes a la entrada en vigencia de la Ley 2157 de 2021, que salían a más tardar seis meses después del pago. Hoy rige la regla permanente: el doble del tiempo de la mora, con un máximo de cuatro años desde el pago.
+
+**¿Qué pasa si no me responden?**
+
+Pasados los quince días hábiles (veintitrés si te avisaron de una prórroga) sin respuesta, se entiende que la solicitud fue resuelta a tu favor (artículo 16 de la Ley 1266). También puedes presentar una tutela de hábeas data.
+
+**¿Cuánto cuesta?**
+
+Radicarlo es gratis: no exige abogado ni tiene costo. En Justiexpress, la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+### Ley 2157 de 2021: cuánto dura un reporte
+
+Página: https://www.justiexpress.com/caducidad-reporte-datacredito/ · Revisada: 2026-11-07
+
+Qué dice la Ley 2157 de 2021: el reporte negativo dura el doble de la mora (máx. 4 años) o caduca a los 8 años. Reclama lo que ya caducó por $19.900 COP.
+
+**¿Qué dice la Ley 2157 de 2021?**
+
+Es una ley estatutaria, publicada el 29 de octubre de 2021, que modifica la Ley 1266 de 2008 de hábeas data financiero. Fija que el dato negativo dura el doble de la mora, con un máximo de cuatro años desde el pago, y caduca a los ocho años desde que entraste en mora. Además exige una comunicación previa antes de reportarte, limita a 18 meses el plazo para reportar la mora, prohíbe negar un crédito solo por el reporte negativo, hace gratuita tu consulta y crea alertas gratuitas contra la suplantación.
+
+**¿Sigue vigente el «borrón y cuenta nueva»?**
+
+No. Era el régimen de transición del artículo 9 de la Ley 2157: quien extinguía sus obligaciones dentro de los doce meses siguientes a la vigencia de la ley salía del reporte a los seis meses del pago, y algunos grupos —mipymes, pequeños productores agropecuarios, deudores del Icetex— salían de inmediato. Ese plazo venció en octubre de 2022. Hoy rige la regla permanente del artículo 13 de la Ley 1266, tal como la modificó la Ley 2157.
+
+**¿Me tienen que avisar antes de reportarme?**
+
+Sí. La Ley 2157 exige comunicación previa al titular antes de reportar un dato negativo. Si la entidad reportó sin avisarte y la deuda ya estaba extinguida, el reporte debe retirarse de inmediato; si la deuda sigue viva, debe retirarlo, enviarte la comunicación y solo después volver a reportar. En obligaciones de hasta el 15 % de un salario mínimo se exigen al menos dos comunicaciones en días diferentes y 20 días calendario entre la última y el reporte.
+
+**¿Pueden negarme un crédito solo porque estoy reportado?**
+
+No basándose exclusivamente en el reporte negativo. El parágrafo 1 del artículo 10 de la Ley 1266, modificado por la Ley 2157, obliga a valorar esa información junto con otros factores del estudio de riesgo, y si una entidad financiera te rechaza, a solicitud tuya debe indicarte por escrito las razones objetivas. La Superintendencia Financiera puede sancionar a quien niegue un crédito solo por el reporte.
+
+**¿A los cuántos años se quita el reporte de Datacrédito?**
+
+Si pagaste, a más tardar cuatro años después del pago: el doble del tiempo de la mora, con ese tope. Si no pagaste, a los ocho años de haber entrado en mora.
+
+**¿Si no pago, me quedo reportado para siempre?**
+
+No. El dato negativo caduca a los ocho años contados desde que entraste en mora y debe eliminarse, aunque no hayas pagado (parágrafo 1 del artículo 13 de la Ley 1266).
+
+**¿La caducidad borra la deuda?**
+
+No. Borra el reporte. Si la deuda todavía se puede cobrar es otra figura, la prescripción, que depende del tipo de obligación.
+
+**¿Desde cuándo se cuentan los ocho años?**
+
+Desde el momento en que la obligación entró en mora, no desde que te reportaron ni desde la última llamada de cobro.
+
+**¿Qué pasa si vendieron mi deuda?**
+
+La venta a una casa de cobranza no cambia la fecha en que entraste en mora, que es desde donde se cuentan los ocho años.
+
+**¿Y si ya pasó el término y sigo reportado?**
+
+Puedes exigir que eliminen el dato con un derecho de petición a la entidad y a las centrales. Si no responden en quince días hábiles, se entiende resuelto a tu favor.
+
+**¿Cuánto cuesta?**
+
+Radicarlo es gratis: no exige abogado ni tiene costo. En Justiexpress, la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+### Suplantación de identidad en Datacrédito
+
+Página: https://www.justiexpress.com/suplantacion-datacredito/ · Revisada: 2026-10-26
+
+Te reportaron por una deuda que no es tuya: qué hacer, qué debe hacer la entidad y qué cambia con la Ley 2573 de 2026. Redacta tu reclamación por $19.900 COP.
+
+**¿Tengo que pagar la deuda mientras se resuelve?**
+
+Con la Ley 2573, desde noviembre de 2026, la entidad debe suspender el cobro —intereses y gastos de cobranza incluidos— desde que le informas la suplantación; si no denuncias dentro del plazo, puede reanudarlo. El escrito pide eliminar el reporte, marcar la leyenda «Víctima de Falsedad Personal» y cotejar los documentos en diez días hábiles.
+
+**¿Necesito la denuncia antes de reclamar?**
+
+No tienes que esperarla para reclamar. Pero la denuncia ante la Fiscalía es la prueba más fuerte y, con la Ley 2573, tienes veinte días hábiles para presentarla desde que la entidad te lo comunica.
+
+**¿La leyenda «Víctima de Falsedad Personal» me perjudica?**
+
+No. La ley dice que no es un reporte negativo ni puede bajar tu calificación de riesgo; solo sirve para que las entidades verifiquen mejor tu identidad en solicitudes futuras.
+
+**¿Puedo pedir los documentos con los que sacaron el crédito?**
+
+Sí. Con la Ley 2573, la entidad debe entregarte copia de la información y los documentos que usó para aprobar el producto a tu nombre, y bajo ninguna circunstancia puede negarse.
+
+**¿Qué pasa si la entidad no responde?**
+
+Si no responde tu reclamo en quince días hábiles, más ocho de prórroga, se entiende resuelto a tu favor (artículo 16 de la Ley 1266). También puedes quejarte ante la Superintendencia Financiera o la de Industria y Comercio, o presentar una tutela de hábeas data.
+
+**¿Cómo evito que me vuelva a pasar?**
+
+Activa las alertas gratuitas de las centrales de riesgo, que te avisan por correo cuando se reporta una obligación nueva a tu nombre (artículo 10 de la Ley 2157 de 2021).
+
+**¿Cuánto cuesta?**
+
+Radicarlo es gratis: no exige abogado ni tiene costo. En Justiexpress, la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+### Ley 1266 de 2008: qué dice el hábeas data
+
+Página: https://www.justiexpress.com/ley-1266-de-2008/ · Revisada: 2026-11-07
+
+La Ley 1266 de 2008 explicada: quién es fuente, operador y usuario, tus derechos, el aviso previo, los plazos del reclamo y quién sanciona.
+
+**¿Qué es la Ley 1266 de 2008?**
+
+Es una ley estatutaria, publicada en el Diario Oficial 47.219 del 31 de diciembre de 2008, que desarrolla el derecho a conocer, actualizar y rectificar las informaciones recogidas sobre ti en bancos de datos, «particularmente en relación con la información financiera y crediticia, comercial, de servicios y la proveniente de terceros países» (artículo 1). Es la ley que rige a centrales como Datacrédito y TransUnion y a las entidades que les reportan.
+
+**¿Qué es el hábeas data?**
+
+Es el derecho que tienes a conocer, actualizar y rectificar la información que sobre ti reposa en bancos de datos. Lo consagra el artículo 15 de la Constitución y, para la información financiera y crediticia, lo desarrolla la Ley 1266 de 2008 con procedimientos de consulta y de reclamo.
+
+**¿Cuál es la diferencia entre fuente, operador y usuario?**
+
+La fuente es la entidad que te dio el crédito o servicio y reporta tus datos; responde por su calidad. El operador es la central, como Datacrédito o TransUnion, que los administra y no responde por su calidad salvo que sea también la fuente. El usuario es quien consulta la información, como un banco que estudia tu solicitud (artículo 3).
+
+**¿Pueden reportarme sin mi autorización?**
+
+Para el dato financiero y crediticio la ley no exige tu autorización (parágrafo del numeral 1 del artículo 6), pero sí una comunicación previa: el reporte negativo solo procede después de avisarte, y la entidad puede reportar pasados veinte días calendario desde el envío del aviso (artículo 12). Si reportó sin avisarte y ya pagaste, el reporte debe retirarse de inmediato.
+
+**¿En cuánto tiempo deben responder mi reclamo?**
+
+En quince días hábiles contados desde el día siguiente al recibo, prorrogables por ocho días hábiles más si se te informan los motivos y la fecha (numeral 3 de la parte II del artículo 16). Dentro de dos días hábiles de recibido el reclamo completo debe aparecer en tu registro la leyenda «reclamo en trámite».
+
+**¿Qué hago si no responden o la respuesta no me sirve?**
+
+Puedes acudir a la Superintendencia de Industria y Comercio o, si la entidad está vigilada por la Superintendencia Financiera, a esta, y pedir que ordenen la corrección o el retiro del dato; para eso debes acreditar que presentaste el reclamo por los mismos hechos y que no fue atendido o lo fue desfavorablemente (numeral 5 del artículo 17). La ley deja a salvo la acción de tutela (numeral 6 de la parte II del artículo 16).
+
+**¿Qué diferencia hay con la Ley 1581 de 2012?**
+
+La Ley 1581 de 2012 contiene las disposiciones generales para la protección de datos personales. Su artículo 2 la deja sin aplicación a las bases de datos y archivos regulados por la Ley 1266 de 2008, así que para tu reporte en las centrales rige la 1266.
+
+**¿Cuánto cuesta reclamar con Justiexpress?**
+
+Radicar el reclamo ante la entidad y las centrales es gratis y no exige abogado. En Justiexpress, la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+## Multas de tránsito
+
+### Multas de tránsito: comparendo y fotomulta
+
+Página: https://www.justiexpress.com/multas-de-transito/ · Revisada: 2026-11-07
+
+Te llegó un comparendo o una fotomulta: cómo consultarlo en el SIMIT, plazos, descuentos del 50 % y 75 % y cómo impugnarlo. Escrito listo por $19.900 COP.
+
+**¿Cómo consulto si tengo comparendos o fotomultas?**
+
+En el SIMIT, el sistema integrado de información sobre multas y sanciones por infracciones de tránsito que el artículo 10 de la Ley 769 de 2002 encargó a la Federación Colombiana de Municipios. Se consulta en simit.org.co con tu cédula o con la placa. Si aparece algo, anota el número del comparendo, la fecha, el organismo de tránsito y el valor antes de decidir.
+
+**¿Cuánto tiempo tengo para pagar un comparendo con descuento?**
+
+El artículo 136 de la Ley 769 de 2002 prevé tres vías si aceptas la infracción: pagar el 100 % dentro de los tres días hábiles siguientes a la orden de comparendo, pagar el 50 % dentro de los cinco días siguientes, o pagar el 75 % dentro de los veinte días siguientes. En las dos últimas debes además asistir a un curso sobre normas de tránsito. Si la fotomulta no se notificó o se notificó mal, esos términos corren desde la fecha de la notificación (parágrafo 2 del artículo 136).
+
+**¿Cuánto tiempo tengo para responder una fotomulta?**
+
+Once (11) días hábiles contados desde que recibes el comparendo y sus soportes en la última dirección que registraste en el RUNT, según el artículo 8 de la Ley 1843 de 2017. La autoridad debe enviarlos dentro de los tres días hábiles siguientes a la validación del comparendo y, si no te encuentra en esa dirección, notificarte por aviso.
+
+**¿Si pago con descuento puedo impugnar después?**
+
+No. Los descuentos del artículo 136 solo existen si el inculpado acepta la comisión de la infracción, y pagar es aceptarla. Si hay algo que discutir, impugna primero: la vía es rechazar el comparendo y pedir audiencia pública, y está explicada en cómo impugnar un comparendo o fotomulta.
+
+**¿Qué pasa si no pago ni me presento?**
+
+El proceso sigue sin ti. Según el artículo 136, si no compareces sin justa causa comprobada, la autoridad continúa la actuación, quedas vinculado a ella y el fallo se dicta en audiencia pública y se notifica en estrados. La sanción en firme se cobra por jurisdicción coactiva, que prescribe en tres años desde la ocurrencia del hecho (artículo 159). Antes de dejar correr el tiempo, mira cuándo prescribe o caduca una multa.
+
+**¿Me pueden multar por un carro que ya vendí?**
+
+La fotomulta se envía al último propietario registrado (artículo 137 de la Ley 769 de 2002), así que si el traspaso no quedó inscrito el comparendo llega a tu nombre. Pero las multas no pueden imponerse a persona distinta de quien cometió la infracción (parágrafo 1 del artículo 129), y la Corte Constitucional declaró inexequible, en la Sentencia C-038 de 2020, que el propietario responda solidariamente con el conductor. Guarda el contrato de compraventa o el traspaso: es la prueba que se anexa.
+
+**¿Necesito abogado para responder una multa de tránsito?**
+
+No. El artículo 135 de la Ley 769 de 2002 dispone que al conductor se le indique que tendrá derecho a nombrar apoderado si así lo desea: es una opción, no un requisito. Puedes presentarte tú mismo ante la autoridad de tránsito.
+
+**¿Cuánto cuesta?**
+
+Consultar en el SIMIT o presentarte ante la autoridad no tiene intermediario: lo que pagas es la multa. Si decides impugnar o pedir la prescripción, radicar el escrito es gratis y en Justiexpress la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+### Cómo impugnar un comparendo o fotomulta
+
+Página: https://www.justiexpress.com/impugnar-comparendo/ · Revisada: 2026-11-07
+
+Cómo impugnar un comparendo o una fotomulta en Colombia: rechazarlo, pedir audiencia pública y qué alegar según la ley. Escrito listo por $19.900 COP.
+
+**¿Cuánto tiempo tengo para impugnar un comparendo?**
+
+La orden de comparendo te ordena presentarte ante la autoridad de tránsito dentro de los tres (3) días hábiles siguientes (artículo 135 de la Ley 769 de 2002). Cuando la infracción se detectó con cámara, el artículo 8 de la Ley 1843 de 2017 fija once (11) días hábiles desde que recibes el comparendo en la dirección registrada en el RUNT (el artículo 137 de la Ley 769 habla de seis días hábiles adicionales). No esperes: radica el rechazo y la solicitud de audiencia tan pronto conozcas el comparendo.
+
+**¿Si pago con el descuento del 50% puedo impugnar después?**
+
+No. Los descuentos del artículo 136 de la Ley 769 de 2002 aplican solo si el inculpado acepta la comisión de la infracción. Pagar es aceptar, y con ello se cierra la discusión y la audiencia. Si vas a impugnar, no pagues el descuento.
+
+**¿Me pueden multar por una fotomulta si yo no conducía?**
+
+El parágrafo 1 del artículo 129 de la Ley 769 de 2002 dispone que las multas no podrán ser impuestas a persona distinta de quien cometió la infracción. La Corte Constitucional, en la Sentencia C-530 de 2003, declaró inexequible el aparte que permitía sancionar al propietario registrado por no comparecer.
+
+**¿Qué pasa si nunca me notificaron el comparendo?**
+
+La notificación es presupuesto del derecho de defensa que protege el artículo 29 de la Constitución. Si no te notificaron en debida forma a la dirección registrada en el RUNT, la actuación queda viciada, y eso es justamente lo que se alega en el escrito.
+
+**¿Impugnar la multa suspende el cobro?**
+
+La impugnación abre la audiencia, y mientras no haya fallo no hay sanción en firme. Si ya te sancionaron y apelas, puedes pedir que el recurso se conceda en el efecto suspensivo (artículo 79 del CPACA), para que la multa no se cobre ni se reporte al SIMIT y al RUNT hasta que decida el superior.
+
+**¿Y si no resuelven mi recurso?**
+
+El artículo 161 de la Ley 769 de 2002 ordena decidir los recursos dentro de un (1) año contado desde su debida y oportuna interposición, y añade que si no se deciden en ese término se entenderán fallados a favor del recurrente.
+
+**¿Necesito abogado para impugnar?**
+
+No. El procedimiento contravencional de tránsito no exige abogado: el propio artículo 135 de la Ley 769 de 2002 prevé que el conductor tendrá derecho a nombrar apoderado si así lo desea, de modo que es una opción y no un requisito.
+
+**¿Cuánto cuesta?**
+
+Radicar el escrito ante la autoridad de tránsito es gratis. En Justiexpress, la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+### ¿Cuándo prescribe una multa de tránsito?
+
+Página: https://www.justiexpress.com/prescripcion-multas-transito/ · Revisada: 2026-10-26
+
+Una multa de tránsito prescribe a los tres años del hecho y la facultad de sancionar caduca al año. Pide que lo declaren y salir del SIMIT por $19.900 COP.
+
+**¿Cuándo prescribe una multa de tránsito?**
+
+A los tres (3) años contados a partir de la ocurrencia del hecho. Así lo dispone el artículo 159 de la Ley 769 de 2002, modificado por el artículo 26 de la Ley 1383 de 2010 y por el artículo 206 del Decreto 019 de 2012.
+
+**¿Prescripción y caducidad son lo mismo?**
+
+No. La caducidad corre contra la facultad de sancionar: si en un (1) año la autoridad no decidió sobre la imposición de la sanción, ya no puede imponerla (artículo 161). La prescripción corre contra el cobro de la sanción ya impuesta, a los tres (3) años del hecho (artículo 159).
+
+**¿Qué interrumpe los tres años?**
+
+El texto del artículo 159 dice que la prescripción se interrumpirá con la presentación de la demanda. Como las autoridades de tránsito cobran por jurisdicción coactiva y no presentan demanda, en la práctica lo que se discute es si el mandamiento de pago se notificó dentro de los tres años. Por eso el escrito pide la constancia de esa notificación.
+
+**¿La prescripción se declara sola?**
+
+No. Hay que pedirla por escrito a la autoridad de tránsito, que debe responder de fondo. Mientras no la declare, el comparendo sigue figurando en el SIMIT y en el RUNT y te bloquea los trámites de tránsito.
+
+**¿Desde cuándo se cuentan los plazos?**
+
+Desde la ocurrencia del hecho, es decir desde la fecha de la infracción. No desde que te notificaron, ni desde la última vez que te cobraron, ni desde que apareció en el SIMIT.
+
+**¿Puedo pedir la prescripción y la caducidad a la vez?**
+
+Conviene elegir la que corresponde a tu caso: la caducidad si la autoridad nunca te sancionó en el año siguiente al hecho, y la prescripción si ya hay sanción y lo que ocurrió fue que no la cobraron en tres años. El formulario te deja elegir una vía y arma el escrito con ese encuadre.
+
+**¿Cuánto tiempo tienen para responderme?**
+
+Quince (15) días hábiles, por la regla general del derecho de petición (artículo 14 de la Ley 1755 de 2015). Si no responden, ese silencio se protege con una tutela por derecho de petición.
+
+**¿Cuánto cuesta?**
+
+Radicar la solicitud es gratis y no exige abogado. En Justiexpress, la redacción completa cuesta $19.900 COP, pago único, y pagas solo cuando el documento está listo.
+
+## Laboral
+
+### Calculadora Laboral en Colombia por $19.900
+
+Página: https://www.justiexpress.com/calculadora-laboral/ · Revisada: 2026-09-23
+
+Calcula liquidación, cesantías, prima, vacaciones, horas extra, recargos e indemnización por $19.900 COP, con la reforma laboral e informe en PDF.
+
+**¿Qué calcula exactamente la Calculadora Laboral?**
+
+Tiene cinco módulos: contrato a tiempo completo (salario neto, prestaciones, seguridad social, horas extra, recargos y costo para el empleador), trabajo por días, indemnización por despido sin justa causa, liquidación laboral definitiva y contratistas por honorarios. Considera salario integral, trabajo doméstico, teletrabajo y la reforma laboral (Ley 2466 de 2025).
+
+**¿Cuánto cuesta la Calculadora Laboral?**
+
+$19.900 COP, pago único a través de Wompi. Sin suscripciones, sin mensualidades, sin costos ocultos. Pagas una vez y recibes tu cálculo completo con informe en PDF.
+
+**¿Puedo modificar los datos después de pagar?**
+
+Sí. Con el botón Editar cálculo puedes ajustar salario, fechas o tipo de contrato y recalcular las veces que necesites, sin pagar de nuevo.
+
+**¿Cómo recibo el resultado?**
+
+Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico.
+
+**¿Sirve si trabajo por días o soy contratista?**
+
+Sí. La calculadora tiene módulos específicos para trabajo por días (prestaciones proporcionales) y para contratistas por prestación de servicios (honorarios, seguridad social y retenciones).
+
+**¿El cálculo es válido legalmente?**
+
+El cálculo se realiza con las fórmulas de la normativa laboral colombiana vigente y te sirve como base sólida para negociar o reclamar. Es una estimación referencial, no una liquidación oficial. Si tu empleador no paga, en el mismo chat puedes generar la reclamación laboral lista para presentar.
+
+### Liquidación de prestaciones sociales
+
+Página: https://www.justiexpress.com/liquidacion-de-prestaciones-sociales/ · Revisada: 2026-11-07
+
+Cómo calcular cesantías, intereses, prima y vacaciones al terminar tu contrato: fórmula, norma y un ejemplo con cifras. Calcula la tuya por $19.900 COP.
+
+**¿Qué incluye la liquidación de prestaciones sociales?**
+
+Al terminar el contrato se suman el sueldo que falte por pagar y cuatro conceptos: las cesantías, los intereses sobre las cesantías, la prima de servicios proporcional del semestre en curso y las vacaciones que no disfrutaste. Si el despido fue sin justa causa se agrega además la indemnización del artículo 64 del Código Sustantivo del Trabajo.
+
+**¿Cómo se calculan las cesantías?**
+
+Un mes de salario por cada año de servicios y proporcionalmente por fracción de año (artículo 249 del CST). El Ministerio del Trabajo da la fórmula: salario mensual por días trabajados, dividido en 360. Como base se toma el último salario mensual si no varió en los tres últimos meses; si varió, o es variable, el promedio del último año (artículo 253).
+
+**¿Cuánto son los intereses sobre las cesantías?**
+
+El 12 % anual sobre el saldo de las cesantías, en proporción al tiempo trabajado cuando el contrato termina antes del 31 de diciembre (artículo 1 del Decreto 116 de 1976, que reglamenta la Ley 52 de 1975). Si el empleador no los paga a tiempo, debe pagar además una suma igual a los intereses, a título de indemnización (artículo 5).
+
+**¿Cómo se calcula la prima de servicios?**
+
+Corresponde a 30 días de salario por año: se paga mitad como máximo el 30 de junio y mitad a más tardar los primeros veinte días de diciembre, por el semestre trabajado o proporcionalmente al tiempo (artículo 306 del CST, modificado por la Ley 1788 de 2016). La fórmula que da el Ministerio del Trabajo es salario por días laborados dividido en 360.
+
+**¿Cómo se pagan las vacaciones al terminar el contrato?**
+
+Si el contrato termina sin que las hayas causado por año cumplido, te las compensan en dinero proporcionalmente al tiempo efectivamente trabajado, según el artículo 1 de la Ley 995 de 2005. Tienes derecho a quince días hábiles por año (artículo 186 del CST), es decir, medio mes de salario por año, y la base es el último salario devengado (artículo 189).
+
+**¿Entra el auxilio de transporte en la liquidación?**
+
+Sí, para quien gana hasta dos salarios mínimos: el Ministerio del Trabajo indica que el auxilio de transporte debe tenerse en cuenta para liquidar las cesantías, y en su ejemplo de la prima suma el subsidio de transporte al salario antes de dividir en 360. Si ganas más de dos salarios mínimos no hay auxilio y la base es solo el salario.
+
+**¿Qué pasa si no me pagan a tiempo?**
+
+Por la prima y por las prestaciones que se adeuden al terminar el contrato, el artículo 65 del CST impone un día de salario por cada día de retardo. Si no te pagaron bien, mira la sanción de un día por día y los tres años para reclamar.
+
+**¿Cuánto cuesta calcular mi liquidación?**
+
+Si quieres que la calculadora laboral lo haga con tu caso, cuesta $19.900 COP, un solo pago que incluye el informe en PDF con el detalle de cada cifra. Los cálculos de esta página, hechos a mano con las fórmulas, no cuestan nada.
+
+### Liquidación por despido sin justa causa
+
+Página: https://www.justiexpress.com/liquidacion-por-despido/ · Revisada: 2026-10-29
+
+Cuánto te deben según el artículo 64, la sanción de un día de salario por cada día de retardo y los tres años para reclamar. Calcula y reclama por $19.900 COP.
+
+**¿Cuánto me deben por despido sin justa causa?**
+
+En contrato a término indefinido y con salario inferior a diez salarios mínimos: treinta días de salario si llevabas hasta un año, y veinte días adicionales por cada año siguiente al primero, proporcional por fracción. Si devengas diez salarios mínimos o más: veinte días el primer año y quince adicionales por cada año siguiente.
+
+**¿Y si mi contrato era a término fijo?**
+
+Te deben los salarios correspondientes al tiempo que faltaba para cumplir el plazo pactado. Si el contrato era por la duración de la obra o la labor, la indemnización no puede ser inferior a quince días.
+
+**No me pagaron la liquidación cuando salí. ¿Qué puedo exigir?**
+
+El artículo 65 del Código es contundente: si a la terminación del contrato el empleador no paga los salarios y prestaciones debidas, debe pagar una suma igual al último salario diario por cada día de retardo, hasta por veinticuatro meses. Es una sanción que casi nadie reclama y que suele superar a la propia indemnización.
+
+**¿Hasta cuándo puedo reclamar?**
+
+Tres años contados desde que la obligación se hizo exigible, por la regla general del artículo 488 del Código Sustantivo del Trabajo.
+
+**¿Sirve de algo reclamar por escrito?**
+
+Sí, y mucho: el artículo 489 dispone que el simple reclamo escrito del trabajador, recibido por el empleador, acerca de un derecho debidamente determinado, interrumpe la prescripción por una sola vez, y el plazo empieza a contarse de nuevo desde ese reclamo. Es decir, una carta bien hecha te devuelve los tres años.
+
+**¿La indemnización reemplaza las prestaciones?**
+
+No. Son cosas distintas y se suman: la liquidación comprende cesantías, intereses sobre cesantías, prima de servicios y vacaciones causadas, y la indemnización del artículo 64 se paga además, por haber terminado el contrato sin justa causa.
+
+**¿La reforma laboral cambió el cálculo?**
+
+El texto del artículo 64 que hoy figura en el Código es el que fijó la Ley 789 de 2002, con las escalas de esta página; lo verificamos en el texto oficial antes de publicar. La reforma sí cambió otras reglas del contrato de trabajo, como la jornada y los recargos, que la calculadora ya aplica.
+
+**¿Cuánto cuesta aquí?**
+
+$19.900 por el informe de liquidación con el detalle de cada concepto, y $19.900 por la reclamación escrita dirigida al empleador. En los dos casos es pago único y pagas solo cuando el documento está listo.
+
+## Vivienda e inmuebles
+
+### Estudio de Riesgo de Arrendamiento $29.900
+
+Página: https://www.justiexpress.com/vivienda/ · Revisada: 2026-09-23
+
+Antes de arrendar, sepa a quién: estudio del arrendatario en minutos por $29.900 COP, con veredicto, hallazgos citados y condiciones para arrendar.
+
+**¿Qué es el estudio de riesgo de arrendamiento?**
+
+Un análisis de los documentos de quien le pide el inmueble y de su codeudor —certificados laborales o de ingresos, extractos, declaración de renta, cédula— que entrega un veredicto con puntaje, la exposición estimada si el contrato termina en restitución, los hallazgos con su cita textual y las condiciones concretas para arrendar.
+
+**¿Cuánto cuesta?**
+
+El estudio del arrendatario cuesta $29.900 COP, pago único. El estudio del certificado de tradición, el contrato de arrendamiento, la promesa y la minuta de compraventa cuestan $19.900 cada uno, y la calculadora notarial es gratis. Se paga con Wompi, sin tarjeta: Nequi, Bancolombia, PSE o Daviplata.
+
+**¿Consultan las centrales de riesgo?**
+
+No, y lo decimos de frente. El estudio se hace únicamente con los documentos que usted aporta. Por eso una de las condiciones que suele recomendar es pedir el reporte de DataCrédito de las partes, que cada persona puede descargar gratis.
+
+**¿Qué documentos necesito?**
+
+Depende del perfil y del canon: sobre ciertos valores de canon el estándar pide más de un codeudor. Desde la primera pantalla puede descargar gratis y sin dar ningún dato la lista exacta en PDF, para reenviarla a quien le pide el inmueble.
+
+**¿Qué pasa con los documentos que subo?**
+
+Se procesan para hacer el estudio y se descartan: no se almacenan en la plataforma. Lo único que se conserva es el estudio que usted compró. Como los soportes suelen ser de un tercero, al empezar usted declara contar con la autorización del titular (Ley 1581 de 2012).
+
+**¿Puedo pedir un depósito al arrendatario?**
+
+En vivienda urbana, no: el artículo 16 de la Ley 820 de 2003 prohíbe exigir depósitos en dinero o cauciones reales. Puede pedir codeudor solidario, póliza de arrendamiento o aval bancario.
+
+**¿El estudio reemplaza una póliza?**
+
+No. Es un análisis prudencial de apoyo a su decisión: no es un dictamen actuarial, ni un reporte de central de riesgo, ni un compromiso de aseguramiento, y no acredita la autenticidad de los soportes. Si el riesgo no se subsana, el propio estudio puede recomendarle exigir una póliza.
+
+### Contrato de arrendamiento de vivienda
+
+Página: https://www.justiexpress.com/contrato-de-arrendamiento-vivienda/ · Revisada: 2026-10-29
+
+Qué fija la Ley 820 por ti: nada de depósitos, tope del canon, reajuste máximo y prórroga automática. Contrato listo para firmar por $19.900 COP.
+
+**¿Me pueden exigir un depósito para arrendar una vivienda?**
+
+No. El artículo 16 de la Ley 820 de 2003 prohíbe exigir depósitos en dinero efectivo u otra clase de cauciones reales en los contratos de arrendamiento para vivienda urbana. Es una prohibición expresa, no una recomendación.
+
+**¿Y si me lo piden en un documento aparte o con otro nombre?**
+
+Tampoco. El mismo artículo cierra esa puerta: las garantías no pueden estipularse indirectamente ni por interpuesta persona, ni pactarse en documentos distintos al contrato, ni sustituirse por otras bajo denominaciones diferentes. Llamarlo fondo, depósito de garantía o anticipo no lo vuelve legal.
+
+**¿Entonces cómo se asegura el arrendador?**
+
+Con lo que sí permite la ley: codeudores con solidaridad, una póliza o afianzamiento de arrendamiento, y sobre todo un buen estudio del candidato antes de entregar las llaves. La garantía no se cobra por adelantado, se verifica antes.
+
+**¿Cuánto puede subir el arriendo cada año?**
+
+Cada doce meses de ejecución bajo un mismo precio, y hasta el cien por ciento del incremento que haya tenido el IPC en el año calendario anterior (artículo 20). Además el arrendador debe informarte el monto y la fecha del incremento, so pena de que no te sea oponible.
+
+**¿Hay un tope para el valor del arriendo?**
+
+Sí. El artículo 18 dispone que el precio mensual no podrá exceder el uno por ciento del valor comercial del inmueble o de la parte que se arriende, y que esa estimación comercial no puede exceder dos veces el avalúo catastral vigente.
+
+**¿Cuánto dura el contrato si no pactamos plazo?**
+
+Un año. El artículo 5 dice que el término será el que acuerden las partes y que, a falta de estipulación expresa, se entenderá por el término de un (1) año.
+
+**¿El contrato se renueva solo?**
+
+Sí. Según el artículo 6, se entiende prorrogado en iguales condiciones y por el mismo término inicial, siempre que cada parte haya cumplido sus obligaciones y que el arrendatario acepte los reajustes de renta autorizados por la ley.
+
+**¿Sirve un contrato verbal?**
+
+Legalmente sí: el artículo 3 admite que el contrato sea verbal o escrito. Pero en un conflicto lo verbal hay que probarlo, y por eso conviene el escrito: deja constancia del precio, el plazo, los servicios y el estado del inmueble.
+
+### Certificado de tradición y libertad
+
+Página: https://www.justiexpress.com/certificado-de-tradicion-y-libertad/ · Revisada: 2026-10-31
+
+Qué significa cada anotación del certificado de tradición y libertad: hipotecas, embargos, falsa tradición y cadena de títulos, explicadas antes de que firmes.
+
+**¿Dónde saco el certificado de tradición y libertad?**
+
+Lo expide la Oficina de Registro de Instrumentos Públicos, y se descarga en PDF desde la ventanilla única de registro de la Superintendencia de Notariado y Registro pagando la tarifa que ella fija. Nosotros no lo consultamos ni lo pedimos por ti: tú lo descargas y nos lo subes ya descargado.
+
+**¿Cuánto tiempo vale un certificado de tradición y libertad?**
+
+La ley no le da un plazo de vigencia: el artículo 72 de la Ley 1579 de 2012 dice que los certificados se expiden en tiempo real respecto de la fecha y hora de su solicitud y que su vigencia se limita a una y otra. Es una foto del folio en ese minuto. Por eso notarías, bancos y aseguradoras suelen exigirlo con pocos días de expedido, y por eso conviene pedir uno nuevo justo antes de firmar.
+
+**¿Qué son los números de cuatro dígitos de cada anotación?**
+
+Son el código de naturaleza jurídica del acto. El parágrafo 3 del artículo 8 de la Ley 1579 de 2012 agrupa los actos registrables en nueve naturalezas, del 01 (tradición) al 09 (otros), y los dos primeros dígitos del código dicen a cuál pertenece la anotación. Ojo: en los folios antiguos conviven códigos de tres dígitos de una codificación anterior, donde los mismos dígitos significan otra cosa.
+
+**¿Cómo sé si una hipoteca o un embargo sigue vigente?**
+
+Una anotación no desaparece del folio: se cancela con otra anotación posterior. Hay que encontrar esa cancelación y verificar que corresponde al gravamen, no a otro. Si la cancelación es parcial, puede haber liberado otro inmueble del mismo gravamen y el tuyo seguir afectado. Mientras no aparezca la cancelación que corresponde, el gravamen se lee como vigente.
+
+**¿Qué es la falsa tradición?**
+
+Es la anotación de un título que no transfiere el dominio pleno, como la venta de derechos y acciones, la venta de cosa ajena o la posesión inscrita. Quien figura ahí no es dueño con título pleno, así que no puede transferir lo que no tiene. No siempre es insalvable —existe el proceso de saneamiento de la Ley 1561 de 2012—, pero es lo más grave que puede traer un folio para quien va a comprar.
+
+**¿Esto reemplaza un estudio de títulos con abogado?**
+
+No, y lo decimos de frente. Un estudio de títulos revisa las escrituras de los últimos veinte años, la capacidad de quienes firmaron y la validez de cada acto. Nosotros leemos el certificado que tú nos subes, que es la publicidad registral de esos actos, y te decimos qué pesa hoy sobre el inmueble y qué exigirle al vendedor. Si el folio trae falsa tradición, cadena rota o un proceso en curso, lo que te decimos es que ahí sí necesitas abogado.
+
+**¿Guardan el certificado que subo?**
+
+No. El PDF se procesa en memoria para leer su texto y se descarta; no queda en nuestras bases de datos ni en nuestros registros de errores. Lo que sí se guarda, como en cualquier compra, es el estudio que recibes.
+
+**¿Cuánto cuesta el estudio y cómo lo recibo?**
+
+$19.900 COP, pago único por Wompi (Nequi, Bancolombia, PSE o Daviplata). Ves el estudio en pantalla apenas termina, lo descargas en PDF y te llega al correo. Sin suscripción.
+
+### Calculadora notarial gratis 2026
+
+Página: https://www.justiexpress.com/calculadora-notarial/ · Revisada: 2026-10-29
+
+Calcula gratis los gastos de escritura de tu compraventa: notaría, retención, beneficencia y registro, y lo que paga el comprador y el vendedor.
+
+**¿La calculadora notarial es gratis de verdad?**
+
+Sí. Calculas, ves el resultado completo y descargas el informe en PDF sin pagar nada y sin tarjeta. Lo único que te pedimos es tu número de celular antes del primer cálculo, con la autorización de tratamiento de datos de nuestra Política de Privacidad.
+
+**¿Cuánto cuesta escriturar una casa en Colombia?**
+
+Depende del valor, de quién vende, del departamento y de si hay hipoteca, por eso conviene calcularlo con tus cifras. Como referencia, en una compraventa de $350.000.000 sin hipoteca, vendida por una persona natural y con impuesto de registro del 1 %, los gastos de cierre suman $12.891.340, el 3,68 % del valor.
+
+**¿Quién paga los gastos notariales, el comprador o el vendedor?**
+
+Lo que pacten. A falta de pacto, el impuesto de registro se paga por partes iguales (artículo 227 de la Ley 223 de 1995), aunque por costumbre muchas veces lo asume el comprador. La retención en la fuente es del vendedor persona natural. Por eso el resultado muestra los dos escenarios, para negociar con las dos cifras.
+
+**¿Qué es la retención en la fuente en la venta de un inmueble?**
+
+Es el 1 % del valor de la venta cuando vende una persona natural (artículo 398 del Estatuto Tributario). Se paga antes de la escritura, ante el notario, que actúa como agente de retención. No es un gasto adicional: es un anticipo del impuesto de renta del vendedor.
+
+**¿Por qué el impuesto de registro cambia de una ciudad a otra?**
+
+Porque lo fija cada asamblea departamental dentro del rango del artículo 230 de la Ley 223 de 1995: entre el 0,5 % y el 1 % en los actos con cuantía que se inscriben en la oficina de registro de instrumentos públicos. La calculadora te deja poner la tarifa de tu departamento.
+
+**¿Sirve para sucesiones, divorcios y matrimonio civil?**
+
+Sí. Tiene un módulo de sucesiones y liquidaciones (sucesión ante notario, sociedad conyugal o patrimonial, divorcio y protocolización de sucesión judicial) y otro de escrituras que incluye el matrimonio civil, el cambio de nombre y la corrección del registro civil.
+
+**¿Los valores que arroja son oficiales?**
+
+Se calculan con las tarifas notariales de 2026 (Resolución 000964 de la Superintendencia de Notariado y Registro, vigente desde febrero) y las registrales del mismo año. Es una estimación detallada para planear el negocio; el valor final lo liquidan la notaría y la oficina de registro.
+
+**Ya tengo las cifras, ¿qué sigue?**
+
+Firmar bien. Antes de la escritura va la promesa de compraventa, y en la notaría la minuta. Las dos se redactan en Justiexpress por $19.900 cada una, y esas sí se pagan cuando el documento está listo. La ruta de vivienda.
+
+## Impuestos
+
+### Calculadora de Impuesto de Renta por $19.900
+
+Página: https://www.justiexpress.com/calculadora-tributaria/ · Revisada: 2026-09-23
+
+Calcula tu renta (formulario 210) con importador de la exógena DIAN, y la retención de salarios y honorarios desde $19.900 COP, con informe en PDF.
+
+**¿Qué calcula exactamente la Calculadora Tributaria?**
+
+El impuesto de renta de personas naturales (formulario 210) con todas sus cédulas —trabajo, capital, no laborales, pensiones, dividendos y ganancias ocasionales—, la retención en la fuente mensual de salarios y la de honorarios y servicios. Puede prellenar la declaración con el archivo de exógena de la DIAN.
+
+**¿Cuánto cuesta?**
+
+$19.900 COP por los resultados con informe en PDF, o $25.000 si además quieres el Formulario 210 oficial diligenciado con tus valores. Pago único a través de Wompi, sin suscripciones ni costos ocultos.
+
+**¿Qué es el importador de exógena?**
+
+La DIAN publica lo que bancos, empleadores y otras entidades reportaron sobre ti («información reportada por terceros»). Descargas ese archivo, lo subes a la calculadora y ella prellena las casillas del formulario 210. El archivo se procesa en tu navegador y no se sube a ningún servidor.
+
+**¿Necesito saber de impuestos para usarla?**
+
+No. La calculadora te guía campo por campo en lenguaje claro: solo necesitas tus ingresos, certificados y aportes. Ella aplica las fórmulas, los topes y las tarifas por ti.
+
+**¿Sirve para saber si debo declarar renta?**
+
+Sí. Con tus ingresos y movimientos del año, el resultado te muestra tu situación frente al impuesto y te orienta sobre tu obligación de declarar.
+
+**¿Puedo modificar los datos después de pagar?**
+
+Sí. Con el botón Editar cálculo puedes ajustar ingresos, deducciones o retenciones y recalcular las veces que necesites, sin pagar de nuevo.
+
+**¿Cómo recibo el resultado?**
+
+Lo ves desglosado en pantalla inmediatamente, puedes descargarlo en PDF y además te lo enviamos a tu correo electrónico.
+
+## Sobre Justiexpress
+
+### Quiénes somos y cómo trabajamos
+
+Página: https://www.justiexpress.com/quienes-somos/ · Revisada: 2026-10-27
+
+Quiénes somos, cómo se redacta cada documento con IA sobre plantillas jurídicas propias, nuestra política editorial y qué hacemos con tus datos.
+
+**¿Justiexpress es una firma de abogados?**
+
+No. Somos una plataforma tecnológica de asistencia jurídica. Redactamos documentos y hacemos cálculos, pero no ejercemos representación judicial ni se crea contigo una relación abogado-cliente.
+
+**¿Entonces quién redacta mi documento?**
+
+Un sistema de inteligencia artificial, sobre una plantilla jurídica escrita por nuestro equipo legal. La plantilla define la estructura, las normas y las peticiones; la inteligencia artificial toma tus respuestas y las redacta dentro de esa estructura, sin inventar hechos.
+
+**¿Un documento hecho así sirve ante un juez o una entidad?**
+
+Sí: en Colombia la tutela y el derecho de petición no exigen abogado, y lo que importa es que el escrito tenga los hechos, los fundamentos y las peticiones. Lo que ningún documento puede prometer es el resultado, porque eso lo decide el juez o la entidad.
+
+**¿Un abogado revisa mi caso antes de entregarlo?**
+
+No, y preferimos decirlo: nuestro equipo legal escribe y actualiza las plantillas y los criterios jurídicos, pero nadie revisa tu caso uno por uno antes de la entrega. Si tu situación es compleja, lo honesto es consultar a un abogado, y te lo decimos cuando lo detectamos.
+
+**¿Cuándo se paga?**
+
+Al final. Respondes las preguntas, el documento se redacta y solo entonces pagas para desbloquearlo. El precio se ve antes de empezar, es fijo y es un pago único: no hay suscripción ni cobros posteriores.
+
+**¿Qué hacen con mis datos?**
+
+Guardamos el documento que compraste y tus datos de contacto para entregártelo y atenderte, conforme a la Ley 1581 de 2012. Los archivos que subes al verificador de reporte y al estudio de arrendamiento se procesan en memoria y no se guardan.
+
+**¿Puedo hablar con una persona?**
+
+Sí. Escríbenos por WhatsApp al +57 318 572 5324 o al correo justiexpress@gmail.com. En el chat también puedes pedir hablar con alguien y te pasamos el contacto.
+
+### Términos y Condiciones de uso
+
+Página: https://www.justiexpress.com/TyC.html
+
+Términos y condiciones de uso de la plataforma y del Chat Jurídico de Justiexpress S.A.S.: alcance del servicio, pagos, reembolsos y responsabilidad.
+
+### Política de Privacidad y Datos Personales
+
+Página: https://www.justiexpress.com/PP.html
+
+Cómo Justiexpress S.A.S. trata tus datos personales según la Ley 1581 de 2012: finalidades, uso de inteligencia artificial, derechos del titular y reclamos.
+
+## Preguntas generales sobre el servicio
+
+**¿Pago antes de ver el documento?**
+
+No. Primero cuentas tu caso, eliges el documento y respondes las preguntas; el asistente lo redacta y solo entonces pagas. El pago de $19.900 desbloquea la descarga en PDF y Word.
+
+**¿Cuánto cuestan los servicios?**
+
+Precio fijo y sin costos ocultos. Los documentos jurídicos (tutelas, derechos de petición, desacatos, contratos y minutas) y las calculadoras laboral y tributaria cuestan $19.900 COP; la calculadora notarial es gratis. La calculadora tributaria con el Formulario 210 oficial diligenciado cuesta $25.000 y el estudio de riesgo de arrendamiento, $29.900. Pago único y seguro a través de Wompi, sin tarjeta: Nequi, Bancolombia, PSE o Daviplata.
+
+**¿Qué es una acción de tutela?**
+
+La acción de tutela es el mecanismo constitucional para proteger tus derechos fundamentales en Colombia (artículo 86 de la Constitución). Cualquier persona puede presentarla cuando sus derechos están siendo vulnerados o amenazados. El juez tiene 10 días para resolverla.
+
+**¿Cuánto tiempo toma elaborar una tutela?**
+
+Unos minutos. Respondes preguntas cerradas sobre tu caso y el asistente redacta la tutela al instante, con hechos, pretensiones, fundamentos y jurisprudencia.
+
+**¿Necesito un abogado para presentar una tutela?**
+
+No. La tutela fue diseñada para que cualquier persona pueda presentarla sin abogado. Aun así, estructurar bien los hechos y los fundamentos jurídicos ayuda al juez a entender tu caso, y eso es lo que hace el documento.
+
+**¿Atienden en todo Colombia?**
+
+Sí. El servicio es 100 % digital y los documentos sirven en cualquier ciudad del país: la tutela y el derecho de petición pueden radicarse por correo electrónico o en ventanilla.
+
+**¿Cuál es el plazo para responder un derecho de petición?**
+
+Las autoridades tienen hasta 15 días hábiles para peticiones generales, 10 días para solicitudes de información y documentos, y 30 días para consultas (Ley 1755 de 2015). Si no responden, puedes presentar una tutela.
+
+**¿Qué son las calculadoras legales?**
+
+Herramientas que calculan al instante tu liquidación laboral (prestaciones, horas extra, recargos e indemnización), tu impuesto de renta —que puedes prellenar con tu exógena de la DIAN— y tus retenciones, o los gastos notariales y de registro de una escritura, sucesión o hipoteca. Recibes el resultado desglosado en pantalla, en PDF y en tu correo, y puedes editar el cálculo sin pagar de nuevo.
+
+**¿Qué es el estudio de riesgo de arrendamiento?**
+
+Un análisis de los documentos de quien te pide el inmueble y de su codeudor que entrega, en minutos, un veredicto con puntaje, los hallazgos con su cita textual y las condiciones para arrendar. Cuesta $29.900. No consulta centrales de riesgo y los soportes no se almacenan en la plataforma.
+
+**¿Qué ocurre si la tutela es negada?**
+
+Tienes derecho a impugnar dentro de los tres días siguientes al fallo. La impugnación la resuelve el superior jerárquico en máximo 20 días. Además, la Corte Constitucional puede seleccionarla para revisión.
+
+**¿Las empresas privadas deben responder derechos de petición?**
+
+Sí. Empresas que prestan servicios públicos, entidades financieras y empresas que manejan datos personales están obligadas a responder. El incumplimiento da lugar a tutela.

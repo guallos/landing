@@ -8,6 +8,7 @@ La landing sigue siendo HTML estático: Vercel sirve la raíz tal cual y **las p
 | `node tools/check.mjs` | Verificación SEO/estructura: parciales al día, JSON-LD válido, FAQPage = FAQ visible, títulos 30–60 c, descripciones 110–160 c, canonical, OG propia, un H1 y sin saltos, imágenes con alt/width/height, enlaces internos vivos, gtag solo en tutela y petición, sitemap. | ninguna |
 | `node tools/render-check.mjs` | Abre todas las páginas en Chromium y WebKit (motor de Safari) a 390 y 1440 px: errores de consola, recursos rotos, scroll horizontal y que gtag cargue en tutela/petición. `--browsers=firefox` para Firefox, `--shots=carpeta` para capturas. | Playwright |
 | `node tools/og.mjs [slug]` | Regenera las imágenes Open Graph de `og/`. | Playwright |
+| `node tools/llms.mjs` | Regenera `llms.txt` (índice de páginas) y `llms-full.txt` (con todas las preguntas frecuentes) para los asistentes de IA, a partir del propio HTML. **Correrlo al crear o editar una página**: `check.mjs` falla si quedaron viejos. Una página nueva se agrega a su grupo en `GRUPOS`. | ninguna |
 
 Una vez: `cd tools && npm install` (instala Playwright; los navegadores se bajan con `npx playwright install chromium webkit`).
 

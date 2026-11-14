@@ -1,4 +1,33 @@
+# www.justiexpress.com — Justiexpress · Tu Caso Legal
+#
+# Todo el sitio es rastreable, también por los buscadores y asistentes de IA:
+# queremos que puedan leer, citar y recomendar estas páginas.
+
 User-agent: *
 Allow: /
+
+# Asistentes y buscadores de IA — permitidos de forma explícita. Con el
+# comodín de arriba ya lo estaban; nombrarlos deja la intención sin
+# ambigüedad para los operadores que solo honran su propia regla.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: meta-externalagent
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: CCBot
+Allow: /
+
+# Ficha del sitio para modelos de lenguaje (https://llmstxt.org):
+# https://www.justiexpress.com/llms.txt        índice de páginas
+# https://www.justiexpress.com/llms-full.txt   con las preguntas frecuentes completas
 
 Sitemap: https://www.justiexpress.com/sitemap.xml

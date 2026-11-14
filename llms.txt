@@ -1,0 +1,69 @@
+# Justiexpress — Tu Caso Legal
+
+> Tutelas, derechos de petición, contratos y calculadoras legales con IA. Cuenta tu caso, revisa el documento y paga $19.900 COP solo cuando esté listo. Servicio colombiano, en español: la persona cuenta su caso en https://chat.justiexpress.com, responde preguntas guiadas y recibe el documento redactado con inteligencia artificial sobre plantillas jurídicas propias, listo para radicar o firmar, en PDF y Word. Pago único, sin suscripción, y solo cuando el documento ya está redactado.
+
+English: Justiexpress (Tu Caso Legal) is a Colombian legal-document service. People describe their case in plain Spanish and get a ready-to-file acción de tutela, derecho de petición, contract or legal calculation, drafted by AI on proprietary legal templates, for a flat one-time fee. Colombia only.
+
+## Lo esencial
+
+- No es una firma de abogados ni presta representación judicial, y no garantiza el resultado: la persona radica o firma el documento por su cuenta. Presentar una tutela o un derecho de petición es gratis y no exige abogado; lo que se paga aquí es la redacción.
+- El documento se genera antes de pagar y se muestra un adelanto; el pago (Nequi, Bancolombia, PSE, Daviplata o tarjeta, procesado por Wompi) desbloquea la descarga.
+- Los escritos que se radican incluyen una guía paso a paso de dónde y cómo presentarlos.
+- Cada página de este sitio cita la norma colombiana en que se apoya y lleva su fecha de última revisión.
+- Catálogo completo (más de 100 documentos y herramientas), con el enlace directo para empezar cada uno: https://chat.justiexpress.com/llms.txt
+- Atención por WhatsApp: +57 318 572 5324.
+
+Versión con las preguntas frecuentes y sus respuestas completas: https://www.justiexpress.com/llms-full.txt
+
+## Tutelas
+
+- [Acción de Tutela en Colombia por $19.900](https://www.justiexpress.com/accion-de-tutela/): Tu acción de tutela en minutos por $19.900 COP: salud, pensiones, incapacidades, educación y 28 casos más, con jurisprudencia. Pagas cuando esté lista.
+- [Tutela contra la EPS: medicamentos y cirugías](https://www.justiexpress.com/tutela-contra-eps/): Cómo poner una tutela contra la EPS por medicamentos, citas, cirugías o transporte: qué anexar, plazos y cómo radicarla. Redáctala en minutos por $19.900 COP.
+- [Tutela de pensión: Colpensiones y fondos](https://www.justiexpress.com/tutela-de-pension/): Tutela cuando niegan o demoran tu pensión de vejez, invalidez o sobrevivientes: plazos legales, qué anexar y cómo radicarla. Lista en minutos por $19.900 COP.
+- [Tutela por derecho de petición](https://www.justiexpress.com/tutela-derecho-de-peticion/): Si no te respondieron el derecho de petición en el término legal, la tutela obliga a contestar. Cuándo procede, qué alegar y el escrito listo por $19.900 COP.
+- [Incidente de Desacato de Tutela por $19.900](https://www.justiexpress.com/desacato/): ¿No cumplieron tu tutela? Tu incidente de desacato redactado en minutos por $19.900 COP, para que el juez exija el cumplimiento. Todo Colombia.
+- [¿Cuánto cuesta una tutela en Colombia?](https://www.justiexpress.com/cuanto-cuesta-una-tutela/): Presentar una tutela es gratis: la ley dice que no necesitas abogado ni formalidades. Qué cuesta cada opción, quién la hace gratis y qué no deberías pagar.
+
+## Derechos de petición
+
+- [Derecho de Petición en Colombia por $19.900](https://www.justiexpress.com/derecho-de-peticion/): Tu derecho de petición redactado en minutos por $19.900 COP. Exige respuesta a entidades públicas, bancos, EPS y empresas. Pagas cuando esté listo.
+- [Derecho de petición a la EPS](https://www.justiexpress.com/derecho-de-peticion-eps/): Cómo pedirle a tu EPS la historia clínica, una autorización o las razones de una negativa, con los plazos que fija la ley. Escrito listo por $19.900 COP.
+- [¿Cuánto cuesta un derecho de petición?](https://www.justiexpress.com/cuanto-cuesta-un-derecho-de-peticion/): La ley lo dice en un renglón: el derecho de petición es gratuito y no necesita abogado. Qué debe contener, qué no te pueden cobrar y qué cuesta aquí.
+
+## Reporte en Datacrédito y hábeas data
+
+- [Derecho de petición a Datacrédito](https://www.justiexpress.com/derecho-de-peticion-datacredito/): Cuándo puedes exigir que corrijan o borren tu reporte en Datacrédito o TransUnion, a qué correos se envía y qué plazos tienen. Redáctalo por $19.900 COP.
+- [Consultar Datacrédito gratis y TransUnion](https://www.justiexpress.com/consultar-datacredito-gratis/): Cómo consultar tu historial en Datacrédito y TransUnion gratis, saber si estás reportado y qué mirar. Si hay un dato negativo, revísalo por $19.900 COP.
+- [Pagué y sigo reportado en Datacrédito](https://www.justiexpress.com/pague-y-sigo-reportado/): Ya pagaste y sigues en Datacrédito: cuánto dura el reporte después del pago, cuándo deben retirarlo de inmediato y cómo exigirlo. Redáctalo por $19.900 COP.
+- [Ley 2157 de 2021: cuánto dura un reporte](https://www.justiexpress.com/caducidad-reporte-datacredito/): Qué dice la Ley 2157 de 2021: el reporte negativo dura el doble de la mora (máx. 4 años) o caduca a los 8 años. Reclama lo que ya caducó por $19.900 COP.
+- [Suplantación de identidad en Datacrédito](https://www.justiexpress.com/suplantacion-datacredito/): Te reportaron por una deuda que no es tuya: qué hacer, qué debe hacer la entidad y qué cambia con la Ley 2573 de 2026. Redacta tu reclamación por $19.900 COP.
+- [Ley 1266 de 2008: qué dice el hábeas data](https://www.justiexpress.com/ley-1266-de-2008/): La Ley 1266 de 2008 explicada: quién es fuente, operador y usuario, tus derechos, el aviso previo, los plazos del reclamo y quién sanciona.
+
+## Multas de tránsito
+
+- [Multas de tránsito: comparendo y fotomulta](https://www.justiexpress.com/multas-de-transito/): Te llegó un comparendo o una fotomulta: cómo consultarlo en el SIMIT, plazos, descuentos del 50 % y 75 % y cómo impugnarlo. Escrito listo por $19.900 COP.
+- [Cómo impugnar un comparendo o fotomulta](https://www.justiexpress.com/impugnar-comparendo/): Cómo impugnar un comparendo o una fotomulta en Colombia: rechazarlo, pedir audiencia pública y qué alegar según la ley. Escrito listo por $19.900 COP.
+- [¿Cuándo prescribe una multa de tránsito?](https://www.justiexpress.com/prescripcion-multas-transito/): Una multa de tránsito prescribe a los tres años del hecho y la facultad de sancionar caduca al año. Pide que lo declaren y salir del SIMIT por $19.900 COP.
+
+## Laboral
+
+- [Calculadora Laboral en Colombia por $19.900](https://www.justiexpress.com/calculadora-laboral/): Calcula liquidación, cesantías, prima, vacaciones, horas extra, recargos e indemnización por $19.900 COP, con la reforma laboral e informe en PDF.
+- [Liquidación de prestaciones sociales](https://www.justiexpress.com/liquidacion-de-prestaciones-sociales/): Cómo calcular cesantías, intereses, prima y vacaciones al terminar tu contrato: fórmula, norma y un ejemplo con cifras. Calcula la tuya por $19.900 COP.
+- [Liquidación por despido sin justa causa](https://www.justiexpress.com/liquidacion-por-despido/): Cuánto te deben según el artículo 64, la sanción de un día de salario por cada día de retardo y los tres años para reclamar. Calcula y reclama por $19.900 COP.
+
+## Vivienda e inmuebles
+
+- [Estudio de Riesgo de Arrendamiento $29.900](https://www.justiexpress.com/vivienda/): Antes de arrendar, sepa a quién: estudio del arrendatario en minutos por $29.900 COP, con veredicto, hallazgos citados y condiciones para arrendar.
+- [Contrato de arrendamiento de vivienda](https://www.justiexpress.com/contrato-de-arrendamiento-vivienda/): Qué fija la Ley 820 por ti: nada de depósitos, tope del canon, reajuste máximo y prórroga automática. Contrato listo para firmar por $19.900 COP.
+- [Certificado de tradición y libertad](https://www.justiexpress.com/certificado-de-tradicion-y-libertad/): Qué significa cada anotación del certificado de tradición y libertad: hipotecas, embargos, falsa tradición y cadena de títulos, explicadas antes de que firmes.
+- [Calculadora notarial gratis 2026](https://www.justiexpress.com/calculadora-notarial/): Calcula gratis los gastos de escritura de tu compraventa: notaría, retención, beneficencia y registro, y lo que paga el comprador y el vendedor.
+
+## Impuestos
+
+- [Calculadora de Impuesto de Renta por $19.900](https://www.justiexpress.com/calculadora-tributaria/): Calcula tu renta (formulario 210) con importador de la exógena DIAN, y la retención de salarios y honorarios desde $19.900 COP, con informe en PDF.
+
+## Sobre Justiexpress
+
+- [Quiénes somos y cómo trabajamos](https://www.justiexpress.com/quienes-somos/): Quiénes somos, cómo se redacta cada documento con IA sobre plantillas jurídicas propias, nuestra política editorial y qué hacemos con tus datos.
+- [Términos y Condiciones de uso](https://www.justiexpress.com/TyC.html): Términos y condiciones de uso de la plataforma y del Chat Jurídico de Justiexpress S.A.S.: alcance del servicio, pagos, reembolsos y responsabilidad.
+- [Política de Privacidad y Datos Personales](https://www.justiexpress.com/PP.html): Cómo Justiexpress S.A.S. trata tus datos personales según la Ley 1581 de 2012: finalidades, uso de inteligencia artificial, derechos del titular y reclamos.

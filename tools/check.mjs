@@ -15,6 +15,7 @@
    · enlaces internos que existen (sin 404)
    · gtag de Google Ads SOLO en tutela y derecho de petición
    · la página está en sitemap.xml (y el sitemap no apunta a nada inexistente)
+   · llms.txt y llms-full.txt al día con las páginas (llms.mjs --check)
 
    Complemento con navegador (Chromium + WebKit, errores de consola,
    scroll horizontal): tools/render-check.mjs
@@ -144,6 +145,10 @@ for (const loc of sitemapLocs) {
   const r = loc.replace(SITE, '');
   if (!resolveInternal(r, '/')) { failures++; console.log(`✗ sitemap apunta a una ruta inexistente: ${loc}`); }
 }
+
+// llms.txt / llms-full.txt (la ficha del sitio para los asistentes de IA) al día
+try { console.log(execFileSync(process.execPath, [path.join(root, 'tools', 'llms.mjs'), '--check'], { stdio: 'pipe' }).toString().trim()); }
+catch (e) { failures++; console.log(e.stdout?.toString().trim() || e.message); }
 
 console.log(failures ? `\n✗ ${failures} problema(s)` : '\n✓ todo en orden');
 process.exit(failures ? 1 : 0);
