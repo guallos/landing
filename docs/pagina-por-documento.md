@@ -29,7 +29,7 @@ jerarquía la dan las migas y el `BreadcrumbList` (Inicio › hub › página).
 | Bloque | Qué lleva | De dónde sale |
 |---|---|---|
 | `<head>` | title 30–60 c con la búsqueda principal · description 110–160 c · canonical · OG/Twitter con imagen propia · `og:type=article` y `article:modified_time` · **sin gtag** | — |
-| JSON-LD | `LegalService` (igual en todas) · `WebSite` · `WebPage` con `datePublished`, `dateModified`, `author` y `citation` (las fuentes) · `Service` + `Offer` · `BreadcrumbList` de 3 niveles · `FAQPage` = espejo exacto del FAQ visible | — |
+| JSON-LD | `LegalService` (igual en todas) · `WebSite` · `WebPage` con `datePublished`, `dateModified`, `author` y `citation` (las fuentes) · `Service` (SIN `offers` ni precio: Google lo mostraba en dólares, ver `tools/README.md`) · `BreadcrumbList` de 3 niveles · `FAQPage` = espejo exacto del FAQ visible | — |
 | `<body>` | `data-categoria` (respaldo) + **`data-plantilla`** (id exacto de la plantilla) + `data-origen` | `server/templates/index.ts` |
 | Hero | eyebrow con la norma · H1 = el nombre como lo busca la gente · **respuesta directa** en el lede (qué es, cuándo procede, plazo, que no necesita abogado, precio) · CTA `data-chat` · `receipt` · confianza **sin cifras inventadas** · `<p class="actualizado">` con `<time>` | — |
 | § Cuándo procede | Una tarjeta por **vía** del formulario: qué pide el escrito en esa vía | `opciones` y `dependeDe` de la plantilla |
@@ -188,8 +188,8 @@ La calculadora notarial pasó a ser gratis (oct 2026, estrategia de marca y SEO:
 «calculadora notarial» traía miles de impresiones con CTR de 0,1 % porque la
 gente la busca gratis). La página se rehízo con tres reglas:
 
-- **«Gratis» va en el title, el H1, el eyebrow, el receipt ($0) y el JSON-LD**
-  (`Offer.price: "0"`), y se quita del sitio TODO lo que la ponía a $19.900:
+- **«Gratis» va en el title, el H1, el eyebrow, el receipt ($0)** (el `Offer.price: "0"` del JSON-LD salió en nov 2026 con
+  todos los precios del marcado), y se quita del sitio TODO lo que la ponía a $19.900:
   home (catálogo, `Offer` y FAQ), `/vivienda/` (tarjeta, `Offer` y FAQ) y la
   imagen OG.
 - **Gratis sin letra pequeña:** se dice qué SÍ se pide (el celular, antes del

@@ -22,7 +22,8 @@ node tools/build.mjs && node tools/check.mjs && node tools/render-check.mjs
 
 - **Cambiar un enlace del menú o del footer:** editar `partials/…` y correr `build.mjs`. No editar ese bloque dentro de las páginas (el build lo sobrescribe y `check.mjs` avisa si se desincroniza).
 - **Mensaje de WhatsApp del botón flotante de una página:** va en el marcador de esa página, `<!-- @partial fab {"wa":"Hola%20..."} -->`.
-- **Cambiar un precio:** buscar el valor en todas las páginas (texto, `receipt`, FAQ **y** el JSON-LD: `price`, `priceRange`, FAQPage). El FAQ visible y el FAQPage deben quedar idénticos: `check.mjs` lo exige.
+- **Cambiar un precio:** buscar el valor en todas las páginas (texto, `receipt`, FAQ **y** el FAQPage del JSON-LD). El FAQ visible y el FAQPage deben quedar idénticos: `check.mjs` lo exige.
+- **El JSON-LD NO lleva precio (nov 2026):** ni `Offer.price`/`priceCurrency` ni `priceRange`. Google mostraba «USD 19,900.00» bajo el resultado orgánico aunque el marcado decía `COP` y el texto «$19.900 COP» (rastreo verificado en Search Console). El precio vive solo en el texto visible. No reintroducirlo sin comprobar antes cómo lo pinta Google.
 - **Nueva página por documento** (una por plantilla del catálogo, p. ej. `/tutela-contra-eps/`): seguir **[docs/pagina-por-documento.md](../docs/pagina-por-documento.md)** — estructura, reglas de contenido y checklist.
 - **Nueva landing:** copiar una existente, cambiar `data-categoria`/`data-origen` del `<body>` (los lee `main.js` para armar el enlace al chat), agregar su entrada en `sitemap.xml`, en `partials/` (nav/footer) y en `tools/og.mjs`, y correr `og.mjs` + `build.mjs`.
 - **Fuentes:** autoalojadas en `assets/fonts/`. Manrope va en instancias estáticas (WebKit en Windows ignoraba el eje variable). Si se cambia una fuente, recalibrar los `@font-face` "Fallback" de `styles.css` (evitan saltos de línea al cargar → CLS).
